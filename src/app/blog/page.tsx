@@ -1,16 +1,11 @@
 'use client'
-import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { getAllPosts, formatDate } from '@/lib/posts'
 
-export const metadata: Metadata = {
-  title: 'Soap Making Blog — Recipes, Tips & Business Advice',
-  description: 'Free guides and tutorials for handmade soap makers. Learn cold process soap making, lye safety, Etsy selling, pricing and running a soap business.',
-  alternates: { canonical: 'https://latherforge.com/blog' }
-}
 
+ 
 export default function BlogPage() {
   const posts = getAllPosts()
 
