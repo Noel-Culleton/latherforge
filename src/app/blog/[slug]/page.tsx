@@ -4,9 +4,8 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { getPostBySlug, getAllPosts, formatDate } from '@/lib/posts'
-interface Props {
+type Props = {
   params: Promise<{ slug: string }>
-}
 }
 
 export async function generateStaticParams() {
