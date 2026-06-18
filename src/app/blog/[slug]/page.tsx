@@ -4,9 +4,8 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { getPostBySlug, getAllPosts, formatDate } from '@/lib/posts'
-
-interface Props {
-  params: { slug: string }
+type Props = {
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -14,7 +13,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getPostBySlug(params.slug)
+const { slug } = await params
+const post = getPostBySlug(slug)
   if (!post) return {}
   return {
     title: post.title,
@@ -30,8 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function BlogPostPage({ params }: Props) {
-  const post = getPostBySlug(params.slug)
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   if (!post) notFound()
 
   const allPosts = getAllPosts().filter(p => p.slug !== post.slug).slice(0, 2)
