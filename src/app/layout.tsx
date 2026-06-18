@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     description: 'AI-powered tools for handmade soap makers.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://latherforge.com' }
+  alternates: { canonical: 'https://latherforge.com' },
+  verification: { google: 'YucVGN7ueMgFMp80xp8iKOKRY0hGIJkmg6RtaKHuTzQ' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
