@@ -1,30 +1,6 @@
 'use client'
 import { useState } from 'react'
-
-const OILS: Record<string, number> = {
-  'Coconut Oil (76°)': 0.190,
-  'Palm Oil': 0.141,
-  'Olive Oil': 0.134,
-  'Castor Oil': 0.128,
-  'Sunflower Oil': 0.134,
-  'Shea Butter': 0.128,
-  'Cocoa Butter': 0.137,
-  'Sweet Almond Oil': 0.136,
-  'Avocado Oil': 0.133,
-  'Hemp Seed Oil': 0.135,
-  'Lard': 0.138,
-  'Tallow': 0.140,
-  'Rice Bran Oil': 0.128,
-  'Canola Oil': 0.124,
-  'Jojoba Oil': 0.069,
-  'Argan Oil': 0.136,
-  'Apricot Kernel Oil': 0.135,
-  'Mango Butter': 0.137,
-  'Palm Kernel Oil': 0.190,
-  'Neem Oil': 0.139
-}
-
-type OilEntry = { oil: string; weight: string }
+import { OILS, calculateLye, type OilEntry } from '@/lib/soap'
 
 export default function LyeCalculatorClient() {
   const [lyeType, setLyeType] = useState<'NaOH' | 'KOH'>('NaOH')
@@ -33,8 +9,6 @@ export default function LyeCalculatorClient() {
   const [oils, setOils] = useState<OilEntry[]>([{ oil: 'Olive Oil', weight: '' }, { oil: 'Coconut Oil (76°)', weight: '' }])
   const [results, setResults] = useState<{ lye: number; water: number; totalOil: number } | null>(null)
   const [error, setError] = useState('')
-
-  const kohPurity = 0.90
 
   const addOil = () => setOils([...oils, { oil: 'Olive Oil', weight: '' }])
   const removeOil = (i: number) => setOils(oils.filter((_, idx) => idx !== i))
@@ -46,16 +20,9 @@ export default function LyeCalculatorClient() {
 
   const calculate = () => {
     setError('')
-    const parsed = oils.map(o => ({ sap: OILS[o.oil] || 0, weight: parseFloat(o.weight) || 0 }))
-    const totalOil = parsed.reduce((s, o) => s + o.weight, 0)
-    if (totalOil <= 0) { setError('Please enter at least one oil weight.'); return }
-
-    let rawLye = parsed.reduce((s, o) => s + o.sap * o.weight, 0)
-    if (lyeType === 'KOH') rawLye = rawLye * (56.11 / 40.00) / kohPurity
-    const lye = rawLye * (1 - superfat / 100)
-    const water = lye * 2.0
-
-    setResults({ lye: Math.round(lye * 10) / 10, water: Math.round(water * 10) / 10, totalOil: Math.round(totalOil * 10) / 10 })
+    const r = calculateLye(oils, lyeType, superfat)
+    if (!r) { setError('Please enter at least one oil weight.'); return }
+    setResults(r)
   }
 
   const reset = () => { setOils([{ oil: 'Olive Oil', weight: '' }, { oil: 'Coconut Oil (76°)', weight: '' }]); setResults(null); setError('') }
