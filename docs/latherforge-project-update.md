@@ -46,7 +46,7 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 
 ## 6b. Found in Base44 (needs a decision before launch)
 - ~~Several Artisan features were open to free users~~ Fixed 27 Sep: Inventory, Products (incl. label printing), Suppliers, Costing, Fragrance planner, Curing tracker, Batch calendar, Ingredient lots, Purchase orders, Stock requirements, Traceability and Reorder reports, and Recipe generator are now locked to Artisan. The trial still unlocks everything in Artisan for 14 days. Free users see an "Artisan" tag on those menu items. The public Etsy pricing calculator, mould calculator and safety pages stay free.
-- The early-access copy in Base44 promises "14 days free on launch day"; the website's early-access page promises "3 months free" and founding-member pricing. Pick one offer (for example a 3-month Stripe coupon emailed to the waitlist).
+- Launch offer decided 27 Sep: **14 days free** (Base44 trial). Website copy changed from "3 months free" to 14 days. People who joined the waitlist before this change were promised 3 months; honour it with a Stripe coupon emailed at launch. "Founding member pricing, locked for life" is still promised on the website but isn't set up in Stripe/Base44 yet.
 
 ## 7. Dates
 - 4 Dec 2026: Google Play developer account ($25) and identity check; recruit 12+ testers (reminder set)

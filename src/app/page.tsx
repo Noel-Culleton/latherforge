@@ -66,7 +66,7 @@ export default function HomePage() {
       <section style={{ background: '#5C3D2E', padding: '1.25rem 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <p style={{ color: '#F5EDD6', fontSize: '0.9rem', letterSpacing: '0.04em' }}>
-            <span style={{ color: '#C9A84C', fontWeight: 600 }}>🚀 Launching January 2027</span>{' '}— Join the waitlist and get 3 months free at launch.
+            <span style={{ color: '#C9A84C', fontWeight: 600 }}>🚀 Launching January 2027</span>{' '}— Join the waitlist and get 14 days free at launch.
           </p>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function HomePage() {
             Be First When We Launch
           </h2>
           <p style={{ color: '#A89882', maxWidth: '440px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
-            Join the waitlist today. Early members get 3 months free and exclusive founding member pricing.
+            Join the waitlist today. Early members get 14 days free at launch and exclusive founding member pricing.
           </p>
           <Link href="/early-access" className="btn-primary">Register My Interest</Link>
           <p style={{ marginTop: '1.25rem', fontSize: '0.8rem', color: '#7A6458' }}>No credit card required. Unsubscribe any time.</p>
