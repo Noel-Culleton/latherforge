@@ -5,7 +5,7 @@ Add this file to the "LatherForge.com Platform Design" Claude project (Files →
 ## 1. Corrections to the project description
 - **latherforge.com is NOT the Base44 app.** DNS points to Vercel (76.76.21.21). The Vercel project "latherforge" serves latherforge.com and www.latherforge.com from the GitHub repo Noel-Culleton/latherforge (Next.js static site). Production deploys from `main`; every branch gets a preview URL.
 - **Base44 app** ("Lather Forge", app id 6a087e8f851b3b060a1fd07e) is the full paid product. Its public address still needs confirming (plan: app.latherforge.com).
-- **Pricing in the Base44 code is Craft €0 / Artisan €39 / Studio €99 a month** (src/pages/Upgrade.jsx, useTier.js), with a 14-day Artisan trial. The project description says Artisan €29 — decide which is right and fix the other.
+- **Pricing decided 27 Sep: Craft free / Artisan €29 / Studio €79 a month**, 14-day Artisan trial. INCI label generator moved from Studio to Artisan (it's the hook from the free app's sample label). Base44 updated (plans page, sidebar, server checks). **Stripe still has the old €39/€99 prices**: create new €29 and €79 monthly EUR prices and paste their IDs into base44/functions/createCheckout/entry.ts. Until then checkout refuses to start rather than charge the wrong amount.
 - Base44 `EARLY_ACCESS_MODE = true` until launch on 1 January 2027 (src/lib/launchConfig.js).
 
 ## 2. Product structure (agreed)
@@ -38,11 +38,15 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 
 ## 6. Open decisions
 1. Which waitlist is real: the website's Zoho form or Base44's EarlyAccess page? One list only.
-2. Artisan price: €29 or €39?
+2. ~~Artisan price~~ Decided: €29 / €79. To do: new Stripe prices (see above); optional annual prices (€290 / €790).
 3. ~~Align the Base44 oil data with the website's~~ Done 27 Sep: Base44 now has the same 46 oils and SAP values as the website, and liquid soap allows for 90% KOH (it was about 11% short). Base44 checkpoint "Align oil data with website (46 oils), KOH 90% purity fix". Still to do: publish Base44, and add soap-quality figures (hardness, lather etc.) for the 31 new oils.
 4. Base44 public URL (app.latherforge.com?).
 5. Approve recipes in docs/recipe-review.md.
 6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.
+
+## 6b. Found in Base44 (needs a decision before launch)
+- Only Batches, Sales, Expenses, Customers and the Etsy listing generator are actually locked to Artisan. Inventory, Products, Suppliers, Costing, the Fragrance planner and the Curing tracker page are open to free users, although the plans page lists them as Artisan features.
+- The early-access copy in Base44 promises "14 days free on launch day"; the website's early-access page promises "3 months free" and founding-member pricing. Pick one offer (for example a 3-month Stripe coupon emailed to the waitlist).
 
 ## 7. Dates
 - 4 Dec 2026: Google Play developer account ($25) and identity check; recruit 12+ testers (reminder set)
