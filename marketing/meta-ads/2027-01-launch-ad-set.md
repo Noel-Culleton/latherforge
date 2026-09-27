@@ -9,7 +9,7 @@ No Meta Ads connection exists in this session. All account, pixel and event fact
 
 | # | Blocker | Why it matters | What's needed |
 |---|---|---|---|
-| 1 | **Offer mismatch.** The site currently says *"Join the waitlist and get 3 months free at launch"* and *"Early members receive 3 months free access and founding member pricing"* (homepage banner, homepage final CTA, /early-access hero + perks). The requested ad wording is *"Live 1 January 2027, waitlist members get 14 days free."* | Ad and landing page must match exactly, or it's a misleading-ad rejection risk. Worse: people already on the waitlist were promised 3 months. Quietly cutting that to 14 days is a trust problem and a consumer-law risk (Irish/EU). | Decide the offer. Recommended: existing sign-ups keep 3 months (honour it, email them); new ad-driven sign-ups get 14 days. Then update the homepage + /early-access to state the new wording **exactly** before 27 Dec. |
+| 1 | **Offer wording: live site updated (per Noel).** Noel confirmed the live site now uses the 14-day offer. The GitHub repo (`main`) still says *"3 months free"* in `src/app/page.tsx` (banner + final CTA) and `src/app/early-access/page.tsx` (hero + perks card). | If the site is ever rebuilt from the repo, the old 3-month wording comes back and the ads stop matching. People who joined under the 3-month promise may also expect it. | Before 27 Dec, open the live homepage + /early-access and confirm the text reads *"Live 1 January 2027, waitlist members get 14 days free."* word for word (including the perks card). Update the repo source to match. Decide what to tell earlier sign-ups. |
 | 2 | **"Founding member pricing — locked-in rate for life"** is on /early-access with no price. | Implies a discount/price claim with no amount, currency, period or renewal terms. | Either publish the founding price with full terms, or remove the claim. Ads below do **not** mention it. |
 | 3 | **No prices anywhere on the site.** | Nothing to quote; ads contain **no prices**. | Before any post-launch trial ad: price, currency, billing period, card required or not, auto-billing, what happens after 14 days, how to cancel. |
 | 4 | **Live site not read.** latherforge.com is blocked from this build environment; claims were taken from the repo source (last commit 18 Jun 2026). | Live copy may differ from the repo. | Open latherforge.com and /early-access/ and confirm the wording matches this doc. Also confirm whether www redirects to non-www. |
@@ -36,7 +36,7 @@ Only these claims are used in the copy below:
 
 **Not used (unverified or risky):** any price, "3 months free", "founding member pricing / locked-in for life", customer counts, time-saved numbers, profit outcomes, testimonials.
 
-**Offer line**, used verbatim in 9 of 10 ads (only after blocker #1 is fixed on the site):
+**Offer line**, used verbatim in 9 of 10 ads (Noel confirmed the live site now carries it; do a final word-for-word check):
 
 > Live 1 January 2027, waitlist members get 14 days free.
 
@@ -286,7 +286,7 @@ Character counts: first line of primary text ≤125, headline ≤40 (checked).
 
 ## 6. Before 27 Dec — your to-do (in order)
 
-1. Decide the offer (blocker #1) and what existing waitlist members get. Update homepage + /early-access to the exact wording.
+1. Word-for-word check of the 14-day offer on the live homepage + /early-access. Sync the GitHub source so a rebuild doesn't revert it (blocker #1).
 2. Remove or price "founding member pricing" (blocker #2).
 3. Zoho thank-you redirect + Pixel `Lead` (blocker #5). Test one sign-up end to end.
 4. Decide what the ads say from 1 January (blocker #6).
