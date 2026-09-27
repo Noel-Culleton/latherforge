@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import { getReviewedRecipes } from '@/lib/recipes'
+
+const hasRecipes = getReviewedRecipes().length > 0
 
 export default function Footer() {
   return (
@@ -22,6 +25,9 @@ export default function Footer() {
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '1rem' }}>Free Tools</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               <Link href="/lye-calculator" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator</Link>
+              <Link href="/sap-values/" style={{ fontSize: '0.85rem', color: '#A89882' }}>SAP Value Chart</Link>
+              {hasRecipes && <Link href="/soap-recipes/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Recipes</Link>}
+              <Link href="/app/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator App</Link>
             </div>
           </div>
 
@@ -34,7 +40,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <p style={{ fontSize: '0.8rem', color: '#7A6458' }}>© 2025 LatherForge. All rights reserved.</p>
+          <p style={{ fontSize: '0.8rem', color: '#7A6458' }}>© 2026 LatherForge. All rights reserved.</p>
           <p style={{ fontSize: '0.8rem', color: '#7A6458' }}>latherforge.com</p>
         </div>
       </div>

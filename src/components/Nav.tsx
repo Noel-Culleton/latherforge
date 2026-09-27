@@ -1,6 +1,9 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { getReviewedRecipes } from '@/lib/recipes'
+
+const hasRecipes = getReviewedRecipes().length > 0
 export default function Nav() {
   const [open, setOpen] = useState(false)
   return (
@@ -20,6 +23,7 @@ export default function Nav() {
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="desktop-nav">
             <Link href="/lye-calculator" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Free Soap Calculator</Link>
+            {hasRecipes && <Link href="/soap-recipes/" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Recipes</Link>}
             <Link href="/blog" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Blog</Link>
             <Link href="/early-access" className="btn-primary" style={{ padding: '0.65rem 1.5rem', fontSize: '0.8rem' }}>Get Early Access</Link>
           </div>
@@ -36,6 +40,8 @@ export default function Nav() {
         {open && (
           <div style={{ background: 'var(--cream)', borderTop: '1px solid #E8DFD0', padding: '1.5rem 2rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             <Link href="/lye-calculator" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Free Soap Calculator</Link>
+            {hasRecipes && <Link href="/soap-recipes/" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Recipes</Link>}
+            <Link href="/sap-values/" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>SAP Value Chart</Link>
             <Link href="/blog" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Blog</Link>
             <Link href="/early-access" onClick={() => setOpen(false)} className="btn-primary" style={{ textAlign: 'center', padding: '0.85rem' }}>Get Early Access</Link>
           </div>

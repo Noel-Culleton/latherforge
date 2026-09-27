@@ -1,6 +1,7 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { OILS, calculateLye, type OilEntry } from '@/lib/soap'
+import { getRecipeBySlug, recipeOilWeights } from '@/lib/recipes'
 
 export default function LyeCalculatorClient() {
   const [lyeType, setLyeType] = useState<'NaOH' | 'KOH'>('NaOH')
@@ -10,6 +11,15 @@ export default function LyeCalculatorClient() {
   const [oils, setOils] = useState<OilEntry[]>([{ oil: 'Olive Oil', weight: '' }, { oil: 'Coconut Oil (76°)', weight: '' }])
   const [results, setResults] = useState<{ lye: number; water: number; totalOil: number } | null>(null)
   const [error, setError] = useState('')
+
+  // Prefill from a recipe page link: /lye-calculator/?recipe=<slug>
+  useEffect(() => {
+    const recipe = getRecipeBySlug(new URLSearchParams(window.location.search).get('recipe') || '')
+    if (!recipe) return
+    const weights = recipeOilWeights(recipe, 1000)
+    setLyeType(recipe.lyeType); setMethod(recipe.method); setSuperfat(recipe.superfat)
+    setOils(weights); setResults(calculateLye(weights, recipe.lyeType, recipe.superfat))
+  }, [])
 
   const addOil = () => setOils([...oils, { oil: 'Olive Oil', weight: '' }])
   const removeOil = (i: number) => setOils(oils.filter((_, idx) => idx !== i))

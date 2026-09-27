@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'The LatherForge soap calculator app: lye calculator, saved recipes, cure countdowns and cost per bar.',
   manifest: '/manifest.webmanifest',
   robots: { index: false, follow: false },
-  alternates: { canonical: 'https://latherforge.com/lye-calculator' },
+  alternates: { canonical: 'https://latherforge.com/lye-calculator/' },
   appleWebApp: { capable: true, title: 'LatherForge', statusBarStyle: 'default' },
   icons: { apple: '/icons/apple-touch-icon.png' }
 }
