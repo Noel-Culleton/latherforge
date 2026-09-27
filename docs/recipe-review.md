@@ -61,7 +61,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | Olive Oil | 35% | 350 g |
 | Coconut Oil (76°) | 25% | 250 g |
 | Shea Butter | 25% | 250 g |
-| Almond Oil, Sweet | 10% | 100 g |
+| Sweet Almond Oil | 10% | 100 g |
 | Castor Oil | 5% | 50 g |
 | **NaOH** | | **138 g** |
 | Water | | 276.1 g |
@@ -78,7 +78,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | Olive Oil | 40% | 400 g |
 | Coconut Oil (76°) | 25% | 250 g |
 | Shea Butter | 15% | 150 g |
-| Almond Oil, Sweet | 15% | 150 g |
+| Sweet Almond Oil | 15% | 150 g |
 | Castor Oil | 5% | 50 g |
 | **NaOH** | | **138.9 g** |
 | Goat milk, frozen into cubes (use the same weight as the water shown) | | 277.8 g |
@@ -196,7 +196,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | Olive Oil | 40% | 400 g |
 | Coconut Oil (76°) | 25% | 250 g |
 | Shea Butter | 15% | 150 g |
-| Almond Oil, Sweet | 15% | 150 g |
+| Sweet Almond Oil | 15% | 150 g |
 | Castor Oil | 5% | 50 g |
 | **NaOH** | | **138.9 g** |
 | Water | | 277.8 g |

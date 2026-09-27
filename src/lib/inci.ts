@@ -11,7 +11,7 @@ const SAPONIFIED: Record<string, string> = {
   'Castor Oil': 'Castorate',
   'Shea Butter': 'Shea Butterate',
   'Cocoa Butter': 'Cocoa Butterate',
-  'Almond Oil, Sweet': 'Sweet Almondate',
+  'Sweet Almond Oil': 'Sweet Almondate',
   'Avocado Oil': 'Avocadoate',
   'Hemp Seed Oil': 'Hempseedate',
   'Lard': 'Lardate',

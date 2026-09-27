@@ -1,7 +1,6 @@
 // SAP values: KOH figures as published by SoapCalc; NaOH is derived as KOH x 40.00/56.11.
 // These are pure-lye values — KOH purity is applied in calculateLye.
 export const SAP_KOH: Record<string, number> = {
-  'Almond Oil, Sweet': 0.195,
   'Apricot Kernel Oil': 0.190,
   'Argan Oil': 0.191,
   'Avocado Oil': 0.186,
@@ -28,8 +27,8 @@ export const SAP_KOH: Record<string, number> = {
   'Mango Butter': 0.191,
   'Meadowfoam Oil': 0.169,
   'Neem Oil': 0.193,
-  'Olive Oil': 0.190,
   'Olive Oil Pomace': 0.188,
+  'Olive Oil': 0.190,
   'Palm Kernel Oil': 0.219,
   'Palm Oil': 0.199,
   'Peanut Oil': 0.192,
@@ -43,6 +42,7 @@ export const SAP_KOH: Record<string, number> = {
   'Soybean Oil': 0.191,
   'Stearic Acid': 0.208,
   'Sunflower Oil': 0.189,
+  'Sweet Almond Oil': 0.195,
   'Tallow (Beef)': 0.200,
   'Tamanu Oil': 0.201,
   'Walnut Oil': 0.189,

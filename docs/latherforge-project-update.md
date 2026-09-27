@@ -39,7 +39,7 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 ## 6. Open decisions
 1. Which waitlist is real: the website's Zoho form or Base44's EarlyAccess page? One list only.
 2. Artisan price: €29 or €39?
-3. Align the Base44 oil data with the website's (Base44: 15 oils, coconut 0.178, mango 0.128; website: 46 oils, 0.183 and 0.136).
+3. ~~Align the Base44 oil data with the website's~~ Done 27 Sep: Base44 now has the same 46 oils and SAP values as the website, and liquid soap allows for 90% KOH (it was about 11% short). Base44 checkpoint "Align oil data with website (46 oils), KOH 90% purity fix". Still to do: publish Base44, and add soap-quality figures (hardness, lather etc.) for the 31 new oils.
 4. Base44 public URL (app.latherforge.com?).
 5. Approve recipes in docs/recipe-review.md.
 6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.

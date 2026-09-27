@@ -52,7 +52,7 @@ export const recipes: SoapRecipe[] = [
     name: 'Shea Butter Soap',
     description: 'A creamy, conditioning cold process shea butter soap recipe with olive, coconut, sweet almond and castor oil.',
     reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
-    oils: [{ oil: 'Olive Oil', pct: 35 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 25 }, { oil: 'Almond Oil, Sweet', pct: 10 }, { oil: 'Castor Oil', pct: 5 }],
+    oils: [{ oil: 'Olive Oil', pct: 35 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 25 }, { oil: 'Sweet Almond Oil', pct: 10 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'A generous amount of shea butter gives a hard bar with a creamy, conditioning feel. Sweet almond oil adds a silky touch.',
     tips: ['Melt the shea butter fully and stir well so it does not leave grainy spots.', 'Shea speeds trace slightly, so have your colours and fragrance ready.']
   },
@@ -61,7 +61,7 @@ export const recipes: SoapRecipe[] = [
     name: 'Goat Milk Soap',
     description: 'Cold process goat milk soap recipe using frozen goat milk in place of water, with shea butter and sweet almond oil.',
     reviewed: false, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
-    oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Almond Oil, Sweet', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
+    oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Sweet Almond Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     liquid: 'Goat milk, frozen into cubes (use the same weight as the water shown)',
     why: 'Goat milk gives a creamy lather and a soft, pale bar. Freezing the milk stops the lye from scorching the sugars, which would turn the soap orange and smell of ammonia.',
     tips: ['Add the lye to the frozen milk slowly, a spoonful at a time, with the jug sitting in an ice bath.', 'Soap cool (around 30°C) and do not insulate; put the mould in the fridge or freezer for 24 hours to prevent overheating.', 'A slight ammonia smell while mixing is normal and fades during cure.']
@@ -126,7 +126,7 @@ export const recipes: SoapRecipe[] = [
     name: 'Activated Charcoal Soap',
     description: 'A striking black activated charcoal soap recipe with olive, coconut, shea and sweet almond oil.',
     reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
-    oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Almond Oil, Sweet', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
+    oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Sweet Almond Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     additives: ['Activated charcoal: about 1 teaspoon per 500 g of oils, dispersed in a little of the recipe oil first'],
     why: 'Activated charcoal gives a deep black bar that looks great with a white swirl. Too much charcoal can make grey lather, so this recipe uses a moderate amount.',
     tips: ['Mix the charcoal into a tablespoon of oil before adding it, to avoid clumps.', 'If you sell it, avoid medical claims such as "treats acne" or "detox". Those make it a medicine, not a cosmetic.']
