@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState, type CSSProperties } from 'react'
+import { draftIngredientList } from '@/lib/inci'
 import { OILS, calculateLye, type LyeResult, type LyeType, type Method, type OilEntry } from '@/lib/soap'
 
 type Tab = 'calc' | 'soaps' | 'selling'
@@ -35,6 +36,11 @@ function cureStatus(r: Recipe): { label: string; ready: boolean } | null {
   const days = Math.ceil((readyAt - Date.now()) / DAY)
   if (days <= 0) return { label: 'Cured and ready to use', ready: true }
   return { label: `Ready in ${days} day${days === 1 ? '' : 's'} (${new Date(readyAt).toLocaleDateString()})`, ready: false }
+}
+
+function batchCode(r: Recipe): string {
+  const d = new Date(r.madeAt || r.createdAt)
+  return `LF-${String(d.getFullYear()).slice(2)}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`
 }
 
 const C = {
@@ -108,6 +114,8 @@ export default function AppClient() {
   const [batchCost, setBatchCost] = useState('')
   const [bars, setBars] = useState('')
   const [labelRecipeId, setLabelRecipeId] = useState('')
+  const [bizName, setBizName] = useState('')
+  const [netWeight, setNetWeight] = useState('')
 
   useEffect(() => {
     setRecipes(loadRecipes())
@@ -297,19 +305,47 @@ export default function AppClient() {
               ))}
             </Locked>
 
-            <div style={{ position: 'relative' }}>
-              {recipes.length > 1 && (
-                <select value={labelRecipe?.id} onChange={e => setLabelRecipeId(e.target.value)} style={{ ...input, marginBottom: '0.6rem' }} aria-label="Recipe for label">
-                  {recipes.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
-                </select>
+            <div style={card}>
+              <span style={label}>Sample label</span>
+              {!labelRecipe ? (
+                <>
+                  <p style={{ fontSize: '0.9rem', color: C.muted, marginBottom: '0.8rem' }}>Save a recipe first, then print a sample label to test your printer and label size.</p>
+                  <button onClick={() => setTab('calc')} style={ghostBtn}>Calculate a recipe</button>
+                </>
+              ) : (
+                <>
+                  {recipes.length > 1 && (
+                    <select value={labelRecipe.id} onChange={e => setLabelRecipeId(e.target.value)} style={{ ...input, marginBottom: '0.5rem' }} aria-label="Recipe for label">
+                      {recipes.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
+                    </select>
+                  )}
+                  <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.8rem' }}>
+                    <input placeholder="Business name" value={bizName} onChange={e => setBizName(e.target.value)} style={{ ...input, flex: 2 }} />
+                    <input type="number" inputMode="numeric" min="1" placeholder="Net g" value={netWeight} onChange={e => setNetWeight(e.target.value)} style={{ ...input, flex: 1 }} />
+                  </div>
+
+                  <div id="lf-print-label" style={{ position: 'relative', overflow: 'hidden', width: '90mm', maxWidth: '100%', minHeight: '55mm', margin: '0 auto', border: `2px solid ${C.walnut}`, borderRadius: 6, padding: '4mm', background: '#FFFFFF', color: C.dark, fontFamily: 'Jost, sans-serif' }}>
+                    <div aria-hidden style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: 'rotate(-20deg)', fontSize: '15mm', fontWeight: 700, letterSpacing: '0.1em', color: 'rgba(92,61,46,0.14)', pointerEvents: 'none' }}>SAMPLE</div>
+                    <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.3rem', fontWeight: 600, lineHeight: 1.1 }}>{labelRecipe.name}</p>
+                    <p style={{ fontSize: '0.62rem', lineHeight: 1.35, margin: '2mm 0' }}>
+                      <strong>Ingredients:</strong> {draftIngredientList(labelRecipe.oils, labelRecipe.lyeType)}
+                    </p>
+                    <p style={{ fontSize: '0.62rem', lineHeight: 1.35 }}>
+                      Net wt: {netWeight || '100'} g · Batch: {batchCode(labelRecipe)}<br />
+                      {bizName || 'Your Business Name'}, Your Address
+                    </p>
+                    <p style={{ fontSize: '0.5rem', color: C.muted, marginTop: '2mm', borderTop: `1px solid ${C.border}`, paddingTop: '1mm' }}>
+                      Sample from the free LatherForge app — not for sale. Ingredient order, allergens and legal details not checked.
+                    </p>
+                  </div>
+
+                  <button onClick={() => window.print()} style={{ ...primaryBtn, marginTop: '0.9rem' }}>🖨️ Print sample label</button>
+                  <p style={{ fontSize: '0.8rem', color: C.muted, marginTop: '0.8rem', lineHeight: 1.5 }}>
+                    Ready-to-sell labels with correct ingredient order, fragrance allergens and batch records are part of LatherForge.{' '}
+                    <a href={`${EARLY_ACCESS}&feature=labels`} style={{ color: C.walnut, textDecoration: 'underline' }}>Get early access</a>
+                  </p>
+                </>
               )}
-              <Locked title="Printable label" feature="labels">
-                <div style={{ border: `2px solid ${C.walnut}`, borderRadius: 6, padding: '0.8rem', fontSize: '0.8rem', lineHeight: 1.5 }}>
-                  <strong style={{ fontSize: '1.1rem' }}>{labelRecipe?.name || 'Your Soap'}</strong>
-                  <p>Ingredients: {labelRecipe ? labelRecipe.oils.map(o => o.oil).join(', ') : 'Olive Oil, Coconut Oil, Shea Butter'} (converted to INCI names)</p>
-                  <p>Batch: LF-0001 · Net weight: 100 g · Responsible person: Your Business</p>
-                </div>
-              </Locked>
             </div>
 
             <p style={{ fontSize: '0.8rem', color: C.muted, textAlign: 'center' }}>
@@ -318,6 +354,15 @@ export default function AppClient() {
           </>
         )}
       </main>
+
+      <style>{`
+        @media print {
+          @page { margin: 10mm; }
+          body * { visibility: hidden !important; }
+          #lf-print-label, #lf-print-label * { visibility: visible !important; }
+          #lf-print-label { position: absolute !important; left: 0; top: 0; max-width: none !important; }
+        }
+      `}</style>
 
       {/* TAB BAR */}
       <nav style={{
