@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Register Your Interest — LatherForge',
   description: 'Be among the first to access LatherForge — the AI-powered business platform for handmade soap makers. Launching January 2027. Register your interest today.',
-  alternates: { canonical: 'https://latherforge.com/early-access' }
+  alternates: { canonical: 'https://latherforge.com/early-access/' }
 }
 
 export default function EarlyAccessPage() {

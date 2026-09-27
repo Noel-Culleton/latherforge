@@ -1,40 +1,25 @@
 'use client'
-import { useState } from 'react'
-
-const OILS: Record<string, number> = {
-  'Coconut Oil (76°)': 0.190,
-  'Palm Oil': 0.141,
-  'Olive Oil': 0.134,
-  'Castor Oil': 0.128,
-  'Sunflower Oil': 0.134,
-  'Shea Butter': 0.128,
-  'Cocoa Butter': 0.137,
-  'Sweet Almond Oil': 0.136,
-  'Avocado Oil': 0.133,
-  'Hemp Seed Oil': 0.135,
-  'Lard': 0.138,
-  'Tallow': 0.140,
-  'Rice Bran Oil': 0.128,
-  'Canola Oil': 0.124,
-  'Jojoba Oil': 0.069,
-  'Argan Oil': 0.136,
-  'Apricot Kernel Oil': 0.135,
-  'Mango Butter': 0.137,
-  'Palm Kernel Oil': 0.190,
-  'Neem Oil': 0.139
-}
-
-type OilEntry = { oil: string; weight: string }
+import { useEffect, useState } from 'react'
+import { OILS, calculateLye, type OilEntry } from '@/lib/soap'
+import { getRecipeBySlug, recipeOilWeights } from '@/lib/recipes'
 
 export default function LyeCalculatorClient() {
   const [lyeType, setLyeType] = useState<'NaOH' | 'KOH'>('NaOH')
   const [method, setMethod] = useState<'cold' | 'hot'>('cold')
   const [superfat, setSuperfat] = useState(5)
+  const [unit, setUnit] = useState<'g' | 'oz'>('g')
   const [oils, setOils] = useState<OilEntry[]>([{ oil: 'Olive Oil', weight: '' }, { oil: 'Coconut Oil (76°)', weight: '' }])
   const [results, setResults] = useState<{ lye: number; water: number; totalOil: number } | null>(null)
   const [error, setError] = useState('')
 
-  const kohPurity = 0.90
+  // Prefill from a recipe page link: /lye-calculator/?recipe=<slug>
+  useEffect(() => {
+    const recipe = getRecipeBySlug(new URLSearchParams(window.location.search).get('recipe') || '')
+    if (!recipe) return
+    const weights = recipeOilWeights(recipe, 1000)
+    setLyeType(recipe.lyeType); setMethod(recipe.method); setSuperfat(recipe.superfat)
+    setOils(weights); setResults(calculateLye(weights, recipe.lyeType, recipe.superfat))
+  }, [])
 
   const addOil = () => setOils([...oils, { oil: 'Olive Oil', weight: '' }])
   const removeOil = (i: number) => setOils(oils.filter((_, idx) => idx !== i))
@@ -46,16 +31,9 @@ export default function LyeCalculatorClient() {
 
   const calculate = () => {
     setError('')
-    const parsed = oils.map(o => ({ sap: OILS[o.oil] || 0, weight: parseFloat(o.weight) || 0 }))
-    const totalOil = parsed.reduce((s, o) => s + o.weight, 0)
-    if (totalOil <= 0) { setError('Please enter at least one oil weight.'); return }
-
-    let rawLye = parsed.reduce((s, o) => s + o.sap * o.weight, 0)
-    if (lyeType === 'KOH') rawLye = rawLye * (56.11 / 40.00) / kohPurity
-    const lye = rawLye * (1 - superfat / 100)
-    const water = lye * 2.0
-
-    setResults({ lye: Math.round(lye * 10) / 10, water: Math.round(water * 10) / 10, totalOil: Math.round(totalOil * 10) / 10 })
+    const r = calculateLye(oils, lyeType, superfat)
+    if (!r) { setError('Please enter at least one oil weight.'); return }
+    setResults(r)
   }
 
   const reset = () => { setOils([{ oil: 'Olive Oil', weight: '' }, { oil: 'Coconut Oil (76°)', weight: '' }]); setResults(null); setError('') }
@@ -112,6 +90,24 @@ export default function LyeCalculatorClient() {
               </div>
             </div>
 
+            {/* Units — the maths is unit-agnostic, so this only changes labels */}
+            <div style={{ marginBottom: '1.75rem' }}>
+              <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5C3D2E', marginBottom: '0.6rem' }}>Units</label>
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
+                {(['g', 'oz'] as const).map(u => (
+                  <button key={u} onClick={() => setUnit(u)} style={{
+                    flex: 1, padding: '0.7rem',
+                    background: unit === u ? '#5C3D2E' : '#FFFFFF',
+                    color: unit === u ? '#F5EDD6' : '#5C3D2E',
+                    border: `1px solid ${unit === u ? '#5C3D2E' : '#D4C8BB'}`,
+                    fontFamily: 'Jost, sans-serif', fontWeight: 500, fontSize: '0.9rem', cursor: 'pointer'
+                  }}>
+                    {u === 'g' ? 'Grams' : 'Ounces'}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {/* Superfat */}
             <div style={{ marginBottom: '1.75rem' }}>
               <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5C3D2E', marginBottom: '0.6rem' }}>
@@ -129,7 +125,7 @@ export default function LyeCalculatorClient() {
             {/* Oils */}
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5C3D2E', marginBottom: '0.75rem' }}>
-                Oils & Butters (grams)
+                Oils & Butters ({unit === 'g' ? 'grams' : 'ounces'})
               </label>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 {oils.map((o, i) => (
@@ -137,7 +133,7 @@ export default function LyeCalculatorClient() {
                     <select value={o.oil} onChange={e => updateOil(i, 'oil', e.target.value)} style={{ ...selectStyle, flex: 2 }}>
                       {Object.keys(OILS).map(name => <option key={name}>{name}</option>)}
                     </select>
-                    <input type="number" placeholder="g" value={o.weight}
+                    <input type="number" placeholder={unit} value={o.weight}
                       onChange={e => updateOil(i, 'weight', e.target.value)}
                       style={{ ...inputStyle, flex: 1, textAlign: 'center' }}
                       min="0"
@@ -184,9 +180,9 @@ export default function LyeCalculatorClient() {
                   </p>
 
                   {[
-                    { label: `${lyeType} Required`, value: `${results.lye}g`, highlight: true },
-                    { label: 'Water Required', value: `${results.water}g`, highlight: false },
-                    { label: 'Total Oil Weight', value: `${results.totalOil}g`, highlight: false },
+                    { label: `${lyeType} Required`, value: `${results.lye} ${unit}`, highlight: true },
+                    { label: 'Water Required', value: `${results.water} ${unit}`, highlight: false },
+                    { label: 'Total Oil Weight', value: `${results.totalOil} ${unit}`, highlight: false },
                     { label: 'Superfat', value: `${superfat}%`, highlight: false },
                     { label: 'Method', value: method === 'cold' ? 'Cold Process' : 'Hot Process', highlight: false }
                   ].map((row, i) => (

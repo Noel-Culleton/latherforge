@@ -53,7 +53,7 @@ export default function HomePage() {
             </p>
             <div className="fade-up-4" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
               <Link href="/early-access" className="btn-primary">Register My Interest</Link>
-              <Link href="/lye-calculator" className="btn-outline">Try Free Lye Calculator</Link>
+              <Link href="/lye-calculator" className="btn-outline">Try the Free Soap Calculator</Link>
             </div>
             <p className="fade-up-4" style={{ marginTop: '1.5rem', fontSize: '0.8rem', color: '#9A8878' }}>
               No credit card. No commitment. Be first to know when we launch.
@@ -75,7 +75,7 @@ export default function HomePage() {
       <section style={{ background: '#EBF2EC', padding: '4rem 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <p style={{ fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A9E7E', marginBottom: '0.75rem' }}>Free Tool</p>
-          <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#3E2820', marginBottom: '1rem' }}>Free Lye Calculator</h2>
+          <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#3E2820', marginBottom: '1rem' }}>Free Soap Calculator</h2>
           <p style={{ color: '#5C4A3A', maxWidth: '480px', margin: '0 auto 2rem', lineHeight: 1.7 }}>
             Calculate exact lye amounts for cold process and hot process soap recipes. No signup required.
           </p>

@@ -19,13 +19,13 @@ const post = getPostBySlug(slug)
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://latherforge.com/blog/${post.slug}` },
+    alternates: { canonical: `https://latherforge.com/blog/${post.slug}/` },
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
       publishedTime: post.date,
-      url: `https://latherforge.com/blog/${post.slug}`
+      url: `https://latherforge.com/blog/${post.slug}/`
     }
   }
 }
@@ -72,9 +72,11 @@ export default async function BlogPostPage({ params }: Props) {
                     {section.heading}
                   </h2>
                 )}
-                <p style={{ fontSize: '1rem', color: '#5C4A3A', lineHeight: 1.85, marginBottom: section.items ? '0.75rem' : '0' }}>
-                  {section.text}
-                </p>
+                {section.text && (
+                  <p style={{ fontSize: '1rem', color: '#5C4A3A', lineHeight: 1.85, marginBottom: section.items ? '0.75rem' : '0' }}>
+                    {section.text}
+                  </p>
+                )}
                 {section.items && (
                   <ul style={{ margin: '0.5rem 0 0', paddingLeft: '1.5rem' }}>
                     {section.items.map((item, j) => (
@@ -84,13 +86,18 @@ export default async function BlogPostPage({ params }: Props) {
                     ))}
                   </ul>
                 )}
+                {section.link && (
+                  <p style={{ marginTop: '0.75rem' }}>
+                    <Link href={section.link.href} style={{ color: '#5C3D2E', fontWeight: 600, textDecoration: 'underline' }}>{section.link.label} →</Link>
+                  </p>
+                )}
               </div>
             ))}
           </div>
 
           <div style={{ margin: '3.5rem 0', background: '#EBF2EC', border: '1px solid rgba(122,158,126,0.3)', padding: '2.5rem', textAlign: 'center' }}>
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A9E7E', marginBottom: '0.5rem' }}>Free Tool</p>
-            <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.6rem', color: '#3E2820', marginBottom: '0.75rem' }}>Free Lye Calculator</h3>
+            <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.6rem', color: '#3E2820', marginBottom: '0.75rem' }}>Free Soap Calculator</h3>
             <p style={{ color: '#5C4A3A', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>Calculate exact NaOH or KOH amounts for any recipe. No signup required.</p>
             <Link href="/lye-calculator" className="btn-primary">Use Free Calculator</Link>
           </div>
