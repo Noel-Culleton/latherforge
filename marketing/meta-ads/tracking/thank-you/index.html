@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You're on the list | LatherForge</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://latherforge.com/thank-you/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --walnut:#5C3D2E; --walnut-dark:#3E2820; --gold:#C9A84C; --gold-light:#E8C97A; --sage:#7A9E7E; --cream:#FAF7F2; --cream-dark:#F0EAE0; --muted:#7A6E62; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Jost',sans-serif; background:var(--cream); color:#2C2416; line-height:1.7; min-height:100vh; display:flex; flex-direction:column; }
+    header { background:rgba(250,247,242,.96); border-bottom:1px solid #E8DFD0; }
+    header a { display:flex; align-items:center; gap:10px; max-width:1100px; margin:0 auto; padding:0 16px; height:68px; text-decoration:none; }
+    header span { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:600; color:var(--walnut); }
+    main { flex:1; background:linear-gradient(160deg,var(--walnut-dark) 0%,var(--walnut) 100%); display:flex; align-items:center; }
+    .wrap { max-width:560px; margin:0 auto; padding:5rem 16px; text-align:center; }
+    .badge { display:inline-block; background:rgba(201,168,76,.2); border:1px solid rgba(201,168,76,.4); color:var(--gold-light); font-size:.75rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.4rem 1rem; margin-bottom:1.75rem; }
+    h1 { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(2.4rem,7vw,3.6rem); line-height:1.15; color:var(--cream); margin-bottom:1.25rem; }
+    h1 em { color:var(--gold); }
+    p { color:#C9B49A; font-weight:300; font-size:1.05rem; margin-bottom:1rem; }
+    .offer { color:var(--cream); font-weight:400; }
+    .btn { display:inline-block; margin-top:1.5rem; background:var(--gold); color:var(--walnut-dark); font-weight:600; font-size:.9rem; letter-spacing:.08em; text-transform:uppercase; padding:1rem 2.5rem; text-decoration:none; }
+    #consent { display:none; position:fixed; left:16px; right:16px; bottom:16px; max-width:560px; margin:0 auto; background:var(--cream); color:#2C2416; border:1px solid #E8DFD0; box-shadow:0 8px 32px rgba(0,0,0,.25); padding:1.25rem; text-align:left; z-index:10; }
+    #consent p { color:#2C2416; font-size:.9rem; margin-bottom:.9rem; }
+    #consent a { color:var(--walnut); }
+    #consent button { font-family:'Jost',sans-serif; font-weight:600; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; padding:.7rem 1.4rem; border:1px solid var(--walnut); cursor:pointer; margin-right:.5rem; }
+    #consent .yes { background:var(--walnut); color:var(--cream); }
+    #consent .no { background:transparent; color:var(--walnut); }
+  </style>
+</head>
+<body>
+  <header><a href="/"><span>LatherForge</span></a></header>
+
+  <main>
+    <div class="wrap">
+      <div class="badge">You're on the list</div>
+      <h1>Thank you, <em>maker</em></h1>
+      <p class="offer">Live 1 January 2027, waitlist members get 14 days free.</p>
+      <p>We'll email you when LatherForge opens. In the meantime, the free lye calculator is ready to use.</p>
+      <a class="btn" href="/lye-calculator/">Use Free Lye Calculator</a>
+    </div>
+  </main>
+
+  <div id="consent" role="dialog" aria-label="Cookie choice">
+    <p>We'd like to use a Meta (Facebook) pixel to see which ads bring soap makers to LatherForge. It sets marketing cookies. <a href="[FILL IN: privacy policy URL]">Privacy policy</a></p>
+    <button class="yes" type="button" id="consent-yes">Allow</button>
+    <button class="no" type="button" id="consent-no">No thanks</button>
+  </div>
+
+  <script>
+  (function () {
+    var PIXEL_ID = 'YOUR_PIXEL_ID';            // Events Manager > Data sources > your pixel
+    var CONSENT_KEY = 'lf_marketing_consent';  // 'granted' | 'denied'
+    var FIRED_KEY = 'lf_lead_fired';
+
+    // 1. Zoho may load this page inside the form's iframe. Break out to the
+    //    full window so the visitor sees the page and the pixel fires once, top-level.
+    if (window.top !== window.self) {
+      try { window.top.location.href = window.location.href; return; } catch (e) { /* stay in frame */ }
+    }
+
+    // 2. Only count a Lead when the visit came from the Zoho redirect
+    //    (?src=waitlist). Strip the flag so a reload or shared link doesn't count again.
+    var params = new URLSearchParams(window.location.search);
+    var fromForm = params.get('src') === 'waitlist';
+    if (fromForm && window.history.replaceState) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+
+    function store(kind, key, value) {
+      try { return value === undefined ? window[kind].getItem(key) : window[kind].setItem(key, value); } catch (e) { return null; }
+    }
+
+    function fireLead() {
+      if (!fromForm || store('sessionStorage', FIRED_KEY) === '1') return;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', PIXEL_ID);
+      fbq('track', 'PageView');
+      fbq('track', 'Lead', { content_name: 'LatherForge waitlist' },
+          { eventID: 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2) });
+      store('sessionStorage', FIRED_KEY, '1');
+    }
+
+    // 3. Irish/UK law: marketing cookies only after consent.
+    var consent = store('localStorage', CONSENT_KEY);
+    if (consent === 'granted') { fireLead(); return; }
+    if (consent === 'denied' || !fromForm) return;
+
+    var box = document.getElementById('consent');
+    box.style.display = 'block';
+    document.getElementById('consent-yes').onclick = function () {
+      store('localStorage', CONSENT_KEY, 'granted'); box.style.display = 'none'; fireLead();
+    };
+    document.getElementById('consent-no').onclick = function () {
+      store('localStorage', CONSENT_KEY, 'denied'); box.style.display = 'none';
+    };
+  })();
+  </script>
+</body>
+</html>
