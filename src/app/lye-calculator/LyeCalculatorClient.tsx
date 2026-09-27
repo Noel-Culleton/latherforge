@@ -6,6 +6,7 @@ export default function LyeCalculatorClient() {
   const [lyeType, setLyeType] = useState<'NaOH' | 'KOH'>('NaOH')
   const [method, setMethod] = useState<'cold' | 'hot'>('cold')
   const [superfat, setSuperfat] = useState(5)
+  const [unit, setUnit] = useState<'g' | 'oz'>('g')
   const [oils, setOils] = useState<OilEntry[]>([{ oil: 'Olive Oil', weight: '' }, { oil: 'Coconut Oil (76°)', weight: '' }])
   const [results, setResults] = useState<{ lye: number; water: number; totalOil: number } | null>(null)
   const [error, setError] = useState('')
@@ -79,6 +80,24 @@ export default function LyeCalculatorClient() {
               </div>
             </div>
 
+            {/* Units — the maths is unit-agnostic, so this only changes labels */}
+            <div style={{ marginBottom: '1.75rem' }}>
+              <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5C3D2E', marginBottom: '0.6rem' }}>Units</label>
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
+                {(['g', 'oz'] as const).map(u => (
+                  <button key={u} onClick={() => setUnit(u)} style={{
+                    flex: 1, padding: '0.7rem',
+                    background: unit === u ? '#5C3D2E' : '#FFFFFF',
+                    color: unit === u ? '#F5EDD6' : '#5C3D2E',
+                    border: `1px solid ${unit === u ? '#5C3D2E' : '#D4C8BB'}`,
+                    fontFamily: 'Jost, sans-serif', fontWeight: 500, fontSize: '0.9rem', cursor: 'pointer'
+                  }}>
+                    {u === 'g' ? 'Grams' : 'Ounces'}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {/* Superfat */}
             <div style={{ marginBottom: '1.75rem' }}>
               <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5C3D2E', marginBottom: '0.6rem' }}>
@@ -96,7 +115,7 @@ export default function LyeCalculatorClient() {
             {/* Oils */}
             <div style={{ marginBottom: '1.5rem' }}>
               <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5C3D2E', marginBottom: '0.75rem' }}>
-                Oils & Butters (grams)
+                Oils & Butters ({unit === 'g' ? 'grams' : 'ounces'})
               </label>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 {oils.map((o, i) => (
@@ -104,7 +123,7 @@ export default function LyeCalculatorClient() {
                     <select value={o.oil} onChange={e => updateOil(i, 'oil', e.target.value)} style={{ ...selectStyle, flex: 2 }}>
                       {Object.keys(OILS).map(name => <option key={name}>{name}</option>)}
                     </select>
-                    <input type="number" placeholder="g" value={o.weight}
+                    <input type="number" placeholder={unit} value={o.weight}
                       onChange={e => updateOil(i, 'weight', e.target.value)}
                       style={{ ...inputStyle, flex: 1, textAlign: 'center' }}
                       min="0"
@@ -151,9 +170,9 @@ export default function LyeCalculatorClient() {
                   </p>
 
                   {[
-                    { label: `${lyeType} Required`, value: `${results.lye}g`, highlight: true },
-                    { label: 'Water Required', value: `${results.water}g`, highlight: false },
-                    { label: 'Total Oil Weight', value: `${results.totalOil}g`, highlight: false },
+                    { label: `${lyeType} Required`, value: `${results.lye} ${unit}`, highlight: true },
+                    { label: 'Water Required', value: `${results.water} ${unit}`, highlight: false },
+                    { label: 'Total Oil Weight', value: `${results.totalOil} ${unit}`, highlight: false },
                     { label: 'Superfat', value: `${superfat}%`, highlight: false },
                     { label: 'Method', value: method === 'cold' ? 'Cold Process' : 'Hot Process', highlight: false }
                   ].map((row, i) => (

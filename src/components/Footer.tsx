@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '1rem' }}>Free Tools</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-              <Link href="/lye-calculator" style={{ fontSize: '0.85rem', color: '#A89882' }}>Lye Calculator</Link>
+              <Link href="/lye-calculator" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator</Link>
             </div>
           </div>
 

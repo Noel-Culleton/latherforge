@@ -4,23 +4,34 @@ import Footer from '@/components/Footer'
 import LyeCalculatorClient from './LyeCalculatorClient'
 
 export const metadata: Metadata = {
-  title: 'Free Lye Calculator for Soap Making — NaOH & KOH',
-  description: 'Free online lye calculator for handmade soap makers. Calculate exact NaOH (sodium hydroxide) and KOH (potassium hydroxide) amounts for cold process and hot process soap recipes. Supports superfatting.',
-  keywords: ['lye calculator', 'soap lye calculator', 'NaOH calculator', 'sodium hydroxide soap', 'cold process soap calculator', 'superfatting calculator'],
-  alternates: { canonical: 'https://latherforge.com/lye-calculator' },
+  title: { absolute: 'Soap Calculator — Free Lye Calculator for Soap Making | LatherForge' },
+  description: 'Free soap calculator for cold process, hot process and liquid soap. Enter your oils in grams or ounces and get exact lye (NaOH or KOH) and water amounts with superfat. Works on your phone.',
+  keywords: ['soap calculator', 'lye calculator', 'soap lye calculator', 'soap making calculator', 'lye calculator for soap making', 'cold process soap calculator', 'NaOH calculator', 'KOH calculator'],
+  alternates: { canonical: 'https://latherforge.com/lye-calculator/' },
   openGraph: {
-    title: 'Free Lye Calculator for Soap Making',
+    title: 'Free Soap Calculator (Lye Calculator for Soap Making)',
     description: 'Calculate exact lye amounts for cold process and hot process soap recipes. Free, instant, no signup required.'
   }
 }
+
+const FAQS = [
+  { q: 'What is a soap calculator?', a: 'A soap calculator (also called a lye calculator) works out the exact amount of sodium hydroxide (NaOH) or potassium hydroxide (KOH) needed to turn a specific blend of oils and butters into soap. It uses the saponification value (SAP value) of each oil, so no lye is left over in your finished bar.' },
+  { q: 'What is the formula for calculating lye in soap?', a: 'Multiply the weight of each oil by its SAP value, add the results together, then reduce the total by your superfat. For example, 700 g olive oil (SAP 0.134) plus 300 g coconut oil (SAP 0.190) needs 93.8 g + 57 g = 150.8 g of NaOH. With a 5% superfat that becomes 150.8 × 0.95 = 143.3 g of NaOH.' },
+  { q: 'What is superfatting in soap making?', a: 'Superfatting is using slightly less lye than required to saponify all oils, leaving a small percentage of free oils in the finished soap. This makes a milder, more moisturising bar. A 5% superfat is the most common choice for handmade soap.' },
+  { q: 'What is the difference between NaOH and KOH?', a: 'NaOH (sodium hydroxide) makes hard bar soap and is used for cold process and hot process soap. KOH (potassium hydroxide) makes soft or liquid soap. Most bar soap makers use NaOH. Liquid soap makers use KOH, typically at 90% purity, which this calculator accounts for.' },
+  { q: 'What is the best water-to-lye ratio for soap making?', a: 'A 2:1 water-to-lye ratio by weight (about a 33% lye concentration) is the standard starting point for cold process soap, and it is what this calculator uses. Experienced makers sometimes use less water to speed up unmoulding and curing, or more water for hot process soap.' },
+  { q: 'What happens if you use too much lye in soap?', a: 'Too much lye leaves unreacted sodium hydroxide in the bar, which makes the soap harsh and can irritate or burn skin. Signs include a white crumbly surface, cracking or a bar that zaps when touched to the tongue. Always weigh lye precisely and run every recipe through a soap calculator before you make it.' },
+  { q: 'Can I use this soap calculator in ounces?', a: 'Yes. Switch the units to ounces, enter your oils in ounces and the lye and water results are given in ounces too.' }
+]
 
 export default function LyeCalculatorPage() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'LatherForge Lye Calculator',
-    description: 'Free online lye calculator for handmade soap makers',
-    url: 'https://latherforge.com/lye-calculator',
+    name: 'LatherForge Soap Calculator',
+    alternateName: 'LatherForge Lye Calculator',
+    description: 'Free soap and lye calculator for handmade soap makers',
+    url: 'https://latherforge.com/lye-calculator/',
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }
@@ -29,28 +40,7 @@ export default function LyeCalculatorPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What is a lye calculator?',
-        acceptedAnswer: { '@type': 'Answer', text: 'A lye calculator determines the exact amount of sodium hydroxide (NaOH) or potassium hydroxide (KOH) needed to saponify a specific blend of oils and butters in soap making. It uses saponification values (SAP values) for each oil to calculate the correct lye amount.' }
-      },
-      {
-        '@type': 'Question',
-        name: 'What is superfatting in soap making?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Superfatting is the practice of using slightly less lye than required to fully saponify all oils, leaving a small percentage of free oils in the finished soap. This results in a milder, more moisturising bar. Most soap makers use a 5% superfat.' }
-      },
-      {
-        '@type': 'Question',
-        name: 'What is the difference between NaOH and KOH for soap making?',
-        acceptedAnswer: { '@type': 'Answer', text: 'NaOH (sodium hydroxide) produces hard bar soap and is used for cold process and hot process soap making. KOH (potassium hydroxide) produces soft or liquid soap and is used primarily for making liquid soap and shaving cream.' }
-      },
-      {
-        '@type': 'Question',
-        name: 'How much water should I use in soap making?',
-        acceptedAnswer: { '@type': 'Answer', text: 'A standard water to lye ratio for cold process soap is 2:1 (two parts water to one part lye by weight). This is the default in most soap recipes. Some soap makers reduce water to speed cure time or increase water for easier tracing.' }
-      }
-    ]
+    mainEntity: FAQS.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
   }
 
   const breadcrumbSchema = {
@@ -58,7 +48,7 @@ export default function LyeCalculatorPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://latherforge.com' },
-      { '@type': 'ListItem', position: 2, name: 'Lye Calculator', item: 'https://latherforge.com/lye-calculator' }
+      { '@type': 'ListItem', position: 2, name: 'Soap Calculator', item: 'https://latherforge.com/lye-calculator/' }
     ]
   }
 
@@ -76,13 +66,13 @@ export default function LyeCalculatorPage() {
             <nav style={{ fontSize: '0.8rem', color: '#9A8878', marginBottom: '1.5rem' }}>
               <a href="/" style={{ color: '#9A8878' }}>Home</a>
               <span style={{ margin: '0 0.5rem' }}>→</span>
-              <span style={{ color: '#5C3D2E' }}>Lye Calculator</span>
+              <span style={{ color: '#5C3D2E' }}>Soap Calculator</span>
             </nav>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: '#3E2820', marginBottom: '1rem' }}>
-              Free Lye Calculator
+              Free Soap Calculator
             </h1>
             <p style={{ color: '#5C4A3A', maxWidth: '560px', lineHeight: 1.7, fontSize: '1.05rem', fontWeight: 300 }}>
-              Calculate exact NaOH or KOH amounts for your soap recipe. Supports cold process, hot process and superfatting. Free, instant, no signup required.
+              A free lye calculator for soap making. Enter your oils in grams or ounces and get the exact NaOH or KOH and water for cold process, hot process or liquid soap. Free, instant, no signup required.
             </p>
           </div>
         </section>
@@ -94,7 +84,7 @@ export default function LyeCalculatorPage() {
         <section style={{ background: '#F0EAE0', padding: '5rem 0' }}>
           <div className="container" style={{ maxWidth: '760px' }}>
             <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', color: '#3E2820', marginBottom: '2rem' }}>
-              How to Use This Lye Calculator
+              How to Use This Soap Calculator
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {[
@@ -127,12 +117,7 @@ export default function LyeCalculatorPage() {
               Frequently Asked Questions
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              {[
-                { q: 'What is a lye calculator?', a: 'A lye calculator determines the exact amount of sodium hydroxide (NaOH) or potassium hydroxide (KOH) needed to saponify a specific blend of oils and butters. It uses saponification values (SAP values) for each oil to calculate the correct lye amount so no lye remains in your finished soap.' },
-                { q: 'What is superfatting in soap making?', a: 'Superfatting is using slightly less lye than required to saponify all oils, leaving a small percentage of free oils in the finished soap. This results in a milder, more moisturising bar. A 5% superfat is the most common choice for handmade soap.' },
-                { q: 'What is the difference between NaOH and KOH?', a: 'NaOH (sodium hydroxide) produces hard bar soap and is used for cold process and hot process soap. KOH (potassium hydroxide) produces soft or liquid soap. Most bar soap makers use NaOH. Liquid soap makers use KOH, typically at 90% purity.' },
-                { q: 'How much water should I use?', a: 'The standard water to lye ratio for cold process soap is 2:1 — two parts water to one part lye by weight. This is the default used in most soap recipes. Some makers reduce water to speed cure time. The calculator recommends water based on your lye amount.' }
-              ].map((item, i) => (
+              {FAQS.map((item, i) => (
                 <div key={i} style={{ borderBottom: '1px solid #E8DFD0', paddingBottom: '1.5rem' }}>
                   <h3 style={{ fontSize: '1.05rem', color: '#3E2820', marginBottom: '0.5rem' }}>{item.q}</h3>
                   <p style={{ fontSize: '0.9rem', color: '#5C4A3A', lineHeight: 1.7 }}>{item.a}</p>
