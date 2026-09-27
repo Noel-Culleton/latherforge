@@ -45,7 +45,7 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.
 
 ## 6b. Found in Base44 (needs a decision before launch)
-- Only Batches, Sales, Expenses, Customers and the Etsy listing generator are actually locked to Artisan. Inventory, Products, Suppliers, Costing, the Fragrance planner and the Curing tracker page are open to free users, although the plans page lists them as Artisan features.
+- ~~Several Artisan features were open to free users~~ Fixed 27 Sep: Inventory, Products (incl. label printing), Suppliers, Costing, Fragrance planner, Curing tracker, Batch calendar, Ingredient lots, Purchase orders, Stock requirements, Traceability and Reorder reports, and Recipe generator are now locked to Artisan. The trial still unlocks everything in Artisan for 14 days. Free users see an "Artisan" tag on those menu items. The public Etsy pricing calculator, mould calculator and safety pages stay free.
 - The early-access copy in Base44 promises "14 days free on launch day"; the website's early-access page promises "3 months free" and founding-member pricing. Pick one offer (for example a 3-month Stripe coupon emailed to the waitlist).
 
 ## 7. Dates
