@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
@@ -89,7 +90,8 @@ export default function EarlyAccessPage() {
               </div>
 
               <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
-                No spam. No selling your data. Just a single email when we launch.
+                No spam. No selling your data. Just a single email when we launch.{' '}
+                See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
               </p>
             </div>
           </div>

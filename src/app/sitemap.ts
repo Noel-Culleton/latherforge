@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...recipes.map(r => ({ url: `${BASE}/soap-recipes/${r.slug}/`, changeFrequency: 'monthly' as const, priority: 0.7 })),
     { url: `${BASE}/blog/`, changeFrequency: 'weekly', priority: 0.6 },
     ...getAllPosts().map(p => ({ url: `${BASE}/blog/${p.slug}/`, lastModified: p.date, changeFrequency: 'monthly' as const, priority: 0.6 })),
-    { url: `${BASE}/early-access/`, changeFrequency: 'monthly', priority: 0.7 }
+    { url: `${BASE}/early-access/`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/privacy/`, changeFrequency: 'yearly', priority: 0.2 },
+    { url: `${BASE}/terms/`, changeFrequency: 'yearly', priority: 0.2 }
   ]
 }
