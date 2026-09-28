@@ -1,4 +1,4 @@
-# LatherForge project update — 27 September 2026
+# LatherForge project update — 28 September 2026
 
 Add this file to the "LatherForge.com Platform Design" Claude project (Files → Add) so future chats start with the current picture.
 
@@ -34,6 +34,13 @@ soap calculator 8,100 (difficulty 9) · soapcalc 4,400 · how to make soap 12,10
 UK "soap calculator" is only 480, so the audience is mainly US.
 Takeaway: search brings soap makers (recipes, calculators), not software buyers. They convert through the free app and email.
 
+## 4b. Done 28 September
+- **Website:** Vercel Web Analytics (cookieless, enabled), /privacy/ and /terms/ pages, footer links, privacy link under the early-access form. Live on latherforge.com (PR #3). Contact address: latherforge@zohomail.eu.
+- **Base44:** early-access users keep Artisan-level trial access until 15 Jan 2027, in both `useTier.js` and the four server functions that had their own 7-day trial checks (generateRecipeContent, exportData, generateEtsyListing, aiAssistant INCI). Checkpoint "Early access: keep Artisan trial until 15 Jan 2027". Not published.
+- **TikTok:** @latherforge cleaned up (old nomad videos removed, LF logo). Personal account (Business needs company documents). First video "3 Lye Rules" posted, 77 views on day one. Plan: one video a day, captions use "latherforge.com" (no clickable bio link until 1,000 followers).
+- **Search Console:** TikTok and YouTube channels added alongside latherforge.com.
+- **Waitlist:** personal welcome emails sent 27 Sep to the existing sign-ups.
+
 ## 5. Competitor
 "Soap Lye Calculator – Trace" (iOS) does calculation, batch logging and cure tracking. Check whether it's on Android before launch. LatherForge's difference: the Selling tab, and the path to the full business platform.
 
@@ -42,11 +49,16 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 2. Pricing agreed (Free / €29 / €49 / €89). To do: decide what goes in Business Pack vs Studio, update the Base44 app to match, then create the Stripe prices before 1 Jan.
 3. ~~Align the Base44 oil data with the website's~~ Done 27 Sep: Base44 now has the same 46 oils and SAP values as the website, and liquid soap allows for 90% KOH (it was about 11% short). Base44 checkpoint "Align oil data with website (46 oils), KOH 90% purity fix". Still to do: publish Base44, and add soap-quality figures (hardness, lather etc.) for the 31 new oils.
 4. Base44 public URL (app.latherforge.com?).
+4b. **Grant / social welfare:** confirm with the case officer (in writing) that free closed testing and pre-launch marketing are OK before publishing Base44 or taking any payment.
+4c. **hello@latherforge.com** does not exist yet (latherforge.com is not a domain in Zoho Mail). Add it in Zoho Mail like podmove.ie, then switch `CONTACT_EMAIL` in `src/components/LegalPage.tsx`.
+4d. **AI trial:** new users currently get the AI Assistant (Studio features) free for 7 days, although the tier notes say the trial excludes AI. Keep as a taster or remove.
 5. Approve recipes in docs/recipe-review.md.
 6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.
 
 ## 7. Dates
+- Tue 29 Sep 2026, 3pm: pricing decision (reminder set). Recommendation: Starter / Craft Pack / Business Pack live, Studio shown as "coming soon" until teams and multi-channel exist, AI usage limits on Business Pack, founding-member price lock.
 - 4 Dec 2026: Google Play developer account ($25) and identity check; recruit 12+ testers (reminder set)
+- December 2026: create the Stripe monthly EUR prices and send the price IDs for `createCheckout`; archive the old €39/€99 prices.
 - 25 Dec 2026: deploy, package with PWABuilder, add assetlinks.json, start the 14-day closed test (reminder set)
 - 1 Jan 2027: Base44 launch (flip EARLY_ACCESS_MODE); app buttons change to "learn more"
 - Early Jan 2027: app public on Google Play
