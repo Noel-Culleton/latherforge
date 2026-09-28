@@ -41,7 +41,10 @@ export default function Footer() {
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <p style={{ fontSize: '0.8rem', color: '#7A6458' }}>© 2026 LatherForge. All rights reserved.</p>
-          <p style={{ fontSize: '0.8rem', color: '#7A6458' }}>latherforge.com</p>
+          <div style={{ display: 'flex', gap: '1.25rem' }}>
+            <Link href="/privacy/" style={{ fontSize: '0.8rem', color: '#7A6458' }}>Privacy</Link>
+            <Link href="/terms/" style={{ fontSize: '0.8rem', color: '#7A6458' }}>Terms</Link>
+          </div>
         </div>
       </div>
     </footer>
