@@ -1,8 +1,8 @@
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-// Confirm this inbox exists before merging to main.
-export const CONTACT_EMAIL = 'hello@latherforge.com'
+// Switch to hello@latherforge.com once that mailbox is set up in Zoho Mail.
+export const CONTACT_EMAIL = 'latherforge@zohomail.eu'
 export const OPERATOR = 'Noel Culleton, trading as LatherForge, Ireland'
 
 export const H2 = { fontSize: 'clamp(1.4rem, 3vw, 1.8rem)', color: '#3E2820', margin: '2.25rem 0 0.75rem' } as const
