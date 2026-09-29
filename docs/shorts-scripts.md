@@ -28,8 +28,8 @@ End card on every video: "Free soap calculator at latherforge.com".
 - HOOK: "Your soap is safe after 2 days, so why wait 6 weeks?"
 - "Curing is about water. Fresh soap is up to 30% water. Cure it and it gets harder, milder and lasts twice as long."
 - Show bars on a rack. "Weigh one bar each week. When the weight stops dropping, it's ready."
-- Screen: app cure countdown.
-- CTA: "The free LatherForge app counts down every batch."
+- Screen: bars on a curing rack, then the soap calculator.
+- CTA: "Free soap calculator at latherforge.com."
 
 ## 5. Are you underpricing your soap?
 - HOOK: "If your soap costs €1.26 to make, what should you charge?"

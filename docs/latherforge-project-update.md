@@ -13,26 +13,24 @@ Add this file to the "LatherForge.com Platform Design" Claude project (Files →
 | Layer | Where | Role | Price |
 |---|---|---|---|
 | Website | latherforge.com (Vercel, this repo) | Get found: calculator, recipes, SAP chart, guides | Free |
-| Free app | latherforge.com/app/ → Google Play | Downloads and daily use: calculator, saved recipes, cure countdown, sample label, cost per bar | Free forever |
 | Full app | Base44 (app.latherforge.com planned) | Revenue: batches, costing, compliant labels, traceability, Etsy, AI | Free / €29 / €49 / €89 |
 
-- Users buy LatherForge directly on the web (Stripe). **Nothing is sold inside the Play app**, so Google takes no cut. The Play app shows no prices or buy buttons, only "learn more" / "get early access".
-- The Base44 app is not wrapped for Google Play: it needs a login first, it's built for desktop, and its Stripe subscriptions would fall under Google Play's billing rules.
+- Users buy LatherForge directly on the web (Stripe).
 
 ## 3. Built this session (branch `claude/keen-edison-5q3cdt`, not yet merged)
-- **Free app** at /app/: installable, works offline. Tabs: Calculate, My Soaps (saved recipes + cure countdown), Selling (cost per bar, locked pricing preview, printable **sample label** with a SAMPLE watermark and draft INCI names).
+- ~~Free app at /app/ for Google Play~~ **Dropped 29 Sep:** no free app on Google Play. /app/ removed (redirects to /lye-calculator/); focus is marketing the Base44 app through the website's free tools.
 - **Calculator page** retargeted to "soap calculator" (8,100 US searches/month vs 1,600 for "lye calculator"), grams/ounces, 7 FAQs, correct canonical.
 - **46 oils** with SoapCalc SAP values. Fixed a safety bug: palm kernel was 0.190 (correct 0.156) and coconut 0.190 (correct 0.183).
 - **16 soap recipes** at /soap-recipes/, hidden until approved (see docs/recipe-review.md).
 - **SAP value chart** at /sap-values/.
 - **Guides:** cure times, hot process, liquid soap, selling soap legally (Ireland/UK/EU).
 - **SEO fixes:** the blog index inherited the homepage canonical; canonicals now match; auto-generated sitemap; OG image added.
-- **Docs:** Play Store listing, 5 short-video scripts, recipe review sheet.
+- **Docs:** 5 short-video scripts, recipe review sheet.
 
 ## 4. Keyword data (DataForSEO, US monthly searches)
 soap calculator 8,100 (difficulty 9) · soapcalc 4,400 · how to make soap 12,100 · cold process soap recipes 4,400 (difficulty 0) · soap recipes 2,900 · lye calculator 1,600 · soap lye calculator 1,000 · soap math formula 590 · sap values 320 · soap making software ~0 · soap pricing calculator ~50.
 UK "soap calculator" is only 480, so the audience is mainly US.
-Takeaway: search brings soap makers (recipes, calculators), not software buyers. They convert through the free app and email.
+Takeaway: search brings soap makers (recipes, calculators), not software buyers. They convert through the website's free tools, the waitlist and email.
 
 ## 4b. Done 28 September
 - **Website:** Vercel Web Analytics (cookieless, enabled), /privacy/ and /terms/ pages, footer links, privacy link under the early-access form. Live on latherforge.com (PR #3). Contact address: latherforge@zohomail.eu.
@@ -54,14 +52,10 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 4d. **AI trial:** new users currently get the AI Assistant (Studio features) free for 7 days, although the tier notes say the trial excludes AI. Keep as a taster or remove.
 4e. **Launch offer decided 27 Sep: 14 days free** (website copy changed from "3 months free"). People who joined the waitlist before 27 Sep were promised 3 months; decide whether to honour it (for example a Stripe coupon emailed at launch).
 4f. **Base44 on 27 Sep (this session, not published):** plans page rewritten value-first; INCI label generator moved to the €29 plan (page and aiAssistant server check); Inventory, Products, Suppliers, Costing, Fragrance planner, Curing tracker, Batch calendar, Ingredient lots, Purchase orders, Stock requirements, Traceability/Reorder reports and Recipe generator locked to the €29 plan with an "Artisan" menu tag for free users. Tier names and the €49/€89 plans still need updating to the Brand Pricing Doctrine once pricing is final.
-4g. **Done 29 Sep:** Google Play screenshots and feature graphic in docs/play-store/; free app records `early_access_click` (feature: pricing / labels / sync) in Vercel Analytics; free app warns that recipes are saved on the phone only. Custom events may need a Vercel Pro plan to show in the dashboard.
+4g. **29 Sep:** decided no free app on Google Play. /app/, its Play Store images and listing removed; Google Play reminders (4 Dec, 25 Dec) cancelled.
 5. Approve recipes in docs/recipe-review.md.
-6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.
 
 ## 7. Dates
 - Tue 29 Sep 2026, 3pm: pricing decision (reminder set). Recommendation: Starter / Craft Pack / Business Pack live, Studio shown as "coming soon" until teams and multi-channel exist, AI usage limits on Business Pack, founding-member price lock.
-- 4 Dec 2026: Google Play developer account ($25) and identity check; recruit 12+ testers (reminder set)
 - December 2026: create the Stripe monthly EUR prices and send the price IDs for `createCheckout`; archive the old €39/€99 prices.
-- 25 Dec 2026: deploy, package with PWABuilder, add assetlinks.json, start the 14-day closed test (reminder set)
-- 1 Jan 2027: Base44 launch (flip EARLY_ACCESS_MODE); app buttons change to "learn more"
-- Early Jan 2027: app public on Google Play
+- 1 Jan 2027: Base44 launch (flip EARLY_ACCESS_MODE); website "early access" buttons change to sign-up
