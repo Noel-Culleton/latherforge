@@ -1,11 +1,12 @@
-# LatherForge project update — 27 September 2026
+# LatherForge project update — 28 September 2026
 
 Add this file to the "LatherForge.com Platform Design" Claude project (Files → Add) so future chats start with the current picture.
 
 ## 1. Corrections to the project description
 - **latherforge.com is NOT the Base44 app.** DNS points to Vercel (76.76.21.21). The Vercel project "latherforge" serves latherforge.com and www.latherforge.com from the GitHub repo Noel-Culleton/latherforge (Next.js static site). Production deploys from `main`; every branch gets a preview URL.
 - **Base44 app** ("Lather Forge", app id 6a087e8f851b3b060a1fd07e) is the full paid product. Its public address still needs confirming (plan: app.latherforge.com).
-- **Pricing decided 27 Sep: Craft free / Artisan €29 / Studio €79 a month**, 14-day Artisan trial. INCI label generator moved from Studio to Artisan (it's the hook from the free app's sample label). Base44 updated (plans page, sidebar, server checks). **Stripe still has the old €39/€99 prices**: create new €29 and €79 monthly EUR prices and paste their IDs into base44/functions/createCheckout/entry.ts. Until then checkout refuses to start rather than charge the wrong amount.
+- **Agreed pricing (Brand Pricing Doctrine, Sep 2026): Starter Free / Craft Pack €29 / Business Pack €49 / Studio €89 a month.** Annual €249 and €799 noted earlier, tiers not yet confirmed. Rules: one system, one price, no add-on packs; anchor €29 against Craftybase, not free calculators; lead with business and compliance, not the lye calculator. Retired names: Craft (free), Artisan, Professional, "Enter the Forge".
+- **The Base44 app does not match yet (checked 28 Sep):** it shows three tiers, Craft €0 / Artisan €29 / Studio €79, using retired names, with no Business Pack and Studio at €79 instead of €89. Stripe price IDs in `base44/functions/createCheckout/entry.ts` are empty, so checkout refuses to start until they are created.
 - Base44 `EARLY_ACCESS_MODE = true` until launch on 1 January 2027 (src/lib/launchConfig.js).
 
 ## 2. Product structure (agreed)
@@ -13,7 +14,7 @@ Add this file to the "LatherForge.com Platform Design" Claude project (Files →
 |---|---|---|---|
 | Website | latherforge.com (Vercel, this repo) | Get found: calculator, recipes, SAP chart, guides | Free |
 | Free app | latherforge.com/app/ → Google Play | Downloads and daily use: calculator, saved recipes, cure countdown, sample label, cost per bar | Free forever |
-| Full app | Base44 (app.latherforge.com planned) | Revenue: batches, costing, compliant labels, traceability, Etsy, AI | €0 / €39 / €99 |
+| Full app | Base44 (app.latherforge.com planned) | Revenue: batches, costing, compliant labels, traceability, Etsy, AI | Free / €29 / €49 / €89 |
 
 - Users buy LatherForge directly on the web (Stripe). **Nothing is sold inside the Play app**, so Google takes no cut. The Play app shows no prices or buy buttons, only "learn more" / "get early access".
 - The Base44 app is not wrapped for Google Play: it needs a login first, it's built for desktop, and its Stripe subscriptions would fall under Google Play's billing rules.
@@ -33,23 +34,33 @@ soap calculator 8,100 (difficulty 9) · soapcalc 4,400 · how to make soap 12,10
 UK "soap calculator" is only 480, so the audience is mainly US.
 Takeaway: search brings soap makers (recipes, calculators), not software buyers. They convert through the free app and email.
 
+## 4b. Done 28 September
+- **Website:** Vercel Web Analytics (cookieless, enabled), /privacy/ and /terms/ pages, footer links, privacy link under the early-access form. Live on latherforge.com (PR #3). Contact address: latherforge@zohomail.eu.
+- **Base44:** early-access users keep Artisan-level trial access until 15 Jan 2027, in both `useTier.js` and the four server functions that had their own 7-day trial checks (generateRecipeContent, exportData, generateEtsyListing, aiAssistant INCI). Checkpoint "Early access: keep Artisan trial until 15 Jan 2027". Not published.
+- **TikTok:** @latherforge cleaned up (old nomad videos removed, LF logo). Personal account (Business needs company documents). First video "3 Lye Rules" posted, 77 views on day one. Plan: one video a day, captions use "latherforge.com" (no clickable bio link until 1,000 followers).
+- **Search Console:** TikTok and YouTube channels added alongside latherforge.com.
+- **Waitlist:** personal welcome emails sent 27 Sep to the existing sign-ups.
+
 ## 5. Competitor
 "Soap Lye Calculator – Trace" (iOS) does calculation, batch logging and cure tracking. Check whether it's on Android before launch. LatherForge's difference: the Selling tab, and the path to the full business platform.
 
 ## 6. Open decisions
 1. Which waitlist is real: the website's Zoho form or Base44's EarlyAccess page? One list only.
-2. ~~Artisan price~~ Decided: €29 / €79. To do: new Stripe prices (see above); optional annual prices (€290 / €790).
+2. Pricing agreed (Free / €29 / €49 / €89). To do: decide what goes in Business Pack vs Studio, update the Base44 app to match, then create the Stripe prices before 1 Jan.
 3. ~~Align the Base44 oil data with the website's~~ Done 27 Sep: Base44 now has the same 46 oils and SAP values as the website, and liquid soap allows for 90% KOH (it was about 11% short). Base44 checkpoint "Align oil data with website (46 oils), KOH 90% purity fix". Still to do: publish Base44, and add soap-quality figures (hardness, lather etc.) for the 31 new oils.
 4. Base44 public URL (app.latherforge.com?).
+4b. **Grant / social welfare:** confirm with the case officer (in writing) that free closed testing and pre-launch marketing are OK before publishing Base44 or taking any payment.
+4c. **hello@latherforge.com** does not exist yet (latherforge.com is not a domain in Zoho Mail). Add it in Zoho Mail like podmove.ie, then switch `CONTACT_EMAIL` in `src/components/LegalPage.tsx`.
+4d. **AI trial:** new users currently get the AI Assistant (Studio features) free for 7 days, although the tier notes say the trial excludes AI. Keep as a taster or remove.
+4e. **Launch offer decided 27 Sep: 14 days free** (website copy changed from "3 months free"). People who joined the waitlist before 27 Sep were promised 3 months; decide whether to honour it (for example a Stripe coupon emailed at launch).
+4f. **Base44 on 27 Sep (this session, not published):** plans page rewritten value-first; INCI label generator moved to the €29 plan (page and aiAssistant server check); Inventory, Products, Suppliers, Costing, Fragrance planner, Curing tracker, Batch calendar, Ingredient lots, Purchase orders, Stock requirements, Traceability/Reorder reports and Recipe generator locked to the €29 plan with an "Artisan" menu tag for free users. Tier names and the €49/€89 plans still need updating to the Brand Pricing Doctrine once pricing is final.
 5. Approve recipes in docs/recipe-review.md.
 6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.
 
-## 6b. Found in Base44 (needs a decision before launch)
-- ~~Several Artisan features were open to free users~~ Fixed 27 Sep: Inventory, Products (incl. label printing), Suppliers, Costing, Fragrance planner, Curing tracker, Batch calendar, Ingredient lots, Purchase orders, Stock requirements, Traceability and Reorder reports, and Recipe generator are now locked to Artisan. The trial still unlocks everything in Artisan for 14 days. Free users see an "Artisan" tag on those menu items. The public Etsy pricing calculator, mould calculator and safety pages stay free.
-- Launch offer decided 27 Sep: **14 days free** (Base44 trial). Website copy changed from "3 months free" to 14 days. People who joined the waitlist before this change were promised 3 months; honour it with a Stripe coupon emailed at launch. "Founding member pricing, locked for life" is still promised on the website but isn't set up in Stripe/Base44 yet.
-
 ## 7. Dates
+- Tue 29 Sep 2026, 3pm: pricing decision (reminder set). Recommendation: Starter / Craft Pack / Business Pack live, Studio shown as "coming soon" until teams and multi-channel exist, AI usage limits on Business Pack, founding-member price lock.
 - 4 Dec 2026: Google Play developer account ($25) and identity check; recruit 12+ testers (reminder set)
+- December 2026: create the Stripe monthly EUR prices and send the price IDs for `createCheckout`; archive the old €39/€99 prices.
 - 25 Dec 2026: deploy, package with PWABuilder, add assetlinks.json, start the 14-day closed test (reminder set)
 - 1 Jan 2027: Base44 launch (flip EARLY_ACCESS_MODE); app buttons change to "learn more"
 - Early Jan 2027: app public on Google Play

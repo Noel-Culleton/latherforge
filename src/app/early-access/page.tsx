@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
@@ -48,7 +49,7 @@ export default function EarlyAccessPage() {
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', textAlign: 'center' }}>
               {[
-                { icon: '🎁', title: '14 Days Free', desc: 'Full Artisan access free for your first 14 days' },
+                { icon: '🎁', title: '14 Days Free', desc: 'Every business feature free for your first 14 days' },
                 { icon: '💎', title: 'Founding Pricing', desc: 'Locked-in rate for life — never pay more than founding members' },
                 { icon: '🚀', title: 'Early Access', desc: 'Get in before the public launch in January 2027' },
                 { icon: '🗺️', title: 'Shape the Product', desc: 'Your feedback directly influences what we build next' }
@@ -89,7 +90,8 @@ export default function EarlyAccessPage() {
               </div>
 
               <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
-                No spam. No selling your data. Just a single email when we launch.
+                No spam. No selling your data. Just a single email when we launch.{' '}
+                See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
               </p>
             </div>
           </div>
