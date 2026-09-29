@@ -91,3 +91,10 @@ a { text-decoration: none; color: inherit; }
 .fade-up-2 { animation: fadeUp 0.7s 0.15s ease forwards; opacity: 0; }
 .fade-up-3 { animation: fadeUp 0.7s 0.3s ease forwards; opacity: 0; }
 .fade-up-4 { animation: fadeUp 0.7s 0.45s ease forwards; opacity: 0; }
+
+@media print {
+  nav, footer, .no-print, .mobile-menu-btn { display: none !important; }
+  main { padding-top: 0 !important; background: #fff !important; }
+  .print-sheet { padding: 0 !important; border: none !important; }
+  .page-break { break-before: page; }
+}

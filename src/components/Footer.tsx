@@ -28,6 +28,7 @@ export default function Footer() {
               <Link href="/sap-values/" style={{ fontSize: '0.85rem', color: '#A89882' }}>SAP Value Chart</Link>
               {hasRecipes && <Link href="/soap-recipes/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Recipes</Link>}
               <Link href="/app/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator App</Link>
+              <Link href="/free-soap-business-toolkit/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Free Soap Business Toolkit</Link>
             </div>
           </div>
 

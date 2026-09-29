@@ -6,9 +6,194 @@ export interface Post {
   readTime: string
   category: string
   sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string } }>
+  download?: { title: string; text: string }
 }
 
 export const posts: Post[] = [
+  {
+    slug: 'how-to-start-a-soap-business',
+    title: 'How to Start a Soap Business: A Step-by-Step Guide (Ireland, UK, EU and US)',
+    description: 'How to turn soap making into a real business: skills, legal requirements, registration, insurance, pricing, where to sell and the records you need from day one.',
+    date: '2026-09-29',
+    readTime: '9 min read',
+    category: 'Soap Business',
+    download: {
+      title: 'Free Soap Business Startup Checklist',
+      text: 'Every step in this guide as a printable checklist, plus a pricing worksheet with a worked example. Tick off each step as you go.'
+    },
+    sections: [
+      {
+        text: 'Plenty of people make lovely soap. Far fewer turn it into a business that makes money and stays on the right side of the law. This guide walks through the steps in the order you should do them. It is a practical overview, not legal or tax advice, so check the current rules with your regulator and tax office before you start selling.'
+      },
+      {
+        heading: 'Step 1: Get Consistent Before You Sell',
+        text: 'Customers come back for a bar that is the same every time. Before you think about selling, make the same recipes repeatedly until the results are predictable: the same trace, the same colour, the same hardness after cure. Most soap makers spend months at this stage, and it is time well spent.',
+        items: [
+          'Settle on 3 to 5 core recipes rather than dozens',
+          'Use a soap calculator for every batch and never guess lye amounts',
+          'Let bars cure fully (usually 4 to 6 weeks for cold process) and use them yourself',
+          'Give bars to friends and family and ask for honest feedback on lather, hardness and scent',
+          'Write down every batch, including what went wrong'
+        ],
+        link: { href: '/lye-calculator/', label: 'Use the free soap calculator' }
+      },
+      {
+        heading: 'Step 2: Decide What You Sell and Who It Is For',
+        text: '"Handmade soap" is a crowded category. A clear angle makes you easier to find and easier to remember. Pick something you can explain in one sentence.',
+        items: [
+          'Unscented or gentle bars for sensitive skin',
+          'Goat milk, tallow or other traditional recipes',
+          'Local ingredients, such as honey, oats or seaweed from your area',
+          'Gift sets for weddings, corporate gifts or the Christmas market',
+          'Vegan and palm-free bars'
+        ]
+      },
+      {
+        heading: 'Step 3: Make It Legal',
+        text: 'This is the step most new soap businesses skip, and the one that can get them into trouble. In Ireland, the UK and the EU, soap for washing skin is a cosmetic product, so cosmetics law applies from your very first sale, including craft fairs and Etsy.',
+        items: [
+          'Ireland and the EU: every recipe needs a Cosmetic Product Safety Report (CPSR) from a qualified safety assessor, a Product Information File, and a free notification on the EU Cosmetic Products Notification Portal (CPNP) before you sell. The regulator in Ireland is the HPRA',
+          'Great Britain: similar rules, with a UK Responsible Person and notification through the UK Submit Cosmetic Product Notification (SCPN) service',
+          'Labels: Responsible Person name and address, net weight, batch number, ingredients using INCI names, fragrance allergens above the threshold, and a best-before date or period-after-opening symbol',
+          'United States: soap made mostly of fats and lye and sold only as soap is regulated by the Consumer Product Safety Commission. Cosmetic claims such as "moisturising" bring it under the FDA',
+          'Never make medical claims such as "treats eczema". That turns your soap into a medicine in the eyes of the law'
+        ],
+        link: { href: '/blog/selling-handmade-soap-legal-requirements/', label: 'Read the full legal checklist for Ireland, UK and EU' }
+      },
+      {
+        heading: 'Step 4: Register the Business and Get Insured',
+        items: [
+          'Ireland: register with Revenue for income tax as a self-employed sole trader once you are trading. If you trade under a name other than your own, register the business name with the Companies Registration Office (CRO). Check Revenue\'s current VAT registration threshold for goods',
+          'UK: register with HMRC for Self Assessment once you are trading',
+          'US: check your state and local rules for business registration and sales tax',
+          'Everywhere: get product liability and public liability insurance before your first sale. Many craft fairs will not let you trade without it',
+          'Open a separate bank account for the business so your records stay clean'
+        ]
+      },
+      {
+        heading: 'Step 5: Work Out Your Costs and Prices',
+        text: 'Underpricing is the most common reason soap businesses fail. Your price has to cover ingredients, packaging, labels, selling fees, a share of your overheads (insurance, safety assessments, equipment) and your own time, with profit on top. Work this out before you print a single price tag.',
+        link: { href: '/blog/how-to-price-handmade-soap/', label: 'How to price handmade soap, with a worked example' }
+      },
+      {
+        heading: 'Step 6: Choose Where to Sell',
+        items: [
+          'Craft fairs and markets: the best place to start. You get instant feedback and build local customers',
+          'Etsy: a large audience of buyers looking for handmade products, but plenty of competition and fees on every sale',
+          'Your own website: no marketplace fees and you own the customer relationship, but you have to bring the traffic yourself',
+          'Local shops and cafés (wholesale): steady orders, but wholesale prices are usually around half of retail, so your costs must be low enough to still make a profit'
+        ],
+        link: { href: '/blog/etsy-soap-shop-tips/', label: '10 tips for selling soap on Etsy' }
+      },
+      {
+        heading: 'Step 7: Keep Records From Day One',
+        text: 'Good records are a legal requirement for cosmetics and they make every other part of the business easier. If a customer reports a reaction, you need to know exactly what went into that bar.',
+        items: [
+          'Batch records: date, recipe, weights, and the supplier and lot number of every ingredient',
+          'A batch number on every label that links back to its batch record',
+          'Stock of ingredients and finished bars',
+          'Sales and expenses, for your tax return',
+          'Customer complaints or reactions, and what you did about them'
+        ]
+      },
+      {
+        heading: 'How LatherForge Helps',
+        text: 'LatherForge is a business platform for soap makers that keeps your recipes, batch records, costs and labels in one place, so the paperwork above does not live in notebooks and spreadsheets. It launches in January 2027. In the meantime, the free soap calculator app works on your phone, including offline.',
+        link: { href: '/early-access/', label: 'Register for early access' }
+      }
+    ]
+  },
+  {
+    slug: 'how-to-price-handmade-soap',
+    title: 'How to Price Handmade Soap (With a Worked Example)',
+    description: 'A simple method for pricing handmade soap that covers ingredients, packaging, fees, overheads and your time, with a full worked example and what it means for retail and wholesale prices.',
+    date: '2026-09-29',
+    readTime: '8 min read',
+    category: 'Soap Business',
+    download: {
+      title: 'Free Soap Pricing Worksheet',
+      text: 'A printable worksheet that walks you through this exact method for your own recipe, plus a startup checklist for your soap business.'
+    },
+    sections: [
+      {
+        text: 'Most new soap makers price by looking at what everyone else charges. The problem is that other sellers may be underpricing too, and you have no idea what their costs are. The only safe way to price is to start from your own costs, then check the result against the market.'
+      },
+      {
+        heading: 'The Formula',
+        text: 'Price your soap in this order. Every step is per bar.',
+        items: [
+          '1. Ingredients: oils, butters, lye, fragrance, colour and additives',
+          '2. Packaging: wrap or box, label, and any sticker or band',
+          '3. Overheads: a share of insurance, safety assessments, equipment, moulds and market stall fees',
+          '4. Labour: your time, paid at a real hourly rate',
+          'Total cost per bar = 1 + 2 + 3 + 4',
+          'Then add profit and selling fees to get your price'
+        ]
+      },
+      {
+        heading: 'Step 1: Ingredient Cost Per Bar',
+        text: 'Work out the cost of the whole batch, then divide by the number of bars. Use what you actually paid per kilo, including delivery. As an example, here is a simple beginner recipe with 1 kg of oils (50% olive, 30% coconut, 15% shea butter, 5% castor) using example prices. Your prices will differ.',
+        items: [
+          'Olive oil 500 g at €9/kg = €4.50',
+          'Coconut oil 300 g at €6/kg = €1.80',
+          'Shea butter 150 g at €14/kg = €2.10',
+          'Castor oil 50 g at €9/kg = €0.45',
+          'Sodium hydroxide 141 g at €6/kg = €0.85',
+          'Fragrance oil 30 g at €45/kg = €1.35',
+          'Batch total: about €11.05. The batch makes around 11 bars of 115 g, so ingredients cost about €1.00 per bar'
+        ]
+      },
+      {
+        heading: 'Step 2: Packaging',
+        text: 'Add up everything that goes on or around one bar: the wrap or box, the printed label and anything else. For our example, say €0.45 per bar. Buying labels and boxes in larger quantities is one of the easiest ways to bring this down.'
+      },
+      {
+        heading: 'Step 3: Overheads',
+        text: 'Overheads are the costs you pay whether you sell 10 bars or 1,000: insurance, safety assessments for each recipe, equipment, moulds, website fees. Add up a year of these and divide by the number of bars you expect to sell in a year. For example, €360 of yearly overheads spread over 1,200 bars is €0.30 per bar. If you sell fewer bars, each bar carries more of the overhead.'
+      },
+      {
+        heading: 'Step 4: Pay Yourself',
+        text: 'This is the step people skip, and it is why so many soap businesses feel busy but never make money. Count all the time a batch takes: weighing, mixing, cleaning up, cutting, wrapping, labelling and the admin. Then pay yourself a fair hourly rate, at least minimum wage.',
+        items: [
+          'Small batch: 1 kg of oils (11 bars) takes about 2.5 hours start to finish. At €15 an hour that is €37.50, or €3.41 per bar',
+          'Bigger batch: 3 kg of oils (33 bars) takes about 4 hours. At €15 an hour that is €60, or €1.82 per bar',
+          'Batch size matters more than almost anything else. Making the same soap in bigger batches cuts your labour cost per bar in half'
+        ]
+      },
+      {
+        heading: 'The Worked Example: Total Cost Per Bar',
+        items: [
+          'Small batch (1 kg oils): €1.00 ingredients + €0.45 packaging + €0.30 overheads + €3.41 labour = €5.16 per bar',
+          'Bigger batch (3 kg oils): €1.00 ingredients + €0.45 packaging + €0.30 overheads + €1.82 labour = €3.57 per bar',
+          'Remember that this already includes paying yourself. Everything above this number is profit for the business'
+        ]
+      },
+      {
+        heading: 'From Cost to Price',
+        text: 'Now look at where you sell. Suppose handmade bars in your area sell for €7 to €9, and you price yours at €8.',
+        items: [
+          'At a craft fair: €8 minus €3.57 cost leaves about €4.40 profit per bar (before the stall fee, if you have not included it in overheads)',
+          'On Etsy: marketplace and payment fees take roughly €1 of an €8 sale, leaving about €3.40 profit per bar. Check Etsy\'s current fees for your country',
+          'Wholesale to a shop: shops usually pay around half of retail, so about €4. That leaves only €0.43 profit per bar at €3.57 cost, and a loss at the small-batch cost of €5.16',
+          'If you are VAT registered, remember the price the customer pays includes VAT, so your share is smaller'
+        ]
+      },
+      {
+        heading: 'What the Numbers Tell You',
+        items: [
+          'If your cost per bar is close to the market price, do not just cut your price. Make bigger batches, buy ingredients in bulk, or simplify packaging',
+          'Wholesale only works once your costs are low. Get your batch sizes up before you approach shops',
+          'Gift sets and bundles raise the value of each sale without adding much work',
+          'Recalculate whenever an ingredient price changes. Oil prices move, and a recipe that was profitable last year may not be now'
+        ]
+      },
+      {
+        heading: 'Let the App Do the Maths',
+        text: 'Doing this by hand for every recipe gets tedious. The free LatherForge app calculates cost per bar from your recipe, and the full LatherForge platform, launching in January 2027, tracks ingredient prices, batch costs and margins automatically.',
+        link: { href: '/app/', label: 'Open the free soap calculator app' }
+      }
+    ]
+  },
   {
     slug: 'lye-calculator-guide',
     title: 'How to Use a Lye Calculator for Cold Process Soap',

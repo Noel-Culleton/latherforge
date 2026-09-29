@@ -95,6 +95,15 @@ export default async function BlogPostPage({ params }: Props) {
             ))}
           </div>
 
+          {post.download && (
+            <div style={{ margin: '3.5rem 0 0', background: '#3E2820', padding: '2.5rem', textAlign: 'center' }}>
+              <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '0.5rem' }}>Free Download</p>
+              <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.6rem', color: '#FAF7F2', marginBottom: '0.75rem' }}>{post.download.title}</h3>
+              <p style={{ color: '#C9B49A', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.7 }}>{post.download.text}</p>
+              <Link href="/free-soap-business-toolkit/" className="btn-primary">Get the Free Toolkit</Link>
+            </div>
+          )}
+
           <div style={{ margin: '3.5rem 0', background: '#EBF2EC', border: '1px solid rgba(122,158,126,0.3)', padding: '2.5rem', textAlign: 'center' }}>
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A9E7E', marginBottom: '0.5rem' }}>Free Tool</p>
             <h3 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.6rem', color: '#3E2820', marginBottom: '0.75rem' }}>Free Soap Calculator</h3>
