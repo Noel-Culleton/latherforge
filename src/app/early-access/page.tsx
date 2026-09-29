@@ -39,7 +39,7 @@ export default function EarlyAccessPage() {
               <em style={{ color: '#C9A84C', fontStyle: 'italic' }}>LatherForge</em>
             </h1>
             <p style={{ color: '#C9B49A', maxWidth: '500px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.75, fontWeight: 300 }}>
-              Register your interest today. Early members receive 3 months free access and founding member pricing when we launch.
+              Register your interest today. Early members get a 14-day free trial and founding member pricing when we launch.
             </p>
           </div>
         </section>
@@ -49,7 +49,7 @@ export default function EarlyAccessPage() {
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', textAlign: 'center' }}>
               {[
-                { icon: '🎁', title: '3 Months Free', desc: 'Full platform access at no cost for founding members' },
+                { icon: '🎁', title: '14-Day Free Trial', desc: 'Try the full platform free for 14 days when we launch' },
                 { icon: '💎', title: 'Founding Pricing', desc: 'Locked-in rate for life — never pay more than founding members' },
                 { icon: '🚀', title: 'Early Access', desc: 'Get in before the public launch in January 2027' },
                 { icon: '🗺️', title: 'Shape the Product', desc: 'Your feedback directly influences what we build next' }

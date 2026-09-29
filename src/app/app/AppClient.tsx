@@ -90,7 +90,7 @@ function Locked({ title, feature, children }: { title: string; feature: string; 
       </p>
       <div style={{ filter: 'blur(4px)', userSelect: 'none', pointerEvents: 'none' }} aria-hidden>{children}</div>
       <a href={`${EARLY_ACCESS}&feature=${feature}`} style={{ ...primaryBtn, display: 'block', textAlign: 'center', marginTop: '0.9rem', textDecoration: 'none' }}>
-        Get early access — 3 months free
+        Get early access — 14-day free trial
       </a>
     </div>
   )
