@@ -25,7 +25,6 @@ export default function PrivacyPage() {
       <ul style={{ paddingLeft: '1.25rem', marginBottom: '1rem' }}>
         <li style={LI}><strong>Early access sign-ups.</strong> If you register your interest, we collect the details you enter in the form (such as your name and email address). The form is provided by Zoho and the data is stored on Zoho&apos;s EU servers.</li>
         <li style={LI}><strong>Anonymous usage statistics.</strong> We use Vercel Web Analytics to count page views, referring sites, country and device type. It does not use cookies and does not identify you personally.</li>
-        <li style={LI}><strong>Recipes you save in the free app.</strong> Recipes saved in the <Link href="/app/" style={{ color: '#5C3D2E', textDecoration: 'underline' }}>soap calculator app</Link> are stored only in your own browser. They are never sent to us.</li>
       </ul>
       <p style={P}>The soap calculator runs entirely in your browser. We do not receive the recipes you calculate.</p>
 

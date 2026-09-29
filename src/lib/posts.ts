@@ -180,7 +180,7 @@ export const posts: Post[] = [
       {
         heading: 'How to Tell When Your Soap Is Ready',
         text: 'The most reliable test is weight. Weigh one bar each week and write it down. When the weight stops dropping, the water has gone and the bar is fully cured. Your batch records should also show the date each batch was made and when it will be ready, so you never sell or gift a bar too early.',
-        link: { href: '/app/', label: 'Track cure dates with the free LatherForge soap calculator app' }
+        link: { href: '/lye-calculator/', label: 'Plan your next batch with the free soap calculator' }
       },
       {
         heading: 'Can You Speed Up the Cure?',
