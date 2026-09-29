@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState, type CSSProperties } from 'react'
+import { track } from '@vercel/analytics'
 import { draftIngredientList } from '@/lib/inci'
 import { OILS, calculateLye, type LyeResult, type LyeType, type Method, type OilEntry } from '@/lib/soap'
 
@@ -21,6 +22,14 @@ type Recipe = {
 const STORAGE_KEY = 'lf-app-recipes'
 const EARLY_ACCESS = '/early-access/?source=app'
 const DAY = 86400000
+
+// Link to early access that records which app feature sent the visitor
+function earlyAccess(feature: string) {
+  return {
+    href: `${EARLY_ACCESS}&feature=${feature}`,
+    onClick: () => track('early_access_click', { source: 'app', feature })
+  }
+}
 
 function loadRecipes(): Recipe[] {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]') } catch { return [] }
@@ -89,7 +98,7 @@ function Locked({ title, feature, children }: { title: string; feature: string; 
         <span>{title}</span><span style={{ color: C.gold }}>🔒 LatherForge</span>
       </p>
       <div style={{ filter: 'blur(4px)', userSelect: 'none', pointerEvents: 'none' }} aria-hidden>{children}</div>
-      <a href={`${EARLY_ACCESS}&feature=${feature}`} style={{ ...primaryBtn, display: 'block', textAlign: 'center', marginTop: '0.9rem', textDecoration: 'none' }}>
+      <a {...earlyAccess(feature)} style={{ ...primaryBtn, display: 'block', textAlign: 'center', marginTop: '0.9rem', textDecoration: 'none' }}>
         Get early access — 14 days free at launch
       </a>
     </div>
@@ -278,7 +287,7 @@ export default function AppClient() {
             })}
             {recipes.length > 0 && (
               <p style={{ fontSize: '0.8rem', color: C.muted, textAlign: 'center', marginTop: '0.5rem' }}>
-                Recipes are saved on this phone. <a href={`${EARLY_ACCESS}&feature=sync`} style={{ color: C.walnut, textDecoration: 'underline' }}>Sync and full batch history are coming in LatherForge.</a>
+                Recipes are saved on this phone only. Clearing your browser data deletes them. <a {...earlyAccess('sync')} style={{ color: C.walnut, textDecoration: 'underline' }}>Sync and full batch history are coming in LatherForge.</a>
               </p>
             )}
           </>
@@ -342,7 +351,7 @@ export default function AppClient() {
                   <button onClick={() => window.print()} style={{ ...primaryBtn, marginTop: '0.9rem' }}>🖨️ Print sample label</button>
                   <p style={{ fontSize: '0.8rem', color: C.muted, marginTop: '0.8rem', lineHeight: 1.5 }}>
                     Ready-to-sell labels with correct ingredient order, fragrance allergens and batch records are part of LatherForge.{' '}
-                    <a href={`${EARLY_ACCESS}&feature=labels`} style={{ color: C.walnut, textDecoration: 'underline' }}>Get early access</a>
+                    <a {...earlyAccess('labels')} style={{ color: C.walnut, textDecoration: 'underline' }}>Get early access</a>
                   </p>
                 </>
               )}

@@ -54,6 +54,7 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 4d. **AI trial:** new users currently get the AI Assistant (Studio features) free for 7 days, although the tier notes say the trial excludes AI. Keep as a taster or remove.
 4e. **Launch offer decided 27 Sep: 14 days free** (website copy changed from "3 months free"). People who joined the waitlist before 27 Sep were promised 3 months; decide whether to honour it (for example a Stripe coupon emailed at launch).
 4f. **Base44 on 27 Sep (this session, not published):** plans page rewritten value-first; INCI label generator moved to the €29 plan (page and aiAssistant server check); Inventory, Products, Suppliers, Costing, Fragrance planner, Curing tracker, Batch calendar, Ingredient lots, Purchase orders, Stock requirements, Traceability/Reorder reports and Recipe generator locked to the €29 plan with an "Artisan" menu tag for free users. Tier names and the €49/€89 plans still need updating to the Brand Pricing Doctrine once pricing is final.
+4g. **Done 29 Sep:** Google Play screenshots and feature graphic in docs/play-store/; free app records `early_access_click` (feature: pricing / labels / sync) in Vercel Analytics; free app warns that recipes are saved on the phone only. Custom events may need a Vercel Pro plan to show in the dashboard.
 5. Approve recipes in docs/recipe-review.md.
 6. Later: a "Send to LatherForge" button that moves saved recipes from the free app into Base44's Recipe Builder.
 

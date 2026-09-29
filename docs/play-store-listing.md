@@ -44,6 +44,8 @@ Free soap recipes, a SAP value chart and soap making guides at latherforge.com.
 - Privacy policy URL: required. The app stores recipes only on the device and collects no personal data, so the policy can say that. It must still be published at a URL, for example latherforge.com/privacy/.
 
 ## Screenshots (phone, at least 2, 1080×1920 or similar)
+Ready to upload: `docs/play-store/play-screenshot-1.png` to `-4.png` (1080×1920) and `docs/play-store/play-feature-graphic.png` (1024×500).
+
 Caption ideas, one per screenshot:
 1. "Exact lye and water in seconds" (Calculate tab with a result)
 2. "40+ oils, grams or ounces" (oil dropdown open)
@@ -51,7 +53,7 @@ Caption ideas, one per screenshot:
 4. "Cost per bar, instantly" (Selling tab)
 
 ## Feature graphic (1024×500)
-Brown background (#3E2820), gold LF mark, text: "Free Soap Calculator". Can be adapted from public/og-image.png.
+Ready: `docs/play-store/play-feature-graphic.png`.
 
 ## Data safety form answers
 - Does the app collect or share user data? No (recipes are stored only on the device)
