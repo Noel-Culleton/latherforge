@@ -144,3 +144,9 @@ One short message: what was made/scheduled, where to see it (Metricool > Plannin
 - Flow names downloads by its OWN short title (e.g. Hands_packing_soap_bars_1080p_2026...mp4), not the prompt. Sort by keyword into <LF>\clips as <chapter>N.mp4 (copy, never move) and list unmatched ones; map leftovers by reading the titles against the prompt order/timestamps.
 - Veo is unreliable at specific soap faults (soda ash, rivers, DOS, sweating): generate 2-4 tries, keep only accurate ones, else use a photo of a real bar or a text slide.
 - Keyword map that worked for LF15: Gloved_hand_turning|chalky=hook; Steam|soda|powder|crust=sodaash; seiz|Spatula|thicken=seize; Thumb|soft|dent=soft; Crack|dome=crack; streak|vein=rivers; crumbl|chip|Wire=crumble; bead|moist|sweat|handling=sweat; orange|spot|old_soap=dos; Dropper|essential|fragrance=scent; goggle|lye|scale|weigh=safety; laptop|typing|recipe=prevent; Cutting=broll_cut; textured|swirl=broll_swirl; pour, blend|mixing|making|batter, shelf|curing, wrap, melt|oil|butter, stamp, stack|linen, gift|pack|box = broll_*.
+
+## 14. Reddit (u/latherforge) and blog for each long-form
+
+- Every long-form gets a matching blog post in the latherforge repo (src/lib/posts.ts, optional youtubeId embed) published the same day. Articles, not script copies; calculator links; "not legal advice" where compliance is mentioned.
+- Reddit account u/latherforge (Reddit Pro, bio discloses founder). Karma first: ~9 helpful comments per 1 mention; no links under ~100 karma; link the BLOG, never the AI video; disclose "I wrote"; no app promo in posts; website in profile social links, content not hidden; check each sub's rules. Communities: own profile (anytime), r/soap (~50 karma), r/soapmaking (~100 karma). Use Reddit Pro Trends keywords: soda ash, soap soft, seized soap, lye heavy, soap pricing, Etsy soap.
+- 30 Sep 2026: LF15 cheat sheet posted to own profile; r/soapmaking version saved as draft for mid-Oct.
