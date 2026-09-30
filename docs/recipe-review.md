@@ -8,7 +8,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Easy Beginner Soap  `/soap-recipes/beginner-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -25,7 +25,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Castile Soap (100% Olive Oil)  `/soap-recipes/castile-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 6 months
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 6 months
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -39,7 +39,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Bastille Soap  `/soap-recipes/bastille-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 8 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 8 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -54,7 +54,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Shea Butter Soap  `/soap-recipes/shea-butter-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -71,7 +71,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Goat Milk Soap  `/soap-recipes/goat-milk-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -89,7 +89,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Salt Bar Soap  `/soap-recipes/salt-bar-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · NaOH · cold process · 20% superfat · cure 8 weeks
+- [x] Approved  ·  Intermediate · NaOH · cold process · 20% superfat · cure 8 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -106,7 +106,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Traditional Lard Soap  `/soap-recipes/lard-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -122,7 +122,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Beef Tallow Soap  `/soap-recipes/tallow-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -138,7 +138,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Vegan Palm-Free Soap  `/soap-recipes/vegan-palm-free-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -156,7 +156,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Avocado Oil Soap  `/soap-recipes/avocado-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -172,7 +172,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Hemp Seed Oil Soap  `/soap-recipes/hemp-seed-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -189,7 +189,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Activated Charcoal Soap  `/soap-recipes/charcoal-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -208,7 +208,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Mango Butter Soap  `/soap-recipes/mango-butter-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -224,7 +224,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Beeswax Soap  `/soap-recipes/beeswax-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 6 weeks
+- [x] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 6 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -241,7 +241,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Hot Process Soap  `/soap-recipes/hot-process-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · NaOH · hot process · 5% superfat · cure 2 weeks
+- [x] Approved  ·  Intermediate · NaOH · hot process · 5% superfat · cure 2 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -258,7 +258,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Liquid Soap  `/soap-recipes/liquid-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · KOH · hot process · 3% superfat · cure No cure needed
+- [x] Approved  ·  Intermediate · KOH · hot process · 3% superfat · cure No cure needed
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
