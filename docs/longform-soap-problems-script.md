@@ -90,7 +90,7 @@ There are two very different causes, and you need to know which one you have.
 
 The harmless one: you cut too late. Recipes high in coconut oil, palm or stearic acid get very hard very fast. Leave them a few days and they'll chip under the knife or wire. The fix for next time is to cut within about twenty-four hours.
 
-The serious one: the soap is lye heavy. Signs include white, hard, chalky lumps inside the bar, a bar that feels harsh or burning on skin, and the other lye-heavy signs I'll cover in chapter ten. That comes from a measuring mistake, a wrong setting in the calculator, or false trace from butters that weren't fully melted.
+The serious one: the soap is lye heavy. Signs include white, hard, chalky lumps inside the bar, a bar that feels harsh or burning on skin, and the other lye-heavy signs I'll cover in problem ten. That comes from a measuring mistake, a wrong setting in the calculator, or false trace from butters that weren't fully melted.
 
 If you suspect lye heavy, don't use it and don't sell it. Re-check the recipe in a calculator before doing anything else.
 
