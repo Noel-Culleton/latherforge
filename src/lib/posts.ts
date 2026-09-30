@@ -5,10 +5,108 @@ export interface Post {
   date: string
   readTime: string
   category: string
+  youtubeId?: string
   sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string } }>
 }
 
 export const posts: Post[] = [
+  {
+    slug: 'cold-process-soap-problems',
+    title: 'Every Cold Process Soap Problem (And How to Fix It)',
+    description: 'Soda ash, seized batter, soft soap, cracks, glycerin rivers, sweating, DOS and scent fade: what causes each cold process soap problem, whether the soap is still usable, and how to prevent it.',
+    date: '2026-10-01',
+    readTime: '12 min read',
+    category: 'Soap Problems Fixed',
+    sections: [
+      {
+        text: 'Most soap problems look far worse than they are. Some are purely cosmetic and the bars are fine to use and sell. A few mean the soap is unsafe. This guide covers ten of the most common cold process soap problems: what each looks like, why it happens, whether the soap is still usable, and how to stop it happening again.'
+      },
+      {
+        heading: '1. Soda Ash',
+        text: 'Soda ash is a white, powdery or crystal-like film on the top of your bars, usually a day or two after pouring. It forms when lye near the surface meets carbon dioxide in the air before it has fully reacted with the oils. It is cosmetic, not dangerous, and does not mean your soap is lye heavy. To remove it, hold the bar in steam for a few seconds, rinse it under warm water, or plane off a thin layer.',
+        items: [
+          'Spritz the top with 99% isopropyl alcohol straight after pouring',
+          'Cover the mold with cling film pressed onto the surface, or a lid',
+          'Use a water discount so the soap sets up faster',
+          'Pour at a slightly thicker trace'
+        ]
+      },
+      {
+        heading: '2. Seized Soap',
+        text: 'Seizing is when the batter goes from custard to lumpy mashed potato within seconds, usually straight after adding fragrance. Some fragrance oils, especially floral, spice and some vanilla-type scents, speed up the reaction dramatically, and working too hot makes it worse. Put the stick blender down, stir by hand with a spatula, glop the batter into the mold and tap it on the bench to knock out air pockets. The top will be rustic, but the soap is usually fine once cured.',
+        items: [
+          'Read the supplier notes on every fragrance: many say whether it accelerates trace',
+          'Test new fragrances in a small batch first',
+          'Add fragrance at thin trace and stir it in by hand',
+          'Soap a little cooler'
+        ]
+      },
+      {
+        heading: '3. Soap Still Soft After Two Days',
+        text: 'Soft soap after two days is normal for many recipes. Recipes high in olive oil or other soft oils can take a week or more to firm up, and pure castile is famously slow. Too much water, a high superfat, a cold room or skipping gel phase all slow things down too. Give it another three to five days somewhere warm. If the soap is soft and also greasy, has pockets of liquid oil or is separating, that points to a measuring problem, usually too little lye or lye that absorbed moisture from the air. Put your exact recipe back through a lye calculator and check your weights.',
+        link: { href: '/lye-calculator/', label: 'Check your recipe in the free soap calculator' }
+      },
+      {
+        heading: '4. Cracked Tops and Overheating',
+        text: 'A crack down the middle of the loaf, sometimes with a domed top or liquid coming up through it, is overheating. Honey, milks, sugars, beer and some fragrances add heat, and a warm room plus heavy insulation can push the soap too far. A cosmetic crack is usually fine: cure the bars and trim the top. If liquid came up through the crack, wear gloves and wait a day, since it is often reabsorbed. If wet pockets remain after a couple of days, treat the batch as suspect and do not sell it. To prevent it, soap cooler, skip insulation for milk, honey or sugar recipes, and put those molds in the fridge or freezer for the first day.'
+      },
+      {
+        heading: '5. Glycerin Rivers',
+        text: 'Glycerin rivers are translucent, vein-like streaks through coloured soap, often most visible where titanium dioxide was used. They are cosmetic and the soap is completely safe. They are linked to excess heat, partial gel and higher water amounts. Use a water discount, disperse titanium dioxide in oil rather than water, and either keep the soap consistently cool or insulate it fully so it gels evenly.'
+      },
+      {
+        heading: '6. Crumbly or Brittle Soap',
+        text: 'Crumbly soap has two very different causes. The harmless one is cutting too late: recipes high in coconut oil, palm or stearic acid harden fast and chip if left for days, so cut within about 24 hours next time. The serious one is lye-heavy soap, with white chalky lumps inside the bar and a harsh or burning feel on skin. That comes from a measuring mistake, a wrong calculator setting, or false trace from butters that were not fully melted. If you suspect lye-heavy soap, do not use or sell it, and re-check the recipe first.'
+      },
+      {
+        heading: '7. Sweating Soap',
+        text: 'Tiny beads of liquid on your bars are glycerin pulling moisture out of humid air. It is harmless and very common in damp climates like Ireland and the UK. Wipe the bars dry, improve airflow with a fan or dehumidifier, and do not wrap bars in plastic while they are still curing. Once fully cured, wrap them in something breathable or shrink wrap them for sale, and store them away from bathrooms and kitchens.'
+      },
+      {
+        heading: '8. DOS (Dreaded Orange Spots)',
+        text: 'Small orange or brown spots, often weeks or months later and sometimes with an old, crayon-like smell, are rancidity: the free oils in the bar are oxidising. You cannot reverse it. A couple of small spots can be cut out for personal use, but if the spots are widespread or the bar smells off, do not sell it.',
+        items: [
+          'Use fresh oils and note the purchase date on every container',
+          'Keep fast-oxidising oils like sunflower, grapeseed and hemp to a small share of the recipe',
+          'Stick to a sensible superfat',
+          'Use distilled water',
+          'Add an antioxidant such as rosemary oleoresin extract to your oils',
+          'Cure and store in a cool, dry, dark place'
+        ]
+      },
+      {
+        heading: '9. Scent Fading',
+        text: 'Some scent fade is normal, and citrus essential oils fade fastest. Heat from gel phase can also drive off lighter notes. Blend light top notes with heavier base notes, consider concentrated (folded) citrus oils, try anchoring fragrance with a little clay, and store cured bars wrapped in a cool, dark place. Never fix fading by simply adding more: every essential oil and fragrance oil has a maximum safe usage rate for soap. Check your supplier\'s IFRA documentation and stay within it.'
+      },
+      {
+        heading: '10. Is My Soap Safe?',
+        text: 'Everything above is mostly cosmetic. What actually makes soap unsafe is excess lye. Watch for these warning signs:',
+        items: [
+          'Pockets of clear liquid that do not reabsorb after a day or two (handle with gloves)',
+          'White, hard, chalky lumps inside the bar, not just on the surface',
+          'Soap that stings, burns or leaves skin red',
+          'A bar that is crumbly and harsh right through, not just at the cut edges'
+        ]
+      },
+      {
+        text: 'The first step is always the same: go back to your recipe. Put the exact oils and weights through a lye calculator, compare the lye amount to what you actually weighed, check the calculator was set to sodium hydroxide (NaOH) for bar soap rather than potassium hydroxide (KOH), and check your scale. If the numbers show too much lye, or you cannot confirm what went wrong, do not use or sell the batch.'
+      },
+      {
+        heading: 'Five Habits That Prevent Most Problems',
+        items: [
+          'Run every recipe through a lye calculator, every time',
+          'Weigh everything in grams on a digital scale, never by volume',
+          'Keep lye sealed and oils fresh',
+          'Test every new fragrance in a small batch first',
+          'Keep a record of every batch: recipe, temperatures, water amount, fragrance and results'
+        ]
+      },
+      {
+        text: 'If you sell soap in the UK or EU you need batch records anyway, and they turn every mistake into a lesson instead of a mystery. This guide is general information, not legal or safety advice for your specific products.',
+        link: { href: '/lye-calculator/', label: 'Open the free soap calculator (no signup)' }
+      }
+    ]
+  },
   {
     slug: 'lye-calculator-guide',
     title: 'How to Use a Lye Calculator for Cold Process Soap',

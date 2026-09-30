@@ -65,6 +65,18 @@ export default async function BlogPostPage({ params }: Props) {
       <section style={{ background: '#FAF7F2', padding: '3rem 0 5rem' }}>
         <div className="container" style={{ maxWidth: '760px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{ borderTop: '1px solid #E8DFD0', paddingTop: '2.5rem' }}>
+            {post.youtubeId && (
+              <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, marginBottom: '2.5rem' }}>
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${post.youtubeId}`}
+                  title={post.title}
+                  loading="lazy"
+                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+                />
+              </div>
+            )}
             {post.sections.map((section, i) => (
               <div key={i} style={{ marginBottom: '2rem' }}>
                 {section.heading && (
