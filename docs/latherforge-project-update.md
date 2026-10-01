@@ -62,3 +62,12 @@ Takeaway: search brings soap makers (recipes, calculators), not software buyers.
 - 25 Dec 2026: deploy, package with PWABuilder, add assetlinks.json, start the 14-day closed test (reminder set)
 - 1 Jan 2027: Base44 launch (flip EARLY_ACCESS_MODE); app buttons change to "learn more"
 - Early Jan 2027: app public on Google Play
+
+## 8. Forge family strategy (agreed 1 October 2026)
+- **Direction:** LatherForge is the first of a family of niche SaaS products for small makers: soap → candles → next craft (wax melts, balms/cosmetics, resin). Each craft is its own brand built on the same engine, not a mode inside LatherForge.
+- **How a new brand is made:** duplicate the LatherForge Base44 app once it is stable, keep the generic modules (suppliers, purchase orders, goods-in, lots, stock, costing, sales, customers, labels, legal), and replace only the craft-specific ones (Recipe, CureLog, Mold, FragranceBlend fields, AppSettings defaults). Clone the website the same way.
+- **CandleForge:** build January 2027, launch 1 February 2027 (calendar events set for 4, 11, 18 and 25 Jan and 1 Feb). Candle-specific modules: wax blend and fragrance load, vessel (fill volume/weight), wick sizing, cure and burn-test log, and a CLP label builder (fragrance SDS + load % → hazard statements, pictograms, UFI; IFRA category 11 limits). CLP labelling is the main selling point for Ireland/UK/EU.
+- **CandleLedger** (Base44, 5 entities) is not used as a starting point; archive it.
+- **Cross-product discount:** active LatherForge subscribers get CandleForge at 40% off the same tier (Stripe coupon, checked by LatherForge email). Not promised publicly until CandleForge is live; founding members can be told privately.
+- **Before January:** check the CandleForge name (domain, EUIPO/UK IPO trademark) and line up a real candle maker to review the wax, wick and CLP logic by 18 Jan.
+- **Launch playbook:** write down the LatherForge process (validate → brand → website → free app → paid app → waitlist/email → content → compliance → pricing → launch → 30/60/90-day review) as a reusable checklist and use it for every Forge brand. Gaps to close: EU VAT on digital sales (OSS / Stripe Tax), one waitlist with an email sequence, go/kill criteria per brand, Pinterest, Reddit/Facebook-group warm-up, funnel tracking with UTM links, in-app onboarding, a support page.
