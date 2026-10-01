@@ -36,6 +36,14 @@ Needs building: a per-user monthly usage counter checked by the aiAssistant and 
 
 Anyone who subscribes in January 2027 keeps their price for as long as they stay subscribed. It rewards early users and gives a reason to commit before the trial ends.
 
+## Tester rewards (agreed 1 Oct 2026)
+
+- **Play Store testers** (15 invited, 12+ needed for Google's 14-day closed test): Craft Pack free for 3 months from 1 Jan 2027, then the founding price.
+- **Product testers** (5–10 real soap makers, testing the Base44 app in December): Business Pack free for 3 months from 1 Jan 2027, then the founding price locked for life, plus a "Founding Tester" credit and personal help setting up labels and costings.
+- Rewards are earned by testing and feedback (product testers: 3 set tasks + feedback form), never by Play Store ratings or reviews (Google bans incentivised reviews).
+- No cash rewards. Normal AI limits apply during the free period.
+- Mention the free tester access in the email to the case officer.
+
 ## Annual (after launch, once monthly churn is known)
 
 Two months free: Craft Pack €290/yr, Business Pack €490/yr. The €249 and €799 figures noted earlier belonged to the old tier names; €249 for Craft Pack would be a 28% discount, which is deep for a first-year product.
