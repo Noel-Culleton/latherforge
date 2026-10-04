@@ -17,6 +17,7 @@ Add this file to the "LatherForge.com Platform Design" Claude project (Files →
 | Full app | Base44 (app.latherforge.com planned) | Revenue: batches, costing, compliant labels, traceability, Etsy, AI | Free / €29 / €49 / €89 |
 
 - Users buy LatherForge directly on the web (Stripe). **Nothing is sold inside the Play app**, so Google takes no cut. The Play app shows no prices or buy buttons, only "learn more" / "get early access".
+- **Decided 4 Oct 2026: Google Play subscriptions come after 1 March 2027 (phase 2).** Launch sells on the web only. From March, plan selling Craft Pack and Business Pack inside the Play app with Google Play Billing (Stripe is not allowed for in-app digital subscriptions). Reasons: one-tap payment and the trust people have in Play subscriptions should raise sign-ups, and Google's cut is accepted. Needs the paid features available in the Play app first, not only the free calculator.
 - The Base44 app is not wrapped for Google Play: it needs a login first, it's built for desktop, and its Stripe subscriptions would fall under Google Play's billing rules.
 
 ## 3. Built this session (branch `claude/keen-edison-5q3cdt`, not yet merged)

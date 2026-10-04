@@ -52,3 +52,9 @@ Two months free: Craft Pack €290/yr, Business Pack €490/yr. The €249 and �
 ## Stripe (December)
 
 Create three monthly EUR prices, €29, €49 and €89 (the €89 one inactive until Studio launches), send the price IDs for `base44/functions/createCheckout/entry.ts`, and archive the old €39/€99 prices.
+
+## Google Play (from March 2027)
+
+Decided 4 Oct 2026: after 1 March 2027, sell Craft Pack and Business Pack inside the Google Play app using Google Play Billing, at the same €29/€49 prices. Until then the Play app stays free with no prices, and people subscribe on the website.
+
+Revenue target for reference: €5,800/mo needs about 200 Craft Pack customers or about 120 Business Pack customers.
