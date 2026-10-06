@@ -133,7 +133,7 @@ export default function HomePage() {
             Be First When We Launch
           </h2>
           <p style={{ color: '#A89882', maxWidth: '440px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
-            Join the waitlist today. Early members get a 14-day free trial and exclusive founding member pricing.
+            Join the waitlist today. Early members get a 14-day free trial.
           </p>
           <Link href="/early-access" className="btn-primary">Register My Interest</Link>
           <p style={{ marginTop: '1.25rem', fontSize: '0.8rem', color: '#7A6458' }}>No credit card required. Unsubscribe any time.</p>
