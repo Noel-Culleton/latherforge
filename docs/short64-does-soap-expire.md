@@ -48,3 +48,5 @@ Free soap calculator, no signup: https://latherforge.com/lye-calculator/
 
 Built 7 Oct 2026: https://www.clipkit.dev/public-editor?id=4b3d0ad7-4f44-4e56-a83e-198e9eb97d8d
 Open, press Export to download the MP4 (free). The footage version above can still be built on the PC.
+
+Scheduled 7 Oct 2026 for Tue 3 Nov 19:00 on TikTok, YouTube, FB Reels, IG Reels and Pinterest (Metricool). Rendered in the cloud with ffmpeg (text and motion, no footage).
