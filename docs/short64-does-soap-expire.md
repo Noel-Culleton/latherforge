@@ -43,3 +43,8 @@ Free soap calculator, no signup: https://latherforge.com/lye-calculator/
 **Pinterest:** title "Does Handmade Soap Expire? Shelf Life, DOS and Labels". Board: Soap Making Tutorials. Link: https://latherforge.com/lye-calculator/
 
 **Schedule:** next free 19:00 slot after the current Metricool queue (Short05–36 run to 31 Oct), or swap it in sooner because the question hook is strong.
+
+## Clipkit version (text and motion, no footage)
+
+Built 7 Oct 2026: https://www.clipkit.dev/public-editor?id=4b3d0ad7-4f44-4e56-a83e-198e9eb97d8d
+Open, press Export to download the MP4 (free). The footage version above can still be built on the PC.
