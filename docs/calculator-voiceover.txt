@@ -1,0 +1,37 @@
+VOICEOVER: How to Use a Free Soap Calculator (Step by Step)
+For ElevenLabs. Generate EACH section as its own clip, then place each clip at its start time on the screen recording.
+Spoken-form text: lye names and numbers are written out so the voice reads them correctly.
+Suggested voice: calm, warm, clear. Stability about 50%, speed 1.0.
+
+=== 0:00 Hook ===
+If you've ever looked at a soap recipe and wondered how much lye to use, this is for you. In the next six minutes I'll show you, step by step, how to use a free soap calculator to get your lye and water right, and the mistakes that catch beginners out.
+
+=== 0:15 What a soap calculator does ===
+Every oil needs a different amount of lye to turn into soap. Coconut oil needs more than olive oil. A soap calculator does that maths for you. You give it your oils and their weights, and it gives you the lye and the water.
+
+=== 0:45 Safety first ===
+Before we start, safety. Lye is caustic. Wear gloves and eye protection, work somewhere well ventilated, and always add lye to water, never water to lye. Keep children and pets out of the room.
+
+=== 1:15 Step 1 ===
+Step one. Choose your lye. N-A-O-H is sodium hydroxide, and it's for solid bars. K-O-H is potassium hydroxide, and it's for liquid soap. For bar soap, choose N-A-O-H. The method buttons say cold process or hot process. In this calculator they're only a label. The lye amount is the same either way.
+
+=== 1:55 Step 2 ===
+Step two. Pick grams or ounces. I recommend grams. They're more precise, and you should always weigh your ingredients, never measure them by volume.
+
+=== 2:15 Step 3 ===
+Step three. Superfat. This is the percentage of oil left unreacted, so your soap is milder and you have a safety margin. Five percent is standard for most bars. Zero percent is a full cleanse and can be harsh. Twenty percent is very mild, and the bar can be soft. If you're unsure, stay at five.
+
+=== 3:05 Step 4 ===
+Step four. Add your oils. Pick the oil, then type its weight. I'll use seven hundred grams of olive oil and three hundred grams of coconut oil. If you need more oils, click Add Another Oil.
+
+=== 4:05 Step 5 ===
+Step five. Click Calculate Lye. And here's the result. One hundred forty-one point nine grams of lye, two hundred eighty-three point nine grams of water, from one thousand grams of oil at five percent superfat. Weigh both exactly. Add the lye to the water, stir, and let it cool before you mix it into your oils.
+
+=== 5:05 Step 6 ===
+Step six, and this is the mistake that catches people. If you change an oil, you must recalculate. Watch. Same one thousand grams, but all olive oil. Now it's one hundred twenty-eight point three grams of lye. That's different from one hundred forty-one point nine. Use the old number, and your soap will be too harsh or too soft.
+
+=== 5:50 Check before you pour ===
+Before you pour, check your weights twice. If you're new, run the recipe through a second calculator and make sure the numbers match. This tool is a guide, and you're responsible for your own batch.
+
+=== 6:20 Outro ===
+To recap. Pick your lye, choose grams, set your superfat, add your oils and weights, calculate, and recalculate every time you change something. The calculator is free, with no signup, and the link is in the description. If you want to save recipes and track batches, that's what we're building LatherForge for. Which oils are you using? Tell me in the comments.
