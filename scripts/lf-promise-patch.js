@@ -38,7 +38,7 @@ if (!s.includes('Every Craft Pack should be worth')) {
 }
 
 // 3. "Our promise" band: new dark band directly after the pricing section, before the FAQ.
-if (!s.includes('That\'s the promise')) {
+if (!s.includes('Value over volume')) {
   const ii = s.indexOf('id="pricing"')
   const se = ii < 0 ? -1 : s.indexOf('</section>', ii)
   if (ii < 0 || se < 0 || se - ii > 6000) fail('pricing section anchor not found')
@@ -55,8 +55,8 @@ if (!s.includes('That\'s the promise')) {
     '<div className="wrap">' +
     '<p className="kick" style={{ color: \'var(--gs)\' }}>Value over volume</p>' +
     '<div style={{ width: \'64px\', height: \'3px\', background: \'var(--g)\', margin: \'16px 0 22px\' }} />' +
-    '<h2 style={{ fontSize: \'clamp(2.4rem, 6vw, 4.6rem)\', color: \'#fff\', maxWidth: \'820px\' }}>More than you pay for. ' +
-    '<em style={{ fontStyle: \'italic\', color: \'var(--g)\' }}>{"That\'s the promise."}</em></h2>' +
+    '<h2 style={{ fontSize: \'clamp(2.4rem, 6vw, 4.6rem)\', color: \'#fff\', maxWidth: \'820px\' }}>' +
+    '<em style={{ fontStyle: \'italic\', color: \'var(--g)\' }}>Always</em> more than you pay for.</h2>' +
     '<div className="fgrid" style={{ marginTop: \'48px\' }}>' +
     pillar('01', 'Start free.', 'Starter costs nothing, and the soap and Etsy pricing calculators need no signup.') +
     pillar('02', 'One fair price.', 'One system, one login. The Craft Pack is €29 a month and should be worth more than that.') +
