@@ -78,3 +78,8 @@ Country lane: 9–31 Oct (23 posts, all with hook images, no links). The Monday 
 Every country-lane post gets a 1080×1350 hook image: brown and gold LatherForge style, country chip, big hook line, one-line subhead, "Free soap calculator · latherforge.com" footer.
 - Made with `social/make_hooks.py` (edit the `posts` list, run `python3 social/make_hooks.py social/country-lane`).
 - Images are pushed to `social/country-lane/` and linked by commit (raw.githubusercontent.com). Metricool copies each image to its own storage when the post is saved.
+
+## TikTok photo carousels (daily, from 9 Oct)
+Each country post is also posted to TikTok as a 5-slide carousel (1080×1920): hook + "Swipe →", three numbered tips, calculator slide. Posted 30 minutes after that country's Facebook post, never near the 19:00 video. TikTok auto-music on. "latherforge.com" as text (TikTok links aren't clickable).
+- Made with `social/make_carousels.py` from a JSON file (see `social/tiktok/oct.json`); slides in `social/tiktok/<month>/`.
+- Scheduled: 9–31 Oct (23 carousels). The Monday routine adds the next week's carousels with the country posts.
