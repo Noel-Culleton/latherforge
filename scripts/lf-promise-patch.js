@@ -16,7 +16,8 @@ if (!s.includes('sell 10,000 something')) {
   if (fi < 0 || fb < 0 || fb - fi > 1500) fail('founder blockquote anchor not found')
   const at = fb + '</blockquote>'.length
   const quote =
-    '<blockquote style={{ marginTop: \'56px\' }}>' +
+    '<div style={{ width: \'48px\', height: \'3px\', background: \'var(--g)\', margin: \'48px auto 0\' }} />' +
+    '<blockquote style={{ marginTop: \'40px\' }}>' +
     '<p>{"“We\'d rather give 100 makers more than they pay for than sell 10,000 something they don\'t use.”"}</p>' +
     '<footer>{"— Noel Culleton, Founder"}</footer>' +
     '</blockquote>'
@@ -30,7 +31,7 @@ if (!s.includes('Every Craft Pack should be worth')) {
   if (pi < 0 || pp < 0 || pp - pi > 400) fail('pricing subheading anchor not found')
   const at = pp + '</p>'.length
   const line =
-    '<p style={{ fontFamily: "\'Cormorant Garamond\', Georgia, serif", fontStyle: \'italic\', fontSize: \'1.35rem\', lineHeight: 1.4, marginTop: \'14px\' }}>' +
+    '<p style={{ fontFamily: "\'Cormorant Garamond\', Georgia, serif", fontStyle: \'italic\', fontSize: \'1.5rem\', lineHeight: 1.35, marginTop: \'20px\', color: \'var(--w)\', borderLeft: \'3px solid var(--g)\', paddingLeft: \'16px\' }}>' +
     '{"Every Craft Pack should be worth more than its €29. If it isn\'t, we haven\'t done our job."}' +
     '</p>'
   s = s.slice(0, at) + line + s.slice(at)
