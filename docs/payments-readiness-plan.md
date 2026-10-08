@@ -39,3 +39,20 @@ Checkout recovery, welcome, trial ends in 3 days, cancellation / win-back; refun
 ## Also pending
 - Re-publish the website from GitHub; settle PR #2 (free app) and merge the open branches.
 - Grant officer written OK before taking real payments.
+
+## Countries and currencies (decided 8 Oct, target Mon 12 Oct)
+Markets: US, Canada, Australia, UK, New Zealand, Ireland. South Africa dropped.
+
+Proposed prices (awaiting Noel's OK):
+
+| Currency | Craft Pack | Business Pack | Studio (coming 2027) |
+|---|---|---|---|
+| EUR | €29 | €49 | €89 |
+| USD | $29 | $49 | $89 |
+| CAD | C$39 | C$65 | C$119 |
+| AUD | A$45 | A$75 | A$139 |
+| GBP | £25 | £42 | £75 |
+| NZD | NZ$49 | NZ$82 | NZ$149 |
+
+Scope for Monday: (1) Stripe multi-currency prices + upgrade page shows local price; (2) in-app currencies add CAD/AUD/NZD, replace hard-coded € (AI Assistant, Etsy generator, lots, stock reports), add "no VAT / sales tax" option; (3) label note "rules: EU/UK" — country label rules later.
+Tax: UK VAT from first sale for non-UK sellers; others above thresholds. Stripe Tax on; accountant before launch.
