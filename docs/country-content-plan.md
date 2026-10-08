@@ -63,9 +63,11 @@ North America gets 3 days a week because it is the biggest market (about 83% of 
 
 Supplier names and legal rules are checked against real sources before publishing. Nothing is invented.
 
-## Links to use
-Until the site is republished from GitHub, only these pages are live: https://latherforge.com/lye-calculator/ · https://latherforge.com/etsy-pricing-calculator/ · https://latherforge.com/early-access/
-Blog links get added once each post is live.
+## Links: none on Facebook
+Facebook cuts reach for posts with links (the Page gets about 2 link posts a month). Country posts say "Free soap calculator on our profile 👆" (or "Free pricing calculator" for business topics) and never include a URL. Links belong on Pinterest pins and blog posts.
+
+## Scheduled so far
+Country lane: 9–31 Oct (23 posts, all with hook images, no links). The Monday routine fills each next week from 1 Nov.
 
 ## Weekly routine
 - Every Monday: Claude writes and schedules the next 7 country-lane posts in Metricool, and reports last week's Facebook reach per country.

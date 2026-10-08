@@ -5,7 +5,7 @@ Rule: one Short every day at 19:00 Irish time on Facebook (Reel), TikTok and You
 | Dates | Videos | Status |
 |---|---|---|
 | to 31 Oct | Short05–36 | Scheduled in Metricool |
-| 1 Nov – 27 Nov | Short37–63 (already rendered on Noel's PC) | **Needs one PC session to upload and schedule** (3 Nov already has "Does handmade soap expire?") |
+| 1 Nov – 27 Nov | Short37–63 (already rendered on Noel's PC) | **Needs one PC session to upload and schedule** (3 Nov already has "Does handmade soap expire?", which repeats the 31 Oct DOS Short. Replace it with an unused Short when loading November) |
 | 28 Nov – 31 Jan | Short64–128 (65 topics in `topics_batch3.json`) | **Needs rendering on Noel's PC**, then scheduling |
 
 December = launch countdown: keep the free-calculator call to action until the January launch offer is confirmed.
