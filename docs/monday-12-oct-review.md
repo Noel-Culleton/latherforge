@@ -12,6 +12,8 @@ Goal: leave the meeting with every launch-readiness decision made, so the Base44
 | 5 | Abandoned-checkout offer | 1st email no discount; 2nd email first month €15, or none |
 | 6 | Free app at /app/ | Keep (close PR #2) or drop (merge PR #2) |
 | 7 | January ad budget | See docs/jan-2027-ads-estimate.md (no US ads; €1,450 total, or lean €850 for Canada + Australia) |
+| 8 | Black Friday offer (27–30 Nov) | Free "Founding Member" price lock (e.g. Craft Pack €24/month for 12 months from January), no money taken. Paid vouchers not before grant OK + live checkout + accountant |
+| 9 | Christmas line | "The gift every soap maker deserves" (self-gift + "tag a soap maker" share). Use "the business app for soap makers"; test "operating system" as a hook only |
 
 ## 2. Check the Base44 work (15 min)
 Saved as a checkpoint, not published; checkout still switched off.
