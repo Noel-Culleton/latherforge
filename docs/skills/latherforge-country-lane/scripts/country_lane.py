@@ -121,7 +121,7 @@ def render(batch):
 def payloads(batch, sha):
     for p in json.load(open(batch)):
         fb = {"autoPublish": True, "draft": False, "descendants": [], "firstCommentText": "", "hasNotReadNotes": False,
-              "media": [RAW.format(sha=sha, path=rel(fb_path(p)))], "mediaAltText": [f"{p['hook']}. {p['sub']}"],
+              "media": [RAW.format(sha=sha, path=rel(fb_path(p)))], "mediaAltText": [(p['hook'] if p['hook'][-1] in '?!.' else p['hook'] + '.') + ' ' + p['sub']],
               "providers": [{"network": "facebook"}], "publicationDate": {"dateTime": p['fb_when'][:19], "timezone": "Europe/Dublin"},
               "shortener": False, "smartLinkData": {"ids": []}, "text": p['fb_text'], "facebookData": {"type": "POST"}}
         pts = '\n'.join(f"{i}. {h} – {s}" for i, (h, s) in enumerate(p['points'], 1))

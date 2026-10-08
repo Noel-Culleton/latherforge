@@ -65,4 +65,4 @@ Canada: winter shipping, craft-fair season, Health Canada CNF follow-ups, biling
 - After 31 Jan 2027, ask Noel whether to continue the country lane past launch and with what call to action.
 
 ## Results log (add one line per week when Noel shares numbers, and turn it into a rule)
-- 8 Oct 2026: lane started. 23 Facebook posts + 23 TikTok carousels scheduled 9-31 Oct. No results yet.
+- 8 Oct 2026: lane started. 23 Facebook posts + 23 TikTok carousels scheduled 9-31 Oct; batch 1-14 Nov (14 + 14) booked with social/country_lane.py. No results yet.
