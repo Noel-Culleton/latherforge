@@ -53,7 +53,7 @@ if (!s.includes('That\'s the promise')) {
   const band =
     '<section className="sec" style={{ background: \'radial-gradient(120% 90% at 20% 0%, #3A2A1F 0%, var(--wd) 70%)\', color: \'var(--c)\' }}>' +
     '<div className="wrap">' +
-    '<p className="kick" style={{ color: \'var(--gs)\' }}>Our promise</p>' +
+    '<p className="kick" style={{ color: \'var(--gs)\' }}>Value over volume</p>' +
     '<div style={{ width: \'64px\', height: \'3px\', background: \'var(--g)\', margin: \'16px 0 22px\' }} />' +
     '<h2 style={{ fontSize: \'clamp(2.4rem, 6vw, 4.6rem)\', color: \'#fff\', maxWidth: \'820px\' }}>More than you pay for. ' +
     '<em style={{ fontStyle: \'italic\', color: \'var(--g)\' }}>{"That\'s the promise."}</em></h2>' +
