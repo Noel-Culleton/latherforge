@@ -1,6 +1,6 @@
 # Soap business outreach plan: follow → warm up → email
 
-**Goal:** 300–500 real soap businesses in Canada, Australia, the UK, New Zealand, Ireland and the US know who LatherForge is before launch, and ~10–20% try it.
+**Goal:** about 750 real soap businesses (10 a day from 8 Oct to 24 Dec) in Canada, Australia, the UK, New Zealand, Ireland and the US know who LatherForge is before launch, and ~10–20% try it.
 **Tracker:** `outreach/soap-business-tracker.csv` (open in Excel or Google Sheets; one row per business).
 
 ## Stage 1: Find and follow (now – end of November)
@@ -9,7 +9,7 @@
    - "handmade soap" + country/city (e.g. "handmade soap Toronto", "soap Melbourne", "soap Auckland", "artisan soap Dublin", "soap company Manchester")
    - "cold process soap", "natural soap company", "soap studio", "soapery", "skincare small batch"
 2. Pick **real selling businesses**: posts in the last month, sells online or at markets, has a website or shop. Skip hobbyists with no shop.
-3. **Follow 20–25 a day, max.** Following hundreds in one go can get the Page restricted.
+3. **Follow and log 10 a day, every day until Christmas** (about 750 by launch). Steady daily numbers are also safest: following hundreds in one go can get the Page restricted.
 4. Add each one to the tracker: name, country, Facebook link, website.
 
 Where else to find them: Etsy shop "about" pages, craft-fair stallholder lists, the LatherForge TikTok and Instagram followers who run soap businesses. Facebook groups are fine for *finding* names, but never post promotions or DM people from groups.
@@ -45,9 +45,10 @@ No email listed, only a contact form? Note "form only". You can send a short ver
 - Anyone who signs up: welcome email + ask for feedback (early users become testimonials).
 - Weekly: count followed / emailed / replied / signed up. I'll add it to the Monday report if you share the sheet.
 
-## Weekly targets
-| Week | Follow | Engage | Emails |
+## Weekly targets (10 a day)
+| Period | New businesses followed + logged | Running total | Emails |
 |---|---|---|---|
-| Now – 30 Nov | 100–150 a week | Everyone followed | 0 |
-| 1–10 Dec | Keep going | Keep going | Wave 1: 10–20 a day |
-| 4–15 Jan | — | — | Wave 2: 10–20 a day |
+| 8–31 Oct | 10 a day | ~240 | 0 |
+| 1–30 Nov | 10 a day | ~540 | 0 |
+| 1–24 Dec | 10 a day | ~750 | Wave 1 (1–10 Dec): 10–20 a day to the warmest |
+| 4–15 Jan | stop following | — | Wave 2: launch email to everyone on the list, 10–20 a day |
