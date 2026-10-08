@@ -67,14 +67,16 @@ if (!s.includes('Value over volume')) {
   s = s.slice(0, at) + band + s.slice(at)
 }
 
-// 4. Top strip: the one-line promise, first thing inside the page wrapper (directly under the nav).
+// 4. Top strip: the one-line promise, first thing inside the page wrapper. The site nav is position:fixed
+//    (68px high) and the next band has 84px top padding to clear it, so the strip is offset by the nav height
+//    and pulls the following band up by 56px to keep the page rhythm.
 if (!s.includes('data-strip="promise"')) {
   const li = s.search(/className=["']lf["']/)
   const le = li < 0 ? -1 : s.indexOf('>', li)
   if (li < 0 || le < 0 || le - li > 200) fail('page wrapper (className="lf") anchor not found')
   const at = le + 1
   const strip =
-    '<div data-strip="promise" style={{ background: \'var(--g)\', color: \'var(--wd)\', textAlign: \'center\', padding: \'9px 20px\', fontSize: \'0.78rem\', fontWeight: 600, letterSpacing: \'0.14em\', textTransform: \'uppercase\' }}>' +
+    '<div data-strip="promise" style={{ background: \'var(--g)\', color: \'var(--wd)\', textAlign: \'center\', padding: \'9px 20px\', fontSize: \'0.78rem\', fontWeight: 600, letterSpacing: \'0.14em\', textTransform: \'uppercase\', margin: \'68px 0 -56px\', position: \'relative\', zIndex: 1, lineHeight: \'20px\' }}>' +
     '{"Always more than you pay for."}</div>'
   s = s.slice(0, at) + strip + s.slice(at)
 }
