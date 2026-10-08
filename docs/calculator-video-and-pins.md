@@ -7,9 +7,10 @@ Target keyword: "soap calculator" (8,100 US searches/month, difficulty 9, from t
 
 | Piece | Made by | Why |
 |---|---|---|
-| Screen recording of the calculator | Noel (real screen capture) | AI video garbles UI text and numbers. A tutorial has to show the real tool. |
-| Voiceover | Azure neural voice via the longform-builder skill, or Noel's own voice | Real script below. |
-| Bench b-roll (weighing oils, pouring) | Noel's clip library first. Google Flow only to fill gaps | Soap makers spot fake pours. |
+| Screen recording of the calculator | Recorded automatically by Claude from the real site (headless browser, 1080p, no filming) | AI video garbles UI text and numbers. A tutorial has to show the real tool. |
+| Voiceover | ElevenLabs, from docs/calculator-voiceover.txt (one clip per section, placed at its start time) | Spoken-form text, numbers written out. |
+| Presenter intro (optional) | HeyGen avatar, 15 to 20 seconds, using the 0:00 hook | Keeps the video human without filming. Label it AI-generated. |
+| Bench b-roll (weighing oils, pouring) | Optional. Noel's clip library, or Google Flow clips | Soap makers spot fake pours, so keep it short. |
 | Thumbnail background and pin backgrounds | Google Flow (images) | Hero shots are where AI is safest. Text is added in Canva, never by the AI. |
 | Script, title, description, pinned comment, Short, pin copy | This doc | Done. |
 
