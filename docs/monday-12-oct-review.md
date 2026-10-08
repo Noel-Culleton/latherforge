@@ -11,7 +11,7 @@ Goal: leave the meeting with every launch-readiness decision made, so the Base44
 | 4 | Waitlist | Pick one: Zoho (website) or Base44 EarlyAccess |
 | 5 | Abandoned-checkout offer | 1st email no discount; 2nd email first month €15, or none |
 | 6 | Free app at /app/ | Keep (close PR #2) or drop (merge PR #2) |
-| 7 | January ad budget | See docs/jan-2027-ads-estimate.md (recommended €2,950 total, or lean €1,950 for US + Canada + retargeting) |
+| 7 | January ad budget | See docs/jan-2027-ads-estimate.md (no US ads; €1,450 total, or lean €850 for Canada + Australia) |
 
 ## 2. Check the Base44 work (15 min)
 Saved as a checkpoint, not published; checkout still switched off.
