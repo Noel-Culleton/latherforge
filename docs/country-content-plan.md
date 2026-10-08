@@ -71,3 +71,8 @@ Blog links get added once each post is live.
 - Every Monday: Claude writes and schedules the next 7 country-lane posts in Metricool, and reports last week's Facebook reach per country.
 - Every 2 weeks: drop topics with low reach and repeat the winners.
 - Mid-December: switch topics to New Year beginners (January is the peak search month).
+
+## Hook images (every post)
+Every country-lane post gets a 1080×1350 hook image: brown and gold LatherForge style, country chip, big hook line, one-line subhead, "Free soap calculator · latherforge.com" footer.
+- Made with `social/make_hooks.py` (edit the `posts` list, run `python3 social/make_hooks.py social/country-lane`).
+- Images are pushed to `social/country-lane/` and linked by commit (raw.githubusercontent.com). Metricool copies each image to its own storage when the post is saved.
