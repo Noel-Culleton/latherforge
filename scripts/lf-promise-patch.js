@@ -37,7 +37,7 @@ if (!s.includes('Every Craft Pack should be worth')) {
   s = s.slice(0, at) + line + s.slice(at)
 }
 
-// 3. "Our promise" band: new dark band directly after the pricing section, before the FAQ.
+// 3. "Value over volume" band: new dark band directly after the pricing section, before the FAQ.
 if (!s.includes('Value over volume')) {
   const ii = s.indexOf('id="pricing"')
   const se = ii < 0 ? -1 : s.indexOf('</section>', ii)
@@ -67,5 +67,17 @@ if (!s.includes('Value over volume')) {
   s = s.slice(0, at) + band + s.slice(at)
 }
 
+// 4. Top strip: the one-line promise, first thing inside the page wrapper (directly under the nav).
+if (!s.includes('data-strip="promise"')) {
+  const li = s.search(/className=["']lf["']/)
+  const le = li < 0 ? -1 : s.indexOf('>', li)
+  if (li < 0 || le < 0 || le - li > 200) fail('page wrapper (className="lf") anchor not found')
+  const at = le + 1
+  const strip =
+    '<div data-strip="promise" style={{ background: \'var(--g)\', color: \'var(--wd)\', textAlign: \'center\', padding: \'9px 20px\', fontSize: \'0.78rem\', fontWeight: 600, letterSpacing: \'0.14em\', textTransform: \'uppercase\' }}>' +
+    '{"Always more than you pay for."}</div>'
+  s = s.slice(0, at) + strip + s.slice(at)
+}
+
 fs.writeFileSync(f, s)
-console.log('PATCH OK: ' + f + ' (founder quote, pricing line, promise band)')
+console.log('PATCH OK: ' + f + ' (top strip, founder quote, pricing line, promise band)')
