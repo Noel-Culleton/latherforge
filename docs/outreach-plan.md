@@ -38,6 +38,7 @@ No email listed, only a contact form? Note "form only". You can send a short ver
 - I write each email personally (their name and product), put it in your Gmail as a **draft**, and you check and send. **10–20 a day.**
 - Send from a LatherForge address (latherforge@zohomail.eu, or hello@latherforge.com once set up), not a personal Gmail.
 - Every email: who you are, why you're writing to *their* business, one link, "reply STOP and I won't email again". Stop immediately if anyone says no. Business addresses only.
+- The one link is always `https://latherforge.com/early-access/?utm_source=outreach&utm_medium=email`. Anyone who clicks lands in the Meta Pixel website audience (once the pixel and cookie banner are live), so they can see LatherForge ads later. **Do not upload the email list to Meta** (Custom Audience): these are prospects who never agreed to it, and business addresses rarely match a Facebook account anyway.
 - Canada/Australia: only email addresses they publish publicly, and never if their site says "no marketing emails". Not legal advice.
 
 ## Stage 5: Follow-up
