@@ -6,6 +6,7 @@ export interface Post {
   readTime: string
   category: string
   sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string } }>
+  faqs?: Array<{ q: string; a: string }>
 }
 
 export const posts: Post[] = [
@@ -186,6 +187,28 @@ export const posts: Post[] = [
         heading: 'Can You Speed Up the Cure?',
         text: 'Using less water in your recipe (a stronger lye solution) shortens cure time a little, and hot process gives a usable bar sooner. But there is no real shortcut for a high olive oil bar. Warm rooms and fans help with airflow, but heat and direct sun can do more harm than good.'
       }
+    ],
+    faqs: [
+      {
+        q: 'Can I use soap before it has cured?',
+        a: 'Cold process soap is usually safe to use after 48 hours once saponification has finished, provided the recipe was correctly calculated. It will be soft, wear away quickly and may feel harsher than a cured bar, so it is best kept for personal testing rather than selling or gifting.'
+      },
+      {
+        q: 'Do you need to cure melt and pour soap?',
+        a: 'No. Melt and pour base has already been saponified by the manufacturer, so it can be used as soon as it has set. Wrap it promptly, because melt and pour bases can attract moisture from the air and "sweat".'
+      },
+      {
+        q: 'Does hot process soap need to cure?',
+        a: 'Hot process soap is safe to use once it has cooled and hardened, usually within a day or two. A 1–4 week cure still helps: the bar gets harder, milder and longer lasting as excess water evaporates.'
+      },
+      {
+        q: 'Why does castile soap take so long to cure?',
+        a: 'Olive oil makes a soft bar that holds on to water and lathers slowly at first. Over 6 to 12 months the bar hardens and the slimy lather becomes creamier, which is why castile makers cure for much longer than the usual 4–6 weeks.'
+      },
+      {
+        q: 'Can soap cure for too long?',
+        a: 'Most bars only get better with time. The risk with very long cures is rancidity, which shows up as orange spots and an off smell, especially in recipes high in soft oils or with a high superfat. Store curing bars somewhere cool, dark and airy and use them within a year or two.'
+      }
     ]
   },
   {
@@ -353,6 +376,28 @@ export const posts: Post[] = [
         heading: 'How LatherForge Helps',
         text: 'Most of this comes down to good records: exact recipes, batch numbers, ingredient lot numbers and correct labels. LatherForge is being built to keep those records for you and generate labels from your recipes. It launches in January 2027.',
         link: { href: '/early-access/', label: 'Register for early access' }
+      }
+    ],
+    faqs: [
+      {
+        q: 'Do I need a safety assessment to sell handmade soap in Ireland or the UK?',
+        a: 'Yes. Soap sold for washing skin is a cosmetic, so each product needs a Cosmetic Product Safety Report signed off by a qualified safety assessor before it is sold. This applies from the very first sale, including craft fairs, markets and Etsy.'
+      },
+      {
+        q: 'Can I sell soap at a craft fair without registering it?',
+        a: 'No. The cosmetics rules apply wherever and however you sell. In Ireland, Northern Ireland and the EU each product must be notified on the CPNP before it goes on sale; in Great Britain it must be notified through the UK SCPN service.'
+      },
+      {
+        q: 'How much does a cosmetic safety assessment cost?',
+        a: 'Prices vary by assessor and by how many recipes and fragrance variations you have. Many assessors offer templated assessments for a base soap recipe with several fragrance options, which is usually cheaper than assessing every product separately. Get quotes from more than one assessor before you commit.'
+      },
+      {
+        q: 'Do I need a separate safety assessment for every scent?',
+        a: 'Usually, yes, because each fragrance changes the product formula and the allergens it contains. Some assessors can cover a single base recipe with a list of approved fragrance variations in one report, so ask about that option.'
+      },
+      {
+        q: 'Is soap sold for laundry or cleaning treated the same way?',
+        a: 'No. Soap sold only for laundry or household cleaning is a detergent, not a cosmetic, and falls under detergent and chemical labelling rules instead. If it is sold for use on skin as well, cosmetics law applies.'
       }
     ]
   }

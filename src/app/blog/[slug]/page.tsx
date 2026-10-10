@@ -37,8 +37,15 @@ export default async function BlogPostPage({ params }: Props) {
 
   const allPosts = getAllPosts().filter(p => p.slug !== post.slug).slice(0, 2)
 
+  const faqSchema = post.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+  } : null
+
   return (
     <>
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <Nav />
 
       <section style={{ background: 'linear-gradient(160deg, #FAF7F2 0%, #F0EAE0 100%)', paddingTop: '120px', paddingBottom: '3rem' }}>
@@ -94,6 +101,20 @@ export default async function BlogPostPage({ params }: Props) {
               </div>
             ))}
           </div>
+
+          {post.faqs && post.faqs.length > 0 && (
+            <div style={{ borderTop: '1px solid #E8DFD0', paddingTop: '2.5rem', marginTop: '1rem' }}>
+              <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 500, color: '#3E2820', marginBottom: '1.5rem', lineHeight: 1.3 }}>
+                Frequently Asked Questions
+              </h2>
+              {post.faqs.map((f, i) => (
+                <div key={i} style={{ marginBottom: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1.05rem', fontWeight: 600, color: '#3E2820', marginBottom: '0.4rem' }}>{f.q}</h3>
+                  <p style={{ fontSize: '0.95rem', color: '#5C4A3A', lineHeight: 1.8 }}>{f.a}</p>
+                </div>
+              ))}
+            </div>
+          )}
 
           <div style={{ margin: '3.5rem 0', background: '#EBF2EC', border: '1px solid rgba(122,158,126,0.3)', padding: '2.5rem', textAlign: 'center' }}>
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A9E7E', marginBottom: '0.5rem' }}>Free Tool</p>
