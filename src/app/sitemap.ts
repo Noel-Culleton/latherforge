@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${BASE}/`, changeFrequency: 'monthly', priority: 1.0 },
     { url: `${BASE}/lye-calculator/`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/etsy-pricing-calculator/`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/sap-values/`, changeFrequency: 'monthly', priority: 0.8 },
     ...(recipes.length > 0 ? [{ url: `${BASE}/soap-recipes/`, changeFrequency: 'weekly' as const, priority: 0.8 }] : []),
     ...recipes.map(r => ({ url: `${BASE}/soap-recipes/${r.slug}/`, changeFrequency: 'monthly' as const, priority: 0.7 })),
