@@ -232,3 +232,36 @@ Checked 11 Oct 2026 against the website calculator (`src/lib/soap.ts`):
 - Reference recipes (the 6 above + Lavender Oatmeal) run through BOTH calculators daily and after every code change. No AI credits.
 - Email Noel immediately if any result changes or the two calculators differ by more than 0.1 g.
 - Public wording only once the check is running: "Every lye calculation uses published SAP values and is tested automatically against reference recipes every day." Keep the safety note: the check proves the maths, not the maker's scale.
+
+# Part I — Stock check system (decided 11 Oct 2026)
+
+Builds on `StockCount` / `StockCountLine` already defined in the procurement build pack (entity 13). That defined the record; this adds who, when, the schedule and the screen. Check in Base44 whether the two entities exist from stage 1 before building.
+
+## Who and when (add to `StockCount`)
+- `counted_by` (text, required): name of the person who counted. Defaults to the signed-in user; editable so a helper's name can be recorded (single-user accounts today; becomes a user link when Studio team accounts arrive).
+- `started_at`, `completed_at` (date-time).
+- `approved_by` (text) and `approved_at` (date-time): who confirmed the variances were posted.
+- `count_type`: `full` (everything) or `partial` (one category, e.g. oils, fragrance, packaging, finished bars).
+- `StockCountLine`: add `counted_at` (date-time) and `note` per line.
+
+## Schedule and reminders
+- Maker sets a stock check schedule in Settings: default **full count monthly** (first Monday), optional partial counts (e.g. fragrance oils fortnightly). Off by default for Starter, suggested on paid plans.
+- Morning check (Part F) shows "Stock check due today" and "Stock check overdue (X days)" until done.
+- Dashboard tile: last full count date, by whom, and value of variances found.
+
+## Counting screen (mobile-first, used standing at the shelves)
+1. Start count → choose full or category → `counted_by` confirmed.
+2. One line per item/lot: name, lot, location; maker types the counted quantity. Expected quantity hidden by default (blind count avoids just confirming the number), with a "show expected" toggle.
+3. Save progress any time; can finish later.
+4. Review screen: items with a difference, quantity and € value, colour-coded. Reason code required for each difference (spillage, evaporation, weighing tolerance, damage, sampling, data error, other).
+5. **Approve** → posts one adjustment movement per difference (append-only ledger; nothing edited). Count locked, `approved_by`/`approved_at` stamped.
+
+## History and reports
+- Stock check history: date, type, counted by, approved by, items counted, differences, € value of variances.
+- Item history shows every count it appeared in.
+- Printable/exportable count sheet (plain export on all plans, per Part 6d of the Lyla brief).
+
+## Rules
+- A count never edits stock directly — only approved adjustment movements change it.
+- Orders and batches can continue during a count; the review screen recalculates expected quantities at approval and flags anything that moved meanwhile.
+- Rule-based, no AI credits.
