@@ -114,3 +114,26 @@ Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
 1. Read Etsy / Shopify order emails with fixed pattern rules first (no AI credit); use AI only when the pattern fails. Biggest saving.
 2. Send "orders to check" only when something needs checking, never a daily empty email.
 3. Review usage weekly for the first 8 weeks after launch, then monthly. Set final plan caps from real data, not these estimates.
+
+# Part E — Usage limits and top-ups (decided 11 Oct 2026)
+
+## Limits (build for launch, using `UsageLog` counts from Part D)
+- **80%:** in-app notice + email: "You've used most of this month's Lyla and auto-import allowance."
+- **100%:** pause AI extras only: Lyla questions, AI reading of non-standard order emails, invoice snap & fill.
+- **Never pause:** recording sales, stock updates, batches, recipes, the lye calculator, order emails read by pattern rules (no AI credit). Stopping these would corrupt the maker's records.
+- Orders that need AI after the cap go to "Orders to check" for manual confirmation. Nothing is dropped.
+- Allowance resets on the 1st of each month.
+
+## At the limit, offer
+1. **Upgrade (launch):** "Move to Business Pack for 3× the allowance." Primary path, consistent with the one-plan rule.
+2. **Top-up (after launch):** one option only: "Extra 500 credits — €5, this month only." Stripe one-off payment. Shown only at the limit, never listed as a product on the pricing page (keeps the buying-simplicity rule: no packs).
+3. **Wait** for the monthly reset.
+
+## Economics
+- Cost ≈ €0.005 per credit (€100 / 20,000). 500 credits ≈ €2.50 cost, sold at €5.
+
+## Hospitality
+- First time a paying customer hits the limit: automatic one-off free boost of 200 credits ("added on us this month"). Cost ≈ €1. Once per customer.
+
+## Admin
+- Usage page (Part D) shows who is at 80% / 100%, top-ups bought and free boosts given.
