@@ -181,3 +181,24 @@ Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
 
 ## Later
 - Connected Google Drive folder: maker drops order export files in; LatherForge imports them automatically (rule-based, no AI credit). Build after the email route works.
+
+# Part G — Out-of-stock order lines (decided 11 Oct 2026)
+
+LatherForge never mentions or suggests other stock. It reports the shortage; the maker decides.
+
+## When an order line can't be filled from stock
+- Order is recorded; line flagged "Short: X ordered, Y in stock".
+- Stock is never pushed below zero by an order.
+- Morning check (Part F) lists the line. No suggestions.
+
+## Maker sets the line status
+| Status | Effect |
+|---|---|
+| `back_order` | Line stays open. Stock is deducted when the maker marks it made/shipped. Listed in the morning check until closed |
+| `cancelled` | Sale reversed (reversing movement if any stock moved), customer history updated. A shop cancellation email read by pattern rules applies this automatically |
+| `replaced` | Original line closed as replaced, no stock change. The replacement arrives as a new or updated order (forwarded email or file upload) and deducts its own stock normally |
+
+## Data
+- Order line field `line_status`: `fulfilled`, `short`, `back_order`, `cancelled`, `replaced`.
+- `replaced_by_order_id` (optional) to link the replacement order when known.
+- All changes logged; stock only moves on real orders, never on suggestions.
