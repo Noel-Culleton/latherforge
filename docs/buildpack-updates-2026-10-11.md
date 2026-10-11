@@ -84,3 +84,33 @@ Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
 - [ ] Can Base44 receive inbound email? If not: an inbound email service or Make.com/Zapier mailhook passes emails in.
 - [ ] Collect one real order email each from Etsy, Shopify and a website shop to test parsing.
 - [ ] Decide the order address format, e.g. name@orders.latherforge.com (needs DNS/MX on a subdomain at IONOS).
+
+# Part D — Base44 usage budget and tracking (decided 11 Oct 2026)
+
+**Budget assumption:** ~20,000 Base44 interactions for ~€100/month (Noel's plan figure). Confirm exactly which actions count (AI calls, emails sent, file uploads, inbound email) on the current Base44 plan.
+
+## Estimated monthly use per paying customer (estimates, test after launch)
+
+| What | Typical | Busy |
+|---|---|---|
+| Lyla questions | 40 | 100 |
+| Order emails read by AI | 50 | 200 |
+| "Orders to check" emails | 20 | 30 |
+| Supplier invoice snap & fill | 5 | 15 |
+| Other AI tools (recipes, listings, pricing) | 20 | 50 |
+| Reminder emails (cure, low stock) | 10 | 20 |
+| **Total** | **~150** | **~400** |
+
+**Planning rule:** ~200 interactions per paying customer per month. 100 customers ≈ 20,000 (at the limit). Free Starter users and the early-access Lyla demo come on top (est. +2,000–5,000). Move up a Base44 tier at ~120–150 paying customers or if demo traffic spikes.
+
+## Track usage from day one (must build)
+- New entity **`UsageLog`**: `user_id`, `date`, `action_type` (enum: `lyla_question`, `order_email_ai_read`, `order_email_pattern_read`, `invoice_snap`, `ai_tool`, `email_sent`, `demo_question`), `plan`, `credits_used` (number, default 1).
+- Write one row every time an AI call or email is made (backend function, not the frontend).
+- **Admin usage page (Noel only):** credits this month vs budget, by action type, by plan, top 10 heaviest users, demo questions this week, projected month-end total.
+- **Alerts:** email Noel at 70% and 90% of the monthly budget.
+- **Per-user caps by plan,** enforced from `UsageLog` counts: Lyla questions per month and auto-imported orders per month (Starter lowest). Demo: 3 questions per visitor.
+
+## Keep usage down
+1. Read Etsy / Shopify order emails with fixed pattern rules first (no AI credit); use AI only when the pattern fails. Biggest saving.
+2. Send "orders to check" only when something needs checking, never a daily empty email.
+3. Review usage weekly for the first 8 weeks after launch, then monthly. Set final plan caps from real data, not these estimates.
