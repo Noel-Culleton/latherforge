@@ -95,7 +95,7 @@ Decided 11 Oct 2026. User drops a screenshot, invoice or photo → Lyla drafts t
 - [ ] Test with Noel's own real supplier invoices. This also fills costing blocker 3 (supplier codes and pack sizes)
 - [ ] Privacy policy line: uploads are sent to the AI provider to be read; images not kept unless the user saves them
 
-**Monday priority order:** (0) lye calculator fundamentals: fix the 3 issues in build pack updates Part H, (1) merge the branch, (2) Lyla test questions, (3) snap & fill schema check and build plan, (4) early-access Ask Lyla box. Keep it to this; the homepage refresh is also due Monday.
+**Monday priority order:** (0) lye calculator fundamentals: fix the 3 issues in build pack updates Part H, (1) merge the branch, (2) Lyla test questions, (3) snap & fill schema check and build plan, (4) early-access Ask Lyla box, (5) check whether StockCount / StockCountLine exist in Base44 and agree the stock check build (build pack updates Part I). Keep it to this; the homepage refresh is also due Monday.
 
 ## 6b. Ask Lyla on every page (roadmap)
 
@@ -103,6 +103,8 @@ Decided 11 Oct 2026. User drops a screenshot, invoice or photo → Lyla drafts t
 |---|---|---|
 | 1 | Side panel on every page (bottom sheet on mobile), general soap Q&A, disclaimer | Launch |
 | 1b | Snap & fill for suppliers and supplier items, with review and approve | Launch |
+| 1c | Stock check system: scheduled full/partial counts, who counted and approved, blind counting, approve to post (build pack updates Part I) | Launch |
+| 1d | Automatic orders via email forwarding, Needs attention list, morning check, usage tracking and limits (build pack updates Parts C–G) | Launch |
 | 2 | Lyla knows the current page and record, reads the user's own data (read-only) | First paying users |
 | 3 | Conversations saved as notes on the record they're about | With stage 2 |
 | 4 | Snap & fill extended: invoices → stock in, customer orders, batch sheets | After launch |
