@@ -182,23 +182,37 @@ Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
 ## Later
 - Connected Google Drive folder: maker drops order export files in; LatherForge imports them automatically (rule-based, no AI credit). Build after the email route works.
 
-# Part G — Out-of-stock order lines (decided 11 Oct 2026)
+# Part G — "Needs attention" orders (decided 11 Oct 2026)
 
-LatherForge never mentions or suggests other stock. It reports the shortage; the maker decides.
+LatherForge never suggests other stock. The maker resolves each problem order by hand.
 
-## When an order line can't be filled from stock
-- Order is recorded; line flagged "Short: X ordered, Y in stock".
-- Stock is never pushed below zero by an order.
-- Morning check (Part F) lists the line. No suggestions.
+## One list: Needs attention
+- Every problem order goes here: short stock, product not recognised, unclear quantity.
+- Visible on the dashboard and in Orders, with a count badge.
+- Stays out of the customer file, sales reports and stock until resolved.
+- Orders with no problem flow through automatically as before.
 
-## Maker sets the line status
-| Status | Effect |
+## Three buttons per problem line (each line approved one at a time)
+| Button | Result |
 |---|---|
-| `back_order` | Line stays open. Stock is deducted when the maker marks it made/shipped. Listed in the morning check until closed |
-| `cancelled` | Sale reversed (reversing movement if any stock moved), customer history updated. A shop cancellation email read by pattern rules applies this automatically |
-| `replaced` | Original line closed as replaced, no stock change. The replacement arrives as a new or updated order (forwarded email or file upload) and deducts its own stock normally |
+| **Wait** | Becomes a back order and stays on the list. Stock deducted when the maker marks it made |
+| **Cancel** | Nothing recorded, no stock change |
+| **Change to…** | Maker picks the new product from their own list. That product's stock is deducted; the line shows "Changed: [original] → [new]" on the order, the customer's history and the stock movement |
+
+On approve, customer file, sales and stock update together.
+
+On Cancel or Change, show: "Remember to also update or refund this order in Etsy / Shopify / your website."
+
+## Customer message: copy, don't send (launch)
+- After each choice, show a ready-written message (back order / cancellation / product change) with a **Copy** button.
+- Maker pastes it into Etsy Messages, Shopify or their own email. Works for every channel, respects Etsy's buyer-contact rules, no email setup, no credits. The maker sending it is the approval.
+- Later: Approve & send from LatherForge for website and Shopify orders only.
+
+## Morning triage
+- Morning check (Part F) opens with "Needs attention: X orders", oldest first, with days waiting. Sent only when the list isn't empty.
+- Prevention line in the same check: "Low stock — reduce the quantity on your Etsy/Shopify listing for [product] ([n] left)." Reminder only. Automatic shop updates come later with direct connections.
 
 ## Data
-- Order line field `line_status`: `fulfilled`, `short`, `back_order`, `cancelled`, `replaced`.
-- `replaced_by_order_id` (optional) to link the replacement order when known.
-- All changes logged; stock only moves on real orders, never on suggestions.
+- Order `status`: `needs_attention`, `complete`, `back_order`, `cancelled`.
+- Order line: `line_status` (`ok`, `short`, `unmatched`, `back_order`, `cancelled`, `changed`), `original_product_id`, `changed_to_product_id`, `resolved_at`.
+- Stock never pushed below zero by an order.
