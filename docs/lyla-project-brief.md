@@ -41,6 +41,17 @@ Paste these into the Lyla agent instructions in Base44.
 6. For pricing questions, use the user's real costs and the LatherForge Etsy Pricing Calculator.
 7. Keep answers short and practical. Use steps and lists.
 8. If unsure, say so. Never guess on safety.
+9. End every answer about lye or compliance with: "Double-check this before you make soap. Lyla can get things wrong."
+
+### Mistakes disclaimer (decided 11 Oct 2026)
+
+Lyla can give wrong answers. The disclaimer is a backup to rule 2 and testing, not a replacement.
+
+- **Under the Ask Lyla box (always visible):** "Lyla is an AI assistant and can make mistakes. Always check lye and water amounts with the LatherForge Soap Calculator and wear gloves and goggles. Compliance answers are general guidance, not legal advice."
+- **First use (one-tap acknowledgement):** "I understand Lyla is an AI assistant and can make mistakes."
+- **Report button:** thumbs-down / "Report a wrong answer" on every reply. Log reports and fix weekly.
+- **Terms of Service:** add the same disclaimer.
+- Marketing copy still avoids "AI-powered", but the disclaimer must say Lyla is an AI assistant (honesty and EU AI Act transparency; confirm current timing before launch).
 
 ## 5. What to load into Lyla (knowledge)
 
@@ -96,7 +107,29 @@ A small, well-organised knowledge base beats a large pile of text.
 | Misspelling (Lila, Leila) | Always write "Lyla". Use the lye intro line |
 | Brand stretch to other crafts | Soap only until soap users are paying |
 
-## 9. Success check (first 30 days live)
+## 9. Phase 2: Lyla reads your own data (after launch)
+
+Decided 11 Oct 2026. Built step by step as real users start using the app, not before launch.
+
+**Why:** a general soap Q&A box is easy to copy, and ChatGPT already does it for free. Lyla that uses the user's own recipes, costs and batches is something ChatGPT and the free calculators can't do. This is the line that matters: "ChatGPT knows soap. Lyla knows your soap business."
+
+| Step | Lyla can answer | Uses the user's |
+|---|---|---|
+| 1 | "What does each bar of this recipe cost me?" | Recipes + ingredient costs |
+| 2 | "Lavender oil went up 20%. What happens to my margin?" | Costs + prices |
+| 3 | "Which batches are ready to sell this week?" | Batches + cure dates |
+| 4 | "What am I running low on?" | Inventory |
+| 5 | "Is this label right for the UK/EU?" | Recipe + compliance rules |
+
+**Rules for Phase 2**
+- Free 3-question demo on /early-access stays general (no user data).
+- Data-connected Lyla is for logged-in users only, and only ever reads that user's own records.
+- Add one step at a time, in the order users actually ask for. Log what paying users ask Lyla most and build the next step from that.
+- Lye amounts still come only from the calculator, even with user data.
+
+**Positioning:** "the soap business system with a built-in soap expert", not "an AI chatbot".
+
+## 10. Success check (first 30 days live)
 
 - Share of visitors who ask Lyla at least one question
 - Share of Lyla users who join the waitlist after 3 questions
