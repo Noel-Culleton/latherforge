@@ -167,3 +167,17 @@ Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
 
 ## Later
 - Connected Google Drive folder: maker drops order export files in; LatherForge imports them automatically (rule-based, no AI credit). Build after the email route works.
+
+# Part F — Morning check (decided 11 Oct 2026)
+
+**No substitutes.** LatherForge does not offer or apply ingredient, fragrance, packaging or product substitutes. It reports shortages; the maker decides what to do.
+
+## Morning check (rule-based, no AI credits)
+- Scheduled daily run (confirm Base44 scheduled automations on current plan; else a Make.com/Zapier schedule calls a backend function).
+- Checks: (1) stock vs planned batches and open orders, reusing the W10 shortage logic; (2) items below reorder level; (3) finished bars vs open orders.
+- Sends ONE summary email/in-app notice only when something needs attention. No empty emails.
+- Each shortage links to the existing review-then-commit purchase order flow (W10), so the maker can reorder in a few taps. Nothing is ordered or sent automatically.
+- Logs to `UsageLog` as `email_sent` (confirm whether Base44 counts it).
+
+## Later
+- Connected Google Drive folder: maker drops order export files in; LatherForge imports them automatically (rule-based, no AI credit). Build after the email route works.
