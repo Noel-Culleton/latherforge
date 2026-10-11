@@ -87,6 +87,38 @@ A small, well-organised knowledge base beats a large pile of text.
 - **A (preferred if possible):** embed the Base44 Lyla, if Base44 allows public, logged-out access
 - **B (fallback):** a small chat built directly on the LatherForge site using the same rules. More work, but full control over the 3-question cap and cost
 
+### Snap & fill: suppliers (start Monday, test before launch)
+Decided 11 Oct 2026. User drops a screenshot, invoice or photo → Lyla drafts the supplier and supplier items → user checks every field → taps Approve. Nothing saves without approval.
+- [ ] Read current Supplier and SupplierItem fields in Base44 (discuss-first protocol)
+- [ ] Agree the fields Lyla fills: supplier name, address, email, phone, website; item name, supplier code, pack size + unit, price, currency
+- [ ] Review screen: every field editable, uncertain fields highlighted, units and currency shown clearly (5 kg vs 0.5 kg, € vs £)
+- [ ] Test with Noel's own real supplier invoices. This also fills costing blocker 3 (supplier codes and pack sizes)
+- [ ] Privacy policy line: uploads are sent to the AI provider to be read; images not kept unless the user saves them
+
+**Monday priority order:** (1) merge the branch, (2) Lyla test questions, (3) snap & fill schema check and build plan, (4) early-access Ask Lyla box. Keep it to this; the homepage refresh is also due Monday.
+
+## 6b. Ask Lyla on every page (roadmap)
+
+| Stage | What | When |
+|---|---|---|
+| 1 | Side panel on every page (bottom sheet on mobile), general soap Q&A, disclaimer | Launch |
+| 1b | Snap & fill for suppliers and supplier items, with review and approve | Launch |
+| 2 | Lyla knows the current page and record, reads the user's own data (read-only) | First paying users |
+| 3 | Conversations saved as notes on the record they're about | With stage 2 |
+| 4 | Snap & fill extended: invoices → stock in, customer orders, batch sheets | After launch |
+| 5 | Action buttons with confirm ("Add to order", "Update stock") | Once stage 2 is reliable |
+| 6 | "Connect my platforms": Etsy first (apply for Etsy API access early), then Shopify and others, replacing Make.com | After Etsy approval |
+
+**Direction:** LatherForge becomes the place soap makers run their business and connect their sales channels, with Lyla doing the setup and data entry for them. Users always check and approve.
+
+## 6c. Studio / manufacturing: batch by volume (later)
+
+Bigger makers don't start from a mould size. They decide a total batch ("100 litres of this recipe"), make it in drums or large vessels, then pour into many moulds or machine moulds.
+- Add a second batch mode: **"Size by mould"** (current) or **"Size by total batch"** (litres or kg).
+- Lye maths works on weight, so litres must convert to kg with each oil's density before any lye calculation. Show the converted weights clearly for checking. Never calculate lye straight from litres.
+- After the batch: "split into moulds" to see how many moulds or bars the batch fills.
+- Studio tier feature. Build after launch, when Studio-size users ask for it.
+
 ## 7. Facebook launch (after Lyla is live and tested)
 
 | Step | Action |
