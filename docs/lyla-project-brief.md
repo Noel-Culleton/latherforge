@@ -111,6 +111,20 @@ Decided 11 Oct 2026. User drops a screenshot, invoice or photo → Lyla drafts t
 
 **Direction:** LatherForge becomes the place soap makers run their business and connect their sales channels, with Lyla doing the setup and data entry for them. Users always check and approve.
 
+## 6d. Exports (decided 11 Oct 2026)
+
+Plain export of a user's own data is never paywalled ("your recipes are always yours"). Polished, ready-to-use documents are the paid perk.
+
+| Plan | Export |
+|---|---|
+| Starter (free) | Plain export of own recipes and data: CSV/Excel, simple PDF |
+| Craft Pack | Printable recipe cards and batch sheets (weights, lye check, safety notes) |
+| Business Pack | Branded PDFs with their logo, costing and pricing reports, ingredient/INCI label PDFs, supplier price lists |
+| Studio | Product information file pack for the safety assessor (CPSR prep, never "compliant"), batch traceability / recall reports, bulk export of everything |
+
+- Lyla on request ("make me a PDF of my lavender recipe with costs") is a Business Pack and Studio perk, once she reads user data (stage 2).
+- Launch: plain export on all plans + printable batch sheets on Craft Pack. Branded and compliance PDFs after launch.
+
 ## 6c. Studio / manufacturing: batch by volume (later)
 
 Bigger makers don't start from a mould size. They decide a total batch ("100 litres of this recipe"), make it in drums or large vessels, then pour into many moulds or machine moulds.
