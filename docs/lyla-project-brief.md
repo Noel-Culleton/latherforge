@@ -95,7 +95,7 @@ Decided 11 Oct 2026. User drops a screenshot, invoice or photo → Lyla drafts t
 - [ ] Test with Noel's own real supplier invoices. This also fills costing blocker 3 (supplier codes and pack sizes)
 - [ ] Privacy policy line: uploads are sent to the AI provider to be read; images not kept unless the user saves them
 
-**Monday priority order:** (1) merge the branch, (2) Lyla test questions, (3) snap & fill schema check and build plan, (4) early-access Ask Lyla box. Keep it to this; the homepage refresh is also due Monday.
+**Monday priority order:** (0) lye calculator fundamentals: fix the 3 issues in build pack updates Part H, (1) merge the branch, (2) Lyla test questions, (3) snap & fill schema check and build plan, (4) early-access Ask Lyla box. Keep it to this; the homepage refresh is also due Monday.
 
 ## 6b. Ask Lyla on every page (roadmap)
 

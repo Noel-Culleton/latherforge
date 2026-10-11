@@ -216,3 +216,19 @@ On Cancel or Change, show: "Remember to also update or refund this order in Etsy
 - Order `status`: `needs_attention`, `complete`, `back_order`, `cancelled`.
 - Order line: `line_status` (`ok`, `short`, `unmatched`, `back_order`, `cancelled`, `changed`), `original_product_id`, `changed_to_product_id`, `resolved_at`.
 - Stock never pushed below zero by an order.
+
+# Part H — Lye calculator fundamentals (Monday 12 Oct, before any new feature)
+
+Checked 11 Oct 2026 against the website calculator (`src/lib/soap.ts`):
+- SAP table (46 oils) matches an independent published supplier table within ±2–3% (normal batch variation, covered by superfat). Palm kernel 0.156 NaOH confirmed.
+- Formula correct; 6 reference recipes (NaOH and KOH, 0–20% superfat) correct to 0.1 g; KOH 90% purity correct; superfat limited to 0–20%.
+
+## Must fix
+1. **Website and Base44 app disagree.** Lavender Oatmeal (200 olive / 125 coconut / 75 shea / 50 sweet almond / 50 castor, 5% SF): website 69.2 g NaOH, Base44 stored recipe 68.6 g. Find the cause (superfat or SAP table) and use ONE shared SAP table and formula everywhere (website, app, Lyla, snap & fill, oil-swap recipe versions).
+2. **Unknown oil name silently counts as 0 g lye.** Must stop with "Oil not recognised — choose from the list." Never calculate with a missing SAP value. Map inventory names (e.g. "Olive Oil (Extra Virgin)", "Coconut Oil (76°F)") to SAP entries explicitly.
+3. **Negative weights accepted.** Reject any weight ≤ 0 (except an empty row, which is ignored).
+
+## Daily automatic check (after fixes)
+- Reference recipes (the 6 above + Lavender Oatmeal) run through BOTH calculators daily and after every code change. No AI credits.
+- Email Noel immediately if any result changes or the two calculators differ by more than 0.1 g.
+- Public wording only once the check is running: "Every lye calculation uses published SAP values and is tested automatically against reference recipes every day." Keep the safety note: the check proves the maths, not the maker's scale.
