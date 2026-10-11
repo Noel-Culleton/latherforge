@@ -48,3 +48,39 @@ Addendum to `claude/latherforge-procurement-traceability-buildpack.md` and `clau
 - **Action now:** apply for Etsy API (Open API v3) commercial access early. Approval can take weeks and is outside our control. Build the native connection after launch.
 - The "customer imports the Make.com template and pastes their Base44 API key" Studio plan above is superseded by the native connection once Etsy approves the app. Do not build customer-facing Make.com onboarding.
 - Label generator (section 3): branded label and INCI PDF exports are Business Pack and up, per the export table in the Lyla brief (section 6d). Still never claims compliance.
+
+# Part C — Automatic orders and customers (decided 11 Oct 2026)
+
+**Screenshots are out for orders** (people forget). Orders must arrive with no daily effort from the maker.
+
+## How orders arrive
+1. **Order email forwarding (launch target):** each user gets their own LatherForge order address. They add it once to their Etsy / Shopify / website order notifications. Works for any platform that emails order notifications. No platform approvals needed.
+2. **File upload:** CSV/Excel export, for catching up on past orders and bulk history.
+3. **Direct connections (later):** "Connect Etsy" after Etsy API approval; Shopify / WooCommerce only when paying users ask.
+
+Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
+
+## What each order does automatically
+- Records the sale: date, channel, products, quantities, prices.
+- **Reduces stock** (this replaces the Sep 2026 "log sales only" importer decision). Confident product matches apply straight away and land in a "Today's orders" list with **Undo** (undo = reversing movement, never an edit). Uncertain matches (new product, unclear match, odd quantity) wait in "Orders to check" on the dashboard and in a daily email.
+- Adds or updates the **customer**: new buyer = new record; repeat buyer matched by email (then name) and order added to their history.
+- Feeds reports: sales by channel, best sellers, repeat customers, sales by country, monthly totals.
+- Links each sale to the batch it came from where known (recall / forward traceability).
+
+## Customer data rules (GDPR)
+- The maker is the controller; LatherForge is the processor. Add a data processing agreement to the Terms and a privacy policy line.
+- Store only: name, email, town/country, order history. Full postal address only when the maker needs it (e.g. wholesale).
+- **No marketing use.** Order data is for records, reporting and recall. Purchasing is not newsletter consent, and Etsy's terms restrict buyer data use. No mailing lists from imported customers unless the customer opted in separately.
+- Maker can delete a customer's data on request from inside LatherForge.
+
+## Product matching (the weak point)
+- Match on SKU first, then exact name, then fuzzy name (fuzzy never auto-applies).
+- Onboarding step: help makers set matching SKUs/names on their shop and in LatherForge.
+
+## Plans
+- Order address included on every plan, not an add-on (buying-simplicity rule). Starter capped (~20–30 auto-imported orders/month); higher limits per tier; Business Pack+ allows several shops on one address. Final limits set after a real cost test (email receiving + AI read per order).
+
+## Before building — check first
+- [ ] Can Base44 receive inbound email? If not: an inbound email service or Make.com/Zapier mailhook passes emails in.
+- [ ] Collect one real order email each from Etsy, Shopify and a website shop to test parsing.
+- [ ] Decide the order address format, e.g. name@orders.latherforge.com (needs DNS/MX on a subdomain at IONOS).
