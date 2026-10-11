@@ -137,3 +137,33 @@ Snap & fill stays for **supplier invoices only** (occasional, sit-down tasks).
 
 ## Admin
 - Usage page (Part D) shows who is at 80% / 100%, top-ups bought and free boosts given.
+
+# Part F — Morning check and substitutes (decided 11 Oct 2026)
+
+## Morning check (rule-based, no AI credits)
+- Scheduled daily run (confirm Base44 scheduled automations on current plan; else Make.com/Zapier schedule calls a backend function).
+- Checks: (1) stock vs planned batches and open orders, reusing the W10 shortage logic; (2) items below reorder level; (3) finished bars vs open orders.
+- Sends ONE summary email/in-app notice only when something needs attention. No empty emails.
+- Logs to `UsageLog` as `email_sent` (confirm whether Base44 counts it).
+
+## Substitutes — rules by type (safety-critical)
+| Short item | Substitute offer | Rule |
+|---|---|---|
+| Packaging, labels, boxes | Yes | Approve → deduct substitute stock, record on the order/batch |
+| Oils and butters | Only via recalculation | Swap creates a NEW RecipeVersion through the lye calculator before the batch. Never a plain stock swap (different SAP values = wrong lye = caustic soap) |
+| Fragrance / essential oils | Only from a maker-approved list per product | Fragrance changes allergens, labels and the safety assessment. Offer only swaps the maker has marked as covered by that product's assessment (EU/UK) |
+| Finished bars for a customer order | Suggest only | Maker contacts the customer first; no automatic swap |
+
+## On approval
+- Original item's stock untouched; substitute's stock reduced via normal movements.
+- `BatchIngredientUsage` records the actual substitute item, lot and a `substitution_reason`; batch links to the new RecipeVersion for oil swaps.
+- Cost per bar and label data follow the actual ingredients used.
+- Nothing is swapped without approval.
+
+## Data needed
+- `InventoryItem`: optional `approved_substitutes` (list of item ids) set by the maker.
+- `Product`: `approved_fragrance_substitutes` (list) — only items covered by its safety assessment.
+- `BatchIngredientUsage`: add `is_substitute` (boolean), `substituted_for_item_id`, `substitution_reason`.
+
+## Later
+- Connected Google Drive folder: maker drops order export files in; LatherForge imports them automatically (rule-based, no AI credit). Build after the email route works.
