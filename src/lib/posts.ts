@@ -186,6 +186,15 @@ export const posts: Post[] = [
       {
         heading: 'Can You Speed Up the Cure?',
         text: 'Using less water in your recipe (a stronger lye solution) shortens cure time a little, and hot process gives a usable bar sooner. But there is no real shortcut for a high olive oil bar. Warm rooms and fans help with airflow, but heat and direct sun can do more harm than good.'
+      },
+      {
+        heading: 'Your Recipe Decides Your Cure Time',
+        text: 'Cure time depends mostly on two things you choose before you start: your oils and your water. Hard oils such as coconut, palm, tallow and lard give a bar that firms up quickly. Soft oils such as olive, sunflower and rapeseed hold on to water and need longer. A lye concentration of around 33% is a common starting point; going higher means less water to evaporate, but the batter traces faster, so make small changes. A soap calculator shows you exactly how much water your recipe uses.',
+        link: { href: '/lye-calculator/', label: 'Set your water and lye concentration in the free soap calculator' }
+      },
+      {
+        text: 'Each oil also needs a different amount of lye to saponify fully. If you are swapping a hard oil for a soft one to change how your bar cures, check its SAP value first and recalculate.',
+        link: { href: '/sap-values/', label: 'See SAP values for 46 soap making oils' }
       }
     ],
     faqs: [
@@ -233,6 +242,15 @@ export const posts: Post[] = [
         ]
       },
       {
+        heading: 'Calculate Your Lye First',
+        text: 'Hot process uses exactly the same NaOH amounts as cold process. Cooking speeds up saponification, but it does not change how much lye your oils need. Never guess or scale a recipe by eye: run every recipe through a soap calculator and weigh the lye to the gram. Many makers add a little extra water for hot process to keep the soap fluid in the cooker, and the calculator lets you set that.',
+        link: { href: '/lye-calculator/', label: 'Calculate your lye and water with the free soap calculator' }
+      },
+      {
+        text: 'The calculator works from each oil\'s saponification (SAP) value. If you want to understand why a coconut-heavy recipe needs more lye than an olive oil one, the SAP chart shows the numbers.',
+        link: { href: '/sap-values/', label: 'View the SAP value chart' }
+      },
+      {
         heading: 'Equipment',
         items: [
           'A slow cooker you only use for soap',
@@ -268,6 +286,28 @@ export const posts: Post[] = [
           'Do not let the soap boil over. Stir it down if it climbs the sides of the cooker'
         ]
       }
+    ],
+    faqs: [
+      {
+        q: 'Can I use a cold process recipe for hot process soap?',
+        a: 'Yes. Hot process uses the same oils and exactly the same lye amount as cold process. The only common change is a little extra water, which keeps the soap fluid enough to mould after cooking. Recalculate the recipe in a soap calculator rather than adding water by eye.'
+      },
+      {
+        q: 'How do I know when hot process soap is fully cooked?',
+        a: 'The whole batch turns glossy and translucent, like petroleum jelly or smooth mashed potato, with no opaque patches left. Many makers also test a small sample with pH strips or a phenolphthalein indicator; a strong pink colour with phenolphthalein means there is still free lye, so keep cooking.'
+      },
+      {
+        q: 'When is hot process soap safe to use?',
+        a: 'Once the cook is complete and the soap has cooled and hardened, usually within a day or two. Letting the bars cure for 1–4 weeks still makes them harder, milder and longer lasting.'
+      },
+      {
+        q: 'When should I add fragrance to hot process soap?',
+        a: 'After the cook, once the soap has cooled for a few minutes. Adding fragrance at the end means less of it burns off in the heat, so you can often use the same amount as in cold process and get a stronger scent.'
+      },
+      {
+        q: 'Why does my hot process soap look lumpy?',
+        a: 'Hot process soap is thick and stiffens as it cools, so a rustic, textured top is normal. For a smoother bar, use slightly more water, stir in a little yoghurt or dissolved sugar after the cook, and press the soap into the mould quickly while it is still warm.'
+      }
     ]
   },
   {
@@ -285,6 +325,15 @@ export const posts: Post[] = [
       {
         heading: 'How It Works',
         text: 'Liquid soap is made in two stages. First you make a thick soap paste by cooking oils and KOH together, like hot process soap. Then you dilute that paste with hot water until it is the thickness you want.'
+      },
+      {
+        heading: 'Calculating KOH Is Different',
+        text: 'You cannot reuse a bar soap lye amount for liquid soap. Each oil has a separate KOH saponification (SAP) value, and KOH is a heavier molecule than NaOH, so you need roughly 1.4 times as much of it by weight. Most KOH sold for soap making is also only about 90% pure, so you need more again to make up for that. Select KOH in the calculator and it does all of this for you.',
+        link: { href: '/lye-calculator/', label: 'Calculate KOH for liquid soap with the free soap calculator' }
+      },
+      {
+        text: 'Coconut oil is the most common base for liquid soap because it stays clear and lathers well, while olive oil makes a milder but thicker, less clear soap. You can compare the KOH values for every oil, including the 90% purity figures, on the SAP chart.',
+        link: { href: '/sap-values/', label: 'See KOH SAP values for 46 oils' }
       },
       {
         heading: 'Step by Step',
@@ -307,6 +356,28 @@ export const posts: Post[] = [
           'Separation: undercooked paste. Recook it and test again',
           'Diluted liquid soap has a high pH that resists spoilage, but if you add water-based extras such as herbal teas or aloe, you may need a preservative'
         ]
+      }
+    ],
+    faqs: [
+      {
+        q: 'Can I make liquid soap with sodium hydroxide (NaOH)?',
+        a: 'Not true liquid soap. NaOH makes a hard soap, and dissolving it in water gives a cloudy gel rather than a clear liquid. Liquid soap needs potassium hydroxide (KOH), which makes a soft soap that dissolves fully in water.'
+      },
+      {
+        q: 'Does liquid soap need to cure?',
+        a: 'No. Once the paste is fully cooked and diluted, liquid soap can be used straight away. Some makers let the diluted soap rest for a week or so, which lets any cloudiness settle so it can be poured off.'
+      },
+      {
+        q: 'Why is my liquid soap cloudy?',
+        a: 'The usual causes are too much superfat, a paste that was not fully cooked, or hard tap water. Keep the superfat at 0–3%, cook until a sample dissolves clear in hot water, and dilute with distilled water.'
+      },
+      {
+        q: 'How much water do I add to liquid soap paste?',
+        a: 'A common starting point is about 1.5 to 2.5 times the weight of the paste in hot distilled water. Add it gradually, leave it overnight to dissolve, and add more only if it is still too thick. It is easier to thin soap than to thicken it.'
+      },
+      {
+        q: 'Does homemade liquid soap need a preservative?',
+        a: 'Plain liquid soap diluted with distilled water has a high pH that makes it hard for microbes to grow. If you add water-based extras such as aloe, herbal infusions or hydrosols after dilution, a preservative becomes more important. If you plan to sell it, your safety assessor will advise on this as part of the safety report.'
       }
     ]
   },
@@ -331,10 +402,10 @@ export const posts: Post[] = [
         items: [
           'Responsible Person: every product needs a Responsible Person based in the EU (or in Northern Ireland for NI sales). For most small makers, that is you',
           'Safety assessment: each recipe needs a Cosmetic Product Safety Report (CPSR), signed off by a qualified safety assessor. Changing the fragrance or an ingredient usually means a new or updated assessment',
-          'Product Information File (PIF): keep the CPSR, product description, manufacturing method and any evidence for claims, for 10 years after the last batch is sold',
+          'Product Information File (PIF): keep the CPSR, product description, manufacturing method and any evidence for claims, for 10 years after the last batch of that product was placed on the market',
           'CPNP notification: notify every product on the EU Cosmetic Products Notification Portal before you sell it. It is free',
           'Good Manufacturing Practice: make your soap in clean, organised conditions and keep batch records. ISO 22716 is the recognised standard',
-          'Allergens: the EU has extended its list of fragrance allergens that must be named on labels. New products must comply from 31 July 2026, and all products on sale from 31 July 2028'
+          'Allergens: Regulation (EU) 2023/1545 extended the list of fragrance allergens that must be named on labels. Products placed on the market from 31 July 2026 must already comply, and products that were on the market before that date can only stay on sale until 31 July 2028 unless they are relabelled'
         ]
       },
       {
@@ -348,13 +419,19 @@ export const posts: Post[] = [
         ]
       },
       {
+        heading: 'Your Safety Assessor Needs Your Exact Formula',
+        text: 'The safety assessor bases the Cosmetic Product Safety Report on your full quantitative formula: every oil, the lye, water, fragrance and additives, with exact weights or percentages. A recipe you adjust by eye from batch to batch cannot be assessed. Calculate each recipe once, fix it, and give the assessor those numbers. If you later change an oil, a fragrance or the superfat, talk to your assessor before you sell the new version.',
+        link: { href: '/lye-calculator/', label: 'Work out your exact formula in the free soap calculator' }
+      },
+      {
         heading: 'What Must Go on the Label',
         items: [
           'Name and address of the Responsible Person',
+          // CHECK BEFORE PUBLISHING: trade-approved scale requirement comes from legal metrology rules (NSAI in Ireland), not the Cosmetics Regulation. Confirm wording.
           'Net weight (weigh on a scale approved for trade use)',
           'Batch number, so each bar can be traced back to its batch record',
           'Ingredient list using INCI names, in descending order of weight (for example Sodium Olivate, Sodium Cocoate, Aqua, Parfum)',
-          'Fragrance allergens above the legal threshold, named individually',
+          'Fragrance allergens named individually when they are above the legal threshold. For rinse-off products such as soap that is 0.01% of the finished product',
           'A best-before date, or a period-after-opening symbol if the product lasts longer than 30 months',
           'Any precautions for use, and the country of origin if made outside the EU/UK'
         ]
@@ -368,6 +445,7 @@ export const posts: Post[] = [
           'A way to handle and record customer complaints or reactions'
         ]
       },
+      // CHECK BEFORE PUBLISHING: US MoCRA requirements and small-business exemptions are still being phased in by the FDA. Confirm against current FDA guidance.
       {
         heading: 'Selling in the United States',
         text: 'US rules are different. Soap that is made mostly of fats and lye and is sold only as soap is regulated by the Consumer Product Safety Commission. If you make cosmetic claims such as "moisturising", the FDA treats it as a cosmetic under the Modernization of Cosmetics Regulation Act (MoCRA), which has some exemptions for small businesses.'
