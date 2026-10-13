@@ -3,7 +3,7 @@
 
 Hi Donagh,
 
-I've followed The Handmade Soap Company's story from the kitchen in 2010 to where you are now. It's a great example for Irish makers.
+I read how The Handmade Soap Company started with two pots in a kitchen in 2010. It's a great story for Irish makers.
 
 I'm Noel, also making soap in Ireland. I'm building LatherForge, which keeps recipes, batches, cost per bar and INCI labels in one place. It's built for growing soap businesses, including wholesale.
 
