@@ -1,6 +1,6 @@
 # LF16: The 10 Most-Asked Soap Making Questions, Answered
 
-**Target length:** ~14 min · **Script:** ~2,100 words · **Voice:** Azure en-IE-ConnorNeural
+**Target length:** ~13–14 min · **Script:** ~1,900 words · **Voice:** Azure en-IE-ConnorNeural
 **Playlist:** Soap Making for Beginners · **Link:** https://latherforge.com/lye-calculator/
 
 **Why this topic:** these are the soap questions people search most (Google Ads, US, monthly):
@@ -44,6 +44,8 @@ Second, a superfat. Most soap makers use about 5%. That means a little more oil 
 
 Where people get into trouble is guessing amounts, using volume instead of weight, or skipping the calculator. Do those three things right and handmade soap is as safe as anything you buy.
 
+One more safety point. Raw lye and fresh soap batter are caustic, so wear gloves and goggles every time, and keep children and pets out of the room. If lye splashes on your skin, rinse it with plenty of cool running water. Don't reach for vinegar. Treat it with respect and it's no more dangerous than many things in your kitchen.
+
 ## Ch 4: What do you need to get started? (~1:20)
 [q3_kit, safety1]
 
@@ -78,6 +80,8 @@ Those are percentages, not amounts. Put them into a free soap calculator with yo
 
 Then make one loaf, about a kilo of oils, and nothing more. Your first batch is a practice run. Save the swirls and fragrances for batch two.
 
+Here's the order on the day. Put on your gloves and goggles. Weigh your water into the jug, then weigh your lye separately and add it to the water, stirring gently. Set it aside to cool. Melt your hard oils and butters, then add the liquid oils. When both have cooled to warm rather than hot, pour the lye solution into the oils and stick blend in short bursts, stirring in between, until it reaches a light trace. Pour it into the mold, cover it, and leave it for 24 to 48 hours before you unmold and cut.
+
 ## Ch 6: Cold process, hot process or melt and pour? (~1:30)
 [q5_cp, q5_hp, q1_mp]
 
@@ -102,6 +106,8 @@ Some recipes take longer. A bar made from 100% olive oil can take 6 months or mo
 
 To cure soap, stand the bars on a rack with space between them, somewhere cool, dry and airy, out of direct sun. Turn them now and then. Don't wrap them in plastic until they're fully cured.
 
+How do you know when it's ready? The easiest test is weight. Weigh one bar when you cut it, then once a week. While water is still leaving the bar, the weight drops. When it stops changing, the bar is cured.
+
 This is also why timing matters if you sell. Soap you want for Christmas markets has to be made in October, not December.
 
 ## Ch 8: How do you make goat milk soap? (~1:30)
@@ -116,6 +122,8 @@ The fix is to freeze the milk first. Pour it into ice cube trays and freeze it s
 Some ammonia smell is normal and fades during cure.
 
 Two more tips. Soap at cooler temperatures. And don't wrap the mold in towels, because milk soaps can overheat and crack. Some makers even pop the mold in the fridge for the first day.
+
+If freezing sounds like too much work, there's another common method. Make your lye solution with half the normal water, then add the other half as goat milk once the batter reaches trace. You get the benefits of milk without scorching it.
 
 ## Ch 9: Castile soap and tallow soap (~1:30)
 [q8_castile, q8_tallow]
@@ -149,6 +157,8 @@ In the US, it depends what you claim. Simple soap sold just as soap is treated d
 This isn't legal advice. Always check the current rules where you sell.
 
 **The numbers.** Most new sellers underprice. You need your real cost per bar: every oil, the lye, fragrance, packaging and labels. Then you need a price that covers your time and still leaves a profit, whether you sell wholesale, at markets or on Etsy.
+
+A common starting point is to price wholesale at around two to three times your cost per bar, and retail at about double the wholesale price. Then check that number against what similar soaps sell for in your area. If your price doesn't cover your costs and your time, it's a hobby, not a business. That's fine, as long as you know which one you're running.
 
 ## Ch 12: Outro (~30s)
 [q_outro]
