@@ -15,7 +15,7 @@ export default function LyeCalculatorClient() {
   // Prefill from a recipe page link: /lye-calculator/?recipe=<slug>
   useEffect(() => {
     const recipe = getRecipeBySlug(new URLSearchParams(window.location.search).get('recipe') || '')
-    if (!recipe) return
+    if (!recipe || !recipe.reviewed) return
     const weights = recipeOilWeights(recipe, 1000)
     setLyeType(recipe.lyeType); setMethod(recipe.method); setSuperfat(recipe.superfat)
     setOils(weights); setResults(calculateLye(weights, recipe.lyeType, recipe.superfat))

@@ -8,8 +8,8 @@ import { cureLabel } from '@/lib/format'
 const live = getReviewedRecipes()
 
 export const metadata: Metadata = {
-  title: 'Cold Process Soap Recipes — Tested, With Exact Lye Amounts',
-  description: 'Free cold process, hot process and liquid soap recipes with exact lye and water amounts in grams and ounces. Beginner-friendly, palm-free, vegan, goat milk, salt bar and more.',
+  title: 'Free Cold Process Soap Recipes With Exact Lye Amounts',
+  description: 'Free cold process soap recipes with exact lye and water amounts in grams and ounces. Beginner-friendly, castile, palm-free, vegan, goat milk, salt bar, tallow and more.',
   alternates: { canonical: 'https://latherforge.com/soap-recipes/' },
   robots: live.length > 0 ? { index: true, follow: true } : { index: false, follow: true }
 }
@@ -30,7 +30,7 @@ export default function SoapRecipesPage() {
         <section style={{ background: '#FAF7F2', padding: '3rem 0 5rem' }}>
           <div className="container" style={{ maxWidth: '900px' }}>
             {live.length === 0 ? (
-              <p style={{ color: '#7A6E62' }}>Our recipe library is being tested and will be published soon. In the meantime, try the <Link href="/lye-calculator/" style={{ color: '#5C3D2E', textDecoration: 'underline' }}>free soap calculator</Link>.</p>
+              <p style={{ color: '#7A6E62' }}>Our recipe library is coming soon. In the meantime, try the <Link href="/lye-calculator/" style={{ color: '#5C3D2E', textDecoration: 'underline' }}>free soap calculator</Link>.</p>
             ) : (
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
                 {live.map(r => (

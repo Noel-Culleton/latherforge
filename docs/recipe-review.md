@@ -1,5 +1,7 @@
 # Recipe review sheet
 
+> **Status (Nov 2026):** 13 recipes approved after an AI desk review (ChatGPT, prompted as a soap maker and safety editor) and published with its text fixes. This was not a test batch or a review by a practising soap maker. Still hidden: Beeswax Soap and Hot Process Soap (temperatures and cooking need a test batch) and Liquid Soap (needs a full method checked by a liquid-soap maker).
+
 Every recipe below is built into the site but hidden from Google, the sitemap and the menus until it is approved.
 To approve one, change `reviewed: false` to `reviewed: true` for that recipe in `src/lib/recipes.ts` (or ask Claude to do it).
 Once at least one recipe is approved, the Recipes page and menu link appear automatically.
@@ -8,7 +10,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Easy Beginner Soap  `/soap-recipes/beginner-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -19,13 +21,13 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | **NaOH** | | **140.6 g** |
 | Water | | 281.2 g |
 
-- Tip: Soap at around 35–40°C to keep trace slow.
-- Tip: Add fragrance at light trace, no more than 3% of oil weight for most skin-safe fragrance oils.
+- Tip: Around 35–40°C is a good starting temperature, as long as the oils stay fully melted. Blend in short bursts; fragrance and heat can both speed up trace.
+- Tip: Add fragrance at light trace. Use only fragrance made for rinse-off soap and follow the supplier’s soap usage rate and IFRA Category 9 limit; there is no single safe percentage for every fragrance.
 - Tip: Unmould after 24–48 hours once the bar is firm.
 
 ## Castile Soap (100% Olive Oil)  `/soap-recipes/castile-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 6 months
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 6 months
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -33,13 +35,13 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | **NaOH** | | **128.3 g** |
 | Water | | 256.5 g |
 
-- Tip: Expect a long time to trace. A stick blender is essential.
-- Tip: Leave it in the mould for 3–5 days; it stays soft for longer than most recipes.
+- Tip: Olive-only soap is slow to trace. A stick blender is strongly recommended; stirring by hand can take a very long time.
+- Tip: Unmould when it is firm enough to release without damage. This can take several days, so check firmness rather than going by the clock.
 - Tip: Cure for at least 6 months. The lather is low and slightly slippery; that is normal for castile.
 
 ## Bastille Soap  `/soap-recipes/bastille-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 8 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 8 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -54,7 +56,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Shea Butter Soap  `/soap-recipes/shea-butter-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -71,7 +73,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Goat Milk Soap  `/soap-recipes/goat-milk-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -83,13 +85,13 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | **NaOH** | | **138.9 g** |
 | Goat milk, frozen into cubes (use the same weight as the water shown) | | 277.8 g |
 
-- Tip: Add the lye to the frozen milk slowly, a spoonful at a time, with the jug sitting in an ice bath.
-- Tip: Soap cool (around 30°C) and do not insulate; put the mould in the fridge or freezer for 24 hours to prevent overheating.
-- Tip: A slight ammonia smell while mixing is normal and fades during cure.
+- Tip: Add the lye to the frozen milk slowly, a spoonful at a time, with the jug sitting in an ice bath. Keep stirring until all the lye has dissolved; milk is opaque, so melted cubes do not prove it. Do not carry on with undissolved granules.
+- Tip: Keep the milk and lye mixture cool to stop it scorching, but keep the oils fully melted and fluid; do not let them go cloudy. Do not insulate; put the mould in the fridge or freezer for 24 hours to prevent overheating.
+- Tip: A slight ammonia-like smell while mixing is normal and fades during cure. Work with good ventilation and do not lean over the jug.
 
 ## Salt Bar Soap  `/soap-recipes/salt-bar-soap-recipe/`
 
-- [ ] Approved  ·  Intermediate · NaOH · cold process · 20% superfat · cure 8 weeks
+- [x] Approved  ·  Intermediate · NaOH · cold process · 20% superfat · cure 8 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -99,14 +101,14 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | **NaOH** | | **138.4 g** |
 | Water | | 276.9 g |
 
-- Additive: Fine sea salt: 50–100% of oil weight (not Dead Sea or Epsom salt), stirred in at light trace
+- Additive: Fine sea salt: 50% of oil weight (500 g per 1000 g oils), stirred in at light trace. Up to 100% is a variation that changes handling and lather. Avoid coarse sharp crystals, Dead Sea salt and Epsom salt
 
-- Tip: Use individual cavity moulds, or cut a loaf within 1–3 hours. Salt bars get rock hard fast and crumble if cut late.
+- Tip: Individual cavity moulds are easiest. For a loaf, check often and cut as soon as it holds its shape, before it turns brittle; timing varies. Wear gloves and eye protection when handling fresh soap.
 - Tip: Cure for at least 8 weeks; salt bars keep improving for months.
 
 ## Traditional Lard Soap  `/soap-recipes/lard-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -122,7 +124,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Beef Tallow Soap  `/soap-recipes/tallow-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 4 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -133,12 +135,12 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | **NaOH** | | **139.3 g** |
 | Water | | 278.6 g |
 
-- Tip: Melt the tallow completely and let it cool to about 40°C before mixing.
+- Tip: Melt the tallow completely and keep the oils fully fluid before adding the lye. About 40°C usually works, but go by the oils, not the thermometer: cloudy or setting fat can look like false trace.
 - Tip: Tallow can trace quickly; keep additives simple for your first batch.
 
 ## Vegan Palm-Free Soap  `/soap-recipes/vegan-palm-free-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -156,7 +158,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Avocado Oil Soap  `/soap-recipes/avocado-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -172,7 +174,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Hemp Seed Oil Soap  `/soap-recipes/hemp-seed-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -189,7 +191,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 ## Activated Charcoal Soap  `/soap-recipes/charcoal-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|
@@ -201,14 +203,14 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 | **NaOH** | | **138.9 g** |
 | Water | | 277.8 g |
 
-- Additive: Activated charcoal: about 1 teaspoon per 500 g of oils, dispersed in a little of the recipe oil first
+- Additive: Activated charcoal: about 1 teaspoon per 500 g of oils (teaspoons are approximate), dispersed in a little of the measured recipe oil first
 
-- Tip: Mix the charcoal into a tablespoon of oil before adding it, to avoid clumps.
-- Tip: If you sell it, avoid medical claims such as "treats acne" or "detox". Those make it a medicine, not a cosmetic.
+- Tip: Use cosmetic-grade activated charcoal and avoid breathing in the dust. Mix it into a little oil taken from the measured recipe oils (not extra oil), then add it back to the batch.
+- Tip: If you sell it, do not claim it treats acne or other conditions, and avoid unsupported “detox” claims. Medical claims can change how the product is regulated.
 
 ## Mango Butter Soap  `/soap-recipes/mango-butter-soap-recipe/`
 
-- [ ] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 5 weeks
 
 | Ingredient | % | per 1000 g oils |
 |---|---|---|

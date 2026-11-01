@@ -28,7 +28,8 @@ export const posts: Post[] = [
       },
       {
         heading: 'Superfat Percentage',
-        text: 'Superfat is the percentage of oils left unsaponified in your finished soap. A 5% superfat means 5% of your oils are left free, giving a more moisturising bar. Most cold process soap makers use a superfat of 5–8%. Your lye calculator reduces the lye amount to achieve this automatically.'
+        text: 'Superfat is the percentage of oils left unsaponified in your finished soap. A 5% superfat means 5% of your oils are left free, giving a more moisturising bar. Most cold process soap makers use a superfat of 5–8%. Your lye calculator reduces the lye amount to achieve this automatically.',
+        link: { href: '/soap-recipes/salt-bar-soap-recipe/', label: 'See a salt bar recipe that uses a 20% superfat' }
       },
       {
         heading: 'Safety First',
@@ -58,7 +59,8 @@ export const posts: Post[] = [
     sections: [
       {
         heading: 'What Is Cold Process Soap?',
-        text: 'Cold process soap is made by combining lye (sodium hydroxide) with oils and butters. Unlike melt-and-pour soap, cold process soap is made entirely from scratch, giving you complete control over ingredients, fragrance, colour, and design. The "cold" in the name refers to the fact that you do not apply external heat during saponification — the chemical reaction itself generates heat naturally.'
+        text: 'Cold process soap is made by combining lye (sodium hydroxide) with oils and butters. Unlike melt-and-pour soap, cold process soap is made entirely from scratch, giving you complete control over ingredients, fragrance, colour, and design. The "cold" in the name refers to the fact that you do not apply external heat during saponification — the chemical reaction itself generates heat naturally.',
+        link: { href: '/soap-recipes/', label: 'Browse free cold process soap recipes with exact lye amounts' }
       },
       {
         heading: 'Equipment You Need',
@@ -162,7 +164,8 @@ export const posts: Post[] = [
           'Salt bars: at least 8 weeks, and they keep improving for months',
           'Goat milk and other milk soaps: 4–6 weeks',
           'Liquid soap (KOH): no cure needed once the paste is fully cooked and diluted'
-        ]
+        ],
+        link: { href: '/soap-recipes/castile-soap-recipe/', label: 'See a castile soap recipe (it needs a 6-month cure)' }
       },
       {
         heading: 'Why Soap Needs to Cure',
@@ -230,7 +233,8 @@ export const posts: Post[] = [
           'Fragrance goes in after the cook, so less of it burns off',
           'Hot process is harder to swirl and gives a rustic finish',
           'Both use exactly the same lye calculation'
-        ]
+        ],
+        link: { href: '/soap-recipes/', label: 'Prefer cold process? Browse recipes with exact lye amounts' }
       },
       {
         heading: 'Equipment',
@@ -257,7 +261,7 @@ export const posts: Post[] = [
           'Press firmly into the mould and tap it on the counter to remove air pockets',
           'Unmould the next day, cut, and let the bars dry'
         ],
-        link: { href: '/soap-recipes/hot-process-soap-recipe/', label: 'Get a hot process soap recipe with exact amounts' }
+        link: { href: '/lye-calculator/', label: 'Work out the lye and water for your hot process recipe' }
       },
       {
         heading: 'Tips for Smoother Hot Process Soap',
@@ -297,7 +301,7 @@ export const posts: Post[] = [
           'Dilute the paste with about 1.5–2.5 times its weight in hot distilled water. Add the water gradually and let it sit overnight to dissolve',
           'Add fragrance once the soap has cooled'
         ],
-        link: { href: '/soap-recipes/liquid-soap-recipe/', label: 'Get a liquid soap recipe with exact KOH amounts' }
+        link: { href: '/lye-calculator/', label: 'Work out your KOH amounts in the free soap calculator' }
       },
       {
         heading: 'Common Problems',
