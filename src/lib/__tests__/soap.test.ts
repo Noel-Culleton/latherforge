@@ -13,6 +13,16 @@ const SOAPCALC_NAOH: Record<string, number> = {
   'Palm Kernel Oil': 0.156,
   'Avocado Oil': 0.133,
   'Tallow (Beef)': 0.143,
+  'Coconut Oil (92°)': 0.183,
+  'Coconut Oil (Fractionated)': 0.232,
+  'Sunflower Oil (High Oleic)': 0.135,
+  'Safflower Oil': 0.137,
+  'Soy Wax (Hydrogenated Soybean)': 0.137,
+  'Lanolin': 0.076,
+  'Ghee': 0.162,
+  'Tallow (Sheep)': 0.138,
+  'Duck Fat': 0.138,
+  'Laurel Berry Oil': 0.141,
 }
 
 describe('SAP tables', () => {
@@ -21,10 +31,10 @@ describe('SAP tables', () => {
     expect(Math.abs(OILS[oil] - expected)).toBeLessThanOrEqual(0.002)
   })
 
-  it('every oil has a KOH SAP in the plausible range (waxes ~0.09, coconut ~0.26)', () => {
+  it('every oil has a KOH SAP in the plausible range (waxes ~0.09, fractionated coconut ~0.33)', () => {
     for (const [oil, sap] of Object.entries(SAP_KOH)) {
       expect(sap, oil).toBeGreaterThanOrEqual(0.085)
-      expect(sap, oil).toBeLessThanOrEqual(0.27)
+      expect(sap, oil).toBeLessThanOrEqual(0.33)
     }
   })
 
