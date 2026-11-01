@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { getReviewedRecipes } from '@/lib/recipes'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import LyeCalculatorClient from './LyeCalculatorClient'
@@ -124,6 +126,20 @@ export default function LyeCalculatorPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Recipes */}
+        <section style={{ background: '#FAF7F2', padding: '4rem 0' }}>
+          <div className="container" style={{ maxWidth: '760px' }}>
+            <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', color: '#3E2820', marginBottom: '0.75rem' }}>Start From a Recipe</h2>
+            <p style={{ color: '#5C4A3A', lineHeight: 1.7, marginBottom: '1.25rem' }}>Pick a recipe and open it here to resize it for your mould.</p>
+            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.5rem 1.5rem', listStyle: 'none', padding: 0 }}>
+              {getReviewedRecipes().map(r => (
+                <li key={r.slug}><Link href={`/soap-recipes/${r.slug}/`} style={{ color: '#5C3D2E', textDecoration: 'underline' }}>{r.name}</Link></li>
+              ))}
+            </ul>
+            <p style={{ marginTop: '1.25rem' }}><Link href="/soap-recipes/" style={{ color: '#5C3D2E', fontWeight: 600 }}>See all soap recipes →</Link></p>
           </div>
         </section>
 

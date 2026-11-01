@@ -3,25 +3,27 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import { recipes, getRecipeBySlug, recipeBatch } from '@/lib/recipes'
+import { getReviewedRecipes, getRecipeBySlug, recipeBatch } from '@/lib/recipes'
 import { cureLabel } from '@/lib/format'
 
 type Props = { params: Promise<{ slug: string }> }
 
+// Only reviewed recipes get a page; anything else 404s.
+export const dynamicParams = false
+
 export async function generateStaticParams() {
-  return recipes.map(r => ({ slug: r.slug }))
+  return getReviewedRecipes().map(r => ({ slug: r.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const recipe = getRecipeBySlug(slug)
-  if (!recipe) return {}
+  if (!recipe || !recipe.reviewed) return {}
   const url = `https://latherforge.com/soap-recipes/${recipe.slug}/`
   return {
     title: `${recipe.name} Recipe (${recipe.method === 'cold' ? 'Cold Process' : recipe.lyeType === 'KOH' ? 'KOH' : 'Hot Process'})`,
     description: recipe.description,
     alternates: { canonical: url },
-    robots: recipe.reviewed ? { index: true, follow: true } : { index: false, follow: true },
     openGraph: { title: `${recipe.name} Recipe`, description: recipe.description, type: 'article', url }
   }
 }
@@ -54,7 +56,7 @@ const STEPS = {
 export default async function RecipePage({ params }: Props) {
   const { slug } = await params
   const recipe = getRecipeBySlug(slug)
-  if (!recipe) notFound()
+  if (!recipe || !recipe.reviewed) notFound()
 
   const metric = recipeBatch(recipe, 1000)
   const imperial = recipeBatch(recipe, 32)
@@ -63,7 +65,7 @@ export default async function RecipePage({ params }: Props) {
   const steps = recipe.lyeType === 'KOH'
     ? [...STEPS.hot.slice(0, 5), 'Once the paste is fully cooked (a small amount dissolves clear in hot water), dilute it with hot distilled water, a little at a time, until it is the thickness you want.']
     : STEPS[recipe.method]
-  const related = recipes.filter(r => r.slug !== recipe.slug && r.reviewed === recipe.reviewed).slice(0, 3)
+  const related = getReviewedRecipes().filter(r => r.slug !== recipe.slug).slice(0, 3)
   const url = `https://latherforge.com/soap-recipes/${recipe.slug}/`
 
   const schema = [
