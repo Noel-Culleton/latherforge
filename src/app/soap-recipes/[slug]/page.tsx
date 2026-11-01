@@ -43,9 +43,9 @@ const STEPS = {
   hot: [
     'Put on gloves and eye protection and clear the work area.',
     'Weigh the water into a heat-safe jug. Weigh the lye separately, then slowly add the lye to the water, never the other way round. Stir until dissolved.',
-    'Melt the oils in a slow cooker on low.',
+    'Melt the oils in a slow cooker on low. Use a slow cooker kept only for soap, big enough that the mixture fills no more than half of it.',
     'Add the lye solution to the oils and stick blend to trace.',
-    'Cover and cook on low, stirring every 15 minutes, until the soap looks like translucent mashed potato or petroleum jelly.',
+    'Cover and cook on low, stirring every 15 minutes, until the soap looks like translucent mashed potato or petroleum jelly. Stay with it the whole time: the soap can rise and bubble over, and hot soap is caustic.',
     'Let it cool slightly, stir in fragrance and additives, then press into the mould.',
     'Unmould once firm (usually the next day), cut and let the bars dry.'
   ]
@@ -148,6 +148,21 @@ export default async function RecipePage({ params }: Props) {
               <Link href={`/lye-calculator/?recipe=${recipe.slug}`} className="btn-primary">Resize in the soap calculator</Link>
             </div>
 
+            <div style={{ marginTop: '2.5rem', background: 'rgba(201,168,76,0.1)', border: '1px solid rgba(201,168,76,0.35)', padding: '1.25rem' }}>
+              <p style={{ fontWeight: 600, color: '#8B6010', marginBottom: '0.5rem' }}>⚠️ Lye safety: read before you start</p>
+              <ul style={{ margin: '0 0 0 1.25rem', fontSize: '0.9rem', color: '#5C4A3A', lineHeight: 1.7 }}>
+                <li>Lye ({recipe.lyeType}) is caustic. Wear splash-proof goggles, chemical-resistant gloves and long sleeves.</li>
+                <li>Work in a well-ventilated room and keep children and pets away.</li>
+                <li>Use heat- and lye-safe containers (stainless steel or sturdy polypropylene). Never use aluminium.</li>
+                <li>Always add lye slowly to the measured liquid, never liquid to lye. Do not breathe the fumes.</li>
+                <li>Fresh soap batter and newly made bars are also caustic. Wear gloves when pouring, unmoulding and cutting.</li>
+                <li>Always run a recipe through a lye calculator before making it, especially if you change an oil.</li>
+              </ul>
+              <p style={{ fontSize: '0.9rem', color: '#5C4A3A', lineHeight: 1.7, marginTop: '0.75rem' }}>
+                <strong>First aid:</strong> on skin, rinse immediately with plenty of running water. In the eyes, rinse with water for at least 15 minutes and get medical help. Do not put vinegar on skin or eyes.
+              </p>
+            </div>
+
             <h2 style={H2}>Method</h2>
             <ol style={{ margin: '0 0 0 1.25rem', color: '#5C4A3A', lineHeight: 1.8 }}>
               {steps.map(s => <li key={s} style={{ marginBottom: '0.5rem' }}>{s}</li>)}
@@ -158,12 +173,6 @@ export default async function RecipePage({ params }: Props) {
               {recipe.tips.map(t => <li key={t} style={{ marginBottom: '0.4rem' }}>{t}</li>)}
             </ul>
 
-            <div style={{ marginTop: '2rem', background: 'rgba(201,168,76,0.1)', border: '1px solid rgba(201,168,76,0.35)', padding: '1.25rem' }}>
-              <p style={{ fontWeight: 600, color: '#8B6010', marginBottom: '0.3rem' }}>⚠️ Lye safety</p>
-              <p style={{ fontSize: '0.9rem', color: '#5C4A3A', lineHeight: 1.7 }}>
-                Lye is caustic. Wear gloves and eye protection, work in a ventilated room, keep children and pets away, and always add lye to water. Always run any recipe through a lye calculator before making it, especially if you change an oil.
-              </p>
-            </div>
 
             <div style={{ marginTop: '2rem', background: '#5C3D2E', padding: '2rem', textAlign: 'center' }}>
               <h3 style={{ fontSize: '1.6rem', color: '#FAF7F2', marginBottom: '0.5rem' }}>Selling your soap?</h3>
