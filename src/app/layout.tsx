@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     title: 'LatherForge — The Business OS for Soap Makers',
     description: 'AI-powered tools for handmade soap makers.',
   },
-  robots: { index: true, follow: true },
-  alternates: { canonical: 'https://latherforge.com/' },
+  // No site-wide robots or canonical: each page sets its own, and the
+  // 404 page (not-found.tsx) must not inherit the homepage canonical.
   verification: { google: 'YucVGN7ueMgFMp80xp8iKOKRY0hGIJkmg6RtaKHuTzQ' },
 }
 
