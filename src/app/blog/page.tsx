@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 import BlogIndexClient from './BlogIndexClient'
 
 export const metadata: Metadata = {
@@ -8,5 +10,13 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
-  return <BlogIndexClient />
+  // Nav and Footer are server components (they read the recipe list), so they are
+  // rendered here rather than inside the client component.
+  return (
+    <>
+      <Nav />
+      <BlogIndexClient />
+      <Footer />
+    </>
+  )
 }

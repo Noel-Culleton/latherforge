@@ -224,6 +224,28 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 - Tip: Mango butter melts easily; do not overheat it.
 
+## Oatmeal and Honey Soap  `/soap-recipes/oatmeal-honey-soap-recipe/`
+
+- [ ] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 6 weeks
+
+| Ingredient | % | per 1000 g oils |
+|---|---|---|
+| Rice Bran Oil | 30% | 300 g |
+| Olive Oil | 30% | 300 g |
+| Coconut Oil (76°) | 20% | 200 g |
+| Shea Butter | 15% | 150 g |
+| Castor Oil | 5% | 50 g |
+| **NaOH** | | **134 g** |
+| Water | | 268.1 g |
+
+- Additive: Colloidal oatmeal: 10 g per 1000 g oils, mixed into about 20 g of the measured olive oil (not extra oil) and stirred in at light trace
+- Additive: Plain honey: 10 g per 1000 g oils, dissolved in 10 g of the measured water (not extra water) once it is cool, and stirred in at light trace. Never add honey to the hot lye solution
+
+- Tip: Keep the oils and lye solution at about 35–38°C, with the oils still fully melted. Blend in short bursts to light trace, then stir in the oats and diluted honey.
+- Tip: Honey makes soap heat up. Use individual cavity moulds, do not insulate, and put the mould in the fridge for the first 24 hours. This lowers the risk of cracking and dark spots but does not remove it.
+- Tip: Let the soap come back to room temperature and unmould when it is firm; this can take 48–72 hours. Cure for at least 6 weeks with good airflow.
+- Note: Drafted by ChatGPT from the LatherForge recipe prompt (Nov 2026); lye recalculated with the site calculator. Not test-batched.
+
 ## Beeswax Soap  `/soap-recipes/beeswax-soap-recipe/`
 
 - [ ] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 6 weeks
