@@ -141,9 +141,19 @@ export const recipes: SoapRecipe[] = [
     tips: ['Mango butter melts easily; do not overheat it.']
   },
   {
-    slug: 'oatmeal-honey-soap-recipe',
-    name: 'Oatmeal and Honey Soap',
-    description: 'A palm-free oatmeal and honey cold process soap recipe with rice bran oil and shea butter, plus how to stop the honey overheating.',
+    slug: 'oatmeal-soap-recipe',
+    name: 'Oatmeal Soap',
+    description: 'A gentle, palm-free oatmeal cold process soap recipe with colloidal oats, rice bran oil, olive oil and shea butter.',
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 6,
+    oils: [{ oil: 'Rice Bran Oil', pct: 30 }, { oil: 'Olive Oil', pct: 30 }, { oil: 'Coconut Oil (76°)', pct: 20 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
+    additives: ['Colloidal oatmeal: 10 g per 1000 g oils, mixed into about 20 g of the measured olive oil (not extra oil) and stirred in at light trace'],
+    why: 'Rice bran and olive oil give a mild, silky base, shea butter adds hardness, and coconut and castor keep the lather creamy. Finely ground colloidal oats add a soft feel and a speckled, natural look.',
+    tips: ['Keep the oils and lye solution at about 35–40°C, with the oils still fully melted. Blend in short bursts to light trace, then stir in the oat mixture.', 'Use colloidal or very finely ground, sifted oats. Coarse oats feel scratchy and can go soggy in the bar.', 'Unmould after 24–48 hours once the bar is firm, then cure for at least 6 weeks with good airflow.']
+  },
+  {
+    slug: 'honey-oatmeal-soap-recipe',
+    name: 'Honey Oatmeal Soap',
+    description: 'A palm-free honey oatmeal cold process soap recipe with rice bran oil and shea butter, plus how to stop the honey overheating.',
     reviewed: false, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 6,
     oils: [{ oil: 'Rice Bran Oil', pct: 30 }, { oil: 'Olive Oil', pct: 30 }, { oil: 'Coconut Oil (76°)', pct: 20 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     additives: ['Colloidal oatmeal: 10 g per 1000 g oils, mixed into about 20 g of the measured olive oil (not extra oil) and stirred in at light trace', 'Plain honey: 10 g per 1000 g oils, dissolved in 10 g of the measured water (not extra water) once it is cool, and stirred in at light trace. Never add honey to the hot lye solution'],
