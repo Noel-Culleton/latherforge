@@ -1,6 +1,6 @@
 # Recipe review sheet
 
-> **Status (Nov 2026):** 13 recipes approved after an AI desk review (ChatGPT, prompted as a soap maker and safety editor) and published with its text fixes. This was not a test batch or a review by a practising soap maker. Still hidden: Beeswax Soap and Hot Process Soap (temperatures and cooking need a test batch) and Liquid Soap (needs a full method checked by a liquid-soap maker).
+> **Status (Nov 2026):** 13 recipes approved after an AI desk review (ChatGPT, prompted as a soap maker and safety editor) and published with its text fixes. Oatmeal Soap was added later on the same basis (see its note). None of these were test-batched or reviewed by a practising soap maker. Still hidden: Honey Oatmeal Soap (needs a test batch for honey heat), Beeswax Soap and Hot Process Soap (temperatures and cooking need a test batch) and Liquid Soap (needs a full method checked by a liquid-soap maker).
 
 Every recipe below is built into the site but hidden from Google, the sitemap and the menus until it is approved.
 To approve one, change `reviewed: false` to `reviewed: true` for that recipe in `src/lib/recipes.ts` (or ask Claude to do it).
@@ -224,7 +224,28 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 
 - Tip: Mango butter melts easily; do not overheat it.
 
-## Oatmeal and Honey Soap  `/soap-recipes/oatmeal-honey-soap-recipe/`
+## Oatmeal Soap  `/soap-recipes/oatmeal-soap-recipe/`
+
+- [x] Approved  ·  Beginner · NaOH · cold process · 5% superfat · cure 6 weeks
+
+| Ingredient | % | per 1000 g oils |
+|---|---|---|
+| Rice Bran Oil | 30% | 300 g |
+| Olive Oil | 30% | 300 g |
+| Coconut Oil (76°) | 20% | 200 g |
+| Shea Butter | 15% | 150 g |
+| Castor Oil | 5% | 50 g |
+| **NaOH** | | **134 g** |
+| Water | | 268.1 g |
+
+- Additive: Colloidal oatmeal: 10 g per 1000 g oils, mixed into about 20 g of the measured olive oil (not extra oil) and stirred in at light trace
+
+- Tip: Keep the oils and lye solution at about 35–40°C, with the oils still fully melted. Blend in short bursts to light trace, then stir in the oat mixture.
+- Tip: Use colloidal or very finely ground, sifted oats. Coarse oats feel scratchy and can go soggy in the bar.
+- Tip: Unmould after 24–48 hours once the bar is firm, then cure for at least 6 weeks with good airflow.
+- Note: Approved Nov 2026 on the same basis as the other published recipes: LatherForge calculator check (134.0 g NaOH, 268.1 g water per 1000 g oils, arithmetic verified using the supplied SAP values; no independent SAP-source verification) plus AI desk review (drafted by ChatGPT, edited by Claude). Not test-batched. Honey was removed from this version because its overheating behaviour is the part that needs a test batch; the honey version is kept below as a hidden draft.
+
+## Honey Oatmeal Soap  `/soap-recipes/honey-oatmeal-soap-recipe/`
 
 - [ ] Approved  ·  Intermediate · NaOH · cold process · 5% superfat · cure 6 weeks
 
@@ -244,7 +265,7 @@ Check for each recipe: the oil percentages, superfat, cure time and tips. The ly
 - Tip: Keep the oils and lye solution at about 35–38°C, with the oils still fully melted. Blend in short bursts to light trace, then stir in the oats and diluted honey.
 - Tip: Honey makes soap heat up. Use individual cavity moulds, do not insulate, and put the mould in the fridge for the first 24 hours. This lowers the risk of cracking and dark spots but does not remove it.
 - Tip: Let the soap come back to room temperature and unmould when it is firm; this can take 48–72 hours. Cure for at least 6 weeks with good airflow.
-- Note: Drafted by ChatGPT from the LatherForge recipe prompt (Nov 2026); lye recalculated with the site calculator. Not test-batched.
+- Note: Drafted by ChatGPT from the LatherForge recipe prompt (Nov 2026); lye recalculated with the site calculator. Not test-batched. Publish only after a 500 g test batch passes the 2–4 h, 24 h and 48 h heat, surface and unmoulding checks.
 
 ## Beeswax Soap  `/soap-recipes/beeswax-soap-recipe/`
 
