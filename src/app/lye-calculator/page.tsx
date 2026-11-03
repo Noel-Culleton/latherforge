@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getReviewedRecipes } from '@/lib/recipes'
+import { getReviewedRecipes, recipeOilWeights } from '@/lib/recipes'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import LyeCalculatorClient from './LyeCalculatorClient'
+import LyeCalculatorClient, { type RecipePreset } from './LyeCalculatorClient'
 
 export const metadata: Metadata = {
   title: { absolute: 'Soap Calculator — Free Lye Calculator for Soap Making | LatherForge' },
@@ -25,6 +25,11 @@ const FAQS = [
   { q: 'What happens if you use too much lye in soap?', a: 'Too much lye leaves unreacted sodium hydroxide in the bar, which makes the soap harsh and can irritate or burn skin. Signs include a white crumbly surface, cracking or a bar that zaps when touched to the tongue. Always weigh lye precisely and run every recipe through a soap calculator before you make it.' },
   { q: 'Can I use this soap calculator in ounces?', a: 'Yes. Switch the units to ounces, enter your oils in ounces and the lye and water results are given in ounces too.' }
 ]
+
+// Only reviewed recipes are sent to the browser for ?recipe= prefill
+const presets: RecipePreset[] = getReviewedRecipes().map(r => ({
+  slug: r.slug, lyeType: r.lyeType, method: r.method, superfat: r.superfat, oils: recipeOilWeights(r, 1000)
+}))
 
 export default function LyeCalculatorPage() {
   const schema = {
@@ -80,7 +85,7 @@ export default function LyeCalculatorPage() {
         </section>
 
         {/* CALCULATOR */}
-        <LyeCalculatorClient />
+        <LyeCalculatorClient presets={presets} />
 
         {/* HOW IT WORKS */}
         <section style={{ background: '#F0EAE0', padding: '5rem 0' }}>
