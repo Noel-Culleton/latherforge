@@ -5,9 +5,13 @@ export interface Post {
   date: string
   readTime: string
   category: string
-  sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string } }>
+  sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string }; shop?: { label: string; query: string } }>
   faqs?: Array<{ q: string; a: string }>
 }
+
+export const AMAZON_TAG = 'latherforge-20'
+export const amazonSearchUrl = (query: string) =>
+  `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AMAZON_TAG}`
 
 export const posts: Post[] = [
   {
@@ -405,7 +409,277 @@ export const posts: Post[] = [
         a: 'No. Soap sold only for laundry or household cleaning is a detergent, not a cosmetic, and falls under detergent and chemical labelling rules instead. If it is sold for use on skin as well, cosmetics law applies.'
       }
     ]
+  },
+  {
+    slug: 'cold-process-soap-problems',
+    title: '10 Cold Process Soap Problems and How to Fix Them',
+    description: 'Soda ash, cracking, volcanoes, glycerin rivers, partial gel, seizing, ricing, false trace, sweating and lye-heavy soap: what causes each one, whether your soap is safe, and how to stop it happening again.',
+    date: '2026-11-08',
+    readTime: '10 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      {
+        text: "Most soap problems look worse than they are. Eight of these ten are cosmetic and the soap is still fine to use once it has cured. Two need a closer look before the soap goes near skin. Here is each problem in one line, then the detail."
+      },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Soda ash: white powder on top. Cosmetic. Steam or plane it off',
+          'Cracking on top: the soap got too hot. Cosmetic',
+          'Soap volcano: severe overheating. Let it cool, then judge it',
+          'Glycerin rivers: translucent streaks. Cosmetic',
+          'Partial gel: darker ring in the middle. Cosmetic',
+          'Seized soap: batter sets solid in the jug. Usually still usable',
+          'Ricing: rice-like lumps in the batter. Often fixable',
+          'False trace: batter thickens from cooling, not soap-making. Warm and blend',
+          'Sweating: droplets on cured bars. Harmless',
+          'Crumbly or lye-heavy soap: check your measurements and do not use it on skin until you are sure'
+        ]
+      },
+      {
+        heading: '1. Soda Ash',
+        text: 'A white, powdery or crystal film on the surface. It forms when unreacted lye at the surface meets carbon dioxide in the air before the soap has fully saponified. It is cosmetic. Fix: steam the bars, wipe them with a damp cloth, or plane the top off. Prevent it: encourage gel phase, cover the mould, or lightly spray the top with isopropyl alcohol after pouring. Using slightly less water also helps.'
+      },
+      {
+        heading: '2. Cracking on Top',
+        text: 'Cracks across the top usually mean the soap overheated in the mould. Common causes are soaping too hot, heavy insulation, and ingredients that add heat, such as honey, sugar, milk or fragrance oils that accelerate. Fix: it is cosmetic, so plane the top if you want. Prevent it: soap cooler, insulate less, and put milk or honey soaps in the fridge or freezer for the first day. A thermometer helps you soap at the same temperature every time.',
+        shop: { label: 'Browse infrared thermometers on Amazon', query: 'infrared thermometer cooking' }
+      },
+      {
+        heading: '3. Soap Volcano',
+        text: 'The extreme version of overheating: the batter rises, bubbles and can spill out of the mould. Do not touch it while it is hot, because it is still caustic. Let it cool completely, wearing gloves and goggles. Once cool, it may be fine to cut and cure, or it may need rebatching. The causes and prevention are the same as for cracking.'
+      },
+      {
+        heading: '4. Glycerin Rivers',
+        text: 'Translucent, vein-like streaks, most visible in coloured soap. They are linked to high temperatures during gel, especially in recipes using titanium dioxide. They are cosmetic. Prevent them: disperse titanium dioxide well in a little oil, soap a little cooler, and avoid overheating in the mould.'
+      },
+      {
+        heading: '5. Partial Gel',
+        text: 'A darker or more translucent ring in the centre of the bar, with a lighter edge. The middle got hot enough to gel and the outside did not. It is cosmetic. Prevent it: either insulate the whole mould so it all gels, or keep the soap cool (fridge) so none of it gels.'
+      },
+      {
+        heading: '6. Seized Soap',
+        text: 'The batter thickens suddenly and sets in the jug, sometimes within seconds. The usual cause is a fragrance oil that accelerates trace, especially florals and spices, or soaping too hot. Fix: work fast, spoon it into the mould and press it down. Or switch to hot process to finish it. The soap is usually still usable once cured. Prevent it: test new fragrances in a small batch, soap cooler, and hand-stir after adding fragrance instead of stick blending.'
+      },
+      {
+        heading: '7. Ricing',
+        text: 'Small lumps like grains of rice appear in the batter, usually right after adding fragrance. Some fragrance oils react with the hard oils in a recipe. Fix: stick blend briefly to smooth it out, or switch to hot process. Prevent it: test fragrances first and add them to the oils before the lye, or at a cooler temperature.'
+      },
+      {
+        heading: '8. False Trace',
+        text: 'The batter thickens because solid fats like butters, lard or stearic acid are cooling and setting again, not because the soap is saponifying. It can separate in the mould later. Fix: warm the batter gently and stick blend until you reach a true trace. Prevent it: make sure every fat is completely melted and the oils are clear before adding the lye.'
+      },
+      {
+        heading: '9. Soap Sweating',
+        text: "Beads of liquid on cured bars. Glycerin in handmade soap pulls moisture from humid air, so bars \"sweat\" in damp rooms or after a temperature change. It is harmless. Fix: wipe the bars and move them somewhere drier, or use a dehumidifier. Wrap bars only after they have fully cured."
+      },
+      {
+        heading: '10. Crumbly or Lye-Heavy Soap',
+        text: "Crumbly soap has two very different causes. It may simply have been cut too late, which is common with hard recipes, salt bars and high stearic acid. Or it may be lye-heavy because of a measuring mistake. Warning signs of lye-heavy soap are liquid pockets, a greasy layer on top that will not absorb, or a strong \"zap\" when tested. If you suspect lye-heavy soap, do not use it on skin. Re-run your recipe through a soap calculator to check the lye amount, and check your scale. Many soap makers use the zap test or pH test strips to check; if in doubt, throw it out.",
+        link: { href: '/lye-calculator/', label: 'Check your recipe in the free soap calculator' }
+      },
+      {
+        heading: 'How to Stop Problems Before They Start',
+        items: [
+          'Weigh everything in grams on a digital scale, including the water',
+          'Run every recipe through a soap calculator and keep a 5% superfat as a safe starting point',
+          'Test new fragrance oils in a small batch first',
+          'Keep the temperature of your oils and lye consistent from batch to batch',
+          'Keep batch records, so you can see what changed when something goes wrong'
+        ],
+        link: { href: '/free-soap-journal/', label: 'Download the free printable soap batch journal' }
+      },
+      {
+        heading: 'Track Every Batch in LatherForge',
+        text: "Most of these problems are solved by knowing exactly what you did last time. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      {
+        text: 'Information only. Not professional or medical advice. Always follow lye safety guidance: goggles, gloves and long sleeves, good ventilation, and lye into water, never water into lye.'
+      }
+    ],
+    faqs: [
+      { q: 'Is soap with soda ash safe to use?', a: 'Yes. Soda ash is a cosmetic issue. Once the soap has cured, it is safe to use. You can steam or plane the ash off if you want a cleaner look.' },
+      { q: 'Why did my soap crack on top?', a: 'It overheated in the mould. Soaping too hot, heavy insulation, or adding honey, sugar, milk or an accelerating fragrance oil are the usual causes. It is cosmetic.' },
+      { q: 'How do I know if my soap is lye heavy?', a: 'Warning signs include liquid pockets, an oily layer that will not absorb, a crumbly texture with a sharp zap, or a high reading on pH strips. Check your recipe in a soap calculator and your scale. Do not use suspected lye-heavy soap on skin.' },
+      { q: 'What are orange spots on my soap?', a: 'Often called dreaded orange spots (DOS), they are usually a sign of oils going rancid. Common causes are old oils, a high proportion of oils rich in linoleic acid (such as sunflower), or curing in a damp place. Use fresh oils and cure soap with good airflow.' }
+    ]
+  },
+  {
+    slug: 'soap-making-tools',
+    title: '10 Soap Making Tools You Actually Need (and 5 You Don’t)',
+    description: 'The essential cold process soap making equipment for beginners: safety gear, a digital scale, stick blender, lye-safe containers and moulds. Plus five things to skip, including aluminium and vinegar.',
+    date: '2026-11-08',
+    readTime: '7 min read',
+    category: 'Beginner Guides',
+    sections: [
+      {
+        text: "You don't need a craft room full of gadgets to make cold process soap. You need ten things, most of which you may already have, and you need to avoid a few common mistakes. Here is the short list."
+      },
+      {
+        heading: 'Quick answer',
+        items: [
+          'Safety goggles', 'Chemical-resistant gloves', 'Digital scale (grams)', 'Stick blender',
+          'Lye-safe container for the lye solution', 'Stainless steel or heavy plastic mixing pot',
+          'Thermometer', 'Silicone spatulas', 'Soap mould', 'A soap calculator'
+        ]
+      },
+      { heading: '1. Safety Goggles', text: 'Lye solution in the eye is a medical emergency. Wear goggles, not just glasses, every time you handle lye or raw soap batter.', shop: { label: 'Browse chemical splash goggles on Amazon', query: 'chemical splash safety goggles' } },
+      { heading: '2. Chemical-Resistant Gloves', text: 'Nitrile gloves protect your hands from lye solution and fresh soap batter, which stays caustic until it has saponified. Add long sleeves.', shop: { label: 'Browse nitrile gloves on Amazon', query: 'nitrile gloves' } },
+      { heading: '3. Digital Scale', text: 'Soap making is measured by weight, not volume. A digital kitchen scale that reads in grams is essential, and a scale that measures in 1 g steps or finer is better for small batches. Weigh the water too.', shop: { label: 'Browse digital scales (grams) on Amazon', query: 'digital kitchen scale grams 0.1g' } },
+      { heading: '4. Stick Blender', text: 'A stick (immersion) blender brings soap to trace in minutes instead of the hour or more it takes by hand. Keep it for soap only.', shop: { label: 'Browse stick blenders on Amazon', query: 'stick immersion blender' } },
+      { heading: '5. Lye-Safe Container', text: 'Mix your lye solution in heavy-duty plastic marked with recycling code 5 (PP) or in stainless steel. Lye solution gets very hot, so choose something sturdy with a handle.', shop: { label: 'Browse PP #5 plastic pitchers on Amazon', query: 'polypropylene pitcher pp5 heavy duty' } },
+      { heading: '6. Mixing Pot', text: 'A stainless steel pot or a large heavy plastic jug for melting and mixing your oils. Stainless steel lets you melt solid fats on the hob.', shop: { label: 'Browse stainless steel pots on Amazon', query: 'stainless steel pot' } },
+      { heading: '7. Thermometer', text: 'Temperature affects how fast your soap traces and whether it overheats. A probe or infrared thermometer helps you repeat results.', shop: { label: 'Browse infrared and probe thermometers on Amazon', query: 'infrared thermometer cooking' } },
+      { heading: '8. Silicone Spatulas', text: 'For scraping every bit of batter out of the pot. Silicone is lye-safe and easy to clean.', shop: { label: 'Browse silicone spatulas on Amazon', query: 'silicone spatula set' } },
+      { heading: '9. Soap Mould', text: 'A silicone loaf mould is the easiest start. A wooden mould lined with baking paper also works. Start simple; you can buy fancy moulds later.', shop: { label: 'Browse silicone loaf soap moulds on Amazon', query: 'silicone loaf soap mold' } },
+      {
+        heading: '10. A Soap Calculator',
+        text: 'Every recipe needs its lye and water worked out for the exact oils you use. Never guess and never copy a recipe without checking it. Our free LatherForge soap calculator does this in your browser, with no signup.',
+        link: { href: '/lye-calculator/', label: 'Use the free LatherForge soap calculator' }
+      },
+      {
+        heading: '5 Things You Don’t Need (or Should Avoid)',
+        items: [
+          'Aluminium pots, spoons or moulds: lye reacts with aluminium. Never use it',
+          'Wooden spoons for mixing lye: lye breaks down wood over time, and it can splinter into your soap',
+          'Glass for mixing lye: many soap makers avoid it, because the heat can crack it and lye can weaken glass over time',
+          'Vinegar for lye splashes: rinse skin with plenty of cool running water instead, and get medical help for eyes or serious burns',
+          'Expensive all-in-one kits: they often come with small amounts and tools you will replace. Buy the essentials separately'
+        ]
+      },
+      {
+        heading: 'Next Steps',
+        text: 'Once you have your tools, follow a beginner recipe exactly, keep records of every batch, and let your soap cure fully before using it.',
+        link: { href: '/blog/cold-process-soap-beginners-guide/', label: 'Read the complete beginner’s guide to cold process soap' }
+      },
+      {
+        heading: 'One More Tool: Somewhere to Keep Your Records',
+        text: "Paper works (try our free printable batch journal). If you would rather keep it digital, LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or medical advice. Always follow lye safety guidance and keep lye away from children and pets.' }
+    ],
+    faqs: [
+      { q: 'What equipment do I need to start making soap?', a: 'Safety goggles, chemical-resistant gloves, a digital scale that reads in grams, a stick blender, a lye-safe container (PP plastic code 5 or stainless steel), a mixing pot, a thermometer, silicone spatulas, a soap mould and a soap calculator.' },
+      { q: 'Can I use aluminium for soap making?', a: 'No. Lye reacts with aluminium. Use stainless steel or heavy plastic marked with recycling code 5 (PP) instead.' },
+      { q: 'Should I use vinegar on a lye burn?', a: 'No. Rinse the skin with plenty of cool running water. For eye contact or serious burns, get medical help straight away.' },
+      { q: 'Do I need a stick blender to make soap?', a: 'You can stir by hand, but it can take an hour or more to reach trace. A stick blender gets you there in minutes and is the one tool most soap makers say they would not be without.' }
+    ]
+  },
+  {
+    slug: 'best-oils-for-soap-making',
+    title: '12 Best Oils for Soap Making and What Each One Does',
+    description: 'Olive, coconut, palm, castor, shea, cocoa butter, lard, tallow, sweet almond, avocado, rice bran and babassu: what each oil brings to a soap bar, typical amounts, and their NaOH SAP values.',
+    date: '2026-11-08',
+    readTime: '8 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      {
+        text: 'Every oil brings something different to a bar: hardness, lather, mildness or conditioning. Good recipes balance a few of them. Here are the twelve most useful soap making oils, with what they do, a common starting range, and the NaOH SAP value from our SAP chart.'
+      },
+      {
+        heading: 'Quick answer',
+        items: [
+          'For hardness: coconut, palm, cocoa butter, lard, tallow, babassu',
+          'For big bubbly lather: coconut and babassu, boosted by castor',
+          'For mildness and conditioning: olive, shea, sweet almond, avocado, rice bran',
+          'A classic beginner balance: olive, coconut, a hard fat or butter, and a little castor'
+        ]
+      },
+      { heading: '1. Olive Oil (NaOH SAP 0.135)', text: 'Mild and conditioning, the backbone of many recipes. Slow to trace and needs a longer cure. Common range: 25% to 100% (100% olive is castile soap).' },
+      { heading: '2. Coconut Oil 76° (NaOH SAP 0.183)', text: 'Makes a hard bar with big, bubbly lather and strong cleansing. Above about 30% it can feel drying, unless you raise the superfat (salt bars often use far more coconut with a high superfat). Common range: 15% to 30%.' },
+      { heading: '3. Palm Oil (NaOH SAP 0.142)', text: 'Adds hardness and a stable, creamy lather. If you use it, choose RSPO-certified sustainable palm. Many soap makers leave it out and use butters, lard or tallow instead. Common range: 15% to 30%.' },
+      { heading: '4. Castor Oil (NaOH SAP 0.128)', text: 'Boosts and stabilises lather. Too much makes a soft, sticky bar. Common range: 5% to 10%.' },
+      { heading: '5. Shea Butter (NaOH SAP 0.128)', text: 'Adds hardness and a silky, conditioning feel. Common range: 5% to 15%.' },
+      { heading: '6. Cocoa Butter (NaOH SAP 0.138)', text: 'Makes a very hard bar. High amounts can make soap brittle or prone to cracking. Common range: 5% to 15%.' },
+      { heading: '7. Lard (NaOH SAP 0.141)', text: 'Traditional and affordable. Gives a hard, mild bar with creamy, stable lather. Common range: 20% to 40%, and often higher in traditional recipes.' },
+      { heading: '8. Beef Tallow (NaOH SAP 0.143)', text: 'Similar to lard: a hard, long-lasting, mild bar with creamy lather. Common range: 20% to 40%, often higher.' },
+      { heading: '9. Sweet Almond Oil (NaOH SAP 0.139)', text: 'A conditioning liquid oil. Mention it on your label and listing, because some customers have nut allergies. Common range: 5% to 15%.' },
+      { heading: '10. Avocado Oil (NaOH SAP 0.133)', text: 'Rich and conditioning. Common range: 5% to 15%.' },
+      { heading: '11. Rice Bran Oil (NaOH SAP 0.128)', text: 'Conditioning, and often a cheaper alternative to some of the olive oil in a recipe. Common range: 5% to 20%.' },
+      { heading: '12. Babassu Oil (NaOH SAP 0.175)', text: 'Behaves much like coconut oil (hardness and big lather), and is often used as a coconut alternative. Common range: 15% to 30%.' },
+      {
+        heading: 'Oils to Use With Care',
+        text: 'Oils high in linoleic acid, such as sunflower, grapeseed and hemp, are lovely in small amounts but can shorten shelf life and make orange spots (rancidity) more likely when used heavily. Many soap makers keep them to around 15% of the recipe or less.'
+      },
+      {
+        heading: 'Put It Together',
+        text: 'The percentages above are common starting points, not rules. Whatever oils you choose, the lye amount must be calculated for your exact recipe.',
+        link: { href: '/sap-values/', label: 'See SAP values for 46 oils' }
+      },
+      {
+        heading: 'Cost Your Oils Properly',
+        text: "Oil prices change, and so does your real cost per bar. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Always run your recipe through a soap calculator and follow lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'What is the best oil for soap making?', a: 'There is no single best oil. Olive oil is the most versatile and the mildest, coconut oil gives hardness and lather, and castor oil boosts lather. Most good recipes combine three to five oils.' },
+      { q: 'How much coconut oil should I use in soap?', a: 'Commonly 15% to 30% of the oils. More than about 30% can feel drying unless you raise the superfat, which is how salt bars use much higher amounts.' },
+      { q: 'Can I make soap without palm oil?', a: 'Yes. Many soap makers replace palm with a mix of butters (shea, cocoa), lard or tallow, or extra coconut or babassu for hardness.' },
+      { q: 'What is the SAP value of olive oil?', a: 'Olive oil has a NaOH SAP value of about 0.135 (KOH about 0.190). Use a soap calculator rather than working it out by hand.' }
+    ]
+  },
+  {
+    slug: 'best-essential-oils-for-soap',
+    title: '9 Best Essential Oils for Soap (and Which Ones Fade)',
+    description: 'Lavender, lemongrass, patchouli, cedarwood, litsea, peppermint, eucalyptus, tea tree and sweet orange in cold process soap: how well each scent holds, which fade, how to anchor them, and what allergens mean for your label.',
+    date: '2026-11-08',
+    readTime: '7 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      {
+        text: 'Essential oils behave differently in cold process soap. Lye and a long cure can weaken some scents, while others stay strong for months. Here are nine popular choices, how well soap makers commonly report they hold, and how to make lighter scents last longer.'
+      },
+      {
+        heading: 'Quick answer',
+        items: [
+          'Usually hold well: lavender, lemongrass, patchouli, cedarwood (atlas), litsea cubeba',
+          'Often fade: peppermint, eucalyptus, tea tree and especially sweet orange',
+          'Anchor lighter scents with a base note such as patchouli or cedarwood',
+          'Every essential oil adds fragrance allergens your label may need to list'
+        ]
+      },
+      { heading: '1. Lavender', text: 'The classic soap scent and a reliable performer. Lavender naturally contains linalool, a listed fragrance allergen.' },
+      { heading: '2. Lemongrass', text: 'Strong, fresh and long-lasting. Some soap makers find it can speed up trace slightly, so be ready to pour.' },
+      { heading: '3. Patchouli', text: 'A deep base note that holds very well and helps anchor lighter oils. A little goes a long way.' },
+      { heading: '4. Cedarwood (Atlas)', text: 'Woody, warm and long-lasting. Pairs well with citrus and lavender and helps them hold.' },
+      { heading: '5. Litsea Cubeba', text: 'A lemony scent that holds far better than lemon oil, which makes it popular for citrus blends.' },
+      { heading: '6. Peppermint', text: 'Bright and cooling, but often fades during cure. Blend it with a base note to help it last.' },
+      { heading: '7. Eucalyptus', text: 'Fresh and clean, but often fades. Pairs well with lavender, peppermint and cedarwood.' },
+      { heading: '8. Tea Tree', text: 'Medicinal and herbaceous. It holds moderately. Do not make medical claims about it on your label or listing; cosmetic soap cannot claim to treat skin conditions.' },
+      { heading: '9. Sweet Orange', text: 'Loved by customers but notorious for fading in soap. Soap makers often use a "folded" (concentrated, e.g. 5-fold or 10-fold) orange oil, and anchor it with litsea or cedarwood.' },
+      {
+        heading: 'How to Make Scents Last Longer',
+        items: [
+          'Blend top notes (citrus, mint) with a middle or base note (lavender, cedarwood, patchouli)',
+          'Use folded citrus oils',
+          'Add essential oils at a cooler temperature, at light trace',
+          'Cure bars somewhere cool and airy, and store them away from sunlight'
+        ]
+      },
+      {
+        heading: 'How Much to Use, and Allergens',
+        text: 'Do not guess usage rates. Each essential oil has its own safe maximum, so follow your supplier’s safety data and IFRA guidance, and have your recipe assessed. Essential oils contain fragrance allergens such as linalool and limonene, and under the expanded EU allergen rules some must be named on your label. Your supplier’s allergen declaration and your safety assessor decide what goes on the label.',
+        link: { href: '/cpsr-for-soap/', label: 'Selling your soap? Read our CPSR and allergen guide' }
+      },
+      {
+        heading: 'Keep Your Fragrance Records Together',
+        text: "Every fragrance change is a new formula, with its own allergens and records. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional, legal or medical advice. Some essential oils are not suitable for everyone; follow your supplier’s safety guidance.' }
+    ],
+    faqs: [
+      { q: 'Which essential oils last longest in cold process soap?', a: 'Soap makers commonly find that lavender, lemongrass, patchouli, cedarwood and litsea cubeba hold well through the cure.' },
+      { q: 'Why does orange essential oil fade in soap?', a: 'Citrus oils are light, volatile top notes, so much of the scent is lost during saponification and curing. Folded (concentrated) orange oil and a base note anchor help it last.' },
+      { q: 'How much essential oil should I put in soap?', a: 'It depends on the oil. Each one has its own safe maximum, so follow your supplier’s safety data and IFRA guidance, and have your recipe checked by a safety assessor if you sell it.' },
+      { q: 'Do essential oils need to be listed as allergens on soap labels?', a: 'Often, yes. Essential oils contain fragrance allergens such as linalool and limonene, which must be named when above the legal threshold (0.01% for rinse-off products like soap in the EU). Use your supplier’s allergen declaration.' }
+    ]
   }
+
 ]
 
 export function getAllPosts(): Post[] {

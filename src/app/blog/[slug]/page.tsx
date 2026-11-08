@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import { getPostBySlug, getAllPosts, formatDate } from '@/lib/posts'
+import { getPostBySlug, getAllPosts, formatDate, amazonSearchUrl } from '@/lib/posts'
 import { autolink } from '@/lib/autolink'
 import type { ReactNode } from 'react'
 type Props = {
@@ -83,6 +83,11 @@ export default async function BlogPostPage({ params }: Props) {
       <section style={{ background: '#FAF7F2', padding: '3rem 0 5rem' }}>
         <div className="container" style={{ maxWidth: '760px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{ borderTop: '1px solid #E8DFD0', paddingTop: '2.5rem' }}>
+            {post.sections.some(s => s.shop) && (
+              <p role="note" style={{ fontSize: '0.82rem', color: '#7A6E62', lineHeight: 1.6, background: '#FFFFFF', border: '1px solid #E8DFD0', padding: '0.75rem 1rem', marginBottom: '2rem' }}>
+                <strong style={{ color: '#3E2820' }}>Affiliate disclosure:</strong> some links on this page are affiliate links. If you buy through them, LatherForge may earn a commission at no extra cost to you. As an Amazon Associate I earn from qualifying purchases. Links open Amazon search results, not a specific product we have tested; check reviews and safety ratings before you buy.
+              </p>
+            )}
             {post.sections.map((section, i) => (
               <div key={i} style={{ marginBottom: '2rem' }}>
                 {section.heading && (
@@ -103,6 +108,11 @@ export default async function BlogPostPage({ params }: Props) {
                       </li>
                     ))}
                   </ul>
+                )}
+                {section.shop && (
+                  <p style={{ marginTop: '0.6rem' }}>
+                    <a href={amazonSearchUrl(section.shop.query)} target="_blank" rel="sponsored nofollow noopener" style={{ display: 'inline-block', fontSize: '0.88rem', fontWeight: 600, color: '#3E2820', background: '#F0EAE0', border: '1px solid #E8DFD0', padding: '0.45rem 0.8rem', textDecoration: 'none' }}>{section.shop.label} ↗</a>
+                  </p>
                 )}
                 {section.link && (
                   <p style={{ marginTop: '0.75rem' }}>
