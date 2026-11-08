@@ -5,7 +5,7 @@ export interface Post {
   date: string
   readTime: string
   category: string
-  sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string }; shop?: { label: string; query: string } }>
+  sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string }; shop?: { label: string; query: string }; videos?: Array<{ id: string; title: string }> }>
   faqs?: Array<{ q: string; a: string }>
 }
 
@@ -437,6 +437,11 @@ export const posts: Post[] = [
         ]
       },
       {
+        heading: 'Watch: Is My Soap Ruined?',
+        text: 'Prefer video? This walkthrough covers how to tell a cosmetic problem from one that needs a closer look.',
+        videos: [{ id: '-qBG33RFIKM', title: 'Is My Soap Ruined?' }]
+      },
+      {
         heading: '1. Soda Ash',
         text: 'A white, powdery or crystal film on the surface. It forms when unreacted lye at the surface meets carbon dioxide in the air before the soap has fully saponified. It is cosmetic. Fix: steam the bars, wipe them with a damp cloth, or plane the top off. Prevent it: encourage gel phase, cover the mould, or lightly spray the top with isopropyl alcohol after pouring. Using slightly less water also helps.'
       },
@@ -477,6 +482,14 @@ export const posts: Post[] = [
         heading: '10. Crumbly or Lye-Heavy Soap',
         text: "Crumbly soap has two very different causes. It may simply have been cut too late, which is common with hard recipes, salt bars and high stearic acid. Or it may be lye-heavy because of a measuring mistake. Warning signs of lye-heavy soap are liquid pockets, a greasy layer on top that will not absorb, or a strong \"zap\" when tested. If you suspect lye-heavy soap, do not use it on skin. Re-run your recipe through a soap calculator to check the lye amount, and check your scale. Many soap makers use the zap test or pH test strips to check; if in doubt, throw it out.",
         link: { href: '/lye-calculator/', label: 'Check your recipe in the free soap calculator' }
+      },
+      {
+        heading: 'Bonus: Soft Soap and Bars That Melt Fast',
+        text: 'Two more common complaints. Soap that is still soft after unmoulding often just needs more time: recipes high in liquid oils, or made with extra water, take longer to firm up. Bars that dissolve quickly in the shower are usually not fully cured, are made with a high share of soft oils, or are sitting in water. A full cure and a draining soap dish make a real difference. If soft soap also looks oily or has liquid pockets, treat it as possibly lye-heavy and check your recipe first.',
+        videos: [
+          { id: 'Zi9wTnohzMQ', title: 'Why Your Cold Process Soap Is Still Soft' },
+          { id: 'dFK7zuoQipM', title: 'Why Your Handmade Soap Dissolves So Quickly' }
+        ]
       },
       {
         heading: 'How to Stop Problems Before They Start',

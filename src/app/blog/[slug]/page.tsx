@@ -109,6 +109,24 @@ export default async function BlogPostPage({ params }: Props) {
                     ))}
                   </ul>
                 )}
+                {section.videos?.map(v => (
+                  <div key={v.id} style={{ marginTop: '1rem' }}>
+                    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', border: '1px solid #E8DFD0' }}>
+                      <iframe
+                        src={`https://www.youtube-nocookie.com/embed/${v.id}`}
+                        title={v.title}
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+                      />
+                    </div>
+                    <p style={{ fontSize: '0.85rem', color: '#7A6E62', marginTop: '0.4rem' }}>
+                      <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener" style={{ color: '#7A6E62', textDecoration: 'underline' }}>{v.title} on YouTube</a>
+                    </p>
+                  </div>
+                ))}
                 {section.shop && (
                   <p style={{ marginTop: '0.6rem' }}>
                     <a href={amazonSearchUrl(section.shop.query)} target="_blank" rel="sponsored nofollow noopener" style={{ display: 'inline-block', fontSize: '0.88rem', fontWeight: 600, color: '#3E2820', background: '#F0EAE0', border: '1px solid #E8DFD0', padding: '0.45rem 0.8rem', textDecoration: 'none' }}>{section.shop.label} ↗</a>
