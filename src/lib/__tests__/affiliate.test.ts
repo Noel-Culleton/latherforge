@@ -15,3 +15,11 @@ describe('amazon affiliate links', () => {
     }
   })
 })
+
+describe('embedded videos', () => {
+  it('use valid 11-character YouTube ids', () => {
+    for (const p of posts) for (const s of p.sections) for (const v of s.videos ?? []) {
+      expect(v.id, `${p.slug}: ${v.title}`).toMatch(/^[A-Za-z0-9_-]{11}$/)
+    }
+  })
+})
