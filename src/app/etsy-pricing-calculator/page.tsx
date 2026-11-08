@@ -257,11 +257,11 @@ export default function EtsyPricingCalculatorPage() {
             LatherForge holds them. Every recipe costed from live ingredient prices, every batch tracked to its cure date, every product priced off what it genuinely cost to make that week — not what it cost the last time you checked.
           </p>
           <p style={{"color": "#C9B49A", "lineHeight": 1.75, "marginBottom": "2rem", "fontSize": "0.95rem"}}>
-            {"Live 1 January 2027. Waitlist members get "}
+            {"Live 1 January 2027. The first 300 on the waitlist get "}
             <strong style={{"color": "#F5EDD6"}}>
-              14 days free
+              3 months free
             </strong>
-            {" on launch day."}
+            {", no card needed to start."}
           </p>
           <a href="/early-access/" className="btn-primary">
             Join the Early Access Inner Circle
