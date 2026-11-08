@@ -99,6 +99,11 @@ export const posts: Post[] = [
         ]
       },
       {
+        heading: 'Watch: Start Here Video Series',
+        text: 'Prefer to learn by watching? Our free Start Here playlist on YouTube covers lye safety, beginner recipes and your first batch, in order.',
+        link: { href: 'https://www.youtube.com/playlist?list=PLGjHBpRtE2og', label: 'Watch the Start Here: Beginner Soap Making playlist on YouTube' }
+      },
+      {
         heading: 'Why Cure Time Matters',
         text: 'Most saponification happens in the first 24–48 hours, but fresh soap is still soft and full of water. Curing for 4–6 weeks lets that water evaporate, so the bar becomes harder, milder and much longer lasting. Rushing cure time produces a soft bar that melts away quickly in the shower.',
         link: { href: '/blog/how-long-does-soap-need-to-cure/', label: 'Read the full soap cure time guide' }
@@ -439,7 +444,8 @@ export const posts: Post[] = [
       {
         heading: 'Watch: Is My Soap Ruined?',
         text: 'Prefer video? This walkthrough covers how to tell a cosmetic problem from one that needs a closer look.',
-        videos: [{ id: '-qBG33RFIKM', title: 'Is My Soap Ruined?' }]
+        videos: [{ id: '-qBG33RFIKM', title: 'Is My Soap Ruined?' }],
+        link: { href: 'https://www.youtube.com/playlist?list=PLQTus9z849YQ', label: 'Watch the full Soap Problems Fixed playlist on YouTube' }
       },
       {
         heading: '1. Soda Ash',

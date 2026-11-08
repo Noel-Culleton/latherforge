@@ -134,7 +134,11 @@ export default async function BlogPostPage({ params }: Props) {
                 )}
                 {section.link && (
                   <p style={{ marginTop: '0.75rem' }}>
-                    <Link href={section.link.href} style={{ color: '#5C3D2E', fontWeight: 600, textDecoration: 'underline' }}>{section.link.label} →</Link>
+                    {section.link.href.startsWith('http') ? (
+                      <a href={section.link.href} target="_blank" rel="noopener" style={{ color: '#5C3D2E', fontWeight: 600, textDecoration: 'underline' }}>{section.link.label} ↗</a>
+                    ) : (
+                      <Link href={section.link.href} style={{ color: '#5C3D2E', fontWeight: 600, textDecoration: 'underline' }}>{section.link.label} →</Link>
+                    )}
                   </p>
                 )}
               </div>
