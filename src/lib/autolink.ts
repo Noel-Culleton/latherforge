@@ -22,6 +22,10 @@ const BASE_RULES: LinkRule[] = [
   rule('/blog/how-to-make-hot-process-soap/', ['hot process soap', 'hot process']),
   rule('/blog/how-to-make-liquid-soap/', ['liquid soap']),
   rule('/blog/cold-process-soap-beginners-guide/', ['cold process soap']),
+  rule('/blog/cold-process-soap-problems/', ['soap problems', 'soda ash', 'seized soap', 'glycerin rivers']),
+  rule('/blog/soap-making-tools/', ['soap making tools', 'soap making equipment', 'stick blender']),
+  rule('/blog/best-oils-for-soap-making/', ['oils for soap making', 'soap making oils', 'best oils']),
+  rule('/blog/best-essential-oils-for-soap/', ['essential oils for soap', 'essential oil']),
   rule('/free-soap-journal/', ['batch records', 'batch record', 'soap journal', 'batch journal']),
   rule('/blog/selling-handmade-soap-legal-requirements/', ['sell soap legally', 'selling soap legally', 'selling handmade soap legally'])
 ]
