@@ -22,6 +22,7 @@ const BASE_RULES: LinkRule[] = [
   rule('/blog/how-to-make-hot-process-soap/', ['hot process soap', 'hot process']),
   rule('/blog/how-to-make-liquid-soap/', ['liquid soap']),
   rule('/blog/cold-process-soap-beginners-guide/', ['cold process soap']),
+  rule('/free-soap-journal/', ['batch records', 'batch record', 'soap journal', 'batch journal']),
   rule('/blog/selling-handmade-soap-legal-requirements/', ['sell soap legally', 'selling soap legally', 'selling handmade soap legally'])
 ]
 

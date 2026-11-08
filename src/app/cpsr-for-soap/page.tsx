@@ -216,7 +216,7 @@ export default function CpsrForSoapPage() {
             <p style={P}>For the full step-by-step picture, including Good Manufacturing Practice and record keeping, read our <Link href="/blog/selling-handmade-soap-legal-requirements/" style={A}>Selling Handmade Soap Legally checklist</Link>.</p>
 
             <h2 style={H2}>Free checklist: are you ready to sell?</h2>
-            <p style={P}>Tick off each step. Your progress is saved in this browser only.</p>
+            <p style={P}>Tick off each step. Your progress is saved in this browser only. Need somewhere to record batch numbers? Download the free <Link href="/free-soap-journal/" style={A}>printable soap batch journal</Link>.</p>
             <ReadinessChecklist />
 
             <div style={{ background: '#5C3D2E', color: '#FAF7F2', padding: '1.5rem', marginTop: '2rem' }}>

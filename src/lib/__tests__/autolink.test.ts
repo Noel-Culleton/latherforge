@@ -32,7 +32,7 @@ describe('autolink', () => {
 
   it('every link target is a real page', () => {
     const postPaths = new Set(posts.map(p => `/blog/${p.slug}/`))
-    const staticPages = new Set(['/cpsr-for-soap/', '/sap-values/', '/lye-calculator/', '/etsy-pricing-calculator/', '/soap-recipes/'])
+    const staticPages = new Set(['/cpsr-for-soap/', '/sap-values/', '/lye-calculator/', '/etsy-pricing-calculator/', '/soap-recipes/', '/free-soap-journal/'])
     for (const r of getLinkRules()) {
       expect(postPaths.has(r.href) || staticPages.has(r.href), `${r.href} is not a page`).toBe(true)
     }

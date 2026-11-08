@@ -110,7 +110,7 @@ const schema = {
           "name": "When does LatherForge launch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens, plus 14 days free on launch day."
+            "text": "LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens. The first 300 people on the waitlist get 3 months free, with no card needed to start; after the 3 months, you add payment details and choose a plan to keep using it."
           }
         },
         {
@@ -192,11 +192,11 @@ export default function HomePage() {
               LatherForge runs the business behind your soap — batches, cure dates, true cost per bar and compliance records in one dashboard. Priced for makers, not manufacturers.
             </p>
             <p className="note">
-              {"Live 1 January 2027. Join the waitlist and get "}
+              {"Live 1 January 2027. The first 300 on the waitlist get "}
               <strong>
-                14 days free
+                3 months free
               </strong>
-              {" on launch day."}
+              {", no card needed to start."}
             </p>
             <div className="ctas">
               <Link href="/early-access/" className="btn">
@@ -565,7 +565,7 @@ export default function HomePage() {
               When does LatherForge launch?
             </summary>
             <p>
-              LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens, plus 14 days free on launch day.
+              LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens. The first 300 people on the waitlist get 3 months free, with no card needed to start; after the 3 months, you add payment details and choose a plan to keep using it.
             </p>
           </details>
           <details>
@@ -621,7 +621,7 @@ export default function HomePage() {
             Stop running a real business on scrap paper.
           </h2>
           <p>
-            Live 1 January 2027. Waitlist members get 14 days free on launch day.
+            Live 1 January 2027. The first 300 on the waitlist get 3 months free, no card needed to start.
           </p>
           <Link href="/early-access/" className="btn">
             Get launch access
