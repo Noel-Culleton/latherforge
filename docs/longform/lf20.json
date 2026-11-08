@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "title": "Can You Make Soap Without Lye? (The Honest Answer)",
+  "file": "Can_You_Make_Soap_Without_Lye",
+  "date": "Thu 28 Jan 2027",
+  "playlist": "Soap Making for Beginners",
+  "link": "lye",
+  "thumb": [
+   "SOAP",
+   "WITHOUT LYE?",
+   "THE TRUTH"
+  ],
+  "band": "THE HONEST ANSWER",
+  "thumb_clip": "nl_hook1",
+  "voice": "en-IE-ConnorNeural",
+  "region": "eastus",
+  "intro": "Can you make soap without lye? The honest answer: no, all real soap is made with lye. Here's why, what \"no-lye\" kits really are, and why a properly made bar contains no lye at all.",
+  "pinned": "Did you think melt and pour was lye-free? 👇 Free soap recipes: https://latherforge.com/soap-recipes/"
+ },
+ "ch": [
+  {
+   "label": "",
+   "title": "SOAP WITHOUT LYE?|THE HONEST ANSWER",
+   "key": "What the videos don't tell you",
+   "pool": [
+    "nl_hook1",
+    "nl_hook2",
+    "broll_cut1"
+   ],
+   "text": "Can you make soap without lye? It's one of the most searched soap questions there is, and you'll find plenty of videos saying yes.\nThe honest answer is no. All real soap is made with lye.\nBut that's not the scary answer it sounds like. In this video I'll explain why, what no-lye soap kits really are, and why a properly made bar of soap contains no lye at all.",
+   "yt": "Intro"
+  },
+  {
+   "label": "THE SCIENCE",
+   "title": "WHAT MAKES SOAP",
+   "key": "Oil + lye|= soap",
+   "pool": [
+    "nl_oils1",
+    "nl_reaction1",
+    "broll_blend1"
+   ],
+   "text": "Soap is what you get when fats and oils react with a strong alkali. For bar soap, that alkali is sodium hydroxide. For liquid soap, it's potassium hydroxide.\nThat reaction is called saponification. The oils and the lye change into something new: soap and glycerin. Without that reaction, you just have oil.",
+   "yt": "What makes soap"
+  },
+  {
+   "label": "MYTH 1",
+   "title": "BAKING SODA?",
+   "key": "Too weak|Won't make soap",
+   "pool": [
+    "nl_bakingsoda1",
+    "nl_oils1",
+    "broll_pour1"
+   ],
+   "text": "You'll see claims that you can use baking soda instead. You can't. Baking soda is far too weak an alkali to turn oils into soap. You'll get a greasy mess, not a bar.\nThe same goes for most \"natural\" lye substitutes. Traditional lye made from wood ash is still lye, just with an unpredictable strength, which makes it riskier, not safer.",
+   "yt": "Myth: baking soda"
+  },
+  {
+   "label": "MYTH 2",
+   "title": "MELT AND POUR",
+   "key": "Lye was used|by the maker",
+   "pool": [
+    "nl_mp1",
+    "nl_mp2",
+    "broll_mould1"
+   ],
+   "text": "So what about no-lye soap kits? Those use melt and pour base.\nThe manufacturer made that base with lye, and the reaction is finished before it ever reaches you. You're melting soap that already exists and pouring it into a new shape.\nIt's a brilliant way to start, especially with children, because you never handle raw lye yourself. But lye was still part of making it.",
+   "yt": "Myth: melt and pour"
+  },
+  {
+   "label": "THE GOOD NEWS",
+   "title": "NO LYE LEFT",
+   "key": "Made right =|zero free lye",
+   "pool": [
+    "nl_bar1",
+    "broll_calc1",
+    "broll_cure1"
+   ],
+   "text": "Here's the good news. In a properly made, cured bar, the lye is used up completely by the reaction. There's none left over.\nTwo things make sure of that. First, an accurate recipe, worked out in a soap calculator and weighed in grams. Second, a superfat, usually around five percent, which means a little more oil than the lye can react with. That leaves a safety margin of oil, never leftover lye.",
+   "yt": "Why good soap has no lye left"
+  },
+  {
+   "label": "SAFETY",
+   "title": "HANDLE IT SAFELY",
+   "key": "Goggles · gloves|Lye into water",
+   "pool": [
+    "safety1",
+    "nl_lye1",
+    "broll_pour1"
+   ],
+   "text": "If you decide to make cold process soap, lye just needs respect.\nWear goggles and gloves. Always add the lye to the water, never water to lye. Mix it somewhere well ventilated, and keep children and pets out of the room. If you splash it on your skin, rinse with plenty of cool running water.\nDo that, and it's no more dangerous than many things already in your kitchen.",
+   "yt": "Lye safety basics"
+  },
+  {
+   "label": "OUTRO",
+   "title": "",
+   "key": "",
+   "pool": [
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "That's the honest answer. If this saved a batch, subscribe, because every week I take one soap problem and fix it properly.\nBefore your next batch, run your recipe through the free soap calculator at latherforge dot com. It's free and there's no signup.\nLatherForge launches on the first of January 2027. The first 300 people on the waitlist get three months free, with no card needed to start. The link's in the description.",
+   "yt": "Outro"
+  }
+ ]
+}

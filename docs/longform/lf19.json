@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "title": "How to Rebatch Soap: Save a Failed Batch",
+  "file": "How_To_Rebatch_Soap",
+  "date": "Thu 21 Jan 2027",
+  "playlist": "Soap Problems Fixed",
+  "link": "lye",
+  "thumb": [
+   "DON'T BIN IT",
+   "REBATCH",
+   "IT"
+  ],
+  "band": "SAVE A FAILED BATCH",
+  "thumb_clip": "rb_hook1",
+  "voice": "en-IE-ConnorNeural",
+  "region": "eastus",
+  "intro": "How to rebatch cold process soap step by step: when rebatching can save a batch, when it can't, and how to grate, melt, scent and re-mould your soap.",
+  "pinned": "What made you rebatch: a seized batch, ugly swirls or a forgotten fragrance? 👇 Free soap calculator: https://latherforge.com/lye-calculator/"
+ },
+ "ch": [
+  {
+   "label": "",
+   "title": "DON'T BIN IT|REBATCH IT",
+   "key": "Save a failed batch",
+   "pool": [
+    "rb_hook1",
+    "rb_hook2",
+    "broll_cut1"
+   ],
+   "text": "Your batch seized. Or the swirl went wrong, you forgot the fragrance, or the bars came out ugly.\nBefore you throw it away, you can probably rebatch it. Rebatching means grating your soap, melting it down gently and pouring it into a mould again.\nIn this video I'll show you when rebatching works, when it doesn't, and exactly how to do it.",
+   "yt": "Intro"
+  },
+  {
+   "label": "WHEN",
+   "title": "WHEN IT WORKS",
+   "key": "Seized · ugly · no scent|Not for lye heavy",
+   "pool": [
+    "rb_seized1",
+    "rb_ugly1",
+    "broll_cut1"
+   ],
+   "text": "First, when should you rebatch?\nIt's ideal for a seized batch, a separated or ricey batch you've stick blended back together, a design you don't like, or soap where you forgot the fragrance.\nWhat rebatching can't do on its own is fix a lye-heavy soap. Melting it again doesn't remove extra lye. If you suspect a lye-heavy batch, you would need to recalculate and add oil, and that's an advanced fix. If you're not sure how much extra lye is in it, it's safer to throw it out.",
+   "yt": "When rebatching works"
+  },
+  {
+   "label": "STEP 1",
+   "title": "GRATE IT",
+   "key": "Small shreds|melt faster",
+   "pool": [
+    "rb_grate1",
+    "rb_grate2",
+    "safety1"
+   ],
+   "text": "Step one: grate the soap.\nUse a cheese grater kept only for soap, or chop it into small pieces. The smaller the shreds, the faster and more evenly they melt.\nIf the soap is fresh, it can still be caustic, so wear gloves and goggles.",
+   "yt": "Step 1: Grate the soap"
+  },
+  {
+   "label": "STEP 2",
+   "title": "ADD A LITTLE LIQUID",
+   "key": "Water or milk|Just a splash",
+   "pool": [
+    "rb_liquid1",
+    "rb_crockpot1",
+    "broll_pour1"
+   ],
+   "text": "Step two: add a little liquid.\nPut the shreds in a slow cooker, or a heat-proof bowl over simmering water. Add a small splash of water or milk, just enough to moisten the soap, not drown it. Fresh soap needs less liquid. Older, drier soap needs a bit more. You can always add more, but you can't take it out.",
+   "yt": "Step 2: Add a little liquid"
+  },
+  {
+   "label": "STEP 3",
+   "title": "MELT LOW AND SLOW",
+   "key": "Mashed potato|not liquid",
+   "pool": [
+    "rb_melt1",
+    "rb_stir1",
+    "rb_crockpot1"
+   ],
+   "text": "Step three: melt it low and slow.\nCover it and heat it on low, stirring every so often. Don't expect it to turn liquid like melt and pour. Rebatched soap goes soft and gloopy, like mashed potato. That's what you want.\nThis can take an hour or more, depending on the amount. Keep the lid on so the moisture stays in.",
+   "yt": "Step 3: Melt low and slow"
+  },
+  {
+   "label": "STEP 4",
+   "title": "SCENT AND MOULD",
+   "key": "Fragrance at the end|Press it down",
+   "pool": [
+    "rb_scent1",
+    "rb_mould1",
+    "broll_mould1"
+   ],
+   "text": "Step four: add fragrance and mould.\nTake it off the heat, let it cool slightly, and stir in your fragrance or essential oil at your supplier's safe usage rate. Then spoon it into the mould and press it down firmly, tapping the mould to knock out air pockets.\nThe top will look rustic. That's part of the charm of rebatched soap.",
+   "yt": "Step 4: Scent and mould"
+  },
+  {
+   "label": "STEP 5",
+   "title": "UNMOULD AND CURE",
+   "key": "Next day · cut|Cure before use",
+   "pool": [
+    "rb_cut1",
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "Step five: unmould, cut and cure.\nLeave it in the mould until it's firm, usually a day or two. Then unmould, cut and let it cure somewhere airy. Rebatched soap made from fresh soap should finish the normal cure time from the original batch date, and a little longer won't hurt.",
+   "yt": "Step 5: Unmould and cure"
+  },
+  {
+   "label": "OUTRO",
+   "title": "",
+   "key": "",
+   "pool": [
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "That's how to rebatch soap. If this saved a batch, subscribe, because every week I take one soap problem and fix it properly.\nBefore your next batch, run your recipe through the free soap calculator at latherforge dot com. It's free and there's no signup.\nLatherForge launches on the first of January 2027. The first 300 people on the waitlist get three months free, with no card needed to start. The link's in the description.",
+   "yt": "Outro"
+  }
+ ]
+}
