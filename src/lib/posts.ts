@@ -527,7 +527,7 @@ export const posts: Post[] = [
       { heading: '1. Safety Goggles', text: 'Lye solution in the eye is a medical emergency. Wear goggles, not just glasses, every time you handle lye or raw soap batter.', shop: { label: 'Browse chemical splash goggles on Amazon', query: 'chemical splash safety goggles' } },
       { heading: '2. Chemical-Resistant Gloves', text: 'Nitrile gloves protect your hands from lye solution and fresh soap batter, which stays caustic until it has saponified. Add long sleeves.', shop: { label: 'Browse nitrile gloves on Amazon', query: 'nitrile gloves' } },
       { heading: '3. Digital Scale', text: 'Soap making is measured by weight, not volume. A digital kitchen scale that reads in grams is essential, and a scale that measures in 1 g steps or finer is better for small batches. Weigh the water too.', shop: { label: 'Browse digital scales (grams) on Amazon', query: 'digital kitchen scale grams 0.1g' } },
-      { heading: '4. Stick Blender', text: 'A stick (immersion) blender brings soap to trace in minutes instead of the hour or more it takes by hand. Keep it for soap only.', shop: { label: 'Browse stick blenders on Amazon', query: 'stick immersion blender' } },
+      { heading: '4. Stick Blender', text: 'A stick (immersion) blender brings soap to trace in minutes instead of the hour or more it takes by hand. Keep it for soap only.', link: { href: '/blog/best-stick-blenders-for-soap-making/', label: 'See our 7 best stick blenders for soap making' }, shop: { label: 'Browse stick blenders on Amazon', query: 'stick immersion blender' } },
       { heading: '5. Lye-Safe Container', text: 'Mix your lye solution in heavy-duty plastic marked with recycling code 5 (PP) or in stainless steel. Lye solution gets very hot, so choose something sturdy with a handle.', shop: { label: 'Browse PP #5 plastic pitchers on Amazon', query: 'polypropylene pitcher pp5 heavy duty' } },
       { heading: '6. Mixing Pot', text: 'A stainless steel pot or a large heavy plastic jug for melting and mixing your oils. Stainless steel lets you melt solid fats on the hob.', shop: { label: 'Browse stainless steel pots on Amazon', query: 'stainless steel pot' } },
       { heading: '7. Thermometer', text: 'Temperature affects how fast your soap traces and whether it overheats. A probe or infrared thermometer helps you repeat results.', shop: { label: 'Browse infrared and probe thermometers on Amazon', query: 'infrared thermometer cooking' } },
@@ -677,6 +677,104 @@ export const posts: Post[] = [
       { q: 'Why does orange essential oil fade in soap?', a: 'Citrus oils are light, volatile top notes, so much of the scent is lost during saponification and curing. Folded (concentrated) orange oil and a base note anchor help it last.' },
       { q: 'How much essential oil should I put in soap?', a: 'It depends on the oil. Each one has its own safe maximum, so follow your supplier’s safety data and IFRA guidance, and have your recipe checked by a safety assessor if you sell it.' },
       { q: 'Do essential oils need to be listed as allergens on soap labels?', a: 'Often, yes. Essential oils contain fragrance allergens such as linalool and limonene, which must be named when above the legal threshold (0.01% for rinse-off products like soap in the EU). Use your supplier’s allergen declaration.' }
+    ]
+  },
+  {
+    slug: 'best-stick-blenders-for-soap-making',
+    title: '7 Best Stick Blenders for Soap Making (2026)',
+    description: 'The best stick (immersion) blenders for cold process soap in 2026: Braun MultiQuick 7 and 5, Cuisinart Smart Stick, Hamilton Beach, KitchenAid, Vitamix and Mueller. What to look for, how to use one for soap, and answers to common questions.',
+    date: '2026-11-08',
+    readTime: '8 min read',
+    category: 'Beginner Guides',
+    sections: [
+      {
+        text: 'A stick blender (also called an immersion or hand blender) is the one tool that turns soap making from an hour of stirring into a few minutes. Almost any decent model will work, but some suit soap better than others. We picked these seven from models named as top choices in current 2026 kitchen reviews and models soap makers recommend on soap making forums. We have not lab-tested them ourselves; we tell you where each recommendation comes from.'
+      },
+      {
+        heading: 'Quick answer',
+        items: [
+          'Best overall: Braun MultiQuick 7',
+          'Best value all-rounder: Braun MultiQuick 5',
+          'Soap makers’ favourites: Cuisinart Smart Stick and Hamilton Beach',
+          'Best budget pick: KitchenAid 2-Speed',
+          'Best premium pick: Vitamix Immersion Blender',
+          'Budget alternative: Mueller'
+        ]
+      },
+      {
+        heading: 'What to Look For in a Soap Stick Blender',
+        items: [
+          'A stainless steel shaft and blade guard: raw soap batter is caustic, so avoid aluminium parts',
+          'A detachable shaft: easier to clean, and you can keep a shaft just for soap',
+          'Pulse or a low speed setting: short bursts mean fewer air bubbles in your bars',
+          'A comfortable grip: you will hold it upright in a jug of hot batter',
+          'Enough power that it does not struggle or overheat on thicker recipes'
+        ]
+      },
+      {
+        heading: '1. Braun MultiQuick 7',
+        text: 'Named best immersion blender overall by Bon Appétit in its June 2026 roundup. A strong, well-built option if you want one blender to last for years of soap making.',
+        shop: { label: 'Check price on Amazon', query: 'Braun MultiQuick 7 immersion blender' }
+      },
+      {
+        heading: '2. Braun MultiQuick 5',
+        text: 'Picked as the best choice for balancing performance, versatility and cost by Shouldit (August 2026). A good middle-ground choice for hobby soap makers.',
+        shop: { label: 'Check price on Amazon', query: 'Braun MultiQuick 5 immersion blender' }
+      },
+      {
+        heading: '3. Cuisinart Smart Stick',
+        text: 'One of the models soap makers name most often on the Soapmaking Forum. A popular, widely available choice for everyday batches.',
+        shop: { label: 'Check price on Amazon', query: 'Cuisinart Smart Stick immersion blender' }
+      },
+      {
+        heading: '4. Hamilton Beach Hand Blender',
+        text: 'Also recommended by soap makers on the Soapmaking Forum, and a common budget-friendly starting point. Check that the model you choose has a stainless steel shaft.',
+        shop: { label: 'Check price on Amazon', query: 'Hamilton Beach hand blender stainless steel' }
+      },
+      {
+        heading: '5. KitchenAid 2-Speed Hand Blender',
+        text: 'Named best budget immersion blender by Food Network (February 2026). The two speeds are useful for soap: low to mix without whipping in air.',
+        shop: { label: 'Check price on Amazon', query: 'KitchenAid 2-Speed Hand Blender' }
+      },
+      {
+        heading: '6. Vitamix Immersion Blender',
+        text: 'Food Network’s best immersion blender overall (February 2026). A premium option if you make large or frequent batches and want something built to last.',
+        shop: { label: 'Check price on Amazon', query: 'Vitamix Immersion Blender' }
+      },
+      {
+        heading: '7. Mueller Immersion Blender',
+        text: 'Included in TechGearLab’s tested roundup of hand blenders. A low-cost way to get started if you are not sure soap making is for you yet.',
+        shop: { label: 'Check price on Amazon', query: 'Mueller immersion blender stainless steel' }
+      },
+      {
+        heading: 'How to Use a Stick Blender for Soap',
+        items: [
+          'Keep the blender for soap only. Never use it for food again once it has touched lye or raw soap batter',
+          'Wear goggles and gloves, and keep the blade fully under the surface before you switch on',
+          'Tap the blender on the bottom of the jug to release trapped air, then use short pulses with stirring in between',
+          'Rest the motor between pulses so it does not overheat',
+          'Stop at the trace you need: thin trace for swirls, thicker for textured tops',
+          'If the batter thickens quickly before it is really soap, it may be false trace: make sure all fats are fully melted'
+        ],
+        link: { href: '/blog/cold-process-soap-problems/', label: 'Read: 10 cold process soap problems and how to fix them' }
+      },
+      {
+        heading: 'Make Every Batch Count',
+        text: 'A good blender is only half of it: you also need the right lye amount for your oils. Run every recipe through our free soap calculator before you blend.',
+        link: { href: '/lye-calculator/', label: 'Open the free LatherForge soap calculator' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you know exactly what worked and what each bar costs. The first 300 people on the waitlist get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: first 300 get 3 months free' }
+      },
+      { text: 'Information only. Recommendations are based on the published reviews and soap maker forums named above, not our own lab testing. Prices and models change, so check current details and reviews on Amazon before you buy. Always follow lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'Do you have to use an immersion blender for soap?', a: 'No, you can stir by hand, but it can take an hour or more to reach trace. A stick blender gets there in a few minutes, which is why almost all soap makers use one.' },
+      { q: 'Is there a difference between a stick blender and an immersion blender?', a: 'No. Stick blender, immersion blender and hand blender are different names for the same tool: a handheld blender you put into the pot or jug.' },
+      { q: 'Can I use my kitchen stick blender for soap?', a: 'You can, but once it has been used for soap it should never be used for food again. Most soap makers buy a separate, inexpensive blender kept only for soap.' },
+      { q: 'What is the best stick blender for soap making?', a: 'Look for a stainless steel shaft, a detachable shaft and a pulse or low speed. Popular choices include the Braun MultiQuick range, Cuisinart Smart Stick, Hamilton Beach and KitchenAid 2-Speed for budget, and Vitamix for premium.' }
     ]
   }
 
