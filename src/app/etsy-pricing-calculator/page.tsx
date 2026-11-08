@@ -214,6 +214,9 @@ export default function EtsyPricingCalculatorPage() {
               <a href="/lye-calculator/" style={{"display": "inline-block", "marginTop": "0.6rem", "fontSize": "0.88rem", "fontWeight": 600, "color": "#7A9E7E"}}>
                 Open the free soap calculator →
               </a>
+              <a href="/cpsr-for-soap/" style={{"display": "block", "marginTop": "0.4rem", "fontSize": "0.88rem", "fontWeight": 600, "color": "#7A9E7E"}}>
+                Budget for your CPSR: what a soap safety report costs →
+              </a>
             </div>
             <div style={{"borderBottom": "1px solid #E8DFD0", "paddingBottom": "1.5rem"}}>
               <h3 style={{"fontSize": "1.05rem", "color": "#3E2820", "marginBottom": "0.5rem"}}>

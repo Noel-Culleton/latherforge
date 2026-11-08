@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { getPostBySlug, getAllPosts, formatDate } from '@/lib/posts'
+import { autolink } from '@/lib/autolink'
+import type { ReactNode } from 'react'
 type Props = {
   params: Promise<{ slug: string }>
 }
@@ -36,6 +38,15 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound()
 
   const allPosts = getAllPosts().filter(p => p.slug !== post.slug).slice(0, 2)
+
+  // Internal links: first mention of each topic links to its page, once per page.
+  // Targets already linked explicitly in a section are skipped.
+  const usedLinks = new Set<string>(post.sections.flatMap(s => (s.link ? [s.link.href] : [])))
+  const pagePath = `/blog/${post.slug}/`
+  const linked = (text: string): ReactNode[] =>
+    autolink(text, usedLinks, pagePath).map((seg, k) =>
+      seg.href ? <Link key={k} href={seg.href} style={{ color: '#5C3D2E', textDecoration: 'underline' }}>{seg.text}</Link> : seg.text
+    )
 
   const faqSchema = post.faqs?.length ? {
     '@context': 'https://schema.org',
@@ -81,14 +92,14 @@ export default async function BlogPostPage({ params }: Props) {
                 )}
                 {section.text && (
                   <p style={{ fontSize: '1rem', color: '#5C4A3A', lineHeight: 1.85, marginBottom: section.items ? '0.75rem' : '0' }}>
-                    {section.text}
+                    {linked(section.text)}
                   </p>
                 )}
                 {section.items && (
                   <ul style={{ margin: '0.5rem 0 0', paddingLeft: '1.5rem' }}>
                     {section.items.map((item, j) => (
                       <li key={j} style={{ fontSize: '0.95rem', color: '#5C4A3A', lineHeight: 1.8, marginBottom: '0.4rem' }}>
-                        {item}
+                        {linked(item)}
                       </li>
                     ))}
                   </ul>
@@ -110,7 +121,7 @@ export default async function BlogPostPage({ params }: Props) {
               {post.faqs.map((f, i) => (
                 <div key={i} style={{ marginBottom: '1.5rem' }}>
                   <h3 style={{ fontSize: '1.05rem', fontWeight: 600, color: '#3E2820', marginBottom: '0.4rem' }}>{f.q}</h3>
-                  <p style={{ fontSize: '0.95rem', color: '#5C4A3A', lineHeight: 1.8 }}>{f.a}</p>
+                  <p style={{ fontSize: '0.95rem', color: '#5C4A3A', lineHeight: 1.8 }}>{linked(f.a)}</p>
                 </div>
               ))}
             </div>
