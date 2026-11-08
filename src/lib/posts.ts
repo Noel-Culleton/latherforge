@@ -5,9 +5,13 @@ export interface Post {
   date: string
   readTime: string
   category: string
-  sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string } }>
+  sections: Array<{ heading?: string; text?: string; items?: string[]; link?: { href: string; label: string }; shop?: { label: string; query: string } }>
   faqs?: Array<{ q: string; a: string }>
 }
+
+export const AMAZON_TAG = 'latherforge-20'
+export const amazonSearchUrl = (query: string) =>
+  `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AMAZON_TAG}`
 
 export const posts: Post[] = [
   {
@@ -438,7 +442,8 @@ export const posts: Post[] = [
       },
       {
         heading: '2. Cracking on Top',
-        text: 'Cracks across the top usually mean the soap overheated in the mould. Common causes are soaping too hot, heavy insulation, and ingredients that add heat, such as honey, sugar, milk or fragrance oils that accelerate. Fix: it is cosmetic, so plane the top if you want. Prevent it: soap cooler, insulate less, and put milk or honey soaps in the fridge or freezer for the first day.'
+        text: 'Cracks across the top usually mean the soap overheated in the mould. Common causes are soaping too hot, heavy insulation, and ingredients that add heat, such as honey, sugar, milk or fragrance oils that accelerate. Fix: it is cosmetic, so plane the top if you want. Prevent it: soap cooler, insulate less, and put milk or honey soaps in the fridge or freezer for the first day. A thermometer helps you soap at the same temperature every time.',
+        shop: { label: 'Browse infrared thermometers on Amazon', query: 'infrared thermometer cooking' }
       },
       {
         heading: '3. Soap Volcano',
@@ -519,15 +524,15 @@ export const posts: Post[] = [
           'Thermometer', 'Silicone spatulas', 'Soap mould', 'A soap calculator'
         ]
       },
-      { heading: '1. Safety Goggles', text: 'Lye solution in the eye is a medical emergency. Wear goggles, not just glasses, every time you handle lye or raw soap batter.' },
-      { heading: '2. Chemical-Resistant Gloves', text: 'Nitrile gloves protect your hands from lye solution and fresh soap batter, which stays caustic until it has saponified. Add long sleeves.' },
-      { heading: '3. Digital Scale', text: 'Soap making is measured by weight, not volume. A digital kitchen scale that reads in grams is essential, and a scale that measures in 1 g steps or finer is better for small batches. Weigh the water too.' },
-      { heading: '4. Stick Blender', text: 'A stick (immersion) blender brings soap to trace in minutes instead of the hour or more it takes by hand. Keep it for soap only.' },
-      { heading: '5. Lye-Safe Container', text: 'Mix your lye solution in heavy-duty plastic marked with recycling code 5 (PP) or in stainless steel. Lye solution gets very hot, so choose something sturdy with a handle.' },
-      { heading: '6. Mixing Pot', text: 'A stainless steel pot or a large heavy plastic jug for melting and mixing your oils. Stainless steel lets you melt solid fats on the hob.' },
-      { heading: '7. Thermometer', text: 'Temperature affects how fast your soap traces and whether it overheats. A probe or infrared thermometer helps you repeat results.' },
-      { heading: '8. Silicone Spatulas', text: 'For scraping every bit of batter out of the pot. Silicone is lye-safe and easy to clean.' },
-      { heading: '9. Soap Mould', text: 'A silicone loaf mould is the easiest start. A wooden mould lined with baking paper also works. Start simple; you can buy fancy moulds later.' },
+      { heading: '1. Safety Goggles', text: 'Lye solution in the eye is a medical emergency. Wear goggles, not just glasses, every time you handle lye or raw soap batter.', shop: { label: 'Browse chemical splash goggles on Amazon', query: 'chemical splash safety goggles' } },
+      { heading: '2. Chemical-Resistant Gloves', text: 'Nitrile gloves protect your hands from lye solution and fresh soap batter, which stays caustic until it has saponified. Add long sleeves.', shop: { label: 'Browse nitrile gloves on Amazon', query: 'nitrile gloves' } },
+      { heading: '3. Digital Scale', text: 'Soap making is measured by weight, not volume. A digital kitchen scale that reads in grams is essential, and a scale that measures in 1 g steps or finer is better for small batches. Weigh the water too.', shop: { label: 'Browse digital scales (grams) on Amazon', query: 'digital kitchen scale grams 0.1g' } },
+      { heading: '4. Stick Blender', text: 'A stick (immersion) blender brings soap to trace in minutes instead of the hour or more it takes by hand. Keep it for soap only.', shop: { label: 'Browse stick blenders on Amazon', query: 'stick immersion blender' } },
+      { heading: '5. Lye-Safe Container', text: 'Mix your lye solution in heavy-duty plastic marked with recycling code 5 (PP) or in stainless steel. Lye solution gets very hot, so choose something sturdy with a handle.', shop: { label: 'Browse PP #5 plastic pitchers on Amazon', query: 'polypropylene pitcher pp5 heavy duty' } },
+      { heading: '6. Mixing Pot', text: 'A stainless steel pot or a large heavy plastic jug for melting and mixing your oils. Stainless steel lets you melt solid fats on the hob.', shop: { label: 'Browse stainless steel pots on Amazon', query: 'stainless steel pot' } },
+      { heading: '7. Thermometer', text: 'Temperature affects how fast your soap traces and whether it overheats. A probe or infrared thermometer helps you repeat results.', shop: { label: 'Browse infrared and probe thermometers on Amazon', query: 'infrared thermometer cooking' } },
+      { heading: '8. Silicone Spatulas', text: 'For scraping every bit of batter out of the pot. Silicone is lye-safe and easy to clean.', shop: { label: 'Browse silicone spatulas on Amazon', query: 'silicone spatula set' } },
+      { heading: '9. Soap Mould', text: 'A silicone loaf mould is the easiest start. A wooden mould lined with baking paper also works. Start simple; you can buy fancy moulds later.', shop: { label: 'Browse silicone loaf soap moulds on Amazon', query: 'silicone loaf soap mold' } },
       {
         heading: '10. A Soap Calculator',
         text: 'Every recipe needs its lye and water worked out for the exact oils you use. Never guess and never copy a recipe without checking it. Our free LatherForge soap calculator does this in your browser, with no signup.',
