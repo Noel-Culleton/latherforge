@@ -27,6 +27,7 @@ export default function Footer() {
               <Link href="/lye-calculator" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator</Link>
               <Link href="/etsy-pricing-calculator/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Etsy Pricing Calculator</Link>
               <Link href="/sap-values/" style={{ fontSize: '0.85rem', color: '#A89882' }}>SAP Value Chart</Link>
+              <Link href="/cpsr-for-soap/" style={{ fontSize: '0.85rem', color: '#A89882' }}>CPSR for Soap</Link>
               {hasRecipes && <Link href="/soap-recipes/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Recipes</Link>}
               <Link href="/app/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator App</Link>
             </div>

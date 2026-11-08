@@ -1,15 +1,19 @@
 'use client'
 import { useMemo, useState } from 'react'
 
-const RATES_VERIFIED = '1 September 2026'
+const RATES_VERIFIED = '8 November 2026'
 const TRANSACTION_PCT = 6.5
 
-type Country = 'US' | 'UK' | 'EU'
+type Country = 'US' | 'UK' | 'IE' | 'EU'
 
-const COUNTRIES: Record<Country, { label: string; symbol: string; processPct: number; processFlat: number; adsCap: number | null }> = {
-  US: { label: 'United States ($)', symbol: '$', processPct: 3, processFlat: 0.25, adsCap: 100 },
-  UK: { label: 'United Kingdom (£)', symbol: '£', processPct: 4, processFlat: 0.2, adsCap: null },
-  EU: { label: 'Ireland & eurozone (€)', symbol: '€', processPct: 4, processFlat: 0.3, adsCap: null }
+// regPct: Etsy Regulatory Operating fee (UK 0.48%; Ireland not charged).
+// vatPct: VAT Etsy adds to its own fees, processing included (Etsy help: "How VAT Is Collected on Seller Fees").
+// vatRemovable: UK sellers with a VAT ID on file are not charged VAT; Irish sellers are charged regardless.
+const COUNTRIES: Record<Country, { label: string; symbol: string; processPct: number; processFlat: number; adsCap: number | null; regPct: number; vatPct: number; vatRemovable: boolean; listing: string }> = {
+  US: { label: 'United States ($)', symbol: '$', processPct: 3, processFlat: 0.25, adsCap: 100, regPct: 0, vatPct: 0, vatRemovable: false, listing: '0.20' },
+  UK: { label: 'United Kingdom (£)', symbol: '£', processPct: 4, processFlat: 0.2, adsCap: null, regPct: 0.48, vatPct: 20, vatRemovable: true, listing: '0.16' },
+  IE: { label: 'Ireland (€)', symbol: '€', processPct: 4, processFlat: 0.3, adsCap: null, regPct: 0, vatPct: 23, vatRemovable: false, listing: '0.18' },
+  EU: { label: 'Other eurozone (€)', symbol: '€', processPct: 4, processFlat: 0.3, adsCap: null, regPct: 0, vatPct: 0, vatRemovable: false, listing: '0.18' }
 }
 
 const num = (v: string) => {
@@ -49,7 +53,7 @@ type Inputs = {
   price: string; shippingCharged: string; shippingCost: string; listingFee: string; offsiteAds: string
 }
 
-function calculate(i: Inputs, country: Country) {
+function calculate(i: Inputs, country: Country, vatRegistered: boolean) {
   const c = COUNTRIES[country]
   const units = Math.max(num(i.yieldUnits), 0)
   const materialsPerUnit = units > 0 ? num(i.materials) / units : 0
@@ -62,10 +66,13 @@ function calculate(i: Inputs, country: Country) {
   let adsFee = ((i.offsiteAds === 'off' ? 0 : num(i.offsiteAds)) / 100) * gross
   if (c.adsCap !== null && adsFee > c.adsCap) adsFee = c.adsCap
 
-  const totalFees = num(i.listingFee) + transactionFee + processingFee + adsFee
+  const regFee = gross * (c.regPct / 100)
+  const feesExVat = num(i.listingFee) + transactionFee + processingFee + regFee + adsFee
+  const vatOnFees = c.vatPct > 0 && !(c.vatRemovable && vatRegistered) ? feesExVat * (c.vatPct / 100) : 0
+  const totalFees = feesExVat + vatOnFees
   const netAfterFees = gross - totalFees
   const profit = netAfterFees - costPerUnit - num(i.shippingCost)
-  return { costPerUnit, gross, transactionFee, processingFee, adsFee, totalFees, netAfterFees, profit, margin: gross > 0 ? (profit / gross) * 100 : 0 }
+  return { costPerUnit, gross, transactionFee, processingFee, regFee, vatOnFees, adsFee, totalFees, netAfterFees, profit, margin: gross > 0 ? (profit / gross) * 100 : 0 }
 }
 
 function verdict(margin: number) {
@@ -75,7 +82,7 @@ function verdict(margin: number) {
 }
 
 export default function EtsyCalculator() {
-  const [country, setCountry] = useState<Country>('EU')
+  const [country, setCountry] = useState<Country>('IE')
   const [materials, setMaterials] = useState('24.00')
   const [packaging, setPackaging] = useState('0.60')
   const [yieldUnits, setYieldUnits] = useState('12')
@@ -85,14 +92,15 @@ export default function EtsyCalculator() {
   const [price, setPrice] = useState('12.00')
   const [shippingCharged, setShippingCharged] = useState('5.00')
   const [shippingCost, setShippingCost] = useState('4.50')
-  const [listingFee, setListingFee] = useState('0.20')
+  const [listingFee, setListingFee] = useState(COUNTRIES.IE.listing)
   const [offsiteAds, setOffsiteAds] = useState('off')
+  const [vatRegistered, setVatRegistered] = useState(false)
 
   const c = COUNTRIES[country]
   const sym = c.symbol
   const r = useMemo(
-    () => calculate({ materials, packaging, yieldUnits, labourMinutes, hourlyRate, overhead, price, shippingCharged, shippingCost, listingFee, offsiteAds }, country),
-    [materials, packaging, yieldUnits, labourMinutes, hourlyRate, overhead, price, shippingCharged, shippingCost, listingFee, offsiteAds, country]
+    () => calculate({ materials, packaging, yieldUnits, labourMinutes, hourlyRate, overhead, price, shippingCharged, shippingCost, listingFee, offsiteAds }, country, vatRegistered),
+    [materials, packaging, yieldUnits, labourMinutes, hourlyRate, overhead, price, shippingCharged, shippingCost, listingFee, offsiteAds, country, vatRegistered]
   )
   const v = verdict(r.margin)
 
@@ -100,7 +108,9 @@ export default function EtsyCalculator() {
     ['Listing fee', num(listingFee)],
     [`Transaction fee (${TRANSACTION_PCT}%)`, r.transactionFee],
     [`Processing (${c.processPct}% + ${sym}${c.processFlat.toFixed(2)})`, r.processingFee],
+    ...(c.regPct > 0 ? [[`Regulatory operating fee (${c.regPct}%)`, r.regFee] as [string, number]] : []),
     ...(offsiteAds !== 'off' ? [[`Offsite Ads (${offsiteAds}%)`, r.adsFee] as [string, number]] : []),
+    ...(r.vatOnFees > 0 ? [[`VAT on Etsy fees (${c.vatPct}%)`, r.vatOnFees] as [string, number]] : []),
     ['Your shipping cost', num(shippingCost)]
   ]
 
@@ -139,10 +149,18 @@ export default function EtsyCalculator() {
               <div className="lf-field-grid">
                 <div>
                   <label style={LABEL}>Country / currency</label>
-                  <select value={country} onChange={e => setCountry(e.target.value as Country)} style={INPUT}>
+                  <select value={country} onChange={e => { const k = e.target.value as Country; setCountry(k); setListingFee(COUNTRIES[k].listing) }} style={INPUT}>
                     {(Object.keys(COUNTRIES) as Country[]).map(k => <option key={k} value={k}>{COUNTRIES[k].label}</option>)}
                   </select>
-                  <p style={HINT}>Sets the payment processing rate — it follows your bank account, not your buyer.</p>
+                  <p style={HINT}>Sets the payment processing rate, the UK regulatory fee and VAT on Etsy fees. It follows where your shop is based, not your buyer.</p>
+                  {country === 'UK' && (
+                    <label style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', marginTop: '0.6rem', fontSize: '0.8rem', color: '#5C4A3A', lineHeight: 1.5 }}>
+                      <input type="checkbox" checked={vatRegistered} onChange={e => setVatRegistered(e.target.checked)} style={{ marginTop: '0.2rem' }} />
+                      I&apos;m VAT-registered and my VAT number is on Etsy (Etsy then doesn&apos;t charge VAT on its fees)
+                    </label>
+                  )}
+                  {country === 'IE' && <p style={HINT}>Etsy adds 23% Irish VAT to its fees, processing included, even if you&apos;ve given it a VAT number.</p>}
+                  {country === 'EU' && <p style={HINT}>Uses the Irish processing rate. VAT on fees and any country-specific Etsy fees are not included, so check your own country&apos;s rates.</p>}
                 </div>
                 <div>
                   <label style={LABEL}>Offsite Ads</label>
@@ -156,7 +174,7 @@ export default function EtsyCalculator() {
                 <Field label="Listing price" symbol={sym} value={price} onChange={setPrice} />
                 <Field label="Shipping charged to buyer" symbol={sym} value={shippingCharged} onChange={setShippingCharged} hint="Etsy's transaction fee applies to this too." />
                 <Field label="Your actual shipping cost" symbol={sym} value={shippingCost} onChange={setShippingCost} hint="Postage and the mailer. Not a fee — a cost Etsy never sees." />
-                <Field label="Listing fee" symbol={sym} value={listingFee} onChange={setListingFee} hint="Etsy sets this at $0.20 USD per listing; non-USD shops are billed the equivalent, so adjust if yours differs." />
+                <Field label="Listing fee" symbol={sym} value={listingFee} onChange={setListingFee} hint="Etsy sets this at $0.20 USD per listing (about £0.16 / €0.18). Non-USD shops are billed the equivalent, so adjust if yours differs." />
               </div>
             </div>
           </div>
@@ -194,7 +212,7 @@ export default function EtsyCalculator() {
               </div>
             </div>
             <p style={{ fontSize: '0.72rem', color: '#9A8878', lineHeight: 1.6, marginTop: '0.9rem' }}>
-              Etsy fee rates verified {RATES_VERIFIED}. Etsy sets these, not us — check their current fee schedule before you price a live listing. Nothing here is saved and nothing is sent anywhere: the whole calculation runs in your browser.
+              Etsy fee rates verified {RATES_VERIFIED} against Etsy&apos;s Fees &amp; Payments Policy and its VAT help pages. Etsy sets these, not us. Check their current fee schedule and your Payment account before you price a live listing. Results are estimates, not financial or tax advice. Nothing here is saved and nothing is sent anywhere: the whole calculation runs in your browser.
             </p>
           </div>
         </div>

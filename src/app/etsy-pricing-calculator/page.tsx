@@ -34,7 +34,7 @@ export default function EtsyPricingCalculatorPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does Etsy take from a $100 sale?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"On a $100 item with free shipping, sold by a US seller with Offsite Ads off: a $0.20 listing fee, a 6.5% transaction fee of $6.50, and payment processing of 3% plus $0.25, which is $3.25. Total fees $9.95, so you keep $90.05. That is before what the item cost you to make, which is the number this page exists to work out. Add Offsite Ads at 15% and the fee total becomes $24.95, leaving $75.05.\"}},{\"@type\":\"Question\",\"name\":\"How to calculate Etsy fees?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Add the listing fee, the transaction fee and the payment processing fee, plus Offsite Ads if the sale came through one. Written out: total fees = listing fee + 6.5% of (item price + shipping you charge) + (your country processing percentage of that same total, plus the flat per-transaction fee) + any Offsite Ads percentage of that total. Subtract the result from what the buyer paid you to get net revenue, then subtract what the item cost you to make and what the shipping actually cost you to get real profit.\"}},{\"@type\":\"Question\",\"name\":\"How much do Etsy take in fees?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"For a typical handmade sale with no Offsite Ads, roughly 10% to 11% of what the buyer pays, once the listing fee, the 6.5% transaction fee and payment processing are added together. If the sale is attributed to Offsite Ads, add another 12% or 15% and the total lands nearer 22% to 26%. Percentages alone will not tell you whether a listing is worth making, because they say nothing about what the item cost you.\"}},{\"@type\":\"Question\",\"name\":\"Does Etsy charge a $29 fee?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"There is no $29 fee in Etsy’s published fee schedule. A charge around that size is usually one of three things: several months of listing and renewal fees settling at once, a one-off shop set-up fee that Etsy charges new sellers in some countries at an amount that varies by country, or an optional subscription you have turned on. Open your Payment account and read the fee lines individually rather than trusting a single total.\"}},{\"@type\":\"Question\",\"name\":\"How do I price handmade soap for Etsy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Start at the cost, not at the price. Work out what one bar actually costs you: the oils, lye and fragrance for the batch divided by how many bars the batch yields, plus packaging, plus your time at a real hourly rate. Then add the Etsy fees on top and set a price that leaves a margin you can grow on. Pricing by looking at what other sellers charge tells you what the market looks like, not whether your bar makes money at that number. Work out your batch first in the free LatherForge soap calculator, then bring the cost here.\"}},{\"@type\":\"Question\",\"name\":\"What is a good profit margin on handmade products?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Under 20% is a hobby with extra steps — it will not survive a supplier price rise or a slow month. Between 20% and 40% is a real business that cannot yet fund its own growth. Over 40% is where a handmade product has room to absorb a bad batch, a fee change and a wholesale order without falling over. Wholesale is usually priced at roughly half retail, so a retail margin under 50% often means there is no wholesale version of your product at all.\"}}]}" }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does Etsy take from a $100 sale?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"On a $100 item with free shipping, sold by a US seller with Offsite Ads off: a $0.20 listing fee, a 6.5% transaction fee of $6.50, and payment processing of 3% plus $0.25, which is $3.25. Total fees $9.95, so you keep $90.05. That is before what the item cost you to make, which is the number this page exists to work out. Add Offsite Ads at 15% and the fee total becomes $24.95, leaving $75.05.\"}},{\"@type\":\"Question\",\"name\":\"How to calculate Etsy fees?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Add the listing fee, the transaction fee and the payment processing fee, plus Offsite Ads if the sale came through one. Written out: total fees = listing fee + 6.5% of (item price + shipping you charge) + (your country processing percentage of that same total, plus the flat per-transaction fee) + any Offsite Ads percentage of that total. Subtract the result from what the buyer paid you to get net revenue, then subtract what the item cost you to make and what the shipping actually cost you to get real profit.\"}},{\"@type\":\"Question\",\"name\":\"How much do Etsy take in fees?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"For a typical handmade sale with no Offsite Ads, a US seller pays roughly 10% to 12% of what the buyer pays, once the listing fee, the 6.5% transaction fee and payment processing are added together. UK and Irish sellers usually pay more, roughly 14% to 17%, because their processing rate is higher, UK shops pay a 0.48% regulatory operating fee, and Etsy adds VAT to its fees (23% for every Irish shop, 20% for UK shops without a VAT number on file). If the sale is attributed to Offsite Ads, add another 12% or 15% on top. Percentages alone will not tell you whether a listing is worth making, because they say nothing about what the item cost you.\"}},{\"@type\":\"Question\",\"name\":\"Does Etsy charge a $29 fee?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"There is no $29 fee in Etsy’s published fee schedule. A charge around that size is usually one of three things: several months of listing and renewal fees settling at once, a one-off shop set-up fee that Etsy charges new sellers in some countries at an amount that varies by country, or an optional subscription you have turned on. Open your Payment account and read the fee lines individually rather than trusting a single total.\"}},{\"@type\":\"Question\",\"name\":\"How do I price handmade soap for Etsy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Start at the cost, not at the price. Work out what one bar actually costs you: the oils, lye and fragrance for the batch divided by how many bars the batch yields, plus packaging, plus your time at a real hourly rate. Then add the Etsy fees on top and set a price that leaves a margin you can grow on. Pricing by looking at what other sellers charge tells you what the market looks like, not whether your bar makes money at that number. Work out your batch first in the free LatherForge soap calculator, then bring the cost here.\"}},{\"@type\":\"Question\",\"name\":\"What is a good profit margin on handmade products?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Under 20% is a hobby with extra steps — it will not survive a supplier price rise or a slow month. Between 20% and 40% is a real business that cannot yet fund its own growth. Over 40% is where a handmade product has room to absorb a bad batch, a fee change and a wholesale order without falling over. Wholesale is usually priced at roughly half retail, so a retail margin under 50% often means there is no wholesale version of your product at all.\"}}]}" }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://latherforge.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Etsy Pricing Calculator\",\"item\":\"https://latherforge.com/etsy-pricing-calculator/\"}]}" }} />
     <Nav />
     <main style={{"paddingTop": "68px"}}>
@@ -109,6 +109,22 @@ export default function EtsyPricingCalculatorPage() {
                 Etsy advertises your listings on other platforms and charges a fee when a sale is attributed to one of those ads. Shops with under $10,000 USD in sales over the prior 365 days pay 15% and can opt out entirely. Once a shop crosses that threshold the rate drops to 12% — but participation becomes mandatory, for the lifetime of the shop, even if sales later fall back below it. The fee is capped at $100 USD on any single attributed order.
               </p>
             </div>
+            <div>
+              <h3 style={{"fontSize": "1.05rem", "color": "#3E2820", "marginBottom": "0.4rem"}}>
+                UK shops pay a 0.48% regulatory operating fee.
+              </h3>
+              <p style={{"fontSize": "0.9rem", "color": "#5C4A3A", "lineHeight": 1.75}}>
+                Etsy charges sellers in some countries an extra percentage to cover the cost of local digital regulation. For UK shops it is 0.48% of the item price plus postage, gift wrap and personalisation. Irish shops are not charged it.
+              </p>
+            </div>
+            <div>
+              <h3 style={{"fontSize": "1.05rem", "color": "#3E2820", "marginBottom": "0.4rem"}}>
+                Etsy adds VAT to its own fees, including payment processing.
+              </h3>
+              <p style={{"fontSize": "0.9rem", "color": "#5C4A3A", "lineHeight": 1.75}}>
+                Etsy&apos;s published fees exclude VAT. Irish shops are charged 23% VAT on Etsy&apos;s fees whether or not they have given Etsy a VAT number. UK shops are charged 20% unless they are VAT-registered with their VAT number on Etsy, in which case Etsy sends a monthly invoice instead and the seller accounts for the VAT in their own return. Both cases are built into the calculator above.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -146,7 +162,7 @@ export default function EtsyPricingCalculatorPage() {
             <strong style={{"color": "#3E2820"}}>
               On VAT:
             </strong>
-            {" whether you charge VAT depends on your turnover and where your buyers are — that is a question for your accountant, not a calculator. Nothing on this page adds or removes VAT. If you are VAT registered, put your figures in excluding VAT and read the result the same way."}
+            {" there are two kinds. The calculator includes the VAT Etsy charges on its own fees, using the rules above. It does not add VAT to the price you charge buyers: whether you charge VAT depends on your turnover and where your buyers are, and that is a question for your accountant, Revenue or HMRC. If you are VAT registered, enter your prices excluding VAT and read the result the same way."}
           </p>
         </div>
       </section>
@@ -177,7 +193,7 @@ export default function EtsyPricingCalculatorPage() {
                 How much do Etsy take in fees?
               </h3>
               <p style={{"fontSize": "0.9rem", "color": "#5C4A3A", "lineHeight": 1.7}}>
-                For a typical handmade sale with no Offsite Ads, roughly 10% to 11% of what the buyer pays, once the listing fee, the 6.5% transaction fee and payment processing are added together. If the sale is attributed to Offsite Ads, add another 12% or 15% and the total lands nearer 22% to 26%. Percentages alone will not tell you whether a listing is worth making, because they say nothing about what the item cost you.
+                For a typical handmade sale with no Offsite Ads, a US seller pays roughly 10% to 12% of what the buyer pays, once the listing fee, the 6.5% transaction fee and payment processing are added together. UK and Irish sellers usually pay more, roughly 14% to 17%, because their processing rate is higher, UK shops pay a 0.48% regulatory operating fee, and Etsy adds VAT to its fees (23% for every Irish shop, 20% for UK shops without a VAT number on file). If the sale is attributed to Offsite Ads, add another 12% or 15% on top. Percentages alone will not tell you whether a listing is worth making, because they say nothing about what the item cost you.
               </p>
             </div>
             <div style={{"borderBottom": "1px solid #E8DFD0", "paddingBottom": "1.5rem"}}>
@@ -208,6 +224,22 @@ export default function EtsyPricingCalculatorPage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="disclaimer" style={{"background": "#FAF7F2", "padding": "0 0 4rem"}}>
+        <div className="container" style={{"maxWidth": "760px", "borderTop": "1px solid #E8DFD0", "paddingTop": "1.5rem"}}>
+          <h2 style={{"fontSize": "1.05rem", "color": "#3E2820", "marginBottom": "0.6rem"}}>
+            Disclaimer
+          </h2>
+          <p style={{"fontSize": "0.8rem", "color": "#7A6E62", "lineHeight": 1.7, "marginBottom": "0.6rem"}}>
+            This calculator and page give general information and estimates for educational purposes only. They are not financial, tax or accounting advice, and using them does not create any professional relationship with LatherForge. Etsy sets and changes its fees, and VAT rules depend on your situation: always confirm current fees in Etsy&apos;s Fees &amp; Payments Policy and your Payment account, and take VAT or tax questions to an accountant, Revenue (Ireland) or HMRC (UK).
+          </p>
+          <p style={{"fontSize": "0.8rem", "color": "#7A6E62", "lineHeight": 1.7, "marginBottom": "0.6rem"}}>
+            All figures and results are estimates. LatherForge makes no warranty about their accuracy or completeness and, to the fullest extent permitted by law, accepts no liability for any loss arising from reliance on them. Etsy is a trademark of Etsy, Inc. LatherForge is independent and is not affiliated with, endorsed by or sponsored by Etsy.
+          </p>
+          <p style={{"fontSize": "0.8rem", "color": "#7A6E62", "lineHeight": 1.7}}>
+            Last reviewed: 8 November 2026.
+          </p>
         </div>
       </section>
       <section style={{"background": "#5C3D2E", "padding": "5rem 0", "textAlign": "center"}}>
