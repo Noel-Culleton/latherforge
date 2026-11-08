@@ -485,6 +485,11 @@ export const posts: Post[] = [
         link: { href: '/free-soap-journal/', label: 'Download the free printable soap batch journal' }
       },
       {
+        heading: 'Track Every Batch in LatherForge',
+        text: "Most of these problems are solved by knowing exactly what you did last time. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      {
         text: 'Information only. Not professional or medical advice. Always follow lye safety guidance: goggles, gloves and long sleeves, good ventilation, and lye into water, never water into lye.'
       }
     ],
@@ -525,7 +530,7 @@ export const posts: Post[] = [
       { heading: '9. Soap Mould', text: 'A silicone loaf mould is the easiest start. A wooden mould lined with baking paper also works. Start simple; you can buy fancy moulds later.' },
       {
         heading: '10. A Soap Calculator',
-        text: 'Every recipe needs its lye and water worked out for the exact oils you use. Never guess and never copy a recipe without checking it.',
+        text: 'Every recipe needs its lye and water worked out for the exact oils you use. Never guess and never copy a recipe without checking it. Our free LatherForge soap calculator does this in your browser, with no signup.',
         link: { href: '/lye-calculator/', label: 'Use the free LatherForge soap calculator' }
       },
       {
@@ -542,6 +547,11 @@ export const posts: Post[] = [
         heading: 'Next Steps',
         text: 'Once you have your tools, follow a beginner recipe exactly, keep records of every batch, and let your soap cure fully before using it.',
         link: { href: '/blog/cold-process-soap-beginners-guide/', label: 'Read the complete beginner’s guide to cold process soap' }
+      },
+      {
+        heading: 'One More Tool: Somewhere to Keep Your Records',
+        text: "Paper works (try our free printable batch journal). If you would rather keep it digital, LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional or medical advice. Always follow lye safety guidance and keep lye away from children and pets.' }
     ],
@@ -592,6 +602,11 @@ export const posts: Post[] = [
         heading: 'Put It Together',
         text: 'The percentages above are common starting points, not rules. Whatever oils you choose, the lye amount must be calculated for your exact recipe.',
         link: { href: '/sap-values/', label: 'See SAP values for 46 oils' }
+      },
+      {
+        heading: 'Cost Your Oils Properly',
+        text: "Oil prices change, and so does your real cost per bar. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Always run your recipe through a soap calculator and follow lye safety guidance.' }
     ],
@@ -644,6 +659,11 @@ export const posts: Post[] = [
         heading: 'How Much to Use, and Allergens',
         text: 'Do not guess usage rates. Each essential oil has its own safe maximum, so follow your supplier’s safety data and IFRA guidance, and have your recipe assessed. Essential oils contain fragrance allergens such as linalool and limonene, and under the expanded EU allergen rules some must be named on your label. Your supplier’s allergen declaration and your safety assessor decide what goes on the label.',
         link: { href: '/cpsr-for-soap/', label: 'Selling your soap? Read our CPSR and allergen guide' }
+      },
+      {
+        heading: 'Keep Your Fragrance Records Together',
+        text: "Every fragrance change is a new formula, with its own allergens and records. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. The first 300 people on the waitlist get 3 months free, with no card needed to start.",
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional, legal or medical advice. Some essential oils are not suitable for everyone; follow your supplier’s safety guidance.' }
     ],
