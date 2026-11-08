@@ -27,6 +27,8 @@ const BASE_RULES: LinkRule[] = [
   rule('/blog/best-stick-blenders-for-soap-making/', ['stick blenders', 'stick blender', 'immersion blender']),
   rule('/blog/best-oils-for-soap-making/', ['oils for soap making', 'soap making oils', 'best oils']),
   rule('/blog/best-essential-oils-for-soap/', ['essential oils for soap', 'essential oil']),
+  rule('/blog/best-soap-making-kits-for-beginners/', ['soap making kits', 'soap making kit', 'melt and pour']),
+  rule('/blog/best-candle-making-kits-for-beginners/', ['candle making kits', 'candle making kit']),
   rule('/free-soap-journal/', ['batch records', 'batch record', 'soap journal', 'batch journal']),
   rule('/blog/selling-handmade-soap-legal-requirements/', ['sell soap legally', 'selling soap legally', 'selling handmade soap legally'])
 ]
