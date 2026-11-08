@@ -334,12 +334,13 @@ export const posts: Post[] = [
         text: 'Soap sold in the Republic of Ireland, Northern Ireland or anywhere in the EU is covered by the EU Cosmetics Regulation (EC) No 1223/2009. In Ireland it is enforced by the Health Products Regulatory Authority (HPRA).',
         items: [
           'Responsible Person: every product needs a Responsible Person based in the EU (or in Northern Ireland for NI sales). For most small makers, that is you',
-          'Safety assessment: each recipe needs a Cosmetic Product Safety Report (CPSR), signed off by a qualified safety assessor. Changing the fragrance or an ingredient usually means a new or updated assessment',
-          'Product Information File (PIF): keep the CPSR, product description, manufacturing method and any evidence for claims, for 10 years after the last batch is sold',
+          'Safety assessment: each recipe needs a Cosmetic Product Safety Report (CPSR), signed off by a qualified safety assessor. Changing the fragrance or an ingredient usually means a new or updated assessment. See what a CPSR involves and costs in our CPSR guide',
+          'Product Information File (PIF): keep the CPSR, product description, manufacturing method and any evidence for claims, for 10 years after the last batch is placed on the market',
           'CPNP notification: notify every product on the EU Cosmetic Products Notification Portal before you sell it. It is free',
           'Good Manufacturing Practice: make your soap in clean, organised conditions and keep batch records. ISO 22716 is the recognised standard',
           'Allergens: the EU has extended its list of fragrance allergens that must be named on labels. New products must comply from 31 July 2026, and all products on sale from 31 July 2028'
-        ]
+        ],
+        link: { href: '/cpsr-for-soap/', label: 'CPSR for soap makers: what it is and what it costs' }
       },
       {
         heading: 'Great Britain (England, Scotland, Wales)',
