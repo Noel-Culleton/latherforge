@@ -776,6 +776,222 @@ export const posts: Post[] = [
       { q: 'Can I use my kitchen stick blender for soap?', a: 'You can, but once it has been used for soap it should never be used for food again. Most soap makers buy a separate, inexpensive blender kept only for soap.' },
       { q: 'What is the best stick blender for soap making?', a: 'Look for a stainless steel shaft, a detachable shaft and a pulse or low speed. Popular choices include the Braun MultiQuick range, Cuisinart Smart Stick, Hamilton Beach and KitchenAid 2-Speed for budget, and Vitamix for premium.' }
     ]
+  },
+  {
+    slug: 'best-candle-making-kits-for-beginners',
+    title: 'Best Candle Making Kits for Beginners: 2026 Gift Guide',
+    description: 'The best candle making kits for beginners and adults in 2026: CandleScience Starter+, Makesy, Hearth & Harbor soy kit, Banter & Bliss, Bramble Berry, Lone Star and Betterbee beeswax. What a good kit includes, safety, and gift tips.',
+    date: '2026-11-08',
+    readTime: '9 min read',
+    category: 'Gift Guides',
+    sections: [
+      {
+        text: 'A candle making kit is one of the most searched craft gifts every Christmas, and for good reason: in an afternoon you can pour candles that look and smell like boutique ones. We picked these seven from kits named in current 2026 reviews and Google’s top shopping results. We have not tested them ourselves; we tell you where each pick comes from, and prices are as listed at the time of writing (November 2026), so check the current price before you buy.'
+      },
+      {
+        heading: 'Quick picks',
+        items: [
+          'Best overall: CandleScience Starter+ Candle Making Kit',
+          'Best stylish gift: Makesy Candle Making Starter Kit',
+          'Best value all-in-one: Hearth & Harbor Natural Soy Candle Making Kit',
+          'Best for a group or date night: Banter & Bliss DIY Candle Kit',
+          'Best from a soap and candle specialist: Bramble Berry Serenity Candle Kit',
+          'Best budget soy kit: Lone Star Candle Supply Beginner’s Kit',
+          'Best beeswax kit: Betterbee Candle Making Beginner Kit'
+        ]
+      },
+      {
+        heading: 'What a Good Beginner Candle Kit Includes',
+        items: [
+          'Wax: soy, coconut-soy or beeswax. Soy and coconut blends are the easiest for beginners',
+          'Pre-tabbed wicks and something to hold them straight while the wax sets',
+          'Containers: tins or glass jars, ideally with lids for gifting',
+          'Fragrance oils made for candles, with clear amounts',
+          'A pouring pitcher and a thermometer: temperature matters for a smooth top and good scent throw',
+          'Clear instructions. If a kit has no thermometer, plan to buy one'
+        ]
+      },
+      {
+        heading: '1. CandleScience Starter+ Candle Making Kit',
+        text: 'Named the best overall beginner kit in Google’s AI summary for “best candle making kit for beginners” (November 2026). Listed at about $74.99, it makes six candles and includes coconut apricot wax, six tumbler jars with lids, three fragrance oils, pre-tabbed wicks, wick bars and a digital thermometer. CandleScience sells it directly; check Amazon too.',
+        shop: { label: 'Check price on Amazon', query: 'CandleScience candle making kit' }
+      },
+      {
+        heading: '2. Makesy Candle Making Starter Kit',
+        text: 'Named best overall in a 2026 hands-on roundup of candle kits (Life Between Weekends), at about $48 to $60. Soy wax and stylish reusable vessels make it a strong gift that looks good on the shelf afterwards.',
+        shop: { label: 'Check price on Amazon', query: 'Makesy candle making starter kit' }
+      },
+      {
+        heading: '3. Hearth & Harbor Natural Soy Candle Making Kit',
+        text: 'Picked as the best all-in-one value kit in Google’s 2026 summary, at about $32 to $34. It includes about 2 lb of soy wax, a melting pot, cotton and wooden wicks, tins, a thermometer and dried flowers, so you can start without buying extra tools.',
+        shop: { label: 'Check price on Amazon', query: 'Hearth Harbor soy candle making kit' }
+      },
+      {
+        heading: '4. Banter & Bliss DIY Candle Kit',
+        text: 'Named best for groups in the same 2026 roundup, at about $46. Coconut-soy wax and four six-ounce candles make it a good pick for a craft night, a couple or a family gift.',
+        shop: { label: 'Check price on Amazon', query: 'Banter Bliss candle making kit' }
+      },
+      {
+        heading: '5. Bramble Berry Serenity Candle Kit',
+        text: 'Rated 4.5 stars from 32 reviews in Google Shopping (November 2026), at about $42.99. Bramble Berry is a long-standing soap and candle supplier, so this is a good choice if the person you are buying for might move on to soap making too.',
+        shop: { label: 'Check price on Amazon', query: 'Bramble Berry candle making kit' }
+      },
+      {
+        heading: '6. Lone Star Candle Supply Beginner’s DIY Candle Making Kit',
+        text: 'A 100% soy wax beginner kit listed at about $29.95, ranking on Google’s first page for beginner kits. Good value if you want real candle-supply materials rather than a toy-style kit.',
+        shop: { label: 'Check price on Amazon', query: 'Lone Star Candle Supply beginner candle making kit' }
+      },
+      {
+        heading: '7. Betterbee Candle Making Beginner Kit',
+        text: 'A beeswax kit rated 4.9 stars from 10 reviews, listed at about $133.89. It makes 30 beeswax tealights and 12 votives. A premium pick for anyone who prefers beeswax over soy.',
+        shop: { label: 'Check price on Amazon', query: 'Betterbee beeswax candle making kit' }
+      },
+      {
+        heading: 'Candle Making Safety',
+        items: [
+          'Never heat wax directly over a flame. Use a double boiler or a dedicated melting pot',
+          'Use a thermometer and stay with melting wax at all times',
+          'If wax catches fire, never use water: turn off the heat and smother it with a lid',
+          'Hot wax burns. Children should only help with adult supervision and should not pour hot wax',
+          'Trim wicks before lighting, and never leave a burning candle unattended',
+          'Let candles cure as the kit instructions say before judging the scent; many soy candles smell stronger after a few days'
+        ]
+      },
+      {
+        heading: 'Gift Tips',
+        items: [
+          'Order early in November and December, as popular kits sell out and delivery slows down',
+          'Check what is included: thermometer, pitcher and containers save the recipient a trip to the shops',
+          'Add a second pack of wax or extra jars so they can make another batch',
+          'For a budget gift, craft stores such as Michaels sell simple kits for around $10 to $20'
+        ]
+      },
+      {
+        heading: 'Making Soap Too?',
+        text: 'If the person you are buying for also loves bath and body crafts, see our soap kit guide.',
+        link: { href: '/blog/best-soap-making-kits-for-beginners/', label: 'Best Soap Making Kits for Beginners: 2026 Gift Guide' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers of soap, candles, bath bombs and skincare, launching on 1 January 2027. It keeps your recipes, batches, stock and true cost per item in one place, so you know what every candle really costs to make. The first 300 people on the waitlist get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: first 300 get 3 months free' }
+      },
+      { text: 'Information only. Picks are based on the published reviews, ratings and search results named above, not our own testing. Prices, contents and availability change; check current details and reviews before you buy. Follow the kit instructions and candle safety guidance.' }
+    ],
+    faqs: [
+      { q: 'What is the best candle making kit for beginners?', a: 'In current 2026 reviews, the CandleScience Starter+ kit is often named best overall, the Makesy Starter Kit is a popular stylish gift, and the Hearth & Harbor soy kit is a strong all-in-one value pick.' },
+      { q: 'What should a candle making kit include?', a: 'Wax (soy, coconut-soy or beeswax), pre-tabbed wicks and holders, containers, candle fragrance oil, a pouring pitcher, a thermometer and clear instructions.' },
+      { q: 'Are candle making kits safe for kids?', a: 'Candle making uses hot wax, so children should only help with close adult supervision and should not handle or pour hot wax themselves.' },
+      { q: 'Is soy wax good for beginners?', a: 'Yes. Soy and coconut-soy waxes are the most common in beginner kits because they melt at lower temperatures and are easy to pour.' }
+    ]
+  },
+  {
+    slug: 'best-soap-making-kits-for-beginners',
+    title: 'Best Soap Making Kits for Beginners: 2026 Gift Guide',
+    description: 'The best soap making kits for beginners in 2026, melt and pour and cold process: Bramble Berry, Craftzee, Makesy, Hinkler and VEVOR. Which type to choose, what a good kit includes, safety, and gift tips.',
+    date: '2026-11-08',
+    readTime: '9 min read',
+    category: 'Gift Guides',
+    sections: [
+      {
+        text: 'A soap making kit is a brilliant gift, but there are two very different kinds. Melt and pour kits are safe and easy for almost anyone. Cold process kits make soap from scratch with lye and are for adults who want the real craft. We picked these seven from kits that appear in Google’s top shopping results with strong ratings in November 2026. We have not tested them ourselves, and prices are as listed at the time of writing, so check the current price before you buy.'
+      },
+      {
+        heading: 'Quick picks',
+        items: [
+          'Best cold process kit overall: Bramble Berry Natural Soap Kit for Beginners',
+          'Best value cold process kit: Bramble Berry Beginner’s Cold Process Soap Kit',
+          'Best melt and pour kit: Craftzee Large Soap Making Kit',
+          'Best stylish melt and pour gift: Makesy soap making kits',
+          'Best budget melt and pour kit: Bramble Berry Raspberry Vanilla Soap Starter Kit',
+          'Best family craft gift: Hinkler Create Your Own Deluxe Soap Kit',
+          'Best budget tool set: VEVOR Soap Making Kit'
+        ]
+      },
+      {
+        heading: 'Melt and Pour or Cold Process?',
+        items: [
+          'Melt and pour: you melt a ready-made soap base, add colour and scent, and pour. No lye handling, ready to use once it sets. Best for children (with adult help), quick gifts and total beginners',
+          'Cold process: you make soap from oils and lye. More creative control and a true handmade bar, but it needs safety gear, accurate weighing and a 4 to 6 week cure. Adults only',
+          'Not sure? Start with melt and pour. You can always move on to cold process later'
+        ]
+      },
+      {
+        heading: '1. Bramble Berry Natural Soap Kit for Beginners',
+        text: 'Rated 4.8 stars from 42 reviews in Google Shopping (November 2026), at about $99.99. A cold process kit; a reviewer on Bramble Berry’s site says it includes clear instructions, all the ingredients, a mould, a scale and some safety gear. Bramble Berry sells it directly; check Amazon too.',
+        shop: { label: 'Check price on Amazon', query: 'Bramble Berry cold process soap making kit beginners' }
+      },
+      {
+        heading: '2. Bramble Berry Beginner’s Cold Process Soap Kit',
+        text: 'Rated 4.7 stars from 41 reviews, at about $69.99. Reviewers mention an easy-to-follow recipe and easy-to-measure ingredients. A lower-cost way into cold process soap.',
+        shop: { label: 'Check price on Amazon', query: 'Bramble Berry beginner cold process soap kit' }
+      },
+      {
+        heading: '3. Craftzee Large Soap Making Kit',
+        text: 'A melt and pour kit with a shea butter soap base, rated 4.6 stars from 73 reviews, at about $99.99. Reviewers say it comes with everything needed to get started. A generous gift for someone who wants to make lots of bars.',
+        shop: { label: 'Check price on Amazon', query: 'Craftzee soap making kit shea butter' }
+      },
+      {
+        heading: '4. Makesy Soap Making Kits',
+        text: 'Makesy ranks on Google’s first page for beginner melt and pour kits, with premium bases, colours and fragrances. Like Makesy’s candle kits, they are designed to look good, which makes them a strong gift.',
+        shop: { label: 'Check price on Amazon', query: 'Makesy soap making kit melt and pour' }
+      },
+      {
+        heading: '5. Bramble Berry Raspberry Vanilla Soap Starter Kit',
+        text: 'A budget melt and pour kit at about $29.99, rated 5 stars from 3 reviews. A reviewer notes you do not need a scale. A simple, affordable first try.',
+        shop: { label: 'Check price on Amazon', query: 'Bramble Berry melt and pour soap starter kit' }
+      },
+      {
+        heading: '6. Hinkler Create Your Own Deluxe Soap Kit',
+        text: 'A craft-style soap kit at about $38.99, rated 4.8 stars from 6 reviews. A fun family or teen gift; check the box for the recommended age and what is included.',
+        shop: { label: 'Check price on Amazon', query: 'Hinkler Create Your Own Deluxe Soap Kit' }
+      },
+      {
+        heading: '7. VEVOR Soap Making Kit',
+        text: 'A budget tool set at about $21.76, rated 4.8 stars from 35 reviews: a bamboo cutting box, silicone mould, straight and wavy cutters, bags and stickers. It is equipment rather than ingredients, so it suits someone who already has soap base or makes cold process soap.',
+        shop: { label: 'Check price on Amazon', query: 'VEVOR soap making kit cutting box silicone mold' }
+      },
+      {
+        heading: 'Soap Making Safety',
+        items: [
+          'Cold process kits contain lye (sodium hydroxide): adults only, with goggles, gloves and long sleeves',
+          'Always add lye to water, never water to lye, and work somewhere well ventilated',
+          'If lye splashes on skin, rinse with plenty of cool running water',
+          'Melt and pour base gets hot: an adult should melt and pour it for children',
+          'Keep all soap making supplies away from food areas and out of reach of children and pets'
+        ]
+      },
+      {
+        heading: 'Gift Tips',
+        items: [
+          'Order early in November and December, as popular kits sell out',
+          'Add a stick blender for a cold process soap maker, or extra soap base for a melt and pour fan',
+          'Pair the kit with our free printable soap batch journal so they can record every batch'
+        ],
+        link: { href: '/free-soap-journal/', label: 'Download the free printable soap batch journal' }
+      },
+      {
+        heading: 'More Guides',
+        items: [
+          'Best stick blenders for soap making',
+          '10 soap making tools you actually need',
+          'Best candle making kits for beginners'
+        ],
+        link: { href: '/blog/best-candle-making-kits-for-beginners/', label: 'Best Candle Making Kits for Beginners: 2026 Gift Guide' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers of soap, candles, bath bombs and skincare, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place, and our free soap calculator works out lye for any cold process recipe. The first 300 people on the waitlist get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: first 300 get 3 months free' }
+      },
+      { text: 'Information only. Picks are based on published ratings, reviews and search results named above, not our own testing. Prices, contents and availability change; check current details and reviews before you buy. Always follow the kit instructions and lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'What is the best soap making kit for beginners?', a: 'For an easy start, choose a melt and pour kit such as Craftzee or Makesy. For real from-scratch soap, Bramble Berry’s Natural Soap Kit for Beginners is one of the highest-rated cold process kits in 2026.' },
+      { q: 'What is the difference between melt and pour and cold process soap kits?', a: 'Melt and pour kits use a ready-made soap base that you melt, scent and pour, with no lye handling. Cold process kits make soap from oils and lye, need safety gear and accurate weighing, and the bars must cure for 4 to 6 weeks.' },
+      { q: 'Are soap making kits safe for kids?', a: 'Melt and pour kits can be a fun family activity if an adult melts and pours the hot base. Cold process kits use lye and are for adults only.' },
+      { q: 'Do soap making kits make good Christmas gifts?', a: 'Yes. They are one of the most searched craft gifts in November and December. Order early, check what is included, and consider adding extra base or a stick blender.' }
+    ]
   }
 
 ]
