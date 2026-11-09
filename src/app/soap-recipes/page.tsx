@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import RelatedGuides from '@/components/RelatedGuides'
 import { getReviewedRecipes } from '@/lib/recipes'
 import { cureLabel } from '@/lib/format'
 
@@ -48,6 +49,7 @@ export default function SoapRecipesPage() {
           </div>
         </section>
       </main>
+      <RelatedGuides page="/soap-recipes/" />
       <Footer />
     </>
   )

@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import RelatedGuides from '@/components/RelatedGuides'
+import { recipeGuideSlugs } from '@/lib/relatedGuides'
 import { getReviewedRecipes, getRecipeBySlug, recipeBatch } from '@/lib/recipes'
 import { cureLabel } from '@/lib/format'
 
@@ -200,6 +202,7 @@ export default async function RecipePage({ params }: Props) {
           </div>
         </section>
       </main>
+      <RelatedGuides slugs={recipeGuideSlugs(recipe)} />
       <Footer />
     </>
   )
