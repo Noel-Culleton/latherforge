@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { getReviewedRecipes, recipeOilWeights } from '@/lib/recipes'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import LyeCalculatorClient from './LyeCalculatorClient'
+import LyeCalculatorClient, { type RecipePreset } from './LyeCalculatorClient'
 
 export const metadata: Metadata = {
   title: { absolute: 'Soap Calculator — Free Lye Calculator for Soap Making | LatherForge' },
@@ -23,6 +25,11 @@ const FAQS = [
   { q: 'What happens if you use too much lye in soap?', a: 'Too much lye leaves unreacted sodium hydroxide in the bar, which makes the soap harsh and can irritate or burn skin. Signs include a white crumbly surface, cracking or a bar that zaps when touched to the tongue. Always weigh lye precisely and run every recipe through a soap calculator before you make it.' },
   { q: 'Can I use this soap calculator in ounces?', a: 'Yes. Switch the units to ounces, enter your oils in ounces and the lye and water results are given in ounces too.' }
 ]
+
+// Only reviewed recipes are sent to the browser for ?recipe= prefill
+const presets: RecipePreset[] = getReviewedRecipes().map(r => ({
+  slug: r.slug, lyeType: r.lyeType, method: r.method, superfat: r.superfat, oils: recipeOilWeights(r, 1000)
+}))
 
 export default function LyeCalculatorPage() {
   const schema = {
@@ -78,7 +85,7 @@ export default function LyeCalculatorPage() {
         </section>
 
         {/* CALCULATOR */}
-        <LyeCalculatorClient />
+        <LyeCalculatorClient presets={presets} />
 
         {/* HOW IT WORKS */}
         <section style={{ background: '#F0EAE0', padding: '5rem 0' }}>
@@ -124,6 +131,20 @@ export default function LyeCalculatorPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Recipes */}
+        <section style={{ background: '#FAF7F2', padding: '4rem 0' }}>
+          <div className="container" style={{ maxWidth: '760px' }}>
+            <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.4rem)', color: '#3E2820', marginBottom: '0.75rem' }}>Start From a Recipe</h2>
+            <p style={{ color: '#5C4A3A', lineHeight: 1.7, marginBottom: '1.25rem' }}>Pick a recipe and open it here to resize it for your mould.</p>
+            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.5rem 1.5rem', listStyle: 'none', padding: 0 }}>
+              {getReviewedRecipes().map(r => (
+                <li key={r.slug}><Link href={`/soap-recipes/${r.slug}/`} style={{ color: '#5C3D2E', textDecoration: 'underline' }}>{r.name}</Link></li>
+              ))}
+            </ul>
+            <p style={{ marginTop: '1.25rem' }}><Link href="/soap-recipes/" style={{ color: '#5C3D2E', fontWeight: 600 }}>See all soap recipes →</Link></p>
           </div>
         </section>
 

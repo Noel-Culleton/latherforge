@@ -24,25 +24,25 @@ export const recipes: SoapRecipe[] = [
     slug: 'beginner-soap-recipe',
     name: 'Easy Beginner Soap',
     description: 'A forgiving, palm-free cold process soap recipe for your first batch: olive oil, coconut oil, shea butter and castor oil.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 50 }, { oil: 'Coconut Oil (76°)', pct: 30 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Four easy-to-find ingredients, a slow trace that gives you time to pour, and a hard, mild bar with good lather. It is the recipe most new soap makers should start with.',
-    tips: ['Soap at around 35–40°C to keep trace slow.', 'Add fragrance at light trace, no more than 3% of oil weight for most skin-safe fragrance oils.', 'Unmould after 24–48 hours once the bar is firm.']
+    tips: ['Around 35–40°C is a good starting temperature, as long as the oils stay fully melted. Blend in short bursts; fragrance and heat can both speed up trace.', 'Add fragrance at light trace. Use only fragrance made for rinse-off soap and follow the supplier’s soap usage rate and IFRA Category 9 limit; there is no single safe percentage for every fragrance.', 'Unmould after 24–48 hours once the bar is firm.']
   },
   {
     slug: 'castile-soap-recipe',
     name: 'Castile Soap (100% Olive Oil)',
     description: 'Traditional castile soap made from 100% olive oil. A very gentle bar that needs a long cure.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 26,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 26,
     oils: [{ oil: 'Olive Oil', pct: 100 }],
     why: 'Pure olive oil soap is one of the mildest bars you can make. It is slow to trace and soft at first, but after a long cure it becomes a very hard, long-lasting bar.',
-    tips: ['Expect a long time to trace. A stick blender is essential.', 'Leave it in the mould for 3–5 days; it stays soft for longer than most recipes.', 'Cure for at least 6 months. The lather is low and slightly slippery; that is normal for castile.']
+    tips: ['Olive-only soap is slow to trace. A stick blender is strongly recommended; stirring by hand can take a very long time.', 'Unmould when it is firm enough to release without damage. This can take several days, so check firmness rather than going by the clock.', 'Cure for at least 6 months. The lather is low and slightly slippery; that is normal for castile.']
   },
   {
     slug: 'bastille-soap-recipe',
     name: 'Bastille Soap',
     description: 'A high olive oil bastille soap with a little coconut and castor for better lather and a shorter cure than castile.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 8,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 8,
     oils: [{ oil: 'Olive Oil', pct: 75 }, { oil: 'Coconut Oil (76°)', pct: 20 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Bastille keeps most of castile\'s mildness but lathers better and hardens faster thanks to the coconut oil.',
     tips: ['Trace is still fairly slow, which makes this a good recipe for simple swirls.', 'Cure for at least 8 weeks for the best bar.']
@@ -51,7 +51,7 @@ export const recipes: SoapRecipe[] = [
     slug: 'shea-butter-soap-recipe',
     name: 'Shea Butter Soap',
     description: 'A creamy, conditioning cold process shea butter soap recipe with olive, coconut, sweet almond and castor oil.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 35 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 25 }, { oil: 'Sweet Almond Oil', pct: 10 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'A generous amount of shea butter gives a hard bar with a creamy, conditioning feel. Sweet almond oil adds a silky touch.',
     tips: ['Melt the shea butter fully and stir well so it does not leave grainy spots.', 'Shea speeds trace slightly, so have your colours and fragrance ready.']
@@ -60,27 +60,27 @@ export const recipes: SoapRecipe[] = [
     slug: 'goat-milk-soap-recipe',
     name: 'Goat Milk Soap',
     description: 'Cold process goat milk soap recipe using frozen goat milk in place of water, with shea butter and sweet almond oil.',
-    reviewed: false, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Sweet Almond Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     liquid: 'Goat milk, frozen into cubes (use the same weight as the water shown)',
     why: 'Goat milk gives a creamy lather and a soft, pale bar. Freezing the milk stops the lye from scorching the sugars, which would turn the soap orange and smell of ammonia.',
-    tips: ['Add the lye to the frozen milk slowly, a spoonful at a time, with the jug sitting in an ice bath.', 'Soap cool (around 30°C) and do not insulate; put the mould in the fridge or freezer for 24 hours to prevent overheating.', 'A slight ammonia smell while mixing is normal and fades during cure.']
+    tips: ['Add the lye to the frozen milk slowly, a spoonful at a time, with the jug sitting in an ice bath. Keep stirring until all the lye has dissolved; milk is opaque, so melted cubes do not prove it. Do not carry on with undissolved granules.', 'Keep the milk and lye mixture cool to stop it scorching, but keep the oils fully melted and fluid; do not let them go cloudy. Do not insulate; put the mould in the fridge or freezer for 24 hours to prevent overheating.', 'A slight ammonia-like smell while mixing is normal and fades during cure. Work with good ventilation and do not lean over the jug.']
   },
   {
     slug: 'salt-bar-soap-recipe',
     name: 'Salt Bar Soap',
     description: 'A high coconut oil salt bar soap recipe with a 20% superfat and fine sea salt. Hard, long-lasting and bubbly.',
-    reviewed: false, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 20, cureWeeks: 8,
+    reviewed: true, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 20, cureWeeks: 8,
     oils: [{ oil: 'Coconut Oil (76°)', pct: 80 }, { oil: 'Olive Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
-    additives: ['Fine sea salt: 50–100% of oil weight (not Dead Sea or Epsom salt), stirred in at light trace'],
+    additives: ['Fine sea salt: 50% of oil weight (500 g per 1000 g oils), stirred in at light trace. Up to 100% is a variation that changes handling and lather. Avoid coarse sharp crystals, Dead Sea salt and Epsom salt'],
     why: 'Salt normally kills lather, so salt bars use lots of coconut oil to stay bubbly. The high 20% superfat keeps all that coconut oil from being drying.',
-    tips: ['Use individual cavity moulds, or cut a loaf within 1–3 hours. Salt bars get rock hard fast and crumble if cut late.', 'Cure for at least 8 weeks; salt bars keep improving for months.']
+    tips: ['Individual cavity moulds are easiest. For a loaf, check often and cut as soon as it holds its shape, before it turns brittle; timing varies. Wear gloves and eye protection when handling fresh soap.', 'Cure for at least 8 weeks; salt bars keep improving for months.']
   },
   {
     slug: 'lard-soap-recipe',
     name: 'Traditional Lard Soap',
     description: 'An old-fashioned lard soap recipe with coconut, olive and castor oil. Hard, white, mild and inexpensive.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 4,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 4,
     oils: [{ oil: 'Lard', pct: 60 }, { oil: 'Coconut Oil (76°)', pct: 20 }, { oil: 'Olive Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Lard makes a hard, white, very mild bar with a creamy lather, and it is one of the cheapest soap-making fats.',
     tips: ['Use rendered, odour-free lard.', 'This recipe traces moderately fast; blend in short bursts.']
@@ -89,16 +89,16 @@ export const recipes: SoapRecipe[] = [
     slug: 'tallow-soap-recipe',
     name: 'Beef Tallow Soap',
     description: 'A classic beef tallow soap recipe for a hard, long-lasting, mild bar with a creamy lather.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 4,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 4,
     oils: [{ oil: 'Tallow (Beef)', pct: 60 }, { oil: 'Olive Oil', pct: 20 }, { oil: 'Coconut Oil (76°)', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Tallow makes one of the hardest, longest-lasting bars. It is a popular choice for makers who want a traditional, palm-free soap.',
-    tips: ['Melt the tallow completely and let it cool to about 40°C before mixing.', 'Tallow can trace quickly; keep additives simple for your first batch.']
+    tips: ['Melt the tallow completely and keep the oils fully fluid before adding the lye. About 40°C usually works, but go by the oils, not the thermometer: cloudy or setting fat can look like false trace.', 'Tallow can trace quickly; keep additives simple for your first batch.']
   },
   {
     slug: 'vegan-palm-free-soap-recipe',
     name: 'Vegan Palm-Free Soap',
     description: 'A vegan, palm-free cold process soap recipe using cocoa butter and shea butter for hardness.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Cocoa Butter', pct: 15 }, { oil: 'Shea Butter', pct: 10 }, { oil: 'Avocado Oil', pct: 5 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Cocoa and shea butter replace palm oil for hardness, so you get a firm vegan bar without palm or animal fats.',
     tips: ['Use deodorised cocoa butter if you do not want a chocolate scent.', 'Cocoa butter speeds trace a little; soap at 35–40°C.']
@@ -107,7 +107,7 @@ export const recipes: SoapRecipe[] = [
     slug: 'avocado-soap-recipe',
     name: 'Avocado Oil Soap',
     description: 'A rich avocado oil soap recipe with olive, coconut, shea butter and castor oil.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 35 }, { oil: 'Avocado Oil', pct: 25 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 10 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Avocado oil adds a rich, conditioning feel. It behaves much like olive oil, so the recipe is easy to work with.',
     tips: ['Refined avocado oil gives a paler bar; unrefined is greener.']
@@ -116,7 +116,7 @@ export const recipes: SoapRecipe[] = [
     slug: 'hemp-seed-soap-recipe',
     name: 'Hemp Seed Oil Soap',
     description: 'A hemp seed oil soap recipe with olive, coconut, shea butter and castor oil.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 35 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 20 }, { oil: 'Hemp Seed Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Hemp seed oil gives a silky, conditioning bar. It is kept at 15% because oils this high in linoleic acid can go rancid (orange spots) if used heavily.',
     tips: ['Store hemp seed oil in the fridge and use it fresh.', 'Keep finished bars out of direct sunlight and humidity during cure.']
@@ -125,20 +125,40 @@ export const recipes: SoapRecipe[] = [
     slug: 'charcoal-soap-recipe',
     name: 'Activated Charcoal Soap',
     description: 'A striking black activated charcoal soap recipe with olive, coconut, shea and sweet almond oil.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Sweet Almond Oil', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
-    additives: ['Activated charcoal: about 1 teaspoon per 500 g of oils, dispersed in a little of the recipe oil first'],
+    additives: ['Activated charcoal: about 1 teaspoon per 500 g of oils (teaspoons are approximate), dispersed in a little of the measured recipe oil first'],
     why: 'Activated charcoal gives a deep black bar that looks great with a white swirl. Too much charcoal can make grey lather, so this recipe uses a moderate amount.',
-    tips: ['Mix the charcoal into a tablespoon of oil before adding it, to avoid clumps.', 'If you sell it, avoid medical claims such as "treats acne" or "detox". Those make it a medicine, not a cosmetic.']
+    tips: ['Use cosmetic-grade activated charcoal and avoid breathing in the dust. Mix it into a little oil taken from the measured recipe oils (not extra oil), then add it back to the batch.', 'If you sell it, do not claim it treats acne or other conditions, and avoid unsupported “detox” claims. Medical claims can change how the product is regulated.']
   },
   {
     slug: 'mango-butter-soap-recipe',
     name: 'Mango Butter Soap',
     description: 'A mango butter soap recipe with olive, coconut, rice bran and castor oil for a hard, creamy bar.',
-    reviewed: false, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 5,
     oils: [{ oil: 'Olive Oil', pct: 40 }, { oil: 'Coconut Oil (76°)', pct: 25 }, { oil: 'Mango Butter', pct: 20 }, { oil: 'Rice Bran Oil', pct: 10 }, { oil: 'Castor Oil', pct: 5 }],
     why: 'Mango butter is a lighter, less greasy alternative to shea that still gives a hard bar. Rice bran oil adds a silky feel.',
     tips: ['Mango butter melts easily; do not overheat it.']
+  },
+  {
+    slug: 'oatmeal-soap-recipe',
+    name: 'Oatmeal Soap',
+    description: 'A gentle, palm-free oatmeal cold process soap recipe with colloidal oats, rice bran oil, olive oil and shea butter.',
+    reviewed: true, skill: 'Beginner', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 6,
+    oils: [{ oil: 'Rice Bran Oil', pct: 30 }, { oil: 'Olive Oil', pct: 30 }, { oil: 'Coconut Oil (76°)', pct: 20 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
+    additives: ['Colloidal oatmeal: 10 g per 1000 g oils, mixed into about 20 g of the measured olive oil (not extra oil) and stirred in at light trace'],
+    why: 'Rice bran and olive oil give a mild, silky base, shea butter adds hardness, and coconut and castor keep the lather creamy. Finely ground colloidal oats add a soft feel and a speckled, natural look.',
+    tips: ['Keep the oils and lye solution at about 35–40°C, with the oils still fully melted. Blend in short bursts to light trace, then stir in the oat mixture.', 'Use colloidal or very finely ground, sifted oats. Coarse oats feel scratchy and can go soggy in the bar.', 'Unmould after 24–48 hours once the bar is firm, then cure for at least 6 weeks with good airflow.']
+  },
+  {
+    slug: 'honey-oatmeal-soap-recipe',
+    name: 'Honey Oatmeal Soap',
+    description: 'A palm-free honey oatmeal cold process soap recipe with rice bran oil and shea butter, plus how to stop the honey overheating.',
+    reviewed: false, skill: 'Intermediate', lyeType: 'NaOH', method: 'cold', superfat: 5, cureWeeks: 6,
+    oils: [{ oil: 'Rice Bran Oil', pct: 30 }, { oil: 'Olive Oil', pct: 30 }, { oil: 'Coconut Oil (76°)', pct: 20 }, { oil: 'Shea Butter', pct: 15 }, { oil: 'Castor Oil', pct: 5 }],
+    additives: ['Colloidal oatmeal: 10 g per 1000 g oils, mixed into about 20 g of the measured olive oil (not extra oil) and stirred in at light trace', 'Plain honey: 10 g per 1000 g oils, dissolved in 10 g of the measured water (not extra water) once it is cool, and stirred in at light trace. Never add honey to the hot lye solution'],
+    why: 'Rice bran and olive oil give a mild, silky base, shea butter adds hardness, and coconut and castor keep the lather creamy. Colloidal oats and a little honey add a soft feel and a warm colour.',
+    tips: ['Keep the oils and lye solution at about 35–38°C, with the oils still fully melted. Blend in short bursts to light trace, then stir in the oats and diluted honey.', 'Honey makes soap heat up. Use individual cavity moulds, do not insulate, and put the mould in the fridge for the first 24 hours. This lowers the risk of cracking and dark spots but does not remove it.', 'Let the soap come back to room temperature and unmould when it is firm; this can take 48–72 hours. Cure for at least 6 weeks with good airflow.']
   },
   {
     slug: 'beeswax-soap-recipe',

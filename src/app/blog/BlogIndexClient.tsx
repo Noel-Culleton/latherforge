@@ -1,7 +1,5 @@
 'use client'
 import Link from 'next/link'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
 import { getAllPosts, formatDate } from '@/lib/posts'
 
 
@@ -11,7 +9,6 @@ export default function BlogIndexClient() {
 
   return (
     <>
-      <Nav />
 
       {/* HERO */}
       <section style={{
@@ -107,7 +104,6 @@ export default function BlogIndexClient() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }
