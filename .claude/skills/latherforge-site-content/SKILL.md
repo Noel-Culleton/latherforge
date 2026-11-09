@@ -19,7 +19,8 @@ description: Add or update latherforge.com blog content (list articles, gift gui
   - `shop` builds an Amazon search link with tag `latherforge-20` (`amazonSearchUrl`). The affiliate disclosure shows automatically when a post has any `shop`.
   - `videos` renders lazy, privacy-enhanced youtube-nocookie embeds with a "watch on YouTube" link.
 - Renderer: `src/app/blog/[slug]/page.tsx`.
-- Auto internal links: `src/lib/autolink.ts` (first mention per page, never self-links). Add a rule when a new article becomes the best target for a phrase. The test checks every target is a real page.
+- Auto internal links: `src/lib/autolink.ts` (first mention per page, never self-links). See "Internal linking" below: it is a required step for every article.
+- Link graph and related articles: `src/lib/linkgraph.ts` (`getInboundLinks`, `getOutboundLinks`, `getRelatedPosts`). The "More from the Blog" box uses `getRelatedPosts`, so it shows on-topic articles, not just the newest.
 - Sitemap, footer and tests: `src/app/sitemap.ts`, `src/components/Footer.tsx`, `src/lib/__tests__/`.
 
 ## Standard article pattern
@@ -29,9 +30,19 @@ description: Add or update latherforge.com blog content (list articles, gift gui
 4. Final disclaimer: "Information only. Not professional or medical advice. Always follow lye safety guidance..."
 5. 3-5 FAQs (these become FAQ schema).
 
+## Internal linking (required every time anything is posted)
+No article ships as an orphan. Do this for every new or updated article, recipe page or tool page, without being asked.
+1. **Add a phrase rule for the new page** in `BASE_RULES` in `src/lib/autolink.ts`: 3-6 phrases people actually use for the topic, including plurals (`'salt bars', 'salt bar'`). Word boundaries are strict, so `'essential oil'` does not match "essential oils". Put specific rules above generic ones: when two rules match at the same spot, the earlier rule wins.
+2. **Get at least 2 older articles linking in.** Run `npm test`. `linkgraph.test.ts` fails and names the page if fewer than 2 other articles link to it. If the phrases do not already appear in older articles, add one short, natural sentence to 2-3 related older articles ("See our guide to soap gift sets."). Use descriptive anchor words, never "click here". Do not add factual claims just to create a link.
+3. **Link out from the new article.** It must link to at least 2 other internal pages. Mention related topics by their rule phrases in the text, or use a section `link`. Always include the relevant free tool (`/lye-calculator/`, `/etsy-pricing-calculator/`, `/sap-values/`, `/cpsr-for-soap/`, `/free-soap-journal/`) where it fits.
+4. **Check the anchors read well.** After `npm run build`, list the links in `out/blog/<slug>/index.html` and in one article that should now link to it. Fix any link that lands on an odd word.
+5. **Tool and recipe pages** (`src/app/**/page.tsx`) do not use the autolinker. When a new article is the best "read more" for one of them, add a normal `<Link>` there by hand.
+6. **Social and off-site posts** (Metricool, Pinterest, Facebook, Bluesky, YouTube descriptions): always link to the most specific page on latherforge.com for the topic (the article or tool, not the homepage), using the live URL with a trailing slash. If no page exists for the topic, tell Noel instead of linking the homepage.
+7. In the summary to Noel, state which pages now link to the new page and which pages it links to.
+
 ## Check, ship, verify
 1. Work on a new branch from `origin/main`. Never push to main.
-2. Run `npm test`, `npx tsc --noEmit` and `npm run build`. Grep `out/blog/<slug>/index.html` for the new content.
+2. Run `npm test` (includes the internal link checks), `npx tsc --noEmit` and `npm run build`. If `next: not found`, run `npm ci` first. Grep `out/blog/<slug>/index.html` for the new content.
    - The `reading 'os'` TypeError in build output already happens on main. Ignore it.
    - Discard the `next-env.d.ts` comment change the build makes (`git checkout -- next-env.d.ts`). Do not commit it.
 3. Commit, push, open a PR. If the stop hook says "no remote branch" after a successful push, add a fetch refspec for the branch, fetch, then `git branch -u origin/<branch>`.
