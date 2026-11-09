@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import RelatedGuides from '@/components/RelatedGuides'
 import ReadinessChecklist from './ReadinessChecklist'
 
 export const metadata: Metadata = {
@@ -247,6 +248,7 @@ export default function CpsrForSoapPage() {
           </div>
         </section>
       </main>
+      <RelatedGuides page="/cpsr-for-soap/" />
       <Footer />
     </>
   )

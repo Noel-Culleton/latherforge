@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import RelatedGuides from '@/components/RelatedGuides'
 import EtsyCalculator from './EtsyCalculator'
 
 export const metadata: Metadata = {
@@ -269,6 +270,7 @@ export default function EtsyPricingCalculatorPage() {
         </div>
       </section>
     </main>
+      <RelatedGuides page="/etsy-pricing-calculator/" />
       <Footer />
     </>
   )

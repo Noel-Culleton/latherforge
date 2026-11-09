@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { getReviewedRecipes, recipeOilWeights } from '@/lib/recipes'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import RelatedGuides from '@/components/RelatedGuides'
 import LyeCalculatorClient, { type RecipePreset } from './LyeCalculatorClient'
 
 export const metadata: Metadata = {
@@ -162,6 +163,7 @@ export default function LyeCalculatorPage() {
         </section>
       </main>
 
+      <RelatedGuides page="/lye-calculator/" />
       <Footer />
     </>
   )

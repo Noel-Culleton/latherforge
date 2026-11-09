@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import RelatedGuides from '@/components/RelatedGuides'
 
 export const metadata: Metadata = {
   title: { absolute: 'Free Printable Soap Batch Journal (A4 & US Letter PDF) | LatherForge' },
@@ -107,6 +108,7 @@ export default function FreeSoapJournalPage() {
           </div>
         </section>
       </main>
+      <RelatedGuides page="/free-soap-journal/" />
       <Footer />
     </>
   )
