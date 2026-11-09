@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import RelatedGuides from '@/components/RelatedGuides'
+import WaitlistSignup from '@/components/WaitlistSignup'
 import { OILS, SAP_KOH } from '@/lib/soap'
 
 const oilCount = Object.keys(OILS).length
@@ -131,6 +132,7 @@ export default function SapValuesPage() {
           </div>
         </section>
       </main>
+      <WaitlistSignup />
       <RelatedGuides page="/sap-values/" />
       <Footer />
     </>
