@@ -5,6 +5,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import { getPostBySlug, getAllPosts, formatDate, amazonSearchUrl } from '@/lib/posts'
 import { autolink } from '@/lib/autolink'
+import { getRelatedPosts } from '@/lib/linkgraph'
 import type { ReactNode } from 'react'
 type Props = {
   params: Promise<{ slug: string }>
@@ -37,7 +38,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug)
   if (!post) notFound()
 
-  const allPosts = getAllPosts().filter(p => p.slug !== post.slug).slice(0, 2)
+  const allPosts = getRelatedPosts(post, 2)
 
   // Internal links: first mention of each topic links to its page, once per page.
   // Targets already linked explicitly in a section are skipped.

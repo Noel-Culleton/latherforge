@@ -132,7 +132,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Price for Profit, Not Just Sales',
-        text: 'Many new soap makers underprice. A proper cost calculation includes materials, packaging, labels, Etsy fees (6.5% transaction fee plus listing fees), payment processing, your time, and a profit margin. If you are not making at least €2–3 profit per bar after all costs, you are running a hobby, not a business. Use a costing tool to know your numbers before you set a price.'
+        text: 'Many new soap makers underprice. A proper cost calculation includes materials, packaging, labels, Etsy fees (6.5% transaction fee plus listing fees), payment processing, your time, and a profit margin. If you are not making at least €2–3 profit per bar after all costs, you are running a hobby, not a business. Use a costing tool to know your numbers before you set a price. Before you list anything, check that you can sell soap legally where you live.'
       },
       {
         heading: '10 Quick Wins for Your Etsy Shop',
@@ -141,7 +141,7 @@ export const posts: Post[] = [
           'Renew listings regularly to boost search visibility',
           'Reply to messages within 24 hours — response rate affects your ranking',
           'Offer a small bundle or multi-bar discount to increase average order value',
-          'Add seasonal products for gifting periods (Christmas, Mother\'s Day, Valentine\'s)',
+          'Add seasonal products for gifting periods (Christmas, Mother\'s Day, Valentine\'s) — soap gift sets work well here',
           'Include a handwritten thank-you note — it drives reviews',
           'Follow up politely after delivery asking for a review',
           'Post new listings regularly — fresh content signals an active shop',
@@ -384,7 +384,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Selling in the United States',
-        text: 'US rules are different. Soap that is made mostly of fats and lye and is sold only as soap is regulated by the Consumer Product Safety Commission. If you make cosmetic claims such as "moisturising", the FDA treats it as a cosmetic under the Modernization of Cosmetics Regulation Act (MoCRA), which has some exemptions for small businesses.'
+        text: 'US rules are different. Soap that is made mostly of fats and lye and is sold only as soap is regulated by the Consumer Product Safety Commission. If you make cosmetic claims such as "moisturising", the FDA treats it as a cosmetic under the Modernization of Cosmetics Regulation Act (MoCRA), which has some exemptions for small businesses. Canada has its own notification and labelling rules: see our guide to selling soap in Canada.'
       },
       {
         heading: 'How LatherForge Helps',
@@ -569,7 +569,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Next Steps',
-        text: 'Once you have your tools, follow a beginner recipe exactly, keep records of every batch, and let your soap cure fully before using it.',
+        text: 'Once you have your tools, follow a beginner recipe exactly, keep records of every batch, and let your soap cure fully before using it. Not in the UK or US? We have local guides to soap making supplies in Australia and in New Zealand.',
         link: { href: '/blog/cold-process-soap-beginners-guide/', label: 'Read the complete beginner’s guide to cold process soap' }
       },
       {
@@ -913,7 +913,7 @@ export const posts: Post[] = [
     category: 'Gift Guides',
     sections: [
       {
-        text: 'A soap making kit is a brilliant gift, but there are two very different kinds. Melt and pour kits are safe and easy for almost anyone. Cold process kits make soap from scratch with lye and are for adults who want the real craft. We picked these seven from kits that appear in Google’s top shopping results with strong ratings in November 2026. We have not tested them ourselves, and prices are as listed at the time of writing, so check the current price before you buy.'
+        text: 'A soap making kit is a brilliant gift, but there are two very different kinds. Melt and pour kits are safe and easy for almost anyone. Cold process kits make soap from scratch with lye and are for adults who want the real craft. We picked these seven from kits that appear in Google’s top shopping results with strong ratings in November 2026. We have not tested them ourselves, and prices are as listed at the time of writing, so check the current price before you buy. If you make soap to sell rather than buying a kit as a present, see our guide to soap gift sets.'
       },
       {
         heading: 'Quick picks',
@@ -1052,7 +1052,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Work out your recipe first',
-        text: 'Run your recipe through a lye calculator before you order, so you buy the right amount of caustic soda for every batch.',
+        text: 'Run your recipe through a lye calculator before you order, so you buy the right amount of caustic soda for every batch. Across the Tasman? See our guide to soap making supplies in New Zealand.',
         link: { href: '/lye-calculator/', label: 'Open the free soap calculator' }
       },
       {
@@ -1112,7 +1112,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Work out how much you need first',
-        text: 'Run your recipe through a lye calculator before you buy, so you know exactly how much caustic soda each batch needs.',
+        text: 'Run your recipe through a lye calculator before you buy, so you know exactly how much caustic soda each batch needs. Buying from Australia instead? See our guide to soap making supplies in Australia.',
         link: { href: '/lye-calculator/', label: 'Open the free soap calculator' }
       },
       {
@@ -1394,7 +1394,8 @@ export const posts: Post[] = [
           'Gentle set: oatmeal, goat milk and unscented bars for sensitive-skin gift buyers.',
           'Spa set: a salt bar, a charcoal bar and a shea butter bar.',
           'Secret Santa minis: small bars wrapped and tagged, priced to a set budget.',
-          '“Pick 3” bundle: buyers choose any three bars at a set price.'
+          '“Pick 3” bundle: buyers choose any three bars at a set price.',
+          'Soap and candle pairing: a bar with a small candle in a matching scent. New to candles? See our guide to candle making kits.'
         ]
       },
       {
@@ -1407,12 +1408,12 @@ export const posts: Post[] = [
       },
       {
         heading: '3. Price the set properly',
-        text: 'Add up the cost of each bar, the extras, the box or wrap, labels and your time to assemble it. Then add your margin. A set should not be priced as just “three bars”, because the packaging and wrapping time are real costs.',
+        text: 'Add up the cost of each bar, the extras, the box or wrap, labels and your time to assemble it. Then add your margin. A set should not be priced as just “three bars”, because the packaging and wrapping time are real costs. Listing sets online? See our Etsy shop tips.',
         link: { href: '/etsy-pricing-calculator/', label: 'Work out your price with the free pricing calculator' }
       },
       {
         heading: '4. Label every set correctly',
-        text: 'Each bar still needs its own compliant label for your country, even inside a gift box. Check the rules where you sell before the Christmas rush.',
+        text: 'Each bar still needs its own compliant label for your country, even inside a gift box. Check the rules where you sell before the Christmas rush. We also have a guide to selling soap in Canada.',
         link: { href: '/blog/selling-handmade-soap-legal-requirements/', label: 'Read: selling handmade soap legal requirements' }
       },
       {
