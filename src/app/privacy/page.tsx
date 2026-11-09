@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   const mail = <a href={`mailto:${CONTACT_EMAIL}`} style={{ color: '#5C3D2E', textDecoration: 'underline' }}>{CONTACT_EMAIL}</a>
   return (
-    <LegalPage title="Privacy Policy" updated="28 September 2026">
+    <LegalPage title="Privacy Policy" updated="9 November 2026">
       <p style={P}>
         This policy explains what personal data latherforge.com collects, why, and what rights you have under the EU General Data Protection Regulation (GDPR).
       </p>
