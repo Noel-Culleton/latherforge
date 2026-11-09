@@ -1192,6 +1192,241 @@ export const posts: Post[] = [
       { q: 'Does the Cosmetic Notification Form cost anything?', a: 'No. Health Canada does not charge a fee for cosmetic notification.' },
       { q: 'Do soap labels in Canada need French?', a: 'Yes. The required label information must be in English and French. The INCI ingredient list stays in INCI names.' }
     ]
+  },
+  {
+    slug: 'what-is-lather-in-soap',
+    title: 'What Is Lather in Soap? What Makes Soap Bubble (and What Kills It)',
+    description: 'What lather in soap is, which oils make big bubbles or creamy lather, why hard water and recipe choices change it, and how to get more lather from handmade soap.',
+    date: '2026-11-09',
+    readTime: '5 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      { text: 'Lather is the foam you get when you rub soap with water and air. Soap molecules have one end that loves water and one end that loves oil and grease. When you work the bar, those molecules gather around tiny pockets of air and trap them, and that mass of small bubbles is lather.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Lather is air trapped by soap molecules in water. It looks like cleaning, but bubbles are not what removes dirt.',
+          'Coconut, palm kernel and babassu oils give big, fluffy bubbles. Castor oil makes lather more stable and creamy.',
+          'Olive oil gives a low, creamy lather. That is why pure castile soap feels “slimy” and bubbles less.',
+          'Hard water cuts lather, because minerals react with soap and form scum.'
+        ]
+      },
+      {
+        heading: '1. Big bubbles vs creamy lather',
+        items: [
+          'Big, fluffy bubbles: coconut oil, palm kernel oil, babassu oil.',
+          'Stable, creamy lather: castor oil (usually 5–10% of the oils), plus butters such as shea and cocoa.',
+          'Low, gentle lather: olive, sunflower, sweet almond and other soft oils.'
+        ],
+        text: 'Most recipes mix these on purpose: enough coconut for bubbles, a little castor to hold them, and conditioning oils for a mild bar.'
+      },
+      {
+        heading: '2. Ways to boost lather in handmade soap',
+        items: [
+          'Add a little sugar, dissolved in the water before the lye. Many makers use a small amount; it adds heat, so watch for overheating.',
+          'Keep castor oil around 5–10%. More is not better: high castor can make bars soft and sticky.',
+          'Let the soap cure. Lather usually improves as bars dry and harden over 4–6 weeks.',
+          'Check your superfat. A very high superfat can dampen lather.'
+        ]
+      },
+      {
+        heading: '3. What kills lather',
+        items: [
+          'Hard water: minerals react with soap and make scum. Distilled water in your recipe helps the bar; a chelator like sodium citrate can help in use.',
+          'Lots of salt: salt bars lather less, which is why salt bar recipes use mostly coconut oil.',
+          'Very soft-oil recipes: high olive or sunflower bars give a gentle, low lather by design.'
+        ]
+      },
+      {
+        heading: '4. Does more lather mean cleaner?',
+        text: 'No. Lather is mostly about how a soap feels. A low-lathering castile bar still cleans. Big bubbles feel luxurious and sell well, but they are not a measure of cleaning power.'
+      },
+      {
+        heading: 'Check the numbers before you change a recipe',
+        text: 'Swapping oils to change lather also changes how much lye the recipe needs. Run every change through a lye calculator.',
+        link: { href: '/lye-calculator/', label: 'Open the free soap calculator' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or medical advice. Always follow lye safety guidance: goggles, gloves, and lye into water, never water into lye.' }
+    ],
+    faqs: [
+      { q: 'What is lather in soap?', a: 'Lather is the foam made when soap molecules trap tiny pockets of air in water as you rub the bar.' },
+      { q: 'What makes soap lather more?', a: 'Oils like coconut, palm kernel and babassu give big bubbles, castor oil stabilises them, and a little sugar in the water can boost lather. Soft water helps too.' },
+      { q: 'Why does my handmade soap not lather?', a: 'Common reasons are a recipe high in soft oils like olive, hard water, a very high superfat, lots of salt, or soap that has not cured long enough.' },
+      { q: 'Does more lather mean the soap cleans better?', a: 'No. Lather is mostly about feel. Low-lather soaps such as castile still clean well.' }
+    ]
+  },
+  {
+    slug: 'what-is-a-salt-bar',
+    title: 'What Is a Salt Bar? Salt Soap Explained',
+    description: 'What a salt bar is, why salt bar recipes use so much coconut oil and a high superfat, how much salt to use, and why you cut salt soap early.',
+    date: '2026-11-09',
+    readTime: '4 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      { text: 'A salt bar (also called salt soap or a spa bar) is cold process soap with a lot of fine salt stirred in, often half the weight of the oils or more. The result is a very hard, dense bar with a smooth, slightly silky feel.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Salt bars use lots of fine salt, commonly 50–100% of the oil weight.',
+          'Salt cuts lather, so recipes use mostly coconut oil (often 70–100%) to bring the bubbles back.',
+          'Because that much coconut can feel harsh, salt bars usually have a high superfat, around 15–20%.',
+          'Cut them early, within hours, before they set rock hard.'
+        ]
+      },
+      {
+        heading: '1. Why so much coconut oil?',
+        text: 'Salt dampens lather. Coconut oil makes big bubbles even with a lot of salt in the bar, so it does the heavy lifting. The high superfat leaves extra oil unreacted, which balances coconut’s strong cleansing.'
+      },
+      {
+        heading: '2. Which salt to use',
+        items: [
+          'Fine sea salt is the usual choice. Coarse salt can feel scratchy.',
+          'Many makers avoid Dead Sea salt in high amounts, because it can pull moisture from the air and leave bars damp.',
+          'Stir the salt in at light trace, once the batter has thickened a little.'
+        ]
+      },
+      {
+        heading: '3. Cut early',
+        text: 'Salt bars set fast and get very hard. Many makers cut them within a few hours, or use individual moulds so there is nothing to cut. Leave a full loaf overnight and it can crumble when you slice it.'
+      },
+      {
+        heading: 'Try a tested salt bar recipe',
+        text: 'Our salt bar recipe uses 80% coconut oil with a 20% superfat and fine sea salt, with exact lye amounts from our calculator.',
+        link: { href: '/soap-recipes/salt-bar-soap-recipe/', label: 'See the salt bar soap recipe' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or medical advice. Always run your own recipe through a lye calculator and follow lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'What is a salt bar?', a: 'A cold process soap with a large amount of fine salt added, giving a very hard, dense bar.' },
+      { q: 'How much salt goes in a salt bar?', a: 'Commonly 50–100% of the weight of the oils. Start lower if you are new to salt bars.' },
+      { q: 'Why do salt bars use so much coconut oil?', a: 'Salt cuts lather, and coconut oil still makes big bubbles with lots of salt in the bar. A high superfat balances its strong cleansing.' },
+      { q: 'When should I cut a salt bar?', a: 'Early, often within a few hours, before it sets too hard to slice cleanly.' }
+    ]
+  },
+  {
+    slug: 'gel-phase-soap',
+    title: 'Gel Phase in Soap: What It Is and Whether You Want It',
+    description: 'What gel phase is in cold process soap, how gelled and ungelled bars differ, how to encourage or prevent gel, and what causes a partial gel ring.',
+    date: '2026-11-09',
+    readTime: '4 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      { text: 'As cold process soap sets, the reaction between oils and lye gives off heat. If the soap gets warm enough, it turns translucent and jelly-like for a while. That stage is called gel phase. It is normal, and the soap is fine whether it gels or not.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Gelled soap: brighter colours, slightly glossy look, often firm enough to unmould sooner.',
+          'Ungelled soap: matte, creamy, more pastel look.',
+          'A darker ring in the middle means partial gel. It is cosmetic.',
+          'You choose gel or no gel mainly with temperature.'
+        ]
+      },
+      {
+        heading: '1. To encourage full gel',
+        items: [
+          'Insulate the mould with a towel or box so heat spreads evenly.',
+          'Some makers put the mould in an oven that has been warmed and then switched off.',
+          'Soap at slightly warmer temperatures.'
+        ]
+      },
+      {
+        heading: '2. To prevent gel',
+        items: [
+          'Soap at cooler temperatures and skip insulation.',
+          'Put the mould in the fridge or freezer for the first day.',
+          'Milk, honey and sugar soaps heat up more, so makers often keep them cool on purpose.'
+        ]
+      },
+      {
+        heading: '3. Partial gel',
+        text: 'If the middle gels and the edges do not, you get a darker circle or band. Pick one approach and commit: insulate well for full gel, or keep it cool for none. Thin moulds and cold rooms make partial gel more likely.'
+      },
+      {
+        heading: 'Watch for overheating',
+        text: 'Too much heat can crack the top or push soap up into a “volcano”. If a recipe runs hot, keep it cooler rather than insulating.',
+        link: { href: '/blog/cold-process-soap-problems/', label: 'Fix common cold process soap problems' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional advice. Always follow lye safety guidance: goggles, gloves, and lye into water, never water into lye.' }
+    ],
+    faqs: [
+      { q: 'What is gel phase in soap?', a: 'A warm stage during saponification when cold process soap turns translucent and jelly-like before setting.' },
+      { q: 'Is gel phase necessary?', a: 'No. Gelled and ungelled soap are both fine to use. Gel changes the look, not the safety.' },
+      { q: 'How do I stop my soap from gelling?', a: 'Soap cooler, skip insulation, and put the mould in the fridge or freezer for the first day.' },
+      { q: 'What causes a dark ring in soap?', a: 'Partial gel: the centre heated enough to gel and the edges did not.' }
+    ]
+  },
+  {
+    slug: 'soap-gift-sets',
+    title: 'Soap Gift Sets That Sell: Ideas and Pricing for Makers',
+    description: 'Handmade soap gift set ideas for Christmas markets and online shops, what to put in a set, simple packaging, and how to price a set so it makes a profit.',
+    date: '2026-11-09',
+    readTime: '5 min read',
+    category: 'Selling',
+    sections: [
+      { text: 'Gift sets are one of the easiest ways to sell more soap at Christmas. Buyers want something ready to give, and a set raises your average sale without making new recipes.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Group three bars that go together: a theme, a scent family or a colour story.',
+          'Add one small extra, like a wooden soap dish or cotton bag, to make it feel like a gift.',
+          'Price the whole set: every bar, the extras, the packaging and your wrapping time.'
+        ]
+      },
+      {
+        heading: '1. Gift set ideas',
+        items: [
+          'Festive trio: a pine or fir bar, an orange-clove bar and an unscented bar.',
+          'Gentle set: oatmeal, goat milk and unscented bars for sensitive-skin gift buyers.',
+          'Spa set: a salt bar, a charcoal bar and a shea butter bar.',
+          'Secret Santa minis: small bars wrapped and tagged, priced to a set budget.',
+          '“Pick 3” bundle: buyers choose any three bars at a set price.'
+        ]
+      },
+      {
+        heading: '2. Packaging that does not eat your margin',
+        items: [
+          'Kraft boxes or paper with twine look good and cost little per set.',
+          'A printed band or label can double as the wrap.',
+          'Keep a tester or display set so you are not unwrapping stock at the stall.'
+        ]
+      },
+      {
+        heading: '3. Price the set properly',
+        text: 'Add up the cost of each bar, the extras, the box or wrap, labels and your time to assemble it. Then add your margin. A set should not be priced as just “three bars”, because the packaging and wrapping time are real costs.',
+        link: { href: '/etsy-pricing-calculator/', label: 'Work out your price with the free pricing calculator' }
+      },
+      {
+        heading: '4. Label every set correctly',
+        text: 'Each bar still needs its own compliant label for your country, even inside a gift box. Check the rules where you sell before the Christmas rush.',
+        link: { href: '/blog/selling-handmade-soap-legal-requirements/', label: 'Read: selling handmade soap legal requirements' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not legal or professional advice. Labelling and safety rules depend on where you sell.' }
+    ],
+    faqs: [
+      { q: 'What should go in a soap gift set?', a: 'Usually three bars that go together by theme, scent or colour, plus one small extra such as a soap dish or cotton bag.' },
+      { q: 'How do I price a soap gift set?', a: 'Add the cost of every bar, the extras, the packaging and your assembly time, then add your margin.' },
+      { q: 'Do soaps in a gift set need labels?', a: 'Yes. Each bar still needs the labelling your country requires, even inside a gift box.' }
+    ]
   }
 
 ]
