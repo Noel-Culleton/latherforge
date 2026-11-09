@@ -1,0 +1,104 @@
+{
+ "meta": {
+  "title": "What Is Superfat? (And Why 5% Is the Usual Starting Point)",
+  "file": "What_Is_Superfat",
+  "date": "Thu 25 Feb 2027",
+  "playlist": "Soap Making for Beginners",
+  "link": "lye",
+  "thumb": [
+   "WHAT IS",
+   "SUPERFAT?"
+  ],
+  "band": "WHY 5% WORKS",
+  "thumb_clip": "sf_hook1",
+  "voice": "en-IE-ConnorNeural",
+  "region": "eastus",
+  "intro": "What is superfat in soap making, why do most recipes use 5%, and when should you go higher or lower? Explained simply, with a worked example from our free calculator.",
+  "pinned": "What superfat do you use: 5%, or something different? 👇 Try it in the free soap calculator: https://latherforge.com/lye-calculator/"
+ },
+ "ch": [
+  {
+   "label": "",
+   "title": "WHAT IS|SUPERFAT?",
+   "key": "And why 5%?",
+   "pool": [
+    "sf_hook1",
+    "broll_calc1",
+    "broll_cut1"
+   ],
+   "text": "Every soap calculator has a setting called superfat, and almost every recipe sets it to five percent. But what does it actually do, and should you ever change it?\nIn this video I'll explain superfat in plain English, show you exactly what it does to your lye amount, and when it makes sense to go higher or lower.",
+   "yt": "Intro"
+  },
+  {
+   "label": "WHAT",
+   "title": "SPARE OIL",
+   "key": "A little oil|left unsaponified",
+   "pool": [
+    "sf_oil1",
+    "sf_bar1",
+    "broll_pour1"
+   ],
+   "text": "Superfat is simply spare oil.\nWhen you make soap, lye reacts with oil and turns it into soap. If you used exactly enough lye to turn every drop of oil into soap, that would be zero percent superfat.\nInstead, we use slightly less lye than that. A small percentage of the oil stays as oil in the finished bar. That's the superfat.",
+   "yt": "What superfat is"
+  },
+  {
+   "label": "WHY",
+   "title": "WHY WE DO IT",
+   "key": "Safety margin|+ a milder bar",
+   "pool": [
+    "sf_scale1",
+    "sf_hands1",
+    "broll_calc1"
+   ],
+   "text": "There are two reasons.\nThe first is safety. SAP values are averages. Real oils vary a little from batch to batch, and kitchen scales aren't perfect. A superfat gives you a margin, so small differences don't leave free lye in the bar.\nThe second is feel. That little bit of spare oil makes the bar feel milder and more conditioning.",
+   "yt": "Why we use it"
+  },
+  {
+   "label": "EXAMPLE",
+   "title": "WHAT IT DOES TO LYE",
+   "key": "0% = 148 g · 5% ≈ 141 g|10% ≈ 133 g",
+   "pool": [
+    "sf_calc1",
+    "broll_calc1",
+    "sf_beads1"
+   ],
+   "text": "Here's what it does in practice. Take our beginner recipe at one kilo of oils.\nAt zero percent superfat, the calculator says 148 grams of sodium hydroxide. At five percent, it's about 141 grams. At ten percent, about 133 grams.\nSo superfat doesn't add oil to your recipe. It reduces the lye. That's why you set it in the calculator and let it do the maths, rather than adding extra oil after you've measured.",
+   "yt": "What it does to your lye"
+  },
+  {
+   "label": "WHY 5%",
+   "title": "WHY 5%?",
+   "key": "Enough margin|Still a firm bar",
+   "pool": [
+    "sf_cure1",
+    "broll_cut1",
+    "broll_cure1"
+   ],
+   "text": "Why five percent? It's a balance.\nIt's enough of a margin for normal variation in oils and scales, and it still gives a firm, long-lasting bar with good lather. That's why it's the default in our free calculator, and the usual starting point for most cold process recipes.",
+   "yt": "Why 5% works"
+  },
+  {
+   "label": "CHANGE IT?",
+   "title": "HIGHER OR LOWER?",
+   "key": "Salt bars: higher|Too high: soft, rancid",
+   "pool": [
+    "sf_salt1",
+    "sf_dos1",
+    "broll_calc1"
+   ],
+   "text": "When would you change it?\nSome recipes go higher on purpose. Salt bars and very high coconut oil soaps often use a superfat of fifteen to twenty percent, because those recipes can feel drying otherwise.\nGo too high in an ordinary recipe and you'll get a softer bar that doesn't last as long, and spare oil that can go rancid and cause orange spots.\nGoing lower than five percent leaves less margin for error. If you're starting out, stay at five, and only change it for a recipe that's designed for it.",
+   "yt": "When to go higher or lower"
+  },
+  {
+   "label": "OUTRO",
+   "title": "",
+   "key": "",
+   "pool": [
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "That's superfat: spare oil, a safety margin, and a milder bar. If this helped it make sense, subscribe for a new soap making video every week.\nBefore your next batch, run your recipe through the free soap calculator at latherforge dot com. It's free and there's no signup.\nLatherForge launches on the first of January 2027. The first 300 people on the waitlist get three months free, with no card needed to start. The link's in the description.",
+   "yt": "Outro"
+  }
+ ]
+}

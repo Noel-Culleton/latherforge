@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "title": "How to Calculate Lye for Soap (Step by Step)",
+  "file": "How_To_Calculate_Lye_For_Soap",
+  "date": "Thu 11 Feb 2027",
+  "playlist": "Soap Making for Beginners",
+  "link": "lye",
+  "thumb": [
+   "HOW MUCH",
+   "LYE DO I",
+   "NEED?"
+  ],
+  "band": "STEP BY STEP",
+  "thumb_clip": "lye_hook1",
+  "voice": "en-IE-ConnorNeural",
+  "region": "eastus",
+  "intro": "How much lye does your soap recipe need? Here's how a lye calculation works, step by step, with a real worked example, plus the mistakes that catch beginners out.",
+  "pinned": "What's the first recipe you're going to run through the calculator? 👇 Free soap calculator: https://latherforge.com/lye-calculator/"
+ },
+ "ch": [
+  {
+   "label": "",
+   "title": "HOW MUCH|LYE DO I NEED?",
+   "key": "Never guess it.",
+   "pool": [
+    "lye_hook1",
+    "broll_calc1",
+    "broll_safety1"
+   ],
+   "text": "Every bar of cold process soap starts with one number: how much lye. Too little and the soap stays soft and greasy. Too much and it can be harsh on skin.\nThe good news is you never have to guess. In this video I'll show you how a lye calculation actually works, walk through a real recipe step by step, and cover the mistakes that catch beginners out.",
+   "yt": "Intro"
+  },
+  {
+   "label": "STEP 1",
+   "title": "PICK YOUR LYE",
+   "key": "NaOH = bars|KOH = liquid soap",
+   "pool": [
+    "lye_beads1",
+    "lye_flakes1",
+    "broll_safety1"
+   ],
+   "text": "Step one: choose your lye.\nFor bar soap you use sodium hydroxide, often written NaOH. For liquid soap you use potassium hydroxide, written KOH. They're not interchangeable, so make sure you pick the right one in the calculator.\nKOH sold for soap making is usually around ninety percent pure, and a good calculator allows for that. Ours does.",
+   "yt": "Step 1: Choose your lye"
+  },
+  {
+   "label": "STEP 2",
+   "title": "WEIGH YOUR OILS",
+   "key": "Grams, not cups|Every oil counts",
+   "pool": [
+    "lye_weighoil1",
+    "lye_scale1",
+    "broll_calc1"
+   ],
+   "text": "Step two: list every oil and its weight.\nAlways work in grams on a digital scale, never cups or spoons. Every oil and butter needs a different amount of lye, so each one goes in separately.\nThat amount is called its saponification value, or SAP value. For sodium hydroxide, olive oil is about 0.135, coconut oil about 0.183, and shea butter and castor oil about 0.128.",
+   "yt": "Step 2: Weigh your oils"
+  },
+  {
+   "label": "STEP 3",
+   "title": "THE MATHS",
+   "key": "Weight × SAP|for each oil",
+   "pool": [
+    "lye_notebook1",
+    "broll_calc1",
+    "lye_scale1"
+   ],
+   "text": "Step three: the maths. For each oil, multiply its weight by its SAP value, then add them up.\nLet's use our beginner recipe at one kilo of oils. Five hundred grams of olive oil times 0.135 is 67.5. Three hundred grams of coconut times 0.183 is 54.9. A hundred and fifty grams of shea times 0.128 is 19.2. Fifty grams of castor is 6.4.\nAdd those up and you get 148 grams. That's the amount of lye that would turn every last drop of oil into soap.",
+   "yt": "Step 3: The maths, worked example"
+  },
+  {
+   "label": "STEP 4",
+   "title": "TAKE OFF THE SUPERFAT",
+   "key": "5% superfat|148 g → about 141 g",
+   "pool": [
+    "lye_calc2",
+    "broll_calc1",
+    "lye_beads1"
+   ],
+   "text": "Step four: take off the superfat.\nWe don't want to use every drop of oil, so we leave a little spare. That's the superfat, and five percent is the usual starting point. So we take five percent off: 148 times 0.95 is about 141 grams of sodium hydroxide.\nFor water, our calculator uses two parts water to one part lye, so that's about 281 grams of water. Exactly what the free calculator gives you, without the arithmetic.",
+   "yt": "Step 4: Superfat"
+  },
+  {
+   "label": "SAFETY",
+   "title": "MIXING SAFELY",
+   "key": "Goggles · gloves|Lye into water",
+   "pool": [
+    "broll_safety1",
+    "lye_mix1",
+    "lye_vent1"
+   ],
+   "text": "Now you've got your numbers, mix safely.\nWear goggles and gloves, and long sleeves. Weigh your water first, then add the lye to the water, slowly. Never pour water onto lye. The solution gets very hot and gives off fumes for a minute or two, so mix where the air moves, and don't lean over the jug. Keep children and pets out of the room.",
+   "yt": "Mixing lye safely"
+  },
+  {
+   "label": "MISTAKES",
+   "title": "3 BEGINNER MISTAKES",
+   "key": "Swapping oils · bad scale|Rounding the lye",
+   "pool": [
+    "lye_scale1",
+    "lye_swap1",
+    "broll_calc1"
+   ],
+   "text": "Three mistakes to avoid.\nOne: swapping an oil without recalculating. Change olive for sunflower, or add more coconut, and the lye changes too. Run it through the calculator again every time.\nTwo: an inaccurate scale. Check yours with something of known weight before a batch.\nThree: rounding the lye up or down by eye. Use the number the calculator gives you, to the gram.",
+   "yt": "Three beginner mistakes"
+  },
+  {
+   "label": "OUTRO",
+   "title": "",
+   "key": "",
+   "pool": [
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "That's how lye is calculated. If this made it click, subscribe for a new soap making video every week.\nBefore your next batch, run your recipe through the free soap calculator at latherforge dot com. It's free and there's no signup.\nLatherForge launches on the first of January 2027. The first 300 people on the waitlist get three months free, with no card needed to start. The link's in the description.",
+   "yt": "Outro"
+  }
+ ]
+}

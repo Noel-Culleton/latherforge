@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "title": "Soap Sweating? Here's Why (and It's Not Ruined)",
+  "file": "Soap_Sweating",
+  "date": "Thu 18 Feb 2027",
+  "playlist": "Soap Problems Fixed",
+  "link": "lye",
+  "thumb": [
+   "WHY IS MY",
+   "SOAP",
+   "SWEATING?"
+  ],
+  "band": "IT'S NOT RUINED",
+  "thumb_clip": "sweat_hook1",
+  "voice": "en-IE-ConnorNeural",
+  "region": "eastus",
+  "intro": "Little beads of liquid on your handmade soap? It's called sweating, or glycerin dew, and it's usually harmless. Here's why it happens, how to stop it, and the one time to look closer.",
+  "pinned": "Where do you cure your soap: spare room, kitchen or somewhere else? 👇 Soap problems guide: https://latherforge.com/blog/cold-process-soap-problems/"
+ },
+ "ch": [
+  {
+   "label": "",
+   "title": "WHY IS MY|SOAP SWEATING?",
+   "key": "It's not ruined.",
+   "pool": [
+    "sweat_hook1",
+    "sweat_hook2",
+    "broll_cure1"
+   ],
+   "text": "You check on your curing soap and the bars are covered in tiny beads of liquid, like they've been sweating. Some soap makers call it glycerin dew.\nIt looks alarming, but in almost every case your soap is fine.\nIn this video I'll explain why it happens, how to stop it, how to store your bars so it doesn't come back, and the one situation where you should take a closer look.",
+   "yt": "Intro"
+  },
+  {
+   "label": "WHY",
+   "title": "IT'S THE GLYCERIN",
+   "key": "Glycerin pulls water|from the air",
+   "pool": [
+    "sweat_macro1",
+    "sweat_humid1",
+    "broll_cure1"
+   ],
+   "text": "When oils and lye react to make soap, they also make glycerin. In commercial soap a lot of that glycerin is often removed. In handmade soap it stays in the bar, and that's part of why handmade soap feels so nice.\nBut glycerin is a humectant. It pulls moisture out of the air. So when the air is damp, water collects on the surface of the bar as little droplets. That's the sweat.",
+   "yt": "Why soap sweats"
+  },
+  {
+   "label": "TRIGGERS",
+   "title": "WHEN IT HAPPENS",
+   "key": "Damp weather · steamy rooms|Cold to warm",
+   "pool": [
+    "sweat_window1",
+    "sweat_kitchen1",
+    "broll_cure1"
+   ],
+   "text": "You'll see it most in humid weather, in steamy rooms like kitchens and bathrooms, and when bars move from somewhere cold to somewhere warm, like condensation on a cold drink.\nHigh glycerin bars sweat more, so it's common with melt and pour bases too. Wrapping soap in plastic while it's still curing can trap moisture and make it worse.",
+   "yt": "When it happens"
+  },
+  {
+   "label": "THE FIX",
+   "title": "HOW TO STOP IT",
+   "key": "Wipe · move · air flow|Dehumidifier",
+   "pool": [
+    "sweat_wipe1",
+    "sweat_fan1",
+    "sweat_rack1"
+   ],
+   "text": "The fix is about moving air and lower humidity.\nGently pat the bars dry with a paper towel. Move them to a cooler, drier room, away from the kitchen and bathroom. Space them out on a rack so air can get all the way around, and turn them every few days.\nA small fan or a dehumidifier in the curing room makes a big difference, especially in an Irish or British winter.",
+   "yt": "How to stop it"
+  },
+  {
+   "label": "STORAGE",
+   "title": "STORE IT RIGHT",
+   "key": "Breathable boxes|Wrap only when cured",
+   "pool": [
+    "sweat_box1",
+    "sweat_wrap1",
+    "broll_cure1"
+   ],
+   "text": "Once your bars are cured, store them somewhere cool and dry, in cardboard boxes or paper rather than sealed plastic.\nIf you sell your soap, wrap or label it only once it's fully cured and dry. If you use shrink wrap, make sure the bars are dry first, and keep finished stock out of damp sheds and garages.",
+   "yt": "Storing bars so it doesn't come back"
+  },
+  {
+   "label": "THE CHECK",
+   "title": "SWEAT OR SOMETHING ELSE?",
+   "key": "Beads on cured soap = sweat|Oily pockets = check recipe",
+   "pool": [
+    "sweat_compare1",
+    "broll_calc1",
+    "broll_safety1"
+   ],
+   "text": "One check. Normal sweat appears on bars that otherwise look and feel fine, and it comes and goes with the weather.\nIf instead your fresh soap has pockets of clear or oily liquid inside it, or liquid weeping out of a crumbly, cracked bar, that's not sweat. It can mean the recipe or the measuring went wrong.\nWear gloves, don't use that soap on skin, and re-check your recipe in a soap calculator. When in doubt, throw it out.",
+   "yt": "Sweat or something else?"
+  },
+  {
+   "label": "OUTRO",
+   "title": "",
+   "key": "",
+   "pool": [
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "So, sweating soap isn't ruined. It just needs drier air. If this helped, subscribe, because every week I take one soap problem and fix it properly.\nBefore your next batch, run your recipe through the free soap calculator at latherforge dot com. It's free and there's no signup.\nLatherForge launches on the first of January 2027. The first 300 people on the waitlist get three months free, with no card needed to start. The link's in the description.",
+   "yt": "Outro"
+  }
+ ]
+}

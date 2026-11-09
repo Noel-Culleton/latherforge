@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "title": "Soda Ash on Soap: Why It Happens and How to Stop It",
+  "file": "Soda_Ash_On_Soap",
+  "date": "Thu 4 Feb 2027",
+  "playlist": "Soap Problems Fixed",
+  "link": "lye",
+  "thumb": [
+   "WHITE STUFF",
+   "ON YOUR",
+   "SOAP?"
+  ],
+  "band": "SODA ASH FIXED",
+  "thumb_clip": "ash_hook1",
+  "voice": "en-IE-ConnorNeural",
+  "region": "eastus",
+  "intro": "White, powdery film on top of your cold process soap? That's soda ash. Here's what causes it, whether it's safe, how to remove it, and four ways to stop it forming.",
+  "pinned": "Do you spray with alcohol, cover the mould, or just steam it off afterwards? 👇 Full soap problems guide: https://latherforge.com/blog/cold-process-soap-problems/"
+ },
+ "ch": [
+  {
+   "label": "",
+   "title": "WHITE STUFF|ON YOUR SOAP?",
+   "key": "It's called soda ash.",
+   "pool": [
+    "ash_hook1",
+    "ash_hook2",
+    "broll_cut1"
+   ],
+   "text": "You unmould a beautiful loaf of soap, and the top is covered in a dull, white, chalky film. Sometimes it's a light dusting. Sometimes it looks like frost, with little feathery crystals.\nThat's soda ash, and it's one of the most common things new soap makers ask about.\nIn this video I'll explain what it actually is, whether your soap is safe, how to get rid of it, and four simple ways to stop it forming in the first place.",
+   "yt": "Intro"
+  },
+  {
+   "label": "WHAT IT IS",
+   "title": "WHAT IS SODA ASH?",
+   "key": "Lye + air|= sodium carbonate",
+   "pool": [
+    "ash_macro1",
+    "ash_pour1",
+    "broll_mould1"
+   ],
+   "text": "Soda ash is sodium carbonate. It forms when lye at the surface of fresh soap meets carbon dioxide in the air, before that lye has had a chance to react with the oils.\nThat's why it's almost always on the top of the loaf, or on any surface that was exposed to air while the soap was still soft. The inside of the bar is usually clear.\nThe key point: soda ash is cosmetic. Once your soap has cured, it doesn't make the bar unsafe or harsh. It just doesn't look as nice.",
+   "yt": "What soda ash is"
+  },
+  {
+   "label": "CAUSES",
+   "title": "WHAT MAKES IT WORSE",
+   "key": "Cool soap · thin trace|Air on the surface",
+   "pool": [
+    "ash_thintrace1",
+    "ash_cool1",
+    "broll_pour1"
+   ],
+   "text": "A few things make soda ash more likely.\nSoaping cool, so the batter stays soft for longer. Pouring at very thin trace. A recipe that's slow to firm up, like high olive oil soaps. And leaving the top of the mould open to the air in a cold or draughty room.\nNone of these are mistakes as such. They just give the lye at the surface more time to meet the air.",
+   "yt": "What makes it worse"
+  },
+  {
+   "label": "PREVENT",
+   "title": "4 WAYS TO STOP IT",
+   "key": "Spray · cover|Insulate · thicker trace",
+   "pool": [
+    "ash_spray1",
+    "ash_cover1",
+    "broll_mould1"
+   ],
+   "text": "Here are four ways to prevent it.\nOne: spray the top with ninety-nine percent isopropyl alcohol straight after pouring. It forms a thin barrier over the surface. Alcohol is flammable, so keep it well away from any flame or hob.\nTwo: cover the mould. Plastic wrap laid right on the surface, or a lid or a sheet of cardboard, keeps the air off.\nThree: keep the soap warm. A little insulation helps the soap go through gel phase and harden faster, which gives soda ash less time to form. Don't overdo it with milk or honey recipes, because they can overheat.\nFour: pour at a slightly thicker trace, so the surface firms up sooner.",
+   "yt": "Four ways to prevent it"
+  },
+  {
+   "label": "REMOVE",
+   "title": "HOW TO REMOVE IT",
+   "key": "Steam · plane|Rinse with gloves on",
+   "pool": [
+    "ash_steam1",
+    "ash_plane1",
+    "broll_cut1"
+   ],
+   "text": "Already got soda ash? You have a few options.\nSteam is the most popular. A clothes steamer, or holding the bar carefully over kettle steam, melts the ash away and leaves a glossy surface. Keep your fingers clear of the steam.\nYou can also plane the top off with a vegetable peeler or a knife, or rinse the bar under running water and rub it gently.\nWait until the soap has been unmoulded for at least a day or two, and wear gloves, because fresh soap is still caustic. Then let it dry and cure as normal.",
+   "yt": "How to remove soda ash"
+  },
+  {
+   "label": "THE CHECK",
+   "title": "ASH OR SOMETHING ELSE?",
+   "key": "Powdery and dry = ash|Wet or oily = check recipe",
+   "pool": [
+    "ash_compare1",
+    "broll_calc1",
+    "broll_cure1"
+   ],
+   "text": "One last check. Soda ash is dry and powdery or crystalline, and it sits on the surface.\nIf instead you see wet beads of liquid, oily pockets, or white spots deep inside the bar that are hard and gritty, that's a different problem. It can point to lye that didn't mix in properly, or a measuring mistake.\nIn that case, don't use the soap on skin until you've re-checked your recipe in a soap calculator. When in doubt, throw it out.",
+   "yt": "Ash or something else?"
+  },
+  {
+   "label": "OUTRO",
+   "title": "",
+   "key": "",
+   "pool": [
+    "broll_cure1",
+    "broll_cut1"
+   ],
+   "text": "That's soda ash: annoying, but harmless and easy to prevent. If this helped, subscribe, because every week I take one soap problem and fix it properly.\nBefore your next batch, run your recipe through the free soap calculator at latherforge dot com. It's free and there's no signup.\nLatherForge launches on the first of January 2027. The first 300 people on the waitlist get three months free, with no card needed to start. The link's in the description.",
+   "yt": "Outro"
+  }
+ ]
+}
