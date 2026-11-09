@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import RelatedGuides from '@/components/RelatedGuides'
+import WaitlistSignup from '@/components/WaitlistSignup'
 import { getReviewedRecipes } from '@/lib/recipes'
 import { cureLabel } from '@/lib/format'
 
@@ -49,6 +50,7 @@ export default function SoapRecipesPage() {
           </div>
         </section>
       </main>
+      <WaitlistSignup />
       <RelatedGuides page="/soap-recipes/" />
       <Footer />
     </>

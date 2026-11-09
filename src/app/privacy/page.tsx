@@ -48,7 +48,7 @@ export default function PrivacyPage() {
 
       <h2 style={H2}>Cookies</h2>
       <p style={P}>
-        latherforge.com does not set cookies of its own. The embedded Zoho form on the early access page may set cookies that are needed for the form to work.
+        latherforge.com does not set cookies of its own. The embedded Zoho form may set cookies that are needed for the form to work. It loads on the early access and free soap journal pages, and on other pages only after you click the button to open it.
       </p>
 
       <h2 style={H2}>How long we keep it</h2>

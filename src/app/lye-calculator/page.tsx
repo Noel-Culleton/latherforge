@@ -4,6 +4,7 @@ import { getReviewedRecipes, recipeOilWeights } from '@/lib/recipes'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import RelatedGuides from '@/components/RelatedGuides'
+import WaitlistSignup from '@/components/WaitlistSignup'
 import LyeCalculatorClient, { type RecipePreset } from './LyeCalculatorClient'
 
 export const metadata: Metadata = {
@@ -163,6 +164,7 @@ export default function LyeCalculatorPage() {
         </section>
       </main>
 
+      <WaitlistSignup />
       <RelatedGuides page="/lye-calculator/" />
       <Footer />
     </>

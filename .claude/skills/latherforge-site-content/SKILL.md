@@ -38,7 +38,13 @@ No article ships as an orphan. Do this for every new or updated article, recipe 
 4. **Check the anchors read well.** After `npm run build`, list the links in `out/blog/<slug>/index.html` and in one article that should now link to it. Fix any link that lands on an odd word.
 5. **Tool and recipe pages** do not use the autolinker. They show a "Related guides" block (`src/components/RelatedGuides.tsx`) fed by `src/lib/relatedGuides.ts`. When a new article is the best read-more for a tool or recipe, add its slug there (3-5 per page; recipe-specific guides go in `RECIPE_FIRST`). Add the block to any new tool page.
 6. **Social and off-site posts** (Metricool, Pinterest, Facebook, Bluesky, YouTube descriptions): always link to the most specific page on latherforge.com for the topic (the article or tool, not the homepage), using the live URL with a trailing slash. If no page exists for the topic, tell Noel instead of linking the homepage.
+   - Add tracking tags to every off-site link so Vercel Web Analytics shows which network sent the visitor: `?utm_source=<pinterest|facebook|instagram|tiktok|youtube|bluesky>&utm_medium=social&utm_campaign=<article-slug>`. Never add tags to links inside the site itself.
 7. In the summary to Noel, state which pages now link to the new page and which pages it links to.
+
+## Waitlist sign-up block
+- `src/components/WaitlistSignup.tsx` is the inline early-access block on the calculator, SAP values and recipe pages. Add it to any new tool page, above `<RelatedGuides />`.
+- It is click-to-load: the Zoho form only loads after the visitor presses the button. Keep it that way; the privacy policy describes this. If the form is embedded directly on another page, update the Cookies section of `src/app/privacy/page.tsx` in the same PR.
+- The offer wording must match `src/app/early-access/page.tsx`. Never change the offer, dates or small print without Noel asking.
 
 ## Check, ship, verify
 1. Work on a new branch from `origin/main`. Never push to main.
