@@ -1011,6 +1011,187 @@ export const posts: Post[] = [
       { q: 'Are soap making kits safe for kids?', a: 'Melt and pour kits can be a fun family activity if an adult melts and pours the hot base. Cold process kits use lye and are for adults only.' },
       { q: 'Do soap making kits make good Christmas gifts?', a: 'Yes. They are one of the most searched craft gifts in November and December. Order early, check what is included, and consider adding extra base or a stick blender.' }
     ]
+  },
+  {
+    slug: 'soap-making-supplies-australia',
+    title: 'Soap Making Supplies in Australia: Caustic Soda, Oils and Moulds',
+    description: 'Where Australian soap makers buy caustic soda, oils, fragrance and moulds, what to check on the label, and why caustic soda ships differently.',
+    date: '2026-11-09',
+    readTime: '5 min read',
+    category: 'Supplies',
+    sections: [
+      { text: 'Most soap-making guides are written for the US, where sodium hydroxide is called lye. In Australia it is usually sold as caustic soda, and big US suppliers often will not send it here. Buying locally is simpler and cheaper.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Soap needs caustic soda that is 98–99%+ sodium hydroxide, with nothing added.',
+          'Australian safety data sheets list sodium hydroxide as a Class 8 dangerous good, so some sellers limit shipping or offer pick-up only.',
+          'Soap suppliers are the safest source; hardware-store caustic soda works only if the label says pure sodium hydroxide.'
+        ]
+      },
+      {
+        heading: '1. Caustic soda (sodium hydroxide)',
+        text: 'Australian forum users report using hardware-store caustic soda (for example Diggers from Bunnings) without problems, and some supermarket brands are labelled 98% sodium hydroxide. These are personal reports, not checked specs, so always read the label or safety data sheet.',
+        items: [
+          'The label or safety data sheet says sodium hydroxide, 98–99%+, nothing else listed.',
+          'Never use drain-cleaner blends. If there are other ingredients, it is not for soap.',
+          'Buy it sealed. Caustic soda pulls moisture from the air, and damp beads weigh wrong.'
+        ]
+      },
+      {
+        heading: '2. Oils, butters, fragrance and moulds',
+        text: 'Aussie Soap Supplies describes itself as Australia’s largest provider of soap bases and silicone moulds, and also sells fragrance, essential oils, colours, clays and packaging at wholesale prices for home crafters and small businesses. Specialist fragrance and essential oil sellers are also popular; check that any older recommendation is still trading before you order.'
+      },
+      {
+        heading: '3. Supermarket oils',
+        text: 'Olive, canola and coconut oil from the supermarket work for basic recipes. Check the label for pure oil, not a blend. Shea butter, cocoa butter and castor oil are usually cheaper from a soap supplier. Freight is the hidden cost in Australia, so combine heavy oils into one order.'
+      },
+      {
+        heading: '4. Summer soaping',
+        text: 'Hot weather speeds up trace and makes overheating and cracking more likely. Soap at cooler room temperatures, skip insulating the mould on hot days, and keep curing bars out of direct sun and humidity.'
+      },
+      {
+        heading: 'Work out your recipe first',
+        text: 'Run your recipe through a lye calculator before you order, so you buy the right amount of caustic soda for every batch.',
+        link: { href: '/lye-calculator/', label: 'Open the free soap calculator' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or safety advice. Supplier details come from each business’s own description or are marked as personal reports; check current details before you buy. Always follow lye safety guidance: goggles, gloves, and caustic soda into water, never water into caustic soda.' }
+    ],
+    faqs: [
+      { q: 'What is lye called in Australia?', a: 'Usually caustic soda. Chemically it is sodium hydroxide (NaOH), the same thing US soap makers call lye.' },
+      { q: 'Can I use Bunnings caustic soda for soap?', a: 'Some Australian soap makers report using hardware-store caustic soda without problems. Only use it if the label or safety data sheet says pure sodium hydroxide (98–99%+) with nothing added.' },
+      { q: 'Why will some suppliers not post caustic soda?', a: 'Sodium hydroxide is classed as a dangerous good for transport in Australia, so some sellers limit shipping, charge extra or offer pick-up only.' }
+    ]
+  },
+  {
+    slug: 'soap-making-supplies-nz',
+    title: 'Soap Making Supplies and Caustic Soda in New Zealand',
+    description: 'Where Kiwi soap makers buy caustic soda (sodium hydroxide), what to check on the label, and why some sellers only offer pick-up.',
+    date: '2026-11-09',
+    readTime: '4 min read',
+    category: 'Supplies',
+    sections: [
+      { text: 'In New Zealand the lye used for soap is usually sold as caustic soda. Chemically it is sodium hydroxide (NaOH): the one ingredient every cold process bar needs, and the one you cannot swap or guess.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Buy caustic soda labelled 98–99%+ sodium hydroxide, with nothing else in it.',
+          'Some NZ sellers offer it pick-up only, because couriers treat it as a dangerous good.',
+          'Check delivery before you plan a batch around it, especially if you are rural.'
+        ]
+      },
+      {
+        heading: '1. Where to buy caustic soda in NZ',
+        items: [
+          'Go Native sells sodium hydroxide as 99% pure fine granules (sometimes called pearls).',
+          'Pure Nature sells 1 kg of sodium hydroxide as pick-up only, explaining that it is a corrosive dangerous good that needs special handling by couriers.',
+          'Bunnings NZ sells Glitz Caustic Soda 500g, which its listing describes as suitable for soap making, with sodium hydroxide as the active ingredient.'
+        ]
+      },
+      {
+        heading: '2. What to check on the label',
+        items: [
+          'Sodium hydroxide, 98–99%+. Nothing else listed.',
+          'Never a drain-cleaner blend. If there are other ingredients, it is not for soap.',
+          'A sealed container. Caustic soda pulls moisture from the air, and damp granules clump and weigh wrong.',
+          'Store it in its original labelled container, lid on, away from children, pets, acids and aluminium.'
+        ]
+      },
+      {
+        heading: '3. Safety, every time',
+        items: [
+          'Goggles and gloves on before you open it.',
+          'Add caustic soda to water, never water to caustic soda.',
+          'Use stainless steel or PP5 plastic jugs. Never aluminium.'
+        ]
+      },
+      {
+        heading: 'Work out how much you need first',
+        text: 'Run your recipe through a lye calculator before you buy, so you know exactly how much caustic soda each batch needs.',
+        link: { href: '/lye-calculator/', label: 'Open the free soap calculator' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or safety advice. Seller details come from each seller’s own product page; prices, stock and delivery change, so check before you buy. Always follow lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'Is caustic soda the same as lye?', a: 'Yes. Caustic soda is sodium hydroxide (NaOH), which soap makers call lye.' },
+      { q: 'Can I buy caustic soda for soap at Bunnings NZ?', a: 'Bunnings NZ lists Glitz Caustic Soda 500g as suitable for soap making. Check the label says sodium hydroxide with nothing added.' },
+      { q: 'Why is caustic soda pick-up only at some shops?', a: 'It is a corrosive dangerous good for transport, so some sellers do not courier it or need special handling that can delay delivery.' }
+    ]
+  },
+  {
+    slug: 'selling-soap-in-canada',
+    title: 'Selling Soap in Canada: Cosmetic Notification and Labels',
+    description: 'What Canadian soap makers need to do before selling: the free Cosmetic Notification Form, the 10-day deadline, and bilingual labels with INCI ingredients.',
+    date: '2026-11-09',
+    readTime: '5 min read',
+    category: 'Selling',
+    sections: [
+      { text: 'In Canada, soap sold for cleansing is treated as a cosmetic. That is different from the US, where “true soap” is mostly outside FDA cosmetic rules. Health Canada says the cosmetic rules apply to handmade products too, including ones sold at craft sales or by home-based businesses.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'File a Cosmetic Notification Form (CNF) for each product within 10 days of your first sale in Canada.',
+          'There is no fee.',
+          'Labels need ingredients in INCI names and the required information in English and French.'
+        ]
+      },
+      {
+        heading: '1. The Cosmetic Notification Form',
+        items: [
+          'Deadline: within 10 days of your first sale in Canada. You can file earlier with a predicted first-sale date.',
+          'Who files: the manufacturer or importer. If you make and sell your own soap, that is you.',
+          'What it asks for: brand and product name, the product form (for example a bar), what it is for, and the ingredients with their amounts.',
+          'Changed a recipe, product name or contact details? File a revised notification within 10 days of the change.',
+          'If a product is not notified within the 10 days, it cannot be sold after that window until it is.'
+        ]
+      },
+      {
+        heading: '2. Notification is not approval',
+        text: 'Health Canada does not test or approve your soap when you notify it. The form is a record that the product exists and what is in it. Keep a list of your recipes and their notification dates in one place, so a recipe change does not slip past the 10-day rule.'
+      },
+      {
+        heading: '3. What goes on a soap label in Canada',
+        items: [
+          'Ingredients in INCI names, in descending order of amount. For soap these are usually the saponified oils, such as Sodium Olivate or Sodium Cocoate.',
+          'English and French for the required label information. The INCI ingredient list is the exception.',
+          'Quebec has stricter French-language rules, so check them if you sell there.',
+          'Product identity can be left off when it is obvious, like a bar of soap.'
+        ]
+      },
+      {
+        heading: 'A checklist before your first market',
+        items: [
+          'Finalise the recipe and check it in a lye calculator.',
+          'Write the ingredient list in INCI names, in order of amount.',
+          'Make bilingual labels (English and French).',
+          'File a Cosmetic Notification Form for each product within 10 days of first sale.',
+          'Keep a record of the notification date for each recipe.'
+        ],
+        link: { href: '/lye-calculator/', label: 'Open the free soap calculator' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not legal or professional advice. Based on Health Canada’s published guidance; rules change, so check Health Canada’s cosmetics pages before you sell. Always follow lye safety guidance when making soap.' }
+    ],
+    faqs: [
+      { q: 'Is handmade soap a cosmetic in Canada?', a: 'Yes. Soap sold for cleansing is regulated as a cosmetic in Canada, including handmade soap sold at markets or by home businesses.' },
+      { q: 'How long do I have to file a Cosmetic Notification Form?', a: 'Within 10 days of your first sale in Canada. You can also file before you start selling.' },
+      { q: 'Does the Cosmetic Notification Form cost anything?', a: 'No. Health Canada does not charge a fee for cosmetic notification.' },
+      { q: 'Do soap labels in Canada need French?', a: 'Yes. The required label information must be in English and French. The INCI ingredient list stays in INCI names.' }
+    ]
   }
 
 ]
