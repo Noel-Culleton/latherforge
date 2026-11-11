@@ -1,5 +1,5 @@
 To: shop@candlemania.ie
-Subject: A business app for candles makers, built in Ireland
+Subject: A business app for candle makers, built in Ireland
 
 Hi Candlemania team,
 
