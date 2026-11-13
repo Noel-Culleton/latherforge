@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import AppPreview from '@/components/AppPreview'
 
 /* LatherForge homepage — Sep/Oct 2026 redesign (restored into Git from the 8 Oct 2026 deploy).
    Server component, so it ships as plain HTML: fast on mobile and fully readable by Google. */
@@ -210,68 +211,9 @@ export default function HomePage() {
               One email at launch. No spam, unsubscribe any time. The calculators need no signup.
             </p>
           </div>
-          <div className="dash" aria-label="Example LatherForge dashboard">
-            <div className="top">
-              <b>
-                Today at the Forge
-              </b>
-              <span>
-                Example dashboard
-              </span>
-            </div>
-            <div className="card">
-              <p className="kick">
-                Cure-Lock Tracking · 3 batches curing
-              </p>
-              <div className="row">
-                <span>
-                  Lavender & Oat
-                </span>
-                <span className="ok">
-                  Ready Fri
-                </span>
-              </div>
-              <div className="row">
-                <span>
-                  Charcoal Mint
-                </span>
-                <span>
-                  16 days
-                </span>
-              </div>
-              <div className="row">
-                <span>
-                  Goat Milk Honey
-                </span>
-                <span>
-                  5 weeks
-                </span>
-              </div>
-            </div>
-            <div className="two">
-              <div className="card">
-                <p className="kick">
-                  True cost per bar
-                </p>
-                <p className="big">
-                  €1.18
-                </p>
-                <p className="tiny">
-                  Oils, lye, fragrance, packaging and your time
-                </p>
-              </div>
-              <div className="card">
-                <p className="kick">
-                  Compliance records
-                </p>
-                <p className="big">
-                  4 of 5
-                </p>
-                <p className="tiny">
-                  Products with safety file and label data ready
-                </p>
-              </div>
-            </div>
+          <div style={{ minWidth: 0 }}>
+            <p className="kick" style={{ marginBottom: '14px' }}>See inside the app</p>
+            <AppPreview priority />
           </div>
         </div>
       </section>

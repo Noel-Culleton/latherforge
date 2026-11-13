@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import AppPreview from '@/components/AppPreview'
 
 export const metadata: Metadata = {
   title: 'Register Your Interest — LatherForge',
@@ -13,12 +14,18 @@ export default function EarlyAccessPage() {
   return (
     <>
       <Nav />
+      <style>{`
+        .signup-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; align-items: start; }
+        .signup-preview { min-width: 0; color: #7A6E62; }
+        .app-preview { margin: 0; }
+        @media (max-width: 860px) { .signup-layout { grid-template-columns: minmax(0, 1fr); } }
+      `}</style>
 
       <main style={{ paddingTop: '68px' }}>
         {/* HERO */}
         <section style={{
           background: 'linear-gradient(160deg, #3E2820 0%, #5C3D2E 100%)',
-          padding: '6rem 0 5rem', textAlign: 'center'
+          padding: '3rem 0', textAlign: 'center'
         }}>
           <div className="container">
             <div style={{
@@ -44,6 +51,46 @@ export default function EarlyAccessPage() {
           </div>
         </section>
 
+        {/* ZOHO FORM */}
+        <section style={{ background: '#FAF7F2', padding: '5rem 0' }}>
+          <div className="container">
+            <div className="signup-layout">
+            <div style={{ minWidth: 0 }}>
+              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#3E2820', marginBottom: '0.75rem' }}>
+                  Register Your Interest
+                </h2>
+                <p style={{ color: '#7A6E62', lineHeight: 1.7 }}>
+                  Fill in the form below. We will email you the moment LatherForge opens its doors.
+                </p>
+              </div>
+
+              <div style={{
+                background: '#FFFFFF', border: '1px solid #E8DFD0',
+                padding: 'clamp(12px, 3vw, 40px)', boxShadow: '0 4px 24px rgba(92,61,46,0.06)'
+              }}>
+                <iframe
+                  aria-label="LatherForge Early Access"
+                  frameBorder="0"
+                  style={{ height: '500px', width: '100%', border: 'none' }}
+                  src="https://forms.zohopublic.eu/culletonnoelgm1/form/LatherForgeEarlyAccess/formperma/hNAOt2XHrbOxOMfDDaY8hViG7DnhJjJASyZ9UlZn3OM"
+                />
+              </div>
+
+              <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
+                The 3 months free is limited to the first 300 sign-ups. No card is needed to start; to keep using LatherForge after the 3 months, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
+                No spam. No selling your data. Just a single email when we launch.{' '}
+                See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
+              </p>
+            </div>
+            <aside className="signup-preview">
+              <h2 style={{ fontSize: '2rem', color: '#3E2820', marginBottom: '12px' }}>See what you are joining</h2>
+              <p style={{ lineHeight: 1.7, marginBottom: '20px' }}>Build your formulas and see oil percentages, calculated amounts and recipe properties together.</p>
+              <AppPreview />
+            </aside>
+            </div>
+          </div>
+        </section>
         {/* PERKS */}
         <section style={{ background: '#F0EAE0', padding: '4rem 0' }}>
           <div className="container">
@@ -64,39 +111,6 @@ export default function EarlyAccessPage() {
           </div>
         </section>
 
-        {/* ZOHO FORM */}
-        <section style={{ background: '#FAF7F2', padding: '5rem 0' }}>
-          <div className="container">
-            <div style={{ maxWidth: '640px', margin: '0 auto' }}>
-              <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#3E2820', marginBottom: '0.75rem' }}>
-                  Register Your Interest
-                </h2>
-                <p style={{ color: '#7A6E62', lineHeight: 1.7 }}>
-                  Fill in the form below. We will email you the moment LatherForge opens its doors.
-                </p>
-              </div>
-
-              <div style={{
-                background: '#FFFFFF', border: '1px solid #E8DFD0',
-                padding: '2.5rem', boxShadow: '0 4px 24px rgba(92,61,46,0.06)'
-              }}>
-                <iframe
-                  aria-label="LatherForge Early Access"
-                  frameBorder="0"
-                  style={{ height: '500px', width: '100%', border: 'none' }}
-                  src="https://forms.zohopublic.eu/culletonnoelgm1/form/LatherForgeEarlyAccess/formperma/hNAOt2XHrbOxOMfDDaY8hViG7DnhJjJASyZ9UlZn3OM"
-                />
-              </div>
-
-              <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
-                The 3 months free is limited to the first 300 sign-ups. No card is needed to start; to keep using LatherForge after the 3 months, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
-                No spam. No selling your data. Just a single email when we launch.{' '}
-                See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
