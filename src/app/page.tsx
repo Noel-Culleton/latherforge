@@ -212,7 +212,7 @@ export default function HomePage() {
             </p>
           </div>
           <div style={{ minWidth: 0 }}>
-            <p className="kick" style={{ marginBottom: '14px' }}>See inside the app</p>
+            <p className="kick" style={{ marginBottom: '14px', fontSize: '1.17rem' }}>ON YOUR PHONE OR DESKTOP</p>
             <AppPreview priority />
           </div>
         </div>
