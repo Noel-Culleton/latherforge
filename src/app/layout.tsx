@@ -1,3 +1,4 @@
+import { RememberLandingPage } from '@/components/EarlyAccessAttribution'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <RememberLandingPage />
         {children}
         <Analytics />
       </body>
