@@ -1,3 +1,4 @@
+import { EarlyAccessForm } from '@/components/EarlyAccessAttribution'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
@@ -69,12 +70,7 @@ export default function EarlyAccessPage() {
                 background: '#FFFFFF', border: '1px solid #E8DFD0',
                 padding: 'clamp(12px, 3vw, 40px)', boxShadow: '0 4px 24px rgba(92,61,46,0.06)'
               }}>
-                <iframe
-                  aria-label="LatherForge Early Access"
-                  frameBorder="0"
-                  style={{ height: '500px', width: '100%', border: 'none' }}
-                  src="https://forms.zohopublic.eu/culletonnoelgm1/form/LatherForgeEarlyAccess/formperma/hNAOt2XHrbOxOMfDDaY8hViG7DnhJjJASyZ9UlZn3OM"
-                />
+                <EarlyAccessForm />
               </div>
 
               <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
