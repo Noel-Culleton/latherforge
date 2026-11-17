@@ -6,7 +6,7 @@ import type { SoapRecipe } from './recipes'
 // they link into the blog. A test checks every slug is a real article.
 
 export const RELATED_GUIDES: Record<string, string[]> = {
-  '/lye-calculator/': ['lye-calculator-guide', 'cold-process-soap-beginners-guide', 'best-oils-for-soap-making', 'cold-process-soap-problems'],
+  '/lye-calculator/': ['lye-calculator-guide', 'what-is-lye', 'cold-process-soap-beginners-guide', 'best-oils-for-soap-making', 'cold-process-soap-problems'],
   '/sap-values/': ['lye-calculator-guide', 'best-oils-for-soap-making', 'what-is-lather-in-soap', 'how-to-make-liquid-soap'],
   '/etsy-pricing-calculator/': ['etsy-soap-shop-tips', 'soap-gift-sets', 'selling-handmade-soap-legal-requirements', 'selling-soap-in-canada'],
   '/cpsr-for-soap/': ['selling-handmade-soap-legal-requirements', 'etsy-soap-shop-tips', 'soap-gift-sets', 'selling-soap-in-canada'],
@@ -21,6 +21,9 @@ const RECIPE_FIRST: Record<string, string> = {
   'salt-bar-soap-recipe': 'what-is-a-salt-bar',
   'hot-process-soap-recipe': 'how-to-make-hot-process-soap',
   'liquid-soap-recipe': 'how-to-make-liquid-soap',
+  'goat-milk-soap-recipe': 'how-to-make-goat-milk-soap',
+  'tallow-soap-recipe': 'tallow-soap',
+  'lard-soap-recipe': 'tallow-soap',
   'castile-soap-recipe': 'best-oils-for-soap-making',
   'bastille-soap-recipe': 'best-oils-for-soap-making'
 }
