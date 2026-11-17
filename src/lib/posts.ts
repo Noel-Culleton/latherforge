@@ -1215,7 +1215,7 @@ export const posts: Post[] = [
         heading: '1. Big bubbles vs creamy lather',
         items: [
           'Big, fluffy bubbles: coconut oil, palm kernel oil, babassu oil.',
-          'Stable, creamy lather: castor oil (usually 5–10% of the oils), plus butters such as shea and cocoa.',
+          'Stable, creamy lather: castor oil (usually 5–10% of the oils), plus butters such as shea and cocoa, and animal fats such as tallow and lard.',
           'Low, gentle lather: olive, sunflower, sweet almond and other soft oils.'
         ],
         text: 'Most recipes mix these on purpose: enough coconut for bubbles, a little castor to hold them, and conditioning oils for a mild bar.'
@@ -1344,7 +1344,7 @@ export const posts: Post[] = [
         items: [
           'Soap at cooler temperatures and skip insulation.',
           'Put the mould in the fridge or freezer for the first day.',
-          'Milk, honey and sugar soaps heat up more, so makers often keep them cool on purpose.'
+          'Milk, honey and sugar soaps heat up more, so makers often keep them cool on purpose. See our guide to making goat milk soap.'
         ]
       },
       {
@@ -1427,6 +1427,243 @@ export const posts: Post[] = [
       { q: 'What should go in a soap gift set?', a: 'Usually three bars that go together by theme, scent or colour, plus one small extra such as a soap dish or cotton bag.' },
       { q: 'How do I price a soap gift set?', a: 'Add the cost of every bar, the extras, the packaging and your assembly time, then add your margin.' },
       { q: 'Do soaps in a gift set need labels?', a: 'Yes. Each bar still needs the labelling your country requires, even inside a gift box.' }
+    ]
+  },
+  {
+    slug: 'what-is-lye',
+    title: 'What Is Lye? Is Lye Soap Safe, and Can You Make Soap Without It?',
+    description: 'What lye is, why all true soap is made with it, why properly made lye soap is safe to use, how to handle lye safely, and how to make soap without touching lye yourself.',
+    date: '2026-11-17',
+    readTime: '6 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      { text: 'Lye is the ingredient that turns oils and fats into soap. Raw lye really is dangerous, but a finished bar made with the right amount of it contains no lye at all. Here is what lye is, why a cured bar is safe, and how to handle lye without getting hurt.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Lye is a strong alkali. For bar soap it is sodium hydroxide (NaOH, also sold as caustic soda). For liquid soap it is potassium hydroxide (KOH).',
+          'All true soap is made with lye. The lye reacts with the oils and is used up, leaving soap and glycerin.',
+          'Soap made from a calculated recipe and fully cured is safe and contains no free lye.',
+          'You can make soap without handling lye yourself by using a melt and pour base, but that base was made with lye too.'
+        ]
+      },
+      {
+        heading: '1. What lye is',
+        text: 'Sodium hydroxide is a white solid, usually sold as beads or flakes. It dissolves in water with a lot of heat and makes a caustic solution that burns skin and can badly damage eyes. Potassium hydroxide behaves the same way and is used for soft and liquid soaps. Buy lye sold as pure sodium hydroxide (99% or higher). Do not use drain cleaner, which can contain other ingredients.',
+        shop: { label: 'Find sodium hydroxide for soap making on Amazon', query: 'sodium hydroxide lye 99% pure soap making' }
+      },
+      {
+        heading: '2. How lye turns oil into soap',
+        text: 'When lye solution meets oils they react, and this is called saponification. Each oil needs a different amount of lye, set by its SAP value. A lye calculator works out the exact amount for your recipe. Most makers add a small superfat, usually around 5%, so a little oil is left over and no lye is.'
+      },
+      {
+        heading: '3. Is lye soap safe?',
+        items: [
+          'Yes, when the recipe was run through a calculator, everything was weighed on a digital scale and the soap was left to cure.',
+          'Soap is naturally alkaline. Handmade bar soap usually tests at around pH 9 to 10. That is normal for soap and does not mean lye is left in it.',
+          'Problems come from mistakes: a mis-weighed batch, the wrong SAP values or the wrong type of lye. A bar that crumbles, has white pockets or weeps liquid may be lye-heavy, so do not use it. See our guide to soap problems.',
+          'Fresh soap is still caustic for the first day or two. Wear gloves to unmould and cut it, then let it cure before use.'
+        ]
+      },
+      {
+        heading: '4. Lye safety rules',
+        items: [
+          'Wear safety goggles, gloves and long sleeves every time you handle lye or raw soap batter.',
+          'Always add lye to water, never water to lye. Pouring water onto lye can make it boil up and splash.',
+          'Mix in good ventilation and do not breathe the fumes while the lye dissolves.',
+          'Use stainless steel or heat-safe polypropylene (PP, recycling number 5) containers. Never use aluminium, which reacts with lye.',
+          'Keep lye in a labelled, sealed container, away from children and pets.',
+          'On skin, rinse with plenty of cool running water. In eyes, rinse with running water for at least 15 minutes and get medical help straight away. Do not rely on vinegar.'
+        ],
+        link: { href: '/blog/soap-making-tools/', label: 'See the safety gear and tools you need' }
+      },
+      {
+        heading: '5. Can you make soap without lye?',
+        text: 'Not true soap: every soap was made with lye at some point. You can, though, make soap without handling lye yourself.',
+        items: [
+          'Melt and pour: melt a ready-made soap base, add colour and scent, and pour it into moulds. The manufacturer used the lye, so you never touch it.',
+          'Rebatching: grate an existing bar, melt it with a little liquid and press it into a new mould.',
+          'Bars sold as “lye-free” are usually syndet bars, made from synthetic detergents rather than soap.'
+        ]
+      },
+      {
+        heading: '6. Can you make your own lye?',
+        text: 'People once made lye by soaking wood ash in water. That gives a potassium-based lye of unknown strength, so there is no way to work out a safe recipe with it. Buy lye of a known purity and run every recipe through a calculator.'
+      },
+      {
+        heading: 'Start from a tested recipe',
+        text: 'Our easy beginner soap recipe has the lye and water worked out for your batch size. For the full method, read our cold process soap guide.',
+        link: { href: '/soap-recipes/beginner-soap-recipe/', label: 'See the easy beginner soap recipe' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or medical advice. Always follow lye safety guidance, and get medical help straight away if lye gets in your eyes.' }
+    ],
+    faqs: [
+      { q: 'What is lye?', a: 'A strong alkali used to make soap. Bar soap uses sodium hydroxide (NaOH); liquid soap uses potassium hydroxide (KOH).' },
+      { q: 'Is lye soap safe for your skin?', a: 'Yes, when it was made from a calculated recipe and fully cured. The lye reacts with the oils, so none is left in a well-made bar.' },
+      { q: 'Can you make soap without lye?', a: 'Not true soap. You can avoid handling lye by using a melt and pour base, which the manufacturer made with lye.' },
+      { q: 'Is caustic soda the same as lye?', a: 'Yes. Caustic soda is another name for sodium hydroxide, the lye used for bar soap.' },
+      { q: 'What should I do if lye gets on my skin?', a: 'Rinse with plenty of cool running water. For eyes, rinse for at least 15 minutes and get medical help straight away.' }
+    ]
+  },
+  {
+    slug: 'how-to-make-goat-milk-soap',
+    title: 'How to Make Goat Milk Soap (Without Scorching the Milk)',
+    description: 'How to make cold process goat milk soap: freezing the milk, adding the lye safely, stopping the soap overheating, cure time, and what to watch when you sell it.',
+    date: '2026-11-17',
+    readTime: '6 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      { text: 'Goat milk soap is cold process soap made with goat milk in place of some or all of the water. It gives a creamy lather and a soft, pale bar, and it sells well at markets. The tricky part is the milk: lye heats up fast and can scorch the milk sugars. This guide shows how to stop that.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Freeze the goat milk into cubes and add the lye to it slowly, with the jug standing in an ice bath.',
+          'Use the same weight of milk as the water your calculator gives you.',
+          'Do not insulate. Put the mould in the fridge or freezer for 24 hours so it does not overheat.',
+          'A tan colour and a faint ammonia smell while mixing are normal. The smell fades during the cure.',
+          'Cure for 4 to 6 weeks.'
+        ]
+      },
+      {
+        heading: '1. Which goat milk to use',
+        items: [
+          'Fresh or shop-bought goat milk: weigh it and freeze it in ice cube trays.',
+          'Evaporated goat milk: dilute it back to normal strength as the can directs, then freeze it.',
+          'Powdered goat milk: stores well. Mix it back into milk with water and freeze it, or use it in the split method below.'
+        ],
+        shop: { label: 'Find powdered goat milk on Amazon', query: 'powdered goat milk for soap making' }
+      },
+      {
+        heading: '2. Method 1: frozen milk',
+        items: [
+          'Weigh out milk to match the water amount, freeze it in cubes, and put the frozen cubes in a heat-safe jug standing in an ice bath.',
+          'Add the lye a spoonful at a time, stirring well. Milk is opaque, so keep stirring until all the lye has dissolved, not just until the cubes melt.',
+          'Aim for a pale yellow to light tan mixture. Bright orange means it has got too hot.',
+          'Keep your oils fully melted and fluid, then add the milk and lye mixture and blend to trace as normal.'
+        ]
+      },
+      {
+        heading: '3. Method 2: the split method',
+        text: 'Dissolve the lye in half of the water amount, as for a normal batch, and let it cool. Use goat milk for the other half and stir it into the oils just before you add the lye solution. Less milk meets the hot lye, so there is less risk of scorching. It suits makers who find frozen milk fiddly.'
+      },
+      {
+        heading: '4. Stop it overheating',
+        text: 'Milk sugars make soap heat up more than a water batch. Skip insulating, soap at cool temperatures and put the mould in the fridge or freezer for the first 24 hours. You can let milk soap go through gel phase, but it is riskier: the bar can crack or darken. Leave out honey and other sugars in your first milk batch, as they add even more heat.'
+      },
+      {
+        heading: '5. Cure and colour',
+        text: 'Goat milk soap is usually ready after 4 to 6 weeks of curing. Expect an off-white to tan bar; the hotter the milk got, the darker it goes. Fragrance oils that contain vanillin can turn the bar brown over time.'
+      },
+      {
+        heading: '6. Selling goat milk soap',
+        items: [
+          'List goat milk in the ingredients on your label, following the naming rules where you sell.',
+          'Do not say the soap treats eczema or any other skin condition. Medical claims can change how the law treats your product. Describe the soap instead.',
+          'In the UK and EU, every soap needs a safety assessment before you sell it, milk soaps included.'
+        ],
+        link: { href: '/blog/selling-handmade-soap-legal-requirements/', label: 'Read: selling handmade soap legal requirements' }
+      },
+      {
+        heading: 'Try a tested goat milk soap recipe',
+        text: 'Our goat milk soap recipe uses olive oil, coconut oil, shea butter, sweet almond and castor oil with a 5% superfat, and gives exact lye and milk amounts for your batch size.',
+        link: { href: '/soap-recipes/goat-milk-soap-recipe/', label: 'See the goat milk soap recipe' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or medical advice. Always run your own recipe through a lye calculator and follow lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'Why did my goat milk soap turn orange?', a: 'The lye scorched the milk sugars. Freeze the milk, add the lye slowly in an ice bath and keep the soap cool after pouring.' },
+      { q: 'Can I use goat milk instead of water in soap?', a: 'Yes. Replace the water with the same weight of goat milk, frozen, and add the lye slowly to keep it cool.' },
+      { q: 'Why does goat milk soap smell of ammonia?', a: 'A faint ammonia smell while mixing is normal with milk and fades during the cure. Work with good ventilation.' },
+      { q: 'How long does goat milk soap need to cure?', a: 'Usually 4 to 6 weeks.' }
+    ]
+  },
+  {
+    slug: 'tallow-soap',
+    title: 'Tallow Soap: Why Makers Use It and How to Make a Beef Tallow Bar',
+    description: 'What tallow soap is, why beef tallow makes a hard, mild, long-lasting bar, how to render tallow for soap, how much to use in a recipe, and how to label it.',
+    date: '2026-11-17',
+    readTime: '5 min read',
+    category: 'Soap Making Basics',
+    sections: [
+      { text: 'Tallow soap is made with tallow, the rendered fat of beef or sheep. It was the standard soap fat for centuries, and it is popular again with makers who want a traditional, palm-free bar.' },
+      {
+        heading: 'Quick answers',
+        items: [
+          'Tallow makes a hard, long-lasting, mild bar with a creamy, stable lather.',
+          'Most recipes use 50–80% tallow, with some coconut oil for bubbles and olive oil for conditioning.',
+          'Render beef suet for the whitest tallow with the least smell.',
+          'Tallow can trace quickly. Keep the oils fully melted and blend in short bursts.',
+          'Cure for 4 to 6 weeks.'
+        ]
+      },
+      {
+        heading: '1. Why tallow works in soap',
+        text: 'Tallow is high in stearic and palmitic acids, the same fatty acids that make palm oil useful in soap. They give a hard bar that lasts well and a creamy lather. Tallow on its own makes few big bubbles, so most recipes add 15–25% coconut oil.'
+      },
+      {
+        heading: '2. Can you make 100% tallow soap?',
+        text: 'Yes. A 100% tallow bar is very hard and mild, with a low, creamy lather. Some makers like it as a simple, single-fat soap. Blends are more common because they lather better.'
+      },
+      {
+        heading: '3. Rendering tallow for soap',
+        items: [
+          'Start with suet, the hard fat from around beef kidneys. It renders whiter and smells less than other trimmings.',
+          'Chop or mince it and heat it gently with a little water until the fat melts out, then strain out the solids.',
+          'Chill it, lift off the solid fat and scrape away anything underneath. If it still smells beefy, melt it again with fresh water, often with a little salt, and repeat.',
+          'Or buy ready-rendered tallow from a butcher or supplier. Check it is plain tallow with nothing added.'
+        ],
+        shop: { label: 'Find rendered beef tallow on Amazon', query: 'rendered beef tallow for soap making' }
+      },
+      {
+        heading: '4. How much lye does tallow need?',
+        text: 'Beef tallow has an NaOH SAP value of about 0.143; sheep tallow is a little lower. Do not work lye amounts out by hand from a single number. Put your exact oils and weights into a lye calculator every time.'
+      },
+      {
+        heading: '5. Tallow vs lard vs palm',
+        items: [
+          'Lard (pork fat) makes a similar mild bar, a little softer, with a creamy lather.',
+          'Tallow is a common swap for palm oil in palm-free recipes.',
+          'Neither tallow nor lard suits vegan customers, so say clearly on your labels and listings that the soap contains animal fat.'
+        ],
+        link: { href: '/soap-recipes/lard-soap-recipe/', label: 'See the traditional lard soap recipe' }
+      },
+      {
+        heading: '6. Labelling and selling tallow soap',
+        items: [
+          'On ingredient lists, tallow that has been made into soap is usually written as sodium tallowate.',
+          'In the UK and EU, tallow soap needs a safety assessment like any other cosmetic soap.',
+          'Some customers worry tallow soap smells of beef. Well-rendered tallow has very little smell, and essential oils cover what is left.'
+        ],
+        link: { href: '/blog/selling-handmade-soap-legal-requirements/', label: 'Read: selling handmade soap legal requirements' }
+      },
+      {
+        heading: 'Try a tested tallow soap recipe',
+        text: 'Our beef tallow soap recipe is 60% tallow with olive, coconut and castor oil and a 5% superfat, with exact lye and water amounts for your batch size.',
+        link: { href: '/soap-recipes/tallow-soap-recipe/', label: 'See the beef tallow soap recipe' }
+      },
+      {
+        heading: 'Join LatherForge',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. The first 300 sign-ups get 3 months free, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
+      },
+      { text: 'Information only. Not professional or medical advice. Always run your own recipe through a lye calculator and follow lye safety guidance.' }
+    ],
+    faqs: [
+      { q: 'Is tallow good for soap?', a: 'Yes. Tallow makes a hard, mild, long-lasting bar with a creamy lather. Add some coconut oil for bigger bubbles.' },
+      { q: 'Does tallow soap smell like beef?', a: 'Well-rendered tallow, especially from suet, has very little smell. Fragrance or essential oils cover any that is left.' },
+      { q: 'How much tallow should I use in soap?', a: 'Most recipes use 50–80% tallow. 100% tallow soap works but lathers less.' },
+      { q: 'What is sodium tallowate?', a: 'The ingredient name for tallow that has been made into soap with sodium hydroxide.' },
+      { q: 'Is tallow soap vegan?', a: 'No. Tallow is an animal fat.' }
     ]
   }
 
