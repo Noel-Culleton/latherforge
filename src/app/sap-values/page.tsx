@@ -10,12 +10,26 @@ const oilCount = Object.keys(OILS).length
 
 export const metadata: Metadata = {
   title: `SAP Value Chart for Soap Making — NaOH & KOH for ${oilCount} Oils`,
-  description: `Saponification (SAP) values for ${oilCount} soap making oils and butters, for both NaOH (bar soap) and KOH (liquid soap), with a worked example of how to calculate lye.`,
+  description: `SAP values for ${oilCount} soap making oils: coconut oil ${OILS['Coconut Oil (76°)'].toFixed(3)} NaOH / ${SAP_KOH['Coconut Oil (76°)'].toFixed(3)} KOH, olive oil ${OILS['Olive Oil'].toFixed(3)} / ${SAP_KOH['Olive Oil'].toFixed(3)}, plus shea, castor, palm and more, with a worked lye example.`,
   alternates: { canonical: 'https://latherforge.com/sap-values/' }
 }
 
 const TH = { textAlign: 'left', padding: '0.65rem 0.8rem', fontSize: '0.75rem', letterSpacing: '0.06em', textTransform: 'uppercase', color: '#F5EDD6', background: '#5C3D2E' } as const
 const TD = { padding: '0.55rem 0.8rem', borderBottom: '1px solid #E8DFD0', fontSize: '0.95rem', color: '#3E2820' } as const
+const slug = (oil: string) => 'sap-' + oil.toLowerCase().replace(/°/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
+// The oils people search for by name ("sap value of coconut oil"): each gets a direct answer
+const POPULAR: { oil: string; label: string; note: string }[] = [
+  { oil: 'Coconut Oil (76°)', label: 'coconut oil', note: 'One of the highest SAP values of any common oil, so recipes heavy in coconut need noticeably more lye.' },
+  { oil: 'Olive Oil', label: 'olive oil', note: 'The base of castile and most beginner recipes.' },
+  { oil: 'Shea Butter', label: 'shea butter', note: 'Lower than most oils, and it contains a share of unsaponifiables that stay in the bar.' },
+  { oil: 'Castor Oil', label: 'castor oil', note: 'Usually kept to 5–10% of the recipe for lather.' },
+  { oil: 'Palm Oil', label: 'palm oil', note: 'Close to lard and tallow, which is why they swap for each other in recipes.' },
+  { oil: 'Cocoa Butter', label: 'cocoa butter', note: 'Adds hardness; usually 5–15% of the recipe.' },
+  { oil: 'Sweet Almond Oil', label: 'sweet almond oil', note: 'A common conditioning oil, close to olive.' },
+  { oil: 'Lard', label: 'lard', note: 'Traditional hard-bar fat, close to palm and tallow.' }
+]
+
 const H2 = { fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', color: '#3E2820', margin: '2.5rem 0 1rem' } as const
 
 const FAQS = [
@@ -26,6 +40,14 @@ const FAQS = [
   {
     q: 'What is the SAP value of olive oil?',
     a: `Olive oil has a NaOH SAP value of ${OILS['Olive Oil'].toFixed(3)} and a KOH SAP value of ${SAP_KOH['Olive Oil'].toFixed(3)}.`
+  },
+  {
+    q: 'What is the SAP value of shea butter?',
+    a: `Shea butter has a NaOH SAP value of ${OILS['Shea Butter'].toFixed(3)} and a KOH SAP value of ${SAP_KOH['Shea Butter'].toFixed(3)}.`
+  },
+  {
+    q: 'What is the SAP value of castor oil?',
+    a: `Castor oil has a NaOH SAP value of ${OILS['Castor Oil'].toFixed(3)} and a KOH SAP value of ${SAP_KOH['Castor Oil'].toFixed(3)}.`
   },
   {
     q: 'How do you convert a KOH SAP value to NaOH?',
@@ -77,12 +99,27 @@ export default function SapValuesPage() {
 
         <section style={{ background: '#FAF7F2', padding: '2rem 0 5rem' }}>
           <div className="container" style={{ maxWidth: '800px' }}>
+            <h2 style={{ ...H2, marginTop: '0.5rem' }}>Most looked-up SAP values</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem', marginBottom: '2rem' }}>
+              {POPULAR.map(p => (
+                <div key={p.oil} style={{ background: '#FFFFFF', border: '1px solid #E8DFD0', padding: '1rem' }}>
+                  <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#3E2820', marginBottom: '0.35rem' }}>{`SAP value of ${p.label}`}</h3>
+                  <p style={{ color: '#3E2820', fontSize: '0.95rem', marginBottom: '0.35rem' }}>
+                    <strong>{OILS[p.oil].toFixed(3)}</strong> NaOH · <strong>{SAP_KOH[p.oil].toFixed(3)}</strong> KOH
+                  </p>
+                  <p style={{ color: '#7A6E62', fontSize: '0.85rem', lineHeight: 1.55, marginBottom: '0.35rem' }}>{p.note}</p>
+                  <a href={`#${slug(p.oil)}`} style={{ color: '#5C3D2E', fontSize: '0.85rem', textDecoration: 'underline' }}>See it in the chart</a>
+                </div>
+              ))}
+            </div>
+
+            <h2 style={{ ...H2, marginTop: '0' }}>Full SAP value chart</h2>
             <div style={{ overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', background: '#FFFFFF' }}>
                 <thead><tr><th style={TH}>Oil / butter</th><th style={TH}>NaOH SAP</th><th style={TH}>KOH SAP</th><th style={TH}>KOH 90%</th><th style={TH}>NaOH per 1 kg oil (5% SF)</th></tr></thead>
                 <tbody>
                   {rows.map(oil => (
-                    <tr key={oil}>
+                    <tr key={oil} id={slug(oil)} style={{ scrollMarginTop: '90px' }}>
                       <td style={TD}>{oil}</td>
                       <td style={TD}>{OILS[oil].toFixed(3)}</td>
                       <td style={TD}>{SAP_KOH[oil].toFixed(3)}</td>
