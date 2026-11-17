@@ -1,6 +1,10 @@
-# LatherForge testing notes for soap makers
+# LatherForge — confidence in your craft, control of your business
 
-## Would a lye calculator catch a mistyped olive-oil value?
+Four promotional article drafts grounded in historical development records. Image concepts use staged promotional photography.
+
+## Your soap deserves a calculator that gets challenged
+
+**Confidence in every calculation starts with asking difficult questions.** You spend money on ingredients and time on every batch. LatherForge takes the figures behind your craft seriously. Our development process includes checking expected results and deliberately introducing an error to see whether the tests catch it.
 
 A calculator can return a precise-looking answer even when someone has copied a number incorrectly. We wanted to know whether the LatherForge tests would notice that mistake before a software change reached a maker.
 
@@ -12,7 +16,14 @@ For a maker choosing a calculator, a fair question is “Would its tests still p
 
 [Original test record](https://github.com/Noel-Culleton/latherforge/pull/9) · [Explore the oil reference chart](https://latherforge.com/sap-values/)
 
-## What happens when you open a soap recipe in the calculator?
+
+**Give your soap business the attention your craft deserves.** Join early access to follow the development of LatherForge's business tools for makers.
+
+[Explore LatherForge](https://latherforge.com/) · [Join early access](https://latherforge.com/early-access/)
+
+## Your next batch starts with LatherForge
+
+**Choose a recipe. Open the calculator. Keep creating.** LatherForge brings published recipes into its calculator so you can move from inspiration to working with a formula. We tested that connection because the small details matter when you are planning your next batch.
 
 Opening a saved formula should save a maker the trouble of typing the oils again. It also creates a handoff worth testing. A recipe page can look right while passing the wrong preset to the calculator.
 
@@ -24,7 +35,14 @@ For makers, this history answers two practical questions about that release. The
 
 [Browser and build checks](https://github.com/Noel-Culleton/latherforge/pull/10) · [Open the calculator](https://latherforge.com/lye-calculator/)
 
-## How much difference did one Etsy fee correction make for an Irish soap seller?
+
+**Give your soap business the attention your craft deserves.** Join early access to follow the development of LatherForge's business tools for makers.
+
+[Explore LatherForge](https://latherforge.com/) · [Join early access](https://latherforge.com/early-access/)
+
+## Beautiful soap deserves a price that respects your work
+
+**You make beautiful soap. Are you making a profit?** Ingredients, packaging and selling fees all have to come out of the price you charge. LatherForge's pricing tools help you examine the numbers behind a sale. The history below shows why we keep reviewing those numbers.
 
 Take a €12 sale with €5 shipping. Before a November 2026 correction, the LatherForge Etsy calculator estimated €2.27 in fees for the Irish example. After the correction, it estimated €2.79. That 52-cent difference comes straight out of the amount a seller might think is available for ingredients, packaging and their own time.
 
@@ -36,7 +54,14 @@ These are historical example outputs from the November change. A current estimat
 
 [Original before-and-after figures](https://github.com/Noel-Culleton/latherforge/pull/15)
 
-## Why LatherForge published oatmeal soap and held back the honey version
+
+**Give your soap business the attention your craft deserves.** Join early access to follow the development of LatherForge's business tools for makers.
+
+[Explore LatherForge](https://latherforge.com/) · [Join early access](https://latherforge.com/early-access/)
+
+## Crafted with care. Reviewed with purpose. Meet LatherForge
+
+**A growing soap business deserves care behind the scenes as well as at the workbench.** LatherForge's recipe library is developed with recorded review decisions. Here is how one familiar ingredient, honey, changed a publishing decision and prompted further questions.
 
 Two recipes can share an oil blend and still need different evidence. During review of LatherForge's oatmeal and honey formula, the arithmetic could be checked against the supplied oil values. That calculation could not tell us how the honey version would behave in the mould.
 
@@ -47,3 +72,8 @@ There was also a publishing check. The build produced the oatmeal recipe page, i
 This gives a maker a way to read our evidence. A calculator check answers a question about the formula as entered. A build check shows which recipe a visitor can reach. A batch record would answer what happened in the workshop. For this release we have the first two records, and the honey decision remains documented for follow-up.
 
 [Editorial decision and build results](https://github.com/Noel-Culleton/latherforge/pull/11)
+
+
+**Give your soap business the attention your craft deserves.** Join early access to follow the development of LatherForge's business tools for makers.
+
+[Explore LatherForge](https://latherforge.com/) · [Join early access](https://latherforge.com/early-access/)
