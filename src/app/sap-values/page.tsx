@@ -9,8 +9,8 @@ import { OILS, SAP_KOH } from '@/lib/soap'
 const oilCount = Object.keys(OILS).length
 
 export const metadata: Metadata = {
-  title: `SAP Value Chart for Soap Making — NaOH & KOH for ${oilCount} Oils`,
-  description: `Saponification (SAP) values for ${oilCount} soap making oils and butters, for both NaOH (bar soap) and KOH (liquid soap), with a worked example of how to calculate lye.`,
+  title: 'SAP Value Chart: Free NaOH, KOH & KOH 90%',
+  description: `Free SAP value chart for ${oilCount} oils and butters: NaOH, KOH and KOH 90% values with a worked lye example. Find your oil, then use the calculator.`,
   alternates: { canonical: 'https://latherforge.com/sap-values/' }
 }
 

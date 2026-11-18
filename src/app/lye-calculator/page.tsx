@@ -8,8 +8,8 @@ import WaitlistSignup from '@/components/WaitlistSignup'
 import LyeCalculatorClient, { type RecipePreset } from './LyeCalculatorClient'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Soap Calculator — Free Lye Calculator for Soap Making | LatherForge' },
-  description: 'Free soap calculator for cold process, hot process and liquid soap. Enter your oils in grams or ounces and get exact lye (NaOH or KOH) and water amounts with superfat. Works on your phone.',
+  title: { absolute: 'Soap Calculator: Free Lye + Recipe Presets | LatherForge' },
+  description: 'Free lye calculator for soap making: enter your oils in grams or ounces and get NaOH or KOH and water amounts at your superfat. No signup. Calculate now.',
   keywords: ['soap calculator', 'lye calculator', 'soap lye calculator', 'soap making calculator', 'lye calculator for soap making', 'cold process soap calculator', 'NaOH calculator', 'KOH calculator'],
   alternates: { canonical: 'https://latherforge.com/lye-calculator/' },
   openGraph: {
