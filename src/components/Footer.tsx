@@ -25,6 +25,7 @@ export default function Footer() {
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '1rem' }}>Free Tools</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               <Link href="/lye-calculator" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator</Link>
+              <Link href="/etsy-pricing-calculator/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Etsy Pricing Calculator</Link>
               <Link href="/sap-values/" style={{ fontSize: '0.85rem', color: '#A89882' }}>SAP Value Chart</Link>
               {hasRecipes && <Link href="/soap-recipes/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Recipes</Link>}
               <Link href="/app/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Soap Calculator App</Link>
@@ -34,6 +35,7 @@ export default function Footer() {
           <div>
             <p style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#C9A84C', marginBottom: '1rem' }}>Platform</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+              <Link href="/blog/" style={{ fontSize: '0.85rem', color: '#A89882' }}>Blog</Link>
               <Link href="/early-access" style={{ fontSize: '0.85rem', color: '#A89882' }}>Register Interest</Link>
             </div>
           </div>
