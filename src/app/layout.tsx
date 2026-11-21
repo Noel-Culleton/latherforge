@@ -26,7 +26,10 @@ export const metadata: Metadata = {
   },
   // No site-wide robots or canonical: each page sets its own, and the
   // 404 page (not-found.tsx) must not inherit the homepage canonical.
-  verification: { google: 'YucVGN7ueMgFMp80xp8iKOKRY0hGIJkmg6RtaKHuTzQ' },
+  verification: {
+    google: 'YucVGN7ueMgFMp80xp8iKOKRY0hGIJkmg6RtaKHuTzQ',
+    other: { 'p:domain_verify': 'a270959ff7299a3a6c9cc4458b769a96' },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
