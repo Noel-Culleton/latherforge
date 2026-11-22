@@ -14,6 +14,132 @@ export const amazonSearchUrl = (query: string) =>
   `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=${AMAZON_TAG}`
 
 export const posts: Post[] = [
+{
+  "slug": "soap-moulds-cutters-cutting-boards",
+  "title": "Soap Moulds, Cutters & Cutting Boards: A Buying Guide",
+  "description": "Choose silicone soap moulds, loaf cutters and dedicated cutting boards. Compare cavity moulds, cutting boxes and wire cutters before shopping on Amazon US.",
+  "date": "2026-11-22",
+  "readTime": "8 min read",
+  "category": "Buying Guides",
+  "sections": [
+    {
+      "text": "Start with the bar shape and batch size you want, then choose a mould. Buy a cutter only if you need to slice a loaf. For a first batch, a simple cavity mould or supported silicone loaf mould is usually a more practical purchase than a large production cutter. This guide compares equipment types and what to check; it does not claim that we have tested individual Amazon products."
+    },
+    {
+      "heading": "Which setup suits you?",
+      "items": [
+        "No cutting: silicone cavity moulds make individual bars.",
+        "Flexible bar thickness: a supported silicone loaf mould, straight cutter and dedicated board.",
+        "More repeatable slices: a cutting box with a guide, or an adjustable single-wire cutter.",
+        "Regular larger batches: consider a multi-wire cutter after checking loaf dimensions and replacement-wire availability."
+      ]
+    },
+    {
+      "heading": "Silicone cavity moulds",
+      "text": "Choose simple shapes with a broad opening for easier unmoulding. Read the cavity dimensions rather than relying on photographs. Check that the manufacturer specifies suitability for your soap process and its temperatures. Support flexible moulds on a stable tray before pouring. Individual cavities also avoid the need to cut a salt-soap loaf.",
+      "shop": {
+        "label": "Browse silicone cavity moulds on Amazon US",
+        "query": "silicone rectangle soap cavity mold"
+      }
+    },
+    {
+      "heading": "Supported silicone loaf moulds",
+      "text": "A removable silicone liner inside a rigid support helps the sides keep their shape. Check internal length, width and depth, and whether the listing’s capacity refers to finished soap or oils. Those are not interchangeable. Leave working headroom and size your recipe for the actual mould.",
+      "shop": {
+        "label": "Browse supported silicone loaf moulds on Amazon US",
+        "query": "silicone soap loaf mold wooden support box"
+      }
+    },
+    {
+      "heading": "Soap cutting boards",
+      "text": "Choose a flat, washable, non-slip board that is wider and longer than your loaf. A plain polypropylene or polyethylene board is a practical dedicated cutting surface. Keep it for soap, separate from food preparation, and replace it if deep grooves make cleaning difficult. A board’s suitability for cutting does not make it a container for hot lye solution. A wooden cutting box is a guide, not necessarily a washable cutting surface.",
+      "shop": {
+        "label": "Browse soap cutting boards on Amazon US",
+        "query": "polypropylene cutting board non slip"
+      }
+    },
+    {
+      "heading": "Straight soap cutters",
+      "text": "A straight blade is a simple starting point for slicing a loaf. Check that the blade spans the full width and that the handle gives a secure grip. A ruler and guide help you repeat bar thickness. Keep fingers clear of the blade and cut on a stable surface. A decorative crinkle cutter is optional rather than a necessary first purchase.",
+      "shop": {
+        "label": "Browse straight soap cutters on Amazon US",
+        "query": "stainless steel straight soap cutter"
+      }
+    },
+    {
+      "heading": "Soap cutting boxes",
+      "text": "A guided box helps keep cuts square. Compare its usable width and height with your actual loaf, not the outside dimensions of the mould. Check whether the cutter is included, how bar thickness is set and whether the cutting surface can be cleaned. Avoid a bundle if its mould and cutter dimensions are not stated.",
+      "shop": {
+        "label": "Browse soap cutting boxes on Amazon US",
+        "query": "soap cutting box adjustable thickness guide"
+      }
+    },
+    {
+      "heading": "Single-wire soap cutters",
+      "text": "An adjustable stop can help produce repeatable bars. Check maximum loaf height and width, frame stability, wire tension adjustment and the availability of replacement wires. Follow the cutter manufacturer’s instructions for soap type and cutting time; do not force a wire through a loaf that has become too hard.",
+      "shop": {
+        "label": "Browse single-wire soap cutters on Amazon US",
+        "query": "single wire soap cutter adjustable"
+      }
+    },
+    {
+      "heading": "Multi-wire soap cutters",
+      "text": "Useful when you repeatedly cut the same loaf size and bar thickness. They take more storage space and may lock you into a fixed spacing. Check the number of bars per cut, usable loaf length, wire spacing and replacement parts before paying for the upgrade. For occasional small batches, a simpler cutter can be enough.",
+      "shop": {
+        "label": "Browse multi-wire soap cutters on Amazon US",
+        "query": "multi wire soap cutter"
+      }
+    },
+    {
+      "heading": "Check dimensions before buying",
+      "items": [
+        "Mould: internal length, width, depth and manufacturer’s capacity definition.",
+        "Board: enough room to support the loaf and the cut bars without overhang.",
+        "Cutter: maximum loaf width and height; guide spacing or adjustable stop.",
+        "Cleaning: removable parts and accessible corners.",
+        "Compatibility: manufacturer guidance for cold process, melt and pour or harder speciality bars."
+      ]
+    },
+    {
+      "heading": "Starting from nothing?",
+      "text": "Choose your soap process before buying a bundle. Equipment-only sets often omit ingredients, scales and protective equipment.",
+      "link": {
+        "href": "/blog/best-soap-making-kits-for-beginners/",
+        "label": "Compare beginner starter-kit options"
+      }
+    },
+    {
+      "heading": "Complete the workbench",
+      "text": "Scales, mixing tools and protective equipment come before decorative finishing tools.",
+      "link": {
+        "href": "/blog/soap-making-tools/",
+        "label": "See the essential equipment checklist"
+      }
+    },
+    {
+      "heading": "Further reading",
+      "text": "Compare the supplier guidance with the specifications of the exact item you buy. Amazon search results can include unsuitable products and sponsored listings.",
+      "link": {
+        "href": "https://www.brambleberry.com/shop-by-product/tools-and-accessories/tools",
+        "label": "Bramble Berry: soap-making tools and equipment"
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a soap cutter for my first batch?",
+      "a": "Not if you use individual cavity moulds. A loaf needs cutting; a suitable straight cutter and dedicated stable board are a simpler starting point than a multi-wire cutter."
+    },
+    {
+      "q": "Can I use a kitchen cutting board for soap?",
+      "a": "Choose a suitable washable board and dedicate it to soap making. Do not alternate between soap and food preparation. Check that its size and grip suit your cutting setup."
+    },
+    {
+      "q": "Is a mould’s advertised weight the amount of oils to use?",
+      "a": "Not necessarily. Some sellers state finished soap capacity and others state oil weight. Check the manufacturer’s definition and dimensions before sizing your recipe."
+    }
+  ]
+},
   {
     slug: 'lye-calculator-guide',
     title: 'How to Use a Lye Calculator for Cold Process Soap',
@@ -526,12 +652,16 @@ export const posts: Post[] = [
   },
   {
     slug: 'soap-making-tools',
-    title: '10 Soap Making Tools You Actually Need (and 5 You Don’t)',
+    title: 'Soap Making Equipment: Starter Kits, Moulds & Tools',
     description: 'The essential cold process soap making equipment for beginners: safety gear, a digital scale, stick blender, lye-safe containers and moulds. Plus five things to skip, including aluminium and vinegar.',
-    date: '2026-11-08',
-    readTime: '7 min read',
+    date: '2026-11-22',
+    readTime: '10 min read',
     category: 'Beginner Guides',
     sections: [
+{"heading":"Shop by project","text":"Choose a starter kit for a first project, or buy only the missing tools below. The shopping buttons open Amazon US results using our affiliate links. Availability, delivery and suitability vary by seller; we have not tested the individual listings.","link":{"href":"/blog/best-soap-making-kits-for-beginners/","label":"Choose a beginner soap-making starter kit"}},
+{"heading":"Moulds, cutters and cutting boards","text":"Compare individual cavity moulds, supported loaf moulds, straight blades and wire cutters. Match the cutter to your mould dimensions before ordering.","link":{"href":"/blog/soap-moulds-cutters-cutting-boards/","label":"Read the mould, cutter and cutting-board buying guide"}},
+{"heading":"Dedicated cutting boards","text":"For slicing soap loaves, look for a flat washable board with a stable non-slip base and enough room for the full loaf. Keep it dedicated to soap rather than food. Buy this only if you plan to cut bars; individual cavity moulds do not need it.","shop":{"label":"Browse dedicated cutting boards on Amazon US","query":"polypropylene cutting board non slip"}},
+{"heading":"Soap loaf cutters","text":"Start with a straight cutter and a guide if you need even slices. Check usable width, height and cleaning access. Save a multi-wire cutter for regular batches that justify the cost and storage space.","shop":{"label":"Browse soap loaf cutters on Amazon US","query":"soap loaf cutter straight blade guide"}},
       {
         text: "You don't need a craft room full of gadgets to make cold process soap. You need ten things, most of which you may already have, and you need to avoid a few common mistakes. Here is the short list."
       },
@@ -544,7 +674,7 @@ export const posts: Post[] = [
         ]
       },
       { heading: '1. Safety Goggles', text: 'Lye solution in the eye is a medical emergency. Wear goggles, not just glasses, every time you handle lye or raw soap batter.', shop: { label: 'Browse chemical splash goggles on Amazon', query: 'chemical splash safety goggles' } },
-      { heading: '2. Chemical-Resistant Gloves', text: 'Nitrile gloves protect your hands from lye solution and fresh soap batter, which stays caustic until it has saponified. Add long sleeves.', shop: { label: 'Browse nitrile gloves on Amazon', query: 'nitrile gloves' } },
+      { heading: '2. Chemical-Resistant Gloves', text: 'Choose chemical-resistant gloves using the lye supplier’s safety data and the glove manufacturer’s compatibility guidance. Material, thickness and contact time matter; do not assume any disposable nitrile glove is suitable. Add long sleeves.', shop: { label: 'Browse nitrile gloves on Amazon', query: 'nitrile gloves' } },
       { heading: '3. Digital Scale', text: 'Soap making is measured by weight, not volume. A digital kitchen scale that reads in grams is essential, and a scale that measures in 1 g steps or finer is better for small batches. Weigh the water too.', shop: { label: 'Browse digital scales (grams) on Amazon', query: 'digital kitchen scale grams 0.1g' } },
       { heading: '4. Stick Blender', text: 'A stick (immersion) blender brings soap to trace in minutes instead of the hour or more it takes by hand. Keep it for soap only.', link: { href: '/blog/best-stick-blenders-for-soap-making/', label: 'See our 7 best stick blenders for soap making' }, shop: { label: 'Browse stick blenders on Amazon', query: 'stick immersion blender' } },
       { heading: '5. Lye-Safe Container', text: 'Mix your lye solution in heavy-duty plastic marked with recycling code 5 (PP) or in stainless steel. Lye solution gets very hot, so choose something sturdy with a handle.', shop: { label: 'Browse PP #5 plastic pitchers on Amazon', query: 'polypropylene pitcher pp5 heavy duty' } },
@@ -564,7 +694,7 @@ export const posts: Post[] = [
           'Wooden spoons for mixing lye: lye breaks down wood over time, and it can splinter into your soap',
           'Glass for mixing lye: many soap makers avoid it, because the heat can crack it and lye can weaken glass over time',
           'Vinegar for lye splashes: rinse skin with plenty of cool running water instead, and get medical help for eyes or serious burns',
-          'Expensive all-in-one kits: they often come with small amounts and tools you will replace. Buy the essentials separately'
+          'Bundles without a clear contents list: compare the complete cost and suitability of the pieces you will actually use'
         ]
       },
       {
@@ -905,113 +1035,110 @@ export const posts: Post[] = [
     ]
   },
   {
-    slug: 'best-soap-making-kits-for-beginners',
-    title: 'Best Soap Making Kits for Beginners: 2026 Gift Guide',
-    description: 'The best soap making kits for beginners in 2026, melt and pour and cold process: Bramble Berry, Craftzee, Makesy, Hinkler and VEVOR. Which type to choose, what a good kit includes, safety, and gift tips.',
-    date: '2026-11-08',
-    readTime: '9 min read',
-    category: 'Gift Guides',
-    sections: [
-      {
-        text: 'A soap making kit is a brilliant gift, but there are two very different kinds. Melt and pour kits are safe and easy for almost anyone. Cold process kits make soap from scratch with lye and are for adults who want the real craft. We picked these seven from kits that appear in Google’s top shopping results with strong ratings in November 2026. We have not tested them ourselves, and prices are as listed at the time of writing, so check the current price before you buy. If you make soap to sell rather than buying a kit as a present, see our guide to soap gift sets.'
-      },
-      {
-        heading: 'Quick picks',
-        items: [
-          'Best cold process kit overall: Bramble Berry Natural Soap Kit for Beginners',
-          'Best value cold process kit: Bramble Berry Beginner’s Cold Process Soap Kit',
-          'Best melt and pour kit: Craftzee Large Soap Making Kit',
-          'Best stylish melt and pour gift: Makesy soap making kits',
-          'Best budget melt and pour kit: Bramble Berry Raspberry Vanilla Soap Starter Kit',
-          'Best family craft gift: Hinkler Create Your Own Deluxe Soap Kit',
-          'Best budget tool set: VEVOR Soap Making Kit'
-        ]
-      },
-      {
-        heading: 'Melt and Pour or Cold Process?',
-        items: [
-          'Melt and pour: you melt a ready-made soap base, add colour and scent, and pour. No lye handling, ready to use once it sets. Best for children (with adult help), quick gifts and total beginners',
-          'Cold process: you make soap from oils and lye. More creative control and a true handmade bar, but it needs safety gear, accurate weighing and a 4 to 6 week cure. Adults only',
-          'Not sure? Start with melt and pour. You can always move on to cold process later'
-        ]
-      },
-      {
-        heading: '1. Bramble Berry Natural Soap Kit for Beginners',
-        text: 'Rated 4.8 stars from 42 reviews in Google Shopping (November 2026), at about $99.99. A cold process kit; a reviewer on Bramble Berry’s site says it includes clear instructions, all the ingredients, a mould, a scale and some safety gear. Bramble Berry sells it directly; check Amazon too.',
-        shop: { label: 'Check price on Amazon', query: 'Bramble Berry cold process soap making kit beginners' }
-      },
-      {
-        heading: '2. Bramble Berry Beginner’s Cold Process Soap Kit',
-        text: 'Rated 4.7 stars from 41 reviews, at about $69.99. Reviewers mention an easy-to-follow recipe and easy-to-measure ingredients. A lower-cost way into cold process soap.',
-        shop: { label: 'Check price on Amazon', query: 'Bramble Berry beginner cold process soap kit' }
-      },
-      {
-        heading: '3. Craftzee Large Soap Making Kit',
-        text: 'A melt and pour kit with a shea butter soap base, rated 4.6 stars from 73 reviews, at about $99.99. Reviewers say it comes with everything needed to get started. A generous gift for someone who wants to make lots of bars.',
-        shop: { label: 'Check price on Amazon', query: 'Craftzee soap making kit shea butter' }
-      },
-      {
-        heading: '4. Makesy Soap Making Kits',
-        text: 'Makesy ranks on Google’s first page for beginner melt and pour kits, with premium bases, colours and fragrances. Like Makesy’s candle kits, they are designed to look good, which makes them a strong gift.',
-        shop: { label: 'Check price on Amazon', query: 'Makesy soap making kit melt and pour' }
-      },
-      {
-        heading: '5. Bramble Berry Raspberry Vanilla Soap Starter Kit',
-        text: 'A budget melt and pour kit at about $29.99, rated 5 stars from 3 reviews. A reviewer notes you do not need a scale. A simple, affordable first try.',
-        shop: { label: 'Check price on Amazon', query: 'Bramble Berry melt and pour soap starter kit' }
-      },
-      {
-        heading: '6. Hinkler Create Your Own Deluxe Soap Kit',
-        text: 'A craft-style soap kit at about $38.99, rated 4.8 stars from 6 reviews. A fun family or teen gift; check the box for the recommended age and what is included.',
-        shop: { label: 'Check price on Amazon', query: 'Hinkler Create Your Own Deluxe Soap Kit' }
-      },
-      {
-        heading: '7. VEVOR Soap Making Kit',
-        text: 'A budget tool set at about $21.76, rated 4.8 stars from 35 reviews: a bamboo cutting box, silicone mould, straight and wavy cutters, bags and stickers. It is equipment rather than ingredients, so it suits someone who already has soap base or makes cold process soap.',
-        shop: { label: 'Check price on Amazon', query: 'VEVOR soap making kit cutting box silicone mold' }
-      },
-      {
-        heading: 'Soap Making Safety',
-        items: [
-          'Cold process kits contain lye (sodium hydroxide): adults only, with goggles, gloves and long sleeves',
-          'Always add lye to water, never water to lye, and work somewhere well ventilated',
-          'If lye splashes on skin, rinse with plenty of cool running water',
-          'Melt and pour base gets hot: an adult should melt and pour it for children',
-          'Keep all soap making supplies away from food areas and out of reach of children and pets'
-        ]
-      },
-      {
-        heading: 'Gift Tips',
-        items: [
-          'Order early in November and December, as popular kits sell out',
-          'Add a stick blender for a cold process soap maker, or extra soap base for a melt and pour fan',
-          'Pair the kit with our free printable soap batch journal so they can record every batch'
-        ],
-        link: { href: '/free-soap-journal/', label: 'Download the free printable soap batch journal' }
-      },
-      {
-        heading: 'More Guides',
-        items: [
-          'Best stick blenders for soap making',
-          '10 soap making tools you actually need',
-          'Best candle making kits for beginners'
-        ],
-        link: { href: '/blog/best-candle-making-kits-for-beginners/', label: 'Best Candle Making Kits for Beginners: 2026 Gift Guide' }
-      },
-      {
-        heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers of soap, candles, bath bombs and skincare, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place, and our free soap calculator works out lye for any cold process recipe. The first 300 people on the waitlist get 3 months free, with no card needed to start.',
-        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: first 300 get 3 months free' }
-      },
-      { text: 'Information only. Picks are based on published ratings, reviews and search results named above, not our own testing. Prices, contents and availability change; check current details and reviews before you buy. Always follow the kit instructions and lye safety guidance.' }
-    ],
-    faqs: [
-      { q: 'What is the best soap making kit for beginners?', a: 'For an easy start, choose a melt and pour kit such as Craftzee or Makesy. For real from-scratch soap, Bramble Berry’s Natural Soap Kit for Beginners is one of the highest-rated cold process kits in 2026.' },
-      { q: 'What is the difference between melt and pour and cold process soap kits?', a: 'Melt and pour kits use a ready-made soap base that you melt, scent and pour, with no lye handling. Cold process kits make soap from oils and lye, need safety gear and accurate weighing, and the bars must cure for 4 to 6 weeks.' },
-      { q: 'Are soap making kits safe for kids?', a: 'Melt and pour kits can be a fun family activity if an adult melts and pours the hot base. Cold process kits use lye and are for adults only.' },
-      { q: 'Do soap making kits make good Christmas gifts?', a: 'Yes. They are one of the most searched craft gifts in November and December. Order early, check what is included, and consider adding extra base or a stick blender.' }
-    ]
-  },
+  "slug": "best-soap-making-kits-for-beginners",
+  "title": "Soap Making Starter Kits: What Beginners Should Buy",
+  "description": "Choose a melt-and-pour kit, a cold-process starter setup or a mould-and-cutter set. Compare contents, missing essentials and Amazon US shopping options.",
+  "date": "2026-11-22",
+  "readTime": "8 min read",
+  "category": "Buying Guides",
+  "sections": [
+    {
+      "text": "The best starter kit is the one that matches the soap you want to make. For an easy first project, choose a melt-and-pour kit with soap base and instructions. To make soap from oils, choose a cold-process setup with accurate weighing and suitable protective equipment. A mould-and-cutter bundle is only equipment: it may contain no soap ingredients at all. This is a buying checklist, not a hands-on ranking of individual products."
+    },
+    {
+      "heading": "Choose your starting point",
+      "items": [
+        "First craft project or gift: melt-and-pour base, a simple silicone mould and clear instructions.",
+        "Soap from scratch: a cold-process recipe, its exact ingredients, scales, protective equipment and compatible mixing tools.",
+        "Already making soap: a mould-and-cutter bundle can be useful if its dimensions match your batches.",
+        "Compare the whole basket, including delivery and missing equipment, rather than the number of pieces printed on the box. If you are choosing between soap and candle making kits as a gift, read our separate candle guide too."
+      ]
+    },
+    {
+      "heading": "Melt-and-pour starter kits",
+      "text": "Look for the weight and ingredient list of the included soap base, a reusable mould, skin-use colourants and fragrance with usage instructions. Confirm whether a heat-safe melting container and thermometer are supplied. Hot melted base needs careful handling; follow the kit’s age guidance and supervise children. Skip bundles that do not identify their soap base or provide instructions.",
+      "shop": {
+        "label": "Browse melt-and-pour starter kits on Amazon US",
+        "query": "melt and pour soap making starter kit soap base silicone mold"
+      }
+    },
+    {
+      "heading": "Cold-process starter kits",
+      "text": "Look for a complete, weight-based recipe and a clear contents list. Check whether sodium hydroxide, oils, a scale and protective equipment are actually included; shipping restrictions and seller bundles vary. Do not assume a craft kit is suitable for handling lye. If you change any oils or batch quantities, recalculate the recipe before making it.",
+      "items": [
+        "Check chemical-splash goggles and gloves against the lye supplier’s safety data.",
+        "Check containers for both heat resistance and compatibility with sodium hydroxide at the concentration used.",
+        "Keep the tools dedicated to soap making. Allow the recipe’s full cure time before use."
+      ],
+      "shop": {
+        "label": "Browse cold-process starter kits on Amazon US",
+        "query": "cold process soap making starter kit"
+      }
+    },
+    {
+      "heading": "Mould-and-cutter starter sets",
+      "text": "A silicone loaf liner, supporting box and straight cutter are a practical equipment combination. Check the mould’s internal dimensions, the cutter’s maximum loaf width and whether a cutting guide is included. Small bags, stickers and decorative pieces can make a set look larger without supplying essential tools.",
+      "shop": {
+        "label": "Browse mould-and-cutter starter sets on Amazon US",
+        "query": "soap making silicone loaf mold wooden box cutter set"
+      }
+    },
+    {
+      "heading": "Build your own starter basket",
+      "items": [
+        "Melt and pour: base, mould, suitable melting container, spatula and thermometer; add fragrance only with documented usage guidance.",
+        "Cold process: goggles, suitable gloves, accurate scale, compatible lye container, stainless mixing vessel, immersion blender, spatula, thermometer and mould.",
+        "Use a calculator and a documented beginner recipe. Colourants, stamps, packaging and a multi-bar cutter can wait."
+      ]
+    },
+    {
+      "heading": "Buy only the missing pieces",
+      "text": "Use the equipment guide to compare scales, blenders, moulds, cutting boards and cutters before adding duplicates to your basket.",
+      "link": {
+        "href": "/blog/soap-making-tools/",
+        "label": "See the soap-making equipment buying guide"
+      }
+    },
+    {
+      "heading": "Choose a mould that fits",
+      "text": "A cavity mould removes the cutting step; a loaf mould gives you more control over bar thickness.",
+      "link": {
+        "href": "/blog/soap-moulds-cutters-cutting-boards/",
+        "label": "Compare moulds, cutters and cutting boards"
+      }
+    },
+    {
+      "heading": "Plan the first batch",
+      "text": "Write down your ingredients, quantities and observations so that your second batch is easier to repeat. For presentation ideas after the soap is ready, see our guide to soap gift sets.",
+      "link": {
+        "href": "/free-soap-journal/",
+        "label": "Download the free soap batch journal"
+      }
+    },
+    {
+      "heading": "Supplier example: what a contents list should show",
+      "text": "Bramble Berry’s Melt and Pour Beginner Creator Kit lists its soap bases, moulds, colourants, fragrances and equipment separately. Use that level of detail as a checklist when comparing any seller. This is a supplier reference, not a claim that the same kit is stocked on Amazon.",
+      "link": {
+        "href": "https://www.brambleberry.com/shop-by-product/kits/soap-making/melt-and-pour-beginner-creator-kit/V700115.html",
+        "label": "View the supplier’s kit contents and instructions"
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does a soap-making kit include lye?",
+      "a": "Some cold-process kits do; many equipment bundles and melt-and-pour kits do not. Read the exact seller’s contents list. Melt-and-pour uses prepared soap base and does not require you to mix lye."
+    },
+    {
+      "q": "Should I buy a kit or separate tools?",
+      "a": "A kit is convenient when its contents match your project. Separate tools can be a better fit when you already own suitable dedicated equipment. Compare the complete delivered cost, including missing items."
+    },
+    {
+      "q": "Are these Amazon product reviews?",
+      "a": "No. These are buying criteria and links to Amazon US search results. We have not tested the individual listings and do not quote live prices or ratings."
+    }
+  ]
+},
   {
     slug: 'soap-making-supplies-australia',
     title: 'Soap Making Supplies in Australia: Caustic Soda, Oils and Moulds',

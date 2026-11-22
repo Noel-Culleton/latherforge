@@ -14,6 +14,7 @@ const rule = (href: string, terms: string[]): LinkRule => ({
 })
 
 const BASE_RULES: LinkRule[] = [
+  rule('/blog/soap-moulds-cutters-cutting-boards/', ['soap cutting boards', 'soap cutters', 'soap moulds', 'soap molds']),
   rule('/cpsr-for-soap/', ['CPSR', 'Cosmetic Product Safety Report', 'safety assessment']),
   rule('/sap-values/', ['SAP values', 'SAP value', 'saponification values', 'saponification value']),
   rule('/lye-calculator/', ['lye calculator', 'soap calculator']),

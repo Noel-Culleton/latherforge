@@ -20,10 +20,11 @@ export default function NavClient({ hasRecipes }: { hasRecipes: boolean }) {
             </svg>
             <span style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '1.4rem', fontWeight: 600, color: '#5C3D2E', letterSpacing: '0.02em' }}>LatherForge</span>
           </Link>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="desktop-nav">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.1rem' }} className="desktop-nav">
             <Link href="/lye-calculator" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Free Soap Calculator</Link>
             <Link href="/etsy-pricing-calculator/" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Etsy Pricing</Link>
             {hasRecipes && <Link href="/soap-recipes/" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Recipes</Link>}
+            <Link href="/blog/soap-making-tools/" style={{ fontSize: '0.85rem', fontWeight: 500, color: '#7A6E62' }}>Equipment</Link>
             <Link href="/blog" style={{ fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7A6E62' }}>Blog</Link>
             <Link href="/early-access" className="btn-primary" style={{ padding: '0.65rem 1.5rem', fontSize: '0.8rem' }}>Get Early Access</Link>
           </div>
@@ -43,13 +44,14 @@ export default function NavClient({ hasRecipes }: { hasRecipes: boolean }) {
             <Link href="/etsy-pricing-calculator/" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Etsy Pricing Calculator</Link>
             {hasRecipes && <Link href="/soap-recipes/" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Recipes</Link>}
             <Link href="/sap-values/" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>SAP Value Chart</Link>
+            <Link href="/blog/soap-making-tools/" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Shop Soap Equipment</Link>
             <Link href="/blog" onClick={() => setOpen(false)} style={{ fontSize: '0.9rem', fontWeight: 500, color: '#5C3D2E' }}>Blog</Link>
             <Link href="/early-access" onClick={() => setOpen(false)} className="btn-primary" style={{ textAlign: 'center', padding: '0.85rem' }}>Get Early Access</Link>
           </div>
         )}
       </nav>
       <style>{`
-        @media (max-width: 860px) {
+        @media (max-width: 1100px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
         }
