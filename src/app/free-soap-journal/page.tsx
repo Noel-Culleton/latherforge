@@ -88,7 +88,7 @@ export default function FreeSoapJournalPage() {
             <div style={{ ...CARD, marginTop: '2.5rem' }}>
               <h2 style={{ fontSize: '1.4rem', color: '#3E2820', marginBottom: '0.5rem' }}>Rather not do it on paper?</h2>
               <p style={{ fontSize: '0.92rem', color: '#5C4A3A', lineHeight: 1.7, marginBottom: '1.25rem' }}>
-                LatherForge keeps these records for you: recipes, batches, stock and cost per bar, all in one place. It launches on 1 January 2027. Leave your details and we&apos;ll email you when it opens. The first 300 sign-ups get 3 months free, with no card needed to start.
+                LatherForge keeps these records for you: recipes, batches, stock and cost per bar, all in one place. It launches on 1 January 2027. Leave your details and we&apos;ll email you when it opens. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.
               </p>
               <iframe
                 aria-label="LatherForge launch sign-up"

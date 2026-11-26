@@ -46,7 +46,7 @@ export default function EarlyAccessPage() {
               <em style={{ color: '#C9A84C', fontStyle: 'italic' }}>LatherForge</em>
             </h1>
             <p style={{ color: '#C9B49A', maxWidth: '500px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.75, fontWeight: 300 }}>
-              Register your interest today. The first 300 people to sign up get 3 months free access and founding member pricing when we launch.
+              Register your interest today. Everyone who signs up by 27 December 2026 gets 3 months free access and founding member pricing when we launch.
             </p>
           </div>
         </section>
@@ -78,7 +78,7 @@ export default function EarlyAccessPage() {
               </div>
 
               <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
-                The 3 months free is limited to the first 300 sign-ups. No card is needed to start; to keep using LatherForge after the 3 months, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
+                The 3 months free is for everyone who signs up by 27 December 2026. Anyone who signs up after that gets 14 days free when we launch. No card is needed to start; to keep using LatherForge after your free period, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
                 No spam. No selling your data. Just a single email when we launch.{' '}
                 See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
               </p>
@@ -96,7 +96,7 @@ export default function EarlyAccessPage() {
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', textAlign: 'center' }}>
               {[
-                { icon: '🎁', title: '3 Months Free', desc: 'For the first 300 sign-ups. No card needed to start' },
+                { icon: '🎁', title: '3 Months Free', desc: 'For everyone who signs up by 27 December 2026. No card needed to start' },
                 { icon: '💎', title: 'Founding Pricing', desc: 'Locked-in rate for life — never pay more than founding members' },
                 { icon: '🚀', title: 'Early Access', desc: 'Get in before the public launch in January 2027' },
                 { icon: '🗺️', title: 'Shape the Product', desc: 'Your feedback directly influences what we build next' }
