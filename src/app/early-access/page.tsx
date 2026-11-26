@@ -42,11 +42,11 @@ export default function EarlyAccessPage() {
               fontFamily: 'Cormorant Garamond, serif', fontWeight: 500,
               color: '#FAF7F2', lineHeight: 1.15, marginBottom: '1.25rem'
             }}>
-              Get 3 Months Free on<br />
-              <em style={{ color: '#C9A84C', fontStyle: 'italic' }}>LatherForge</em>
+              Keep your soap recipes, batches<br />
+              <em style={{ color: '#C9A84C', fontStyle: 'italic' }}>and costs together</em>
             </h1>
             <p style={{ color: '#C9B49A', maxWidth: '500px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.75, fontWeight: 300 }}>
-              Sign up by 27 December 2026 and get 3 months of the Craft Pack free when LatherForge goes live on 1 January 2027, plus founding member pricing. No card needed to start.
+              LatherForge helps soap makers manage recipes, track batches and know the cost of every bar. Join now and we’ll email you when it opens on 1 January 2027.
             </p>
           </div>
         </section>
@@ -58,10 +58,10 @@ export default function EarlyAccessPage() {
             <div style={{ minWidth: 0 }}>
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#3E2820', marginBottom: '0.75rem' }}>
-                  Claim your 3 free months
+                  Join LatherForge
                 </h2>
                 <p style={{ color: '#7A6E62', lineHeight: 1.7 }}>
-                  Fill in the form below. We will email you the moment LatherForge opens on 1 January 2027.
+                  Leave your details below to join the launch list. Sign up by 27 December for 3 months of the Craft Pack free; later signups get 14 days free. No card needed to start.
                 </p>
               </div>
 
