@@ -636,7 +636,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Track Every Batch in LatherForge',
-        text: "Most of these problems are solved by knowing exactly what you did last time. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start.",
+        text: "Most of these problems are solved by knowing exactly what you did last time. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.",
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       {
@@ -704,7 +704,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'One More Tool: Somewhere to Keep Your Records',
-        text: "Paper works (try our free printable batch journal). If you would rather keep it digital, LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start.",
+        text: "Paper works (try our free printable batch journal). If you would rather keep it digital, LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.",
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional or medical advice. Always follow lye safety guidance and keep lye away from children and pets.' }
@@ -759,7 +759,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Cost Your Oils Properly',
-        text: "Oil prices change, and so does your real cost per bar. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start.",
+        text: "Oil prices change, and so does your real cost per bar. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.",
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Always run your recipe through a soap calculator and follow lye safety guidance.' }
@@ -816,7 +816,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Keep Your Fragrance Records Together',
-        text: "Every fragrance change is a new formula, with its own allergens and records. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start.",
+        text: "Every fragrance change is a new formula, with its own allergens and records. LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you are not juggling paper notes and spreadsheets. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.",
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional, legal or medical advice. Some essential oils are not suitable for everyone; follow your supplier’s safety guidance.' }
@@ -914,8 +914,8 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you know exactly what worked and what each bar costs. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start.',
-        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: 3 months free if you join by 27 December' }
+        text: 'LatherForge is our own soap business app, launching on 1 January 2027. It keeps your recipes, batches, ingredient stock and cost per bar in one place, so you know exactly what worked and what each bar costs. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: 3 months free on the Craft Pack if you join by 27 December' }
       },
       { text: 'Information only. Recommendations are based on the published reviews and soap maker forums named above, not our own lab testing. Prices and models change, so check current details and reviews on Amazon before you buy. Always follow lye safety guidance.' }
     ],
@@ -1022,8 +1022,8 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers of soap, candles, bath bombs and skincare, launching on 1 January 2027. It keeps your recipes, batches, stock and true cost per item in one place, so you know what every candle really costs to make. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start.',
-        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: 3 months free if you join by 27 December' }
+        text: 'LatherForge is our own app for makers of soap, candles, bath bombs and skincare, launching on 1 January 2027. It keeps your recipes, batches, stock and true cost per item in one place, so you know what every candle really costs to make. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.',
+        link: { href: '/early-access/', label: 'Join the LatherForge waitlist: 3 months free on the Craft Pack if you join by 27 December' }
       },
       { text: 'Information only. Picks are based on the published reviews, ratings and search results named above, not our own testing. Prices, contents and availability change; check current details and reviews before you buy. Follow the kit instructions and candle safety guidance.' }
     ],
@@ -1184,7 +1184,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional or safety advice. Supplier details come from each business’s own description or are marked as personal reports; check current details before you buy. Always follow lye safety guidance: goggles, gloves, and caustic soda into water, never water into caustic soda.' }
@@ -1244,7 +1244,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional or safety advice. Seller details come from each seller’s own product page; prices, stock and delivery change, so check before you buy. Always follow lye safety guidance.' }
@@ -1308,7 +1308,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not legal or professional advice. Based on Health Canada’s published guidance; rules change, so check Health Canada’s cosmetics pages before you sell. Always follow lye safety guidance when making soap.' }
@@ -1375,7 +1375,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional or medical advice. Always follow lye safety guidance: goggles, gloves, and lye into water, never water into lye.' }
@@ -1428,7 +1428,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional or medical advice. Always run your own recipe through a lye calculator and follow lye safety guidance.' }
@@ -1485,7 +1485,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not professional advice. Always follow lye safety guidance: goggles, gloves, and lye into water, never water into lye.' }
@@ -1545,7 +1545,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.',
+        text: 'LatherForge is our own app for makers, launching on 1 January 2027. It keeps your recipes, batches, stock and cost per bar in one place. Sign up by 27 December 2026 to get 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist' }
       },
       { text: 'Information only. Not legal or professional advice. Labelling and safety rules depend on where you sell.' }

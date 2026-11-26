@@ -5,8 +5,8 @@ import Footer from '@/components/Footer'
 import AppPreview from '@/components/AppPreview'
 
 export const metadata: Metadata = {
-  title: 'Register Your Interest — LatherForge',
-  description: 'Be among the first to access LatherForge — the AI-powered business platform for handmade soap makers. Launching January 2027. Register your interest today.',
+  title: 'Get 3 Months Free — LatherForge Early Access',
+  description: 'Be among the first to access LatherForge — the AI-powered business platform for handmade soap makers. Launching January 2027. Sign up by 27 December 2026 for 3 months free on the Craft Pack.',
   alternates: { canonical: 'https://latherforge.com/early-access/' }
 }
 
@@ -42,11 +42,11 @@ export default function EarlyAccessPage() {
               fontFamily: 'Cormorant Garamond, serif', fontWeight: 500,
               color: '#FAF7F2', lineHeight: 1.15, marginBottom: '1.25rem'
             }}>
-              Be First to Access<br />
+              Get 3 Months Free on<br />
               <em style={{ color: '#C9A84C', fontStyle: 'italic' }}>LatherForge</em>
             </h1>
             <p style={{ color: '#C9B49A', maxWidth: '500px', margin: '0 auto', fontSize: '1.05rem', lineHeight: 1.75, fontWeight: 300 }}>
-              Register your interest today. Everyone who signs up by 27 December 2026 gets 3 months free access and founding member pricing when we launch.
+              Sign up by 27 December 2026 and get 3 months of the Craft Pack free when LatherForge goes live on 1 January 2027, plus founding member pricing. No card needed to start.
             </p>
           </div>
         </section>
@@ -58,10 +58,10 @@ export default function EarlyAccessPage() {
             <div style={{ minWidth: 0 }}>
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#3E2820', marginBottom: '0.75rem' }}>
-                  Register Your Interest
+                  Claim your 3 free months
                 </h2>
                 <p style={{ color: '#7A6E62', lineHeight: 1.7 }}>
-                  Fill in the form below. We will email you the moment LatherForge opens its doors.
+                  Fill in the form below. We will email you the moment LatherForge opens on 1 January 2027.
                 </p>
               </div>
 
@@ -78,7 +78,7 @@ export default function EarlyAccessPage() {
               </div>
 
               <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#9A8878' }}>
-                The 3 months free is for everyone who signs up by 27 December 2026. Anyone who signs up after that gets 14 days free when we launch. No card is needed to start; to keep using LatherForge after your free period, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
+                The 3 months free on the Craft Pack is for everyone who signs up by 27 December 2026. Anyone who signs up after that gets 14 days free when we launch. No card is needed to start; to keep using LatherForge after your free period, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
                 No spam. No selling your data. Just a single email when we launch.{' '}
                 See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
               </p>
@@ -96,7 +96,7 @@ export default function EarlyAccessPage() {
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', textAlign: 'center' }}>
               {[
-                { icon: '🎁', title: '3 Months Free', desc: 'For everyone who signs up by 27 December 2026. No card needed to start' },
+                { icon: '🎁', title: '3 Months Free', desc: 'On the Craft Pack, for everyone who signs up by 27 December 2026. No card needed to start' },
                 { icon: '💎', title: 'Founding Pricing', desc: 'Locked-in rate for life — never pay more than founding members' },
                 { icon: '🚀', title: 'Early Access', desc: 'Get in before the public launch in January 2027' },
                 { icon: '🗺️', title: 'Shape the Product', desc: 'Your feedback directly influences what we build next' }
