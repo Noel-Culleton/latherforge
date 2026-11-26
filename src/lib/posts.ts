@@ -652,8 +652,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'soap-making-tools',
-    title: 'Soap Making Equipment: Starter Kits, Moulds & Tools',
-    description: 'The essential cold process soap making equipment for beginners: safety gear, a digital scale, stick blender, lye-safe containers and moulds. Plus five things to skip, including aluminium and vinegar.',
+    title: 'Soap Making Tools: 10 Essentials and 5 to Skip',
+    description: 'The 10 soap making tools and equipment a beginner needs for cold process soap, from goggles and a digital scale to moulds, plus 5 things to skip.',
     date: '2026-11-22',
     readTime: '10 min read',
     category: 'Beginner Guides',
@@ -1197,8 +1197,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'soap-making-supplies-nz',
-    title: 'Soap Making Supplies and Caustic Soda in New Zealand',
-    description: 'Where Kiwi soap makers buy caustic soda (sodium hydroxide), what to check on the label, and why some sellers only offer pick-up.',
+    title: 'Soap Making Supplies NZ: Where to Buy Caustic Soda',
+    description: 'Soap making supplies in New Zealand: where Kiwi soap makers buy caustic soda (sodium hydroxide), what to check on the label, and pick-up rules.',
     date: '2026-11-09',
     readTime: '4 min read',
     category: 'Supplies',
@@ -1322,8 +1322,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'what-is-lather-in-soap',
-    title: 'What Is Lather in Soap? What Makes Soap Bubble (and What Kills It)',
-    description: 'What lather in soap is, which oils make big bubbles or creamy lather, why hard water and recipe choices change it, and how to get more lather from handmade soap.',
+    title: 'What Is Lather in Soap? Why Some Bars Foam More',
+    description: 'Big bubbles or creamy lather? See which oils make soap lather, why hard water kills it, and how to tweak a handmade soap recipe for more foam.',
     date: '2026-11-09',
     readTime: '5 min read',
     category: 'Soap Making Basics',
@@ -1389,8 +1389,8 @@ export const posts: Post[] = [
   },
   {
     slug: 'what-is-a-salt-bar',
-    title: 'What Is a Salt Bar? Salt Soap Explained',
-    description: 'What a salt bar is, why salt bar recipes use so much coconut oil and a high superfat, how much salt to use, and why you cut salt soap early.',
+    title: 'What Is a Salt Bar? Oils, Salt Ratio and Cutting',
+    description: 'Salt bars explained: why they use so much coconut oil and a high superfat, which salt to use and how much, and why you must cut salt soap early.',
     date: '2026-11-09',
     readTime: '4 min read',
     category: 'Soap Making Basics',
