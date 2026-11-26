@@ -24,7 +24,7 @@ export default function WaitlistSignup() {
             Keep your recipes and batches in one place
           </h2>
           <p style={{ color: '#5C4A3A', lineHeight: 1.7, fontSize: '0.95rem' }}>
-            LatherForge is our app for soap makers. It keeps your recipes, batches, stock and cost per bar in one place. Leave your email and we will tell you when it opens. The first 300 sign-ups get 3 months free, with no card needed to start.
+            LatherForge is our app for soap makers. It keeps your recipes, batches, stock and cost per bar in one place. Leave your email and we will tell you when it opens. Sign up by 27 December 2026 to get 3 months free, with no card needed to start.
           </p>
         </div>
         {open ? (
@@ -49,7 +49,7 @@ export default function WaitlistSignup() {
           </div>
         )}
         <p style={{ textAlign: 'center', marginTop: '1.25rem', fontSize: '0.8rem', color: '#7A6E62' }}>
-          The 3 months free is limited to the first 300 sign-ups. No card is needed to start; to keep using LatherForge after the 3 months, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
+          The 3 months free is for everyone who signs up by 27 December 2026. Anyone who signs up after that gets 14 days free when we launch. No card is needed to start; to keep using LatherForge after your free period, you add payment details and choose a plan. Nothing is charged unless you do.{' '}
           No spam. No selling your data. Just a single email when we launch.{' '}
           See our <Link href="/privacy/" style={{ color: '#7A6E62', textDecoration: 'underline' }}>privacy policy</Link>.
         </p>

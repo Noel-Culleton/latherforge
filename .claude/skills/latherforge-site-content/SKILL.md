@@ -26,7 +26,7 @@ description: Add or update latherforge.com blog content (list articles, gift gui
 ## Standard article pattern
 1. Short intro, then a "Quick answer(s)" list.
 2. Numbered sections, each answering one problem or product type. Add a `shop` button only where a product genuinely helps.
-3. A LatherForge waitlist section near the end: "first 300 sign-ups get 3 months free, no card needed to start", linking `/early-access/`.
+3. A LatherForge waitlist section near the end: "sign up by 27 December 2026 for 3 months free (14 days free after that), no card needed to start", linking `/early-access/`.
 4. Final disclaimer: "Information only. Not professional or medical advice. Always follow lye safety guidance..."
 5. 3-5 FAQs (these become FAQ schema).
 
