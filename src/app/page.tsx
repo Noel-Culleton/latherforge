@@ -111,7 +111,7 @@ const schema = {
           "name": "When does LatherForge launch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start; after your free period, you add payment details and choose a plan to keep using it."
+            "text": "LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start; after your free period, you add payment details and choose a plan to keep using it."
           }
         },
         {
@@ -195,7 +195,7 @@ export default function HomePage() {
             <p className="note">
               {"Live 1 January 2027. Join by 27 December 2026 to get "}
               <strong>
-                3 months free
+                 3 months free on the Craft Pack
               </strong>
               {", no card needed to start."}
             </p>
@@ -507,7 +507,7 @@ export default function HomePage() {
               When does LatherForge launch?
             </summary>
             <p>
-              LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens. Everyone who joins the waitlist by 27 December 2026 gets 3 months free, with no card needed to start; after your free period, you add payment details and choose a plan to keep using it.
+              LatherForge goes live on 1 January 2027. Join the waitlist and you get one email when it opens. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start; after your free period, you add payment details and choose a plan to keep using it.
             </p>
           </details>
           <details>
@@ -563,7 +563,7 @@ export default function HomePage() {
             Stop running a real business on scrap paper.
           </h2>
           <p>
-            Live 1 January 2027. Join by 27 December 2026 to get 3 months free, no card needed to start.
+            Live 1 January 2027. Join by 27 December 2026 to get 3 months free on the Craft Pack, no card needed to start.
           </p>
           <Link href="/early-access/" className="btn">
             Get launch access

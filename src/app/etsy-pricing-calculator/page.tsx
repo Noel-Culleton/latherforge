@@ -260,7 +260,7 @@ export default function EtsyPricingCalculatorPage() {
           <p style={{"color": "#C9B49A", "lineHeight": 1.75, "marginBottom": "2rem", "fontSize": "0.95rem"}}>
             {"Live 1 January 2027. Join by 27 December 2026 to get "}
             <strong style={{"color": "#F5EDD6"}}>
-              3 months free
+               3 months free on the Craft Pack
             </strong>
             {", no card needed to start."}
           </p>
