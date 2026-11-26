@@ -1022,7 +1022,7 @@ export const posts: Post[] = [
       },
       {
         heading: 'Join LatherForge',
-        text: 'LatherForge is our own app for makers of soap, candles, bath bombs and skincare, launching on 1 January 2027. It keeps your recipes, batches, stock and true cost per item in one place, so you know what every candle really costs to make. Everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.',
+        text: 'LatherForge is our own app for soap makers, launching on 1 January 2027. It keeps your recipes, batches, stock and true cost per bar in one place. Candle tools are not part of the January launch, so if you make soap too, this is for you: everyone who joins the waitlist by 27 December 2026 gets 3 months free on the Craft Pack, with no card needed to start.',
         link: { href: '/early-access/', label: 'Join the LatherForge waitlist: 3 months free on the Craft Pack if you join by 27 December' }
       },
       { text: 'Information only. Picks are based on the published reviews, ratings and search results named above, not our own testing. Prices, contents and availability change; check current details and reviews before you buy. Follow the kit instructions and candle safety guidance.' }
