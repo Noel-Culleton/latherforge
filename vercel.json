@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.latherforge.com" }],
+      "destination": "https://latherforge.com/:path*",
+      "permanent": true
+    }
+  ]
+}
